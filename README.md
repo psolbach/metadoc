@@ -14,10 +14,9 @@ python run.py => serving on port 6060
 ```
 
 # Todo
-* Improve test coverage
-* Profiling w/ cPython, snakeviz
-* Newspaper's summarize is doing a poor job, instead try json-ld or meta-tags like
-twitter:card with content="summary" or og:description. Maybe python-goose, polyglot, dat/pyner can help.
+* Build up test coverage
+* Profiling w/ snakeviz
+* Newspaper's summarize is doing a poor job, maybe python-goose, polyglot, dat/pyner can help.
 The results of summarize are used as pullquote suggestions for now.
 * Page concatenation is needed in order to properly calculate wordcount and reading time.
-* Untrustworthy heuristic in addition to user flagging, e.g. hostname registration date lookup, over-quartile sharecount detection (requires state).
+* Authenticity heuristic in addition to user flagging, quartile sharecount detection (requires state).
