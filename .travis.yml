@@ -3,7 +3,7 @@ python:
   - "3.5"
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y python3 libxml2-dev libxslt1-dev libtiff-dev libjpeg-dev webp
+  - sudo apt-get install -y python3 libxml2-dev libxslt1-dev libtiff-dev libjpeg-dev webp whois
 # command to install dependencies
 install: pip3 install -r doxhund/requirements.txt
 before_script:
