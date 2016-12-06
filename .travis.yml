@@ -11,6 +11,8 @@ before_script:
   - python -m nltk.downloader averaged_perceptron_tagger words maxent_ne_chunker
 # command to run tests
 script: py.test -v tests
-after_success: codecov
+after_success:
+  - codecov
+  - bash <(curl -s https://codecov.io/bash)
 notifications:
   email: false
