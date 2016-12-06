@@ -3,7 +3,7 @@ python:
   - "3.5"
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y python3 libxml2 libxslt libtiff libjpeg webp little-cms2
+  - sudo apt-get install -y python3 libxml2-dev libxslt1-dev libtiff-dev libjpeg-dev webp
 # command to install dependencies
 install: pip3 install -r doxhund/requirements.txt
 before_script:
@@ -12,3 +12,5 @@ before_script:
 # command to run tests
 script: py.test -v tests
 after_success: codecov
+notifications:
+  email: false
