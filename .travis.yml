@@ -12,7 +12,7 @@ before_script:
   - curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python3
   - python -m nltk.downloader averaged_perceptron_tagger words maxent_ne_chunker
 # command to run tests
-script: py.test -v tests
+script: py.test --cov=doxhund -v tests
 after_success:
   - codecov
 notifications:
