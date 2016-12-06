@@ -1,5 +1,7 @@
 # Doxhund
-![travis](https://travis-ci.org/psolbach/doxhund.svg?branch=master)    
+![travis](https://travis-ci.org/psolbach/doxhund.svg?branch=master)
+![codecov](https://codecov.io/gh/psolbach/doxhund/branch/master/graph/badge.svg)    
+
 
 Doxhund is a postmodern news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, docshund retrieves relatively fast.
 
