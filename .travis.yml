@@ -2,6 +2,7 @@ language: python
 python:
   - "3.5"
 # command to install dependencies
-install: "pip3 install -r requirements.txt"
+install: "pip3 install -r doxhund/requirements.txt"
 # command to run tests
 script: py.test -v tests
+codecov
