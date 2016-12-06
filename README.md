@@ -3,6 +3,7 @@
 ![codecov](https://codecov.io/gh/psolbach/doxhund/branch/master/graph/badge.svg)    
 
 Doxhund is a postmodern news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, docshund retrieves relatively fast.
+It wants to be pronounced "dachshund".
 
 ## Example
 
@@ -87,5 +88,6 @@ The results of summarize are used as pullquote suggestions for now.
 
 ---
 
+Doxhund stems from a pedigree of nice libraries like [newspaper](https://github.com/codelucas/newspaper), [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect).   
 Doxhund is maintained by [@___paul](https://twitter.com/___paul)   
-It stems from a pedigree of nice libraries like [newspaper](https://github.com/codelucas/newspaper), [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect)  
+
