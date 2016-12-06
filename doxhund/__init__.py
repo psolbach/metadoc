@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__title__ = 'Docshund - Postmodern news article metadata service'
+__title__ = 'Doxhund - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
@@ -14,10 +14,14 @@ from .domain import Domaintools
 from .extract import Extractor
 from .social import ActivityCount
 
-class Docshund(object):
-  """Main API handler
+class Doxhund(object):
+  """Doxhund API
   """
   def __init__(self, url=None, html=None, **kwargs):
+    """Initialize with
+    :param url: The article url we shall investigate, required.
+    :param html: You can pass in the article html manually, optional.
+    """
     self.html = html
     self.url = url
     

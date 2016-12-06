@@ -10,7 +10,7 @@ import concurrent
 import json
 import bottle
 from bottle import response, request, post, route, run, abort, error
-from docshund import Docshund
+from doxhund import Doxhund
 
 bottle.BaseRequest.MEMFILE_MAX = 1024 * 1024 # up max POST payload size to 1MB
 
@@ -27,8 +27,8 @@ def article():
   if not url:
       abort(404)
 
-  docshund = Docshund(url=url, html=html)
-  docshund.query_all()
+  doxhund = Doxhund(url=url, html=html)
+  doxhund.query_all()
 
   payload = docshund.return_ball() # Preserve order
   return json.dumps(payload)

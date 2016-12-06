@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 version = '0.2.16'
 
 setup(
-  name='docshund',
+  name='doxhund',
   version=version,
   description="Postmodern news article metadata extraction.",
   long_description="",
