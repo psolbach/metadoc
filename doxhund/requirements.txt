@@ -1,9 +1,12 @@
 aiohttp==1.1.5
+asynctest==0.9.0
 bottle==0.12.10
 jmespath==0.9.0
 langdetect==1.0.7
 newspaper3k==0.1.7
 nltk==3.2.1
+pytest==3.0.5
+pytest-cov==2.4.0
 numpy==1.11.2
 requests==2.12.2
 whois==0.7

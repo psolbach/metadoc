@@ -25,10 +25,12 @@ class DoxhundDomaintoolsTest(asynctest.TestCase):
     assert self.domaintools.domain == "theintercept.com"
 
   @asynctest.ignore_loop
-  @patch('doxhund.domain.lookup.get_registered_date')
-  def test_get_all(self, mock_registered_date):
-    mock_registered_date.return_value = asynctest.MagicMock(self.date_registered)
-    self.domaintools.get_all()
+  @patch('doxhund.domain.lookup.get_date_registered')
+  async def test_get_all(self, mock_date_registered):
+    mock_date_registered.return_value = asynctest.MagicMock(self.date_registered)
+    
+    loop = asyncio.get_event_loop()
+    await self.domaintools.async_get_all(loop)
 
     credibility_resp = {
       "is_blacklisted": False,
@@ -37,3 +39,13 @@ class DoxhundDomaintoolsTest(asynctest.TestCase):
 
     assert self.domaintools.credibility == credibility_resp
     assert self.domaintools.date_registered == self.date_registered
+
+  @asynctest.ignore_loop
+  def test_new_domain(self):
+    today = datetime.datetime.now()
+    self.domaintools.date_registered = today
+    self.domaintools.check_credibility()
+    self.domaintools.recalculate_fake_confidence()
+
+    assert self.domaintools.credibility["fake_confidence"] == 0.2
+

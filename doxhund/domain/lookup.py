@@ -4,6 +4,6 @@
 import urllib
 import whois
 
-def get_registered_date(domain):
+def get_date_registered(domain):
   query = whois.query(domain) # silently fails in corporate env, vocally fails behind proxy
   return query.creation_date if query else None
