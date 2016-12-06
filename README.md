@@ -4,7 +4,6 @@
 
 Doxhund is a postmodern news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, docshund retrieves relatively fast.
 
----
 ## Example
 
 ```json
@@ -85,3 +84,8 @@ python run.py => serving on port 6060
 The results of summarize are used as pullquote suggestions for now.
 * Page concatenation is needed in order to properly calculate wordcount and reading time.
 * Authenticity heuristic with sharecount deviance detection (requires state).
+
+---
+
+Doxhund is maintained by [@___paul](https://twitter.com/___paul)   
+It stems from a pedigree of nice libraries like [newspaper](https://github.com/codelucas/newspaper), [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect)  
