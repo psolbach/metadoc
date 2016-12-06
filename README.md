@@ -13,8 +13,11 @@ python -m nltk.downloader averaged_perceptron_tagger words maxent_ne_chunker
 python run.py => serving on port 6060
 ```
 
+# Tests
+Testing is done via pytest and asynctest.
+Invoke with `py.test -v tests`
+
 # Todo
-* Build up test coverage
 * Profiling w/ snakeviz
 * Newspaper's summarize is doing a poor job, maybe python-goose, polyglot, dat/pyner can help.
 The results of summarize are used as pullquote suggestions for now.
