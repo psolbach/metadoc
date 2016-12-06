@@ -2,8 +2,10 @@
 ![travis](https://travis-ci.org/psolbach/doxhund.svg?branch=master)
 ![codecov](https://codecov.io/gh/psolbach/doxhund/branch/master/graph/badge.svg)    
 
-
 Doxhund is a postmodern news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, docshund retrieves relatively fast.
+
+---
+## Example
 
 ```json
 {
@@ -58,7 +60,6 @@ Doxhund is a postmodern news article metadata retrieval service and API mashup. 
   }]
 }
 ```
----
 
 ## Install
 Requires python 3.5.    
@@ -78,10 +79,6 @@ curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpo
 python -m nltk.downloader averaged_perceptron_tagger words maxent_ne_chunker
 python run.py => serving on port 6060
 ```
-
-## Tests
-Testing is done via pytest and asynctest.
-Invoke with `py.test -v tests`
 
 ## Todo
 * Newspaper's summarize is doing a poor job, maybe python-goose, polyglot, dat/pyner can help.
