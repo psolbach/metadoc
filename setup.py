@@ -26,7 +26,7 @@ setup(
   author='Paul Solbach',
   maintainer='Paul Solbach',
   maintainer_email='p@psolbach.com',
-  url='https://github.com/psolbach/docshund',
+  url='https://github.com/psolbach/doxhund',
   license='MIT',
 
   packages=find_packages(exclude=['tests']),

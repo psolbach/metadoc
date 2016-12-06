@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__title__ = 'Docshund - Postmodern news article metadata service'
+__title__ = 'Doxhund - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
@@ -30,7 +30,7 @@ def article():
   doxhund = Doxhund(url=url, html=html)
   doxhund.query_all()
 
-  payload = docshund.return_ball() # Preserve order
+  payload = doxhund.return_ball() # Preserve order
   return json.dumps(payload)
 
 
