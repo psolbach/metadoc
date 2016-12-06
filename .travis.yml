@@ -5,4 +5,4 @@ python:
 install: "pip3 install -r doxhund/requirements.txt"
 # command to run tests
 script: py.test -v tests
-codecov
+after_success: codecov
