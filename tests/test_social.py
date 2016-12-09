@@ -15,7 +15,7 @@ from doxhund.social.providers import providers
 class DoxhundActivityCountTest(asynctest.TestCase):
   def setUp(self):
     self.url = "https://theintercept.com/2016/11/26/laura-ingraham-lifezette/"
-    self.activity = ActivityCount(self.url)
+    self.activity = ActivityCount(url=self.url)
   
   @asynctest.ignore_loop
   def test_init(self):
