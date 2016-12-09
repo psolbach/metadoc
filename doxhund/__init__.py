@@ -22,17 +22,22 @@ class Doxhund(object):
     :param url: The article url we shall investigate, required.
     :param html: You can pass in the article html manually, optional.
     """
-    self.html = html
-    self.url = url
+
+    self.html = html or None
+    self.url = url or None
     
     if not url:
       raise AttributeError('Missing \"url\" attribute.')
 
+    if not self.html:
+      self._request_url()
+
+    self.extractor = Extractor(html=self.html) # Named entities, synthetic summaries
+    self.activity = ActivityCount(url=self.url) # Social activity from various networks
+    self.domain = Domaintools(url=self.url) # Domain whois date, blacklisting
+
   def query_all(self):
     """Combine all available resources"""
-    self.extractor = Extractor(self.html) # Named entities, synthetic summaries
-    self.activity = ActivityCount(self.url) # Social activity from various networks
-    self.domain = Domaintools(self.url) # Domain whois date, blacklisting
     subtasks = []
 
     loop = asyncio.new_event_loop()
@@ -48,14 +53,13 @@ class Doxhund(object):
     return self._render()
 
   def query_domain(self):
-    Domaintools(url).get_all()
+    self.domain.get_all()
 
-  def query_social(self):
-    ActivityCount(url).get_all()
+  async def query_social(self):
+    await self.activity.async_get_all(asyncio.get_event_loop())
 
-  def query_ner(self):
-    if not self.html: self._request_url()
-    Extractor(html).get_all()
+  def query_extract(self):
+    self.extractor.get_all()
 
   def _render(self):
     """Construct response dict after partial or complete
@@ -91,10 +95,9 @@ class Doxhund(object):
 
   def _request_url(self):
     """In case no html parameter was provided to the constructor"""
-    req = requests.get(self.url).content 
+    req = requests.get(self.url)
     if req.status_code != 200:
       raise Exception('Requesting article body \
         failed with {1} status code.'.format(req.status_code))
 
     self.html = req.content # after except
-

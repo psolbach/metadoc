@@ -5,15 +5,15 @@ import asyncio
 import math
 import tldextract
 from datetime import datetime, timedelta
-from .lookup import get_date_registered
+from .lookup import whois_date_registered
 from .check import check_credibility
 
 class Domaintools(object):
   """Gather various metadata like whois informaion
   and blacklist status about any given hostname
   """
-  def __init__(self, url):
-    self.url = url
+  def __init__(self, url=None):
+    self.url = url or None
     self.get_domain(url)
 
   def get_domain(self, url):
@@ -21,7 +21,7 @@ class Domaintools(object):
     self.domain = "{}.{}".format(tld.domain, tld.suffix)
 
   def get_date_registered(self):
-    self.date_registered = get_date_registered(self.domain)
+    self.date_registered = whois_date_registered(self.domain)
 
   def check_credibility(self):
     self.credibility = check_credibility(self.domain)

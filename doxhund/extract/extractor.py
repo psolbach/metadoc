@@ -19,9 +19,9 @@ from .html import HtmlMeta
 class Extractor(object):
   """Entity recognition, pullquote extraction etc.
   """
-  def __init__(self, html, title=" ", **kwargs):
-    self.html = html
-    self.title = title
+  def __init__(self, html=None, title=" ", **kwargs):
+    self.html = html or None
+    self.title = title or None
     self.entities = []
 
   def detect_language(self):
@@ -72,7 +72,7 @@ class Extractor(object):
       or html_meta.metatags.get("article:author") \
       or html_meta.metatags.get("author")
 
-    self.title = html_meta.jsonld.get("title") or html_meta.title
+    self.title = html_meta.jsonld.get("headline") or html_meta.title
     self.image = html_meta.metatags.get("twitter:image") or html_meta.jsonld.get("thumbnailUrl")
 
   def get_contenthash(self):
@@ -87,7 +87,7 @@ class Extractor(object):
     """Calculate average reading time in seconds"""
     if not self.fulltext: return None
     wordcount = len(self.fulltext.split())
-    self.reading_time = math.floor(wordcount / 300 * 60) 
+    self.reading_time = math.floor(wordcount / 300 * 60)
 
   def get_all(self):
     self.sanitize_html()

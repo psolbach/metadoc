@@ -11,7 +11,7 @@ class HtmlMeta(object):
   detect if author content is a social media destination.
   """
   def __init__(self, html, encoding="UTF-8"):
-    self.html = html
+    self.html = html or None
     self.parser = lxml.html.HTMLParser(encoding=encoding)
     self.document = lxml.html.fromstring(html, parser=self.parser)
     self._jsonld_xpath = lxml.etree.XPath('descendant-or-self::script[@type="application/ld+json"]')

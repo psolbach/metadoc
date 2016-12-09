@@ -16,14 +16,17 @@ logging.getLogger("requests").setLevel(logging.WARNING)
 
 class ActivityCount(object):
   """Gather activity/share stats from social APIs"""
-  def __init__(self, url):
-    self.url = url
+  def __init__(self, url=None):
+    self.url = url or None
     self.responses = []
 
-  async def async_get_all(self, loop):
+  def establish_client(self, loop):
     self.loop = asyncio.new_event_loop()
     self.client = aiohttp.ClientSession(loop=self.loop)
     asyncio.set_event_loop(self.loop)
+
+  async def async_get_all(self, loop):
+    self.establish_client(loop)
     
     for provider in providers:
       url = provider["endpoint"].format(self.url)
@@ -39,11 +42,12 @@ class ActivityCount(object):
     async with self.client.get(url) as response:
       assert response.status == 200
       logging.debug("Got response for URL {0} with statuscode {1}".format(url, response.status))
-      return await response.read()
+      response = await response.read()
+      return response.decode('utf-8')
 
   async def collect_sharecount(self, url, provider):
     response = await self.get_json(url)
-    j = json.loads(response.decode('utf-8'))
+    j = json.loads(response)
 
     data = {
       "provider": provider["provider"],
