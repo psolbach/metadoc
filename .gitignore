@@ -1,6 +1,7 @@
-.pypirc
 .DS_Store
-venv
+*.egg
 *.egg-info
 *-sdist
 dist
+venv
+htmlcov
