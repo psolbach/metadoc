@@ -100,4 +100,4 @@ class Doxhund(object):
       raise Exception('Requesting article body \
         failed with {1} status code.'.format(req.status_code))
 
-    self.html = req.content # after except
+    self.html = req.text # after except
