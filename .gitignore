@@ -1,4 +1,6 @@
 .DS_Store
+.cache
+**/__pycache__
 *.egg
 *.egg-info
 *-sdist
