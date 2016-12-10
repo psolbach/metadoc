@@ -55,4 +55,5 @@ class DoxhundModuleTest(asynctest.TestCase):
       foo = Doxhund(url="https://theintercept.com/404/", html=None)
 
   async def test_no_html(self):
-    assert Doxhund(url=self.url).html is not None
+    doxhund = Doxhund(url=self.url)
+    doxhund.query_all()
