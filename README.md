@@ -7,6 +7,14 @@ It wants to be pronounced "dachshund".
 
 ## Example
 
+You just throw it any news article URL, and Doxhund will yield.
+```python
+from doxhund import Doxhund
+url = "https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says"
+doxhund = Doxhund(url=url).query_all()
+doxhund.return_ball()
+```
+=>
 ```json
 {
   "title": "iPhones Secretly Send Call History to Apple, Security Firm Says",
@@ -62,7 +70,14 @@ It wants to be pronounced "dachshund".
 ```
 
 ## Install
-Requires python 3.5.    
+Requires python 3.5.
+
+#### Using pip
+```shell
+pip install doxhund
+```
+
+## Develop
 
 #### Mac OS
 ```shell
