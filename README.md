@@ -69,6 +69,9 @@ doxhund.return_ball()
 }
 ```
 
+## Trustworthiness Check
+Since it's painful to watch the beloved humans be all aggrevated about those fake news making the rounds, Doxhund does a rather crude background check on article sources. This means e.g. a simple blacklist-lookup and `whois` on the domain. Blacklists taken into account include the widely discredited PropOrNot. The whole concept is very much alarming in itself. Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. That means we are conservative here. The resulting metadata should be taken with lots of saltgrains. Let's put it like Don DeLillo would – because "lists are a form of cultural hysteria." 
+
 ## Install
 Requires python 3.5.
 
