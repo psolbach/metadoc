@@ -1,0 +1,6 @@
+.pypirc
+.DS_Store
+venv
+*.egg-info
+*-sdist
+dist
