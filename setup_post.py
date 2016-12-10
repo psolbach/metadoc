@@ -10,7 +10,7 @@ REQUIRED_CORPORA = [
   'movie_reviews', # Required for NaiveBayesAnalyzer
   'wordnet', # Required for lemmatization and Wordnet
   'averaged_perceptron_tagger',
-  'maxent_ne_chunker'
+  'maxent_ne_chunker',
   'stopwords',
   'words' 
 ]
