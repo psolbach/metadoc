@@ -11,7 +11,7 @@ import signal
 
 from .providers import providers
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.WARNING)
 logging.getLogger("requests").setLevel(logging.WARNING)
 
 class ActivityCount(object):
