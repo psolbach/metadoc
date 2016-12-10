@@ -1,16 +1,29 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# TODO: 
-# - twine to publish!
-
+import os
+import sys
+from subprocess import call
 from setuptools import setup, find_packages
+from setuptools.command.install import install as _install
+
 version = '0.2.16'
+
+def _post_install(dir):
+  call([sys.executable, 'setup_post.py'],
+    cwd=os.path.join(dir, 'doxhund'))
+
+class CustomInstall(_install):
+  """Do stuff after setup."""
+  def run(self):
+    _install.run(self)
+    self.execute(_post_install, (self.install_lib,),
+      msg="Running post install task")
 
 setup(
   name='doxhund',
   version=version,
-  description="Postmodern news article metadata extraction.",
+  description="Post-truth era news article metadata service.",
   long_description="",
   classifiers=[ # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     "Programming Language :: Python :: 3.5",
@@ -24,13 +37,25 @@ setup(
 
   keywords=["scraping", "metadata", "news article"],
   author='Paul Solbach',
-  maintainer='Paul Solbach',
-  maintainer_email='p@psolbach.com',
+  author_email='p@psolbach.com',
   url='https://github.com/psolbach/doxhund',
   license='MIT',
-
+  cmdclass={'install': CustomInstall},
   packages=find_packages(exclude=['tests']),
   include_package_data=True,
   zip_safe=False,
-  install_requires=[]
+  install_requires=[
+    'aiohttp==1.1.5',
+    'asynctest==0.9.0',
+    'bottle==0.12.10',
+    'jmespath==0.9.0',
+    'langdetect==1.0.7',
+    'newspaper3k==0.1.7',
+    'nltk==3.2.1',
+    'pytest==3.0.5',
+    'pytest-cov==2.4.0',
+    'numpy==1.11.2',
+    'requests==2.12.2',
+    'whois==0.7'
+  ]
 )

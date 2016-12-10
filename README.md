@@ -95,9 +95,7 @@ apt-get install -y python3 libxml2-dev libxslt-dev libtiff-dev libjpeg-dev webp 
 ```
 #### Then
 ```shell
-pip3 install -r requirements.txt
-curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python3
-python -m nltk.downloader averaged_perceptron_tagger words maxent_ne_chunker
+python setup.py
 python run.py => serving on port 6060
 ```
 
