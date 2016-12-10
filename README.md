@@ -1,6 +1,6 @@
 # Doxhund
-![travis](https://travis-ci.org/psolbach/doxhund.svg?branch=master)
-![codecov](https://codecov.io/gh/psolbach/doxhund/branch/master/graph/badge.svg)    
+[![Build Status](https://travis-ci.org/psolbach/doxhund.svg?branch=master)](https://travis-ci.org/psolbach/doxhund)
+[![Coverage Status](https://coveralls.io/repos/github/psolbach/doxhund/badge.svg?branch=master)](https://coveralls.io/github/psolbach/doxhund?branch=master)  
 
 Doxhund is a postmodern news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, doxhund retrieves relatively fast.
 It wants to be pronounced "dachshund".
