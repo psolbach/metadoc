@@ -95,7 +95,8 @@ apt-get install -y python3 libxml2-dev libxslt-dev libtiff-dev libjpeg-dev webp 
 ```
 #### Then
 ```shell
-python setup.py
+pip3 install -r requirements.txt
+python setup_post.py
 python run.py => serving on port 6060
 ```
 
