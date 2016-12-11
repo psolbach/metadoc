@@ -5,10 +5,10 @@ import asyncio
 import asynctest
 
 from asynctest.mock import patch
-from doxhund.extract import Extractor
-from doxhund.extract import html
+from metadoc.extract import Extractor
+from metadoc.extract import html
 
-class DoxhundExtractorTest(asynctest.TestCase):
+class MetadocExtractorTest(asynctest.TestCase):
   def setUp(self):
     article_path = "tests/fixtures/theintercept.com/laura-ingraham-lifezette.html"
     with open(article_path, 'r') as article:

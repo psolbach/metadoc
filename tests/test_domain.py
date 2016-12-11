@@ -7,9 +7,9 @@ import asynctest
 import datetime
 
 from asynctest.mock import patch
-from doxhund.domain import Domaintools
+from metadoc.domain import Domaintools
 
-class DoxhundDomaintoolsTest(asynctest.TestCase):
+class MetadocDomaintoolsTest(asynctest.TestCase):
 
   def setUp(self):
     article_path = "tests/fixtures/theintercept.com/laura-ingraham-lifezette.html"
@@ -27,7 +27,7 @@ class DoxhundDomaintoolsTest(asynctest.TestCase):
     assert self.domaintools.domain == "theintercept.com"
 
   @asynctest.ignore_loop
-  @patch('doxhund.domain.domaintools.whois_date_registered')
+  @patch('metadoc.domain.domaintools.whois_date_registered')
   async def test_get_all_local(self, _mocked_func):
     _mocked_func.return_value = self.date_registered
     await self.domaintools.async_get_all(self.loop)

@@ -1,18 +1,17 @@
-# Doxhund
-[![Build Status](https://travis-ci.org/psolbach/doxhund.svg?branch=master)](https://travis-ci.org/psolbach/doxhund)
-[![Coverage Status](https://coveralls.io/repos/github/psolbach/doxhund/badge.svg?branch=master)](https://coveralls.io/github/psolbach/doxhund?branch=master)  
+# Metadoc
+[![Build Status](https://travis-ci.org/psolbach/metadoc.svg?branch=master)](https://travis-ci.org/psolbach/metadoc)
+[![Coverage Status](https://coveralls.io/repos/github/psolbach/metadoc/badge.svg?branch=master)](https://coveralls.io/github/psolbach/metadoc?branch=master)  
 
-Doxhund is a post-truth era news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, doxhund retrieves relatively fast.
-It wants to be pronounced "dachshund".
+Metadoc is a post-truth era news article metadata retrieval service and API mashup. It does social media activity lookup, source authenticity rating, checksum creation, json-ld and metatag parsing as well as information extraction for named entities, pullquotes, fulltext and other useful things based off of arbitrary article URLs. Also, Metadoc retrieves relatively fast.
 
 ## Example
 
-You just throw it any news article URL, and Doxhund will yield.
+You just throw it any news article URL, and Metadoc will yield.
 ```python
-from doxhund import Doxhund
+from metadoc import Metadoc
 url = "https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says"
-doxhund = Doxhund(url=url).query_all()
-doxhund.return_ball()
+metadoc = Metadoc(url=url).query_all()
+metadoc.return_ball()
 ```
 =>
 ```json
@@ -70,7 +69,7 @@ doxhund.return_ball()
 ```
 
 ## Trustworthiness Check
-Since it's painful watching humans be all aggrevated about those fake news making the rounds, Doxhund does a rather crude background check on article sources. This means compiling a simple blacklist-lookup and `whois` data on the domain. Blacklists taken into account include the widely discredited [PropOrNot](http://www.propornot.com/p/the-list.html). The whole concept is very much alarming in itself. Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. That means we are conservative here. The resulting metadata should be taken with lots of salt. Let's put it like [Don DeLillo would](http://www.theparisreview.org/interviews/1887/don-delillo-the-art-of-fiction-no-135-don-delillo) – because "lists are a form of cultural hysteria."
+Since it's painful watching humans be all aggrevated about those fake news making the rounds, Metadoc does a rather crude background check on article sources. This means compiling a simple blacklist-lookup and `whois` data on the domain. Blacklists taken into account include the widely discredited [PropOrNot](http://www.propornot.com/p/the-list.html). The whole concept is very much alarming in itself. Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. That means we are conservative here. The resulting metadata should be taken with lots of salt. Let's put it like [Don DeLillo would](http://www.theparisreview.org/interviews/1887/don-delillo-the-art-of-fiction-no-135-don-delillo) – because "lists are a form of cultural hysteria."
 
 ## Purpose
 This humble library is used in the context of a larger news-related software undertaking. We're synthesizing what we dub "audience-evaluated content" with automated metadata and a hint of machine learning. Machine-in-the-loop, if you will. Sounds like bullshit, but it's totally not. If you're intrigued and might want to work with us, feel free to drop a line to p at psolbach dot com.
@@ -80,7 +79,7 @@ Requires python 3.5.
 
 #### Using pip
 ```shell
-pip install doxhund
+pip install metadoc
 ```
 
 ## Develop
@@ -108,6 +107,6 @@ The results of summarize are used as pullquote suggestions for now.
 
 ---
 
-Doxhund stems from a pedigree of nice libraries like [newspaper](https://github.com/codelucas/newspaper), [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect).   
-Doxhund is maintained by [@___paul](https://twitter.com/___paul)   
+Metadoc stems from a pedigree of nice libraries like [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect).   
+Metadoc is maintained by [@___paul](https://twitter.com/___paul)   
 

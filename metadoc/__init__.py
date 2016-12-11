@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__title__ = 'Doxhund - Postmodern news article metadata service'
+__title__ = 'Metadoc - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
@@ -17,11 +17,9 @@ from .social import ActivityCount
 import logging
 logging.basicConfig(level=logging.WARN)
 
-class Doxhund(object):
-  """Doxhund API
-  """
+class Metadoc(object):
   def __init__(self, url=None, html=None, **kwargs):
-    """Initialize with
+    """Metadoc API, initialize with
     :param url: The article url we shall investigate, required.
     :param html: You can pass in the article html manually, optional.
     """

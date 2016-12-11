@@ -11,7 +11,7 @@ version = '0.2.19'
 
 def _post_install(dir):
   call([sys.executable, 'setup_post.py'],
-    cwd=os.path.join(dir, 'doxhund'))
+    cwd=os.path.join(dir, 'metadoc'))
 
 class CustomInstall(_install):
   """Do stuff after setup."""
@@ -21,7 +21,7 @@ class CustomInstall(_install):
       msg="Running post install task")
 
 setup(
-  name='doxhund',
+  name='metadoc',
   version=version,
   description="Post-truth era news article metadata service.",
   long_description="",
@@ -38,7 +38,7 @@ setup(
   keywords=["scraping", "metadata", "news article"],
   author='Paul Solbach',
   author_email='p@psolbach.com',
-  url='https://github.com/psolbach/doxhund',
+  url='https://github.com/psolbach/metadoc',
   license='MIT',
   cmdclass={'install': CustomInstall},
   packages=find_packages(exclude=['tests']),

@@ -9,10 +9,10 @@ import jmespath
 import urllib.parse
 
 from asynctest.mock import patch
-from doxhund.social import ActivityCount
-from doxhund.social.providers import providers
+from metadoc.social import ActivityCount
+from metadoc.social.providers import providers
 
-class DoxhundActivityCountTest(asynctest.TestCase):
+class MetadocActivityCountTest(asynctest.TestCase):
   def setUp(self):
     self.url = "https://theintercept.com/2016/11/26/laura-ingraham-lifezette/"
     self.activity = ActivityCount(url=self.url)
