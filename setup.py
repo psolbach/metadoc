@@ -7,7 +7,7 @@ from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
-version = '0.2.19'
+version = '0.2.21'
 
 def _post_install(dir):
   call([sys.executable, 'setup_post.py'],
@@ -50,11 +50,13 @@ setup(
     'bottle==0.12.10',
     'jmespath==0.9.0',
     'langdetect==1.0.7',
+    'libextract==0.0.12',
     'newspaper3k==0.1.7',
     'nltk==3.2.1',
     'pytest==3.0.5',
     'pytest-cov==2.4.0',
     'numpy==1.11.2',
+    'tldextract==2.0.2',
     'requests==2.12.2',
     'whois==0.7'
   ]
