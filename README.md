@@ -100,13 +100,13 @@ python run.py => serving on port 6060
 ```
 
 ## Todo
-* Newspaper's summarize is doing a poor job, maybe python-goose, polyglot, dat/pyner can help.
-The results of summarize are used as pullquote suggestions for now.
+* Perf: Worst offender is nltk's pos tagger. Roll own w/ Average Perceptron.
 * Page concatenation is needed in order to properly calculate wordcount and reading time.
 * Authenticity heuristic with sharecount deviance detection (requires state).
+~~* Newspaper's summarize is doing a poor job, fulltext is slow. Move to libextract?~~
 
 ---
 
-Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect).   
+Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).   
 Metadoc is maintained by [@___paul](https://twitter.com/___paul)   
 
