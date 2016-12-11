@@ -9,11 +9,9 @@ import math
 import hashlib
 
 from langdetect import detect
-from newspaper.nlp import summarize, keywords
-from newspaper.extractors import ContentExtractor
-from newspaper.configuration import Configuration
-from newspaper import fulltext
+from libextract.api import extract
 
+from .ner import EntityExtractor
 from .html import HtmlMeta
 
 class Extractor(object):
@@ -43,24 +41,16 @@ class Extractor(object):
   
     self.html = emoji_pattern.sub(r'', self.html)
 
-  def extract_entities(self):
-    """Rudimentary NER, label PERSON is unreliable but ok, 
-    improve accuracy by combining with other methods.
-    Will not work with Python 3.5.2 oddly enough. Investigate.
-    """
-    for sent in nltk.sent_tokenize(self.fulltext):
-      for chunk in nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(sent))):
-        if hasattr(chunk, 'label') and chunk.label() == 'PERSON' and len(chunk.leaves()) > 1:
-          clean_chunk = ' '.join(c[0] for c in chunk.leaves())
-          self.entities.append(clean_chunk)
-
   def extract_text(self):
     """Parse fulltext, do keyword extraction using the newspaper lib
     => newspaper.readthedocs.io
     """
-    self.fulltext = fulltext(self.html) # heads up: contains newlines
-    self.pullquotes = summarize(title=" ", text=self.fulltext) # array of sentences, unusable as summary
-    self.keywords = {k: v for k, v in keywords(self.fulltext).items() if v > 1.015} # filter confidence
+    libextract_nodes = list(extract(self.html.encode("utf-8")))
+    self.fulltext = libextract_nodes[0].text_content()
+
+    entities = EntityExtractor(self.fulltext)
+    self.keywords = entities.get_keywords() # filter
+    self.names = entities.get_names()
 
   def extract_metadata(self):
     """Sniff for essential and additional metadata via
@@ -92,7 +82,6 @@ class Extractor(object):
   def get_all(self):
     self.sanitize_html()
     self.extract_text()
-    self.extract_entities()
     self.extract_metadata()
     self.detect_language()
     self.get_contenthash()

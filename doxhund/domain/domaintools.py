@@ -17,7 +17,8 @@ class Domaintools(object):
     self.get_domain(url)
 
   def get_domain(self, url):
-    tld = tldextract.extract(url)
+    no_fetch_extract = tldextract.TLDExtract(suffix_list_urls=None)
+    tld = no_fetch_extract(url)
     self.domain = "{}.{}".format(tld.domain, tld.suffix)
 
   def get_date_registered(self):

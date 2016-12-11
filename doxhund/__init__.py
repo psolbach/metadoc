@@ -14,6 +14,9 @@ from .domain import Domaintools
 from .extract import Extractor
 from .social import ActivityCount
 
+import logging
+logging.basicConfig(level=logging.WARN)
+
 class Doxhund(object):
   """Doxhund API
   """
@@ -75,13 +78,12 @@ class Doxhund(object):
 
       "text": {
         "fulltext": getattr(self.extractor, "fulltext", None),
-        "pullquotes": getattr(self.extractor, "pullquotes", None),
         "reading_time": getattr(self.extractor, "reading_time", None),
         "contenthash": getattr(self.extractor, "contenthash", None)
       },
       
       "entities": {
-        "names": getattr(self.extractor, "entities", None),
+        "names": getattr(self.extractor, "names", None),
         "keywords": getattr(self.extractor, "keywords", None),
       },
       

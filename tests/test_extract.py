@@ -22,5 +22,5 @@ class DoxhundExtractorTest(asynctest.TestCase):
 
   async def test_get_all_local(self):
     await self.extractor.async_get_all(self.loop)
-    assert self.extractor.contenthash == "db0c45b4f9ce7ca51bd68cd48de3975b"
+    assert self.extractor.contenthash == "61ffed47a1a3e32e29829665ffa1e76e"
     assert self.extractor.title == "Some Fake News Publishers Just Happen to Be Donald Trump’s Cronies"
