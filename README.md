@@ -107,6 +107,6 @@ The results of summarize are used as pullquote suggestions for now.
 
 ---
 
-Metadoc stems from a pedigree of nice libraries like [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect).   
+Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [nltk](https://github.com/nltk/nltk) and [langdetect](https://github.com/Mimino666/langdetect).   
 Metadoc is maintained by [@___paul](https://twitter.com/___paul)   
 
