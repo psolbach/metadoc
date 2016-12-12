@@ -100,13 +100,14 @@ python run.py => serving on port 6060
 ```
 
 ## Todo
-* Perf: Worst offender is nltk's pos tagger. Roll own w/ Average Perceptron.
 * Page concatenation is needed in order to properly calculate wordcount and reading time.
 * Authenticity heuristic with sharecount deviance detection (requires state).
+* ~~Perf: Worst offender is nltk's pos tagger. Roll own w/ Average Perceptron.~~
 * ~~Newspaper's summarize is doing a poor job, fulltext is slow. Move to libextract?~~
 
 ---
 
 Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).   
+Metadoc leans on [this](https://github.com/hankcs/AveragedPerceptronPython) perceptron implementation inspired by Matthew Honnibal.    
 Metadoc is maintained by [@___paul](https://twitter.com/___paul)   
 
