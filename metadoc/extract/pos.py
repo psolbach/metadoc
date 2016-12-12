@@ -60,8 +60,8 @@ class AveragedPerceptron(object):
     '''Dot-product the features and current weights and return the best label.'''
     scores = defaultdict(float)
     for feat, value in features.items():
-      # if feat not in self.weights or value == 0:
-      #   continue
+      if feat not in self.weights or value == 0:
+        continue
       weights = self.weights[feat]
       for label, weight in weights.items():
         scores[label] += value * weight

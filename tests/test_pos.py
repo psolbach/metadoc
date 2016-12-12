@@ -14,7 +14,6 @@ class MetadocPerceptronTest(asynctest.TestCase):
 
   @asynctest.ignore_loop
   def test_init(self):
-    do_train()
     self.perceptron_tagger = AveragedPerceptronTagger(autoload=True)
     tags = self.perceptron_tagger.tag("Rami Eid is studying at Stony Brook University in NY")
     assert len(tags) == 10
