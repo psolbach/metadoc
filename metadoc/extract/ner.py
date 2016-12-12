@@ -1,94 +1,86 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import difflib
 import operator
 import nltk
+import numpy
 import string
+import re
+
 from nltk.tokenize import RegexpTokenizer
-from nltk.tag.perceptron import PerceptronTagger
+from .pos import AveragedPerceptronTagger
 
 tokenizer = RegexpTokenizer(r'\w+')
-tagger = PerceptronTagger()
+sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
+perceptron_tagger = AveragedPerceptronTaipdgger(autoload=True)
 
 def isPunct(word):
-  return len(word) == 1 and word in string.punctuation
-
-def isNumeric(word):
-  try:
-    float(word) if '.' in word else int(word)
-    return True
-  except ValueError:
-    return False
-
-def isUnwantedTag(word):
-  s = nltk.word_tokenize(word)
-  tag = tagger.tag(s)[0][1]
-  return tag in ['VBD','VBG']
+  pattern = r"(`|\.|#|\$|%|&|\'|\(|\)|\*|\||\+|,|-|—|/|:|;|<|=|>|\?|@|\[|\]|\^|_|`|{|}|~|”|“|’)"
+  return re.search(pattern, word) is not None
 
 class EntityExtractor(object):
-  """Quick and dirty, inspired by Sujit Pal's RAKE implementation.
-  Ported to Python3. Additional person/org extraction is unreliable but ok,
-  improve accuracy by combining with other methods.
-  """
   def __init__(self, text):
     self.stopwords = set(nltk.corpus.stopwords.words())
-    self.top_fraction = 85 # consider top candidate keywords only
-    self.sentences = nltk.sent_tokenize(text)
+    self.top_fraction = 70 # consider top candidate keywords only
+    self.sentences = sent_detector.tokenize(text)
 
-  def _generate_candidate_keywords(self, sentences):
-    phrase_list = []
-
-    for sentence in sentences:
-      words = map(lambda x: "|" if x in self.stopwords else x, tokenizer.tokenize(sentence.lower()))
-      phrase = []
-
-      for word in words:
-        if word == "|" or isPunct(word):
-          if len(phrase) > 0:
-            phrase_list.append(phrase)
-            phrase = []
-        else:
-          phrase.append(word)
-
-    return phrase_list
-
-  def _calculate_word_scores(self, phrase_list):
+  def _calculate_word_scores(self, word_list):
+    """Quick and dirty, inspired by Sujit Pal's RAKE implementation.
+    """
     word_freq = nltk.FreqDist()
-    word_degree = nltk.FreqDist()
+    for word in word_list:
+      word_freq[word] += 1
     
-    for phrase in phrase_list:
-      degree = len(list((x for x in phrase if not isNumeric(x)))) -1
-
-      for word in phrase:
-        word_freq[word] += 1
-        word_degree[word] += degree # other words
-
-    for word in word_freq.keys():
-      word_degree[word] = word_degree[word] + word_freq[word] # itself
-    
-    avg_degree = sum(word_degree.values()) / len(word_degree)
-    word_scores = {k:v for k, v in word_degree.items() if (v > 0 and not isUnwantedTag(k))}
+    word_scores = {k:v for k, v in word_freq.items() if v > 0}
     return word_scores
-    
-  def get_keywords(self):
-    phrase_list = self._generate_candidate_keywords(self.sentences)
-    word_scores = self._calculate_word_scores(phrase_list)
-    sorted_word_scores = sorted(word_scores.items(), key=operator.itemgetter(1), reverse=True)
-    n_words = len(sorted_word_scores)
-    
-    top_words = sorted_word_scores[0:int(n_words/self.top_fraction)]
-    return {a: b for a, b in top_words}
 
-  def get_names(self):
-    entities = []
+  def _get_mt_median(self, word_scores):
+    median = numpy.median([v for k, v in word_scores.items()])
+    return {k: v for k, v in word_scores.items() if v > median}
+
+  def _filter_distance(self, words):
+    close_matches = []
+    wordlist = set(words[:]) # deepcopy
+
+    for word in words:
+      if word in close_matches: continue
+      matches = difflib.get_close_matches(word, wordlist, 2)
+      if len(matches) > 1:
+        close_matches += matches[1:]
+
+    return wordlist.difference(close_matches)
+
+  def _sort_and_filter(self, word_scores):
+    n_words = len(word_scores)
+    sorted_word_scores = sorted(word_scores.items(), key=operator.itemgetter(1), reverse=True)
+    top_words = sorted_word_scores[0:int(n_words/100*self.top_fraction)]
+    punct_filtered = [k[0] for k in top_words if not isPunct(k[0])]
+    distance_filtered = self._filter_distance(punct_filtered)
+    return list(distance_filtered)
+
+  def _contains_stopword(self, ent):
+    filtered = [word.lower() in self.stopwords for word in ent.split(" ")]
+    return True in filtered
+
+  def get_scored_entities(self):
+    named_ents = []
 
     for sent in self.sentences:
-      pos_tags = tagger.tag(nltk.word_tokenize(sent))
-      chunks = nltk.ne_chunk(pos_tags)
+      pos_tags = perceptron_tagger.tag(" ".join(nltk.word_tokenize(sent)))
+      entities = perceptron_tagger.named_entities(pos_tags)
+      named_ents += [ent for ent in entities if not self._contains_stopword(ent)]
 
-      for chunk in chunks:
-        if hasattr(chunk, 'label') and chunk.label() == 'PERSON' and len(chunk.leaves()) > 1:
-          clean_chunk = ' '.join(c[0] for c in chunk.leaves())
-          entities.append(clean_chunk)
+    ent_scores = self._calculate_word_scores(named_ents)
+    self.ent_scores = ent_scores
+    return ent_scores
 
-    return entities
+  def get_names(self):
+    filtered_names = {k: v for k, v in self.ent_scores.items() if len(k.split(" ")) > 1}
+    top_names = self._sort_and_filter(filtered_names)
+    return top_names[:8]
+    
+  def get_keywords(self):
+    filtered_keywords = {k.lower(): v for k, v in self.ent_scores.items() if len(k.split(" ")) == 1}
+    top_keywords = self._sort_and_filter(filtered_keywords)
+    return top_keywords[:8]

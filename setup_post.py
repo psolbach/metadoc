@@ -2,13 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import nltk
+from metadoc.etract.pos import do_train
 
 REQUIRED_CORPORA = [
   'brown', # Required for FastNPExtractor
   'punkt', # Required for WordTokenizer
-  'maxent_treebank_pos_tagger',  # Required for NLTKTagger
   'wordnet', # Required for lemmatization and Wordnet
-  'averaged_perceptron_tagger',
   'maxent_ne_chunker',
   'stopwords',
   'words' 
@@ -17,3 +16,5 @@ REQUIRED_CORPORA = [
 for each in REQUIRED_CORPORA:
   print(('Downloading "{0}"'.format(each)))
   nltk.download(each)
+
+do_train() # Averaged Perceptron Tagger
