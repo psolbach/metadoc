@@ -13,7 +13,6 @@ from .pos import AveragedPerceptronTagger
 
 tokenizer = RegexpTokenizer(r'\w+')
 sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
-perceptron_tagger = AveragedPerceptronTagger(autoload=True)
 
 def isPunct(word):
   pattern = r"(`|\.|#|\$|%|&|\'|\(|\)|\*|\||\+|,|-|—|/|:|;|<|=|>|\?|@|\[|\]|\^|_|`|{|}|~|”|“|’)"
@@ -21,6 +20,7 @@ def isPunct(word):
 
 class EntityExtractor(object):
   def __init__(self, text):
+    self.perceptron_tagger = AveragedPerceptronTagger(autoload=True)
     self.stopwords = set(nltk.corpus.stopwords.words())
     self.top_fraction = 70 # consider top candidate keywords only
     self.sentences = sent_detector.tokenize(text)
@@ -67,8 +67,8 @@ class EntityExtractor(object):
     named_ents = []
 
     for sent in self.sentences:
-      pos_tags = perceptron_tagger.tag(" ".join(nltk.word_tokenize(sent)))
-      entities = perceptron_tagger.named_entities(pos_tags)
+      pos_tags = self.perceptron_tagger.tag(" ".join(nltk.word_tokenize(sent)))
+      entities = self.perceptron_tagger.named_entities(pos_tags)
       named_ents += [ent for ent in entities if not self._contains_stopword(ent)]
 
     ent_scores = self._calculate_word_scores(named_ents)
