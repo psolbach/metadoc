@@ -35,9 +35,9 @@ class EntityExtractor(object):
     word_scores = {k:v for k, v in word_freq.items() if v > 0}
     return word_scores
 
-  def _get_mt_median(self, word_scores):
-    median = numpy.median([v for k, v in word_scores.items()])
-    return {k: v for k, v in word_scores.items() if v > median}
+  # def _get_mt_median(self, word_scores):
+  #   median = numpy.median([v for k, v in word_scores.items()])
+  #   return {k: v for k, v in word_scores.items() if v > median}
 
   def _filter_distance(self, words):
     close_matches = []

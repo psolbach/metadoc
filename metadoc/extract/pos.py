@@ -99,14 +99,14 @@ class AveragedPerceptron(object):
       self.weights[feat] = new_feat_weights
     return None
 
-  def save(self, path):
-    '''Save the pickled model weights.'''
-    return pickle.dump(dict(self.weights), open(path, 'w'))
+  # def save(self, path):
+  #   '''Save the pickled model weights.'''
+  #   return pickle.dump(dict(self.weights), open(path, 'w'))
 
-  def load(self, path):
-    '''Load the pickled model weights.'''
-    self.weights = pickle.load(open(path))
-    return None
+  # def load(self, path):
+  #   '''Load the pickled model weights.'''
+  #   self.weights = pickle.load(open(path))
+  #   return None
 
 class AveragedPerceptronTagger(object):
   '''Greedy Averaged Perceptron tagger, as implemented by Matthew Honnibal.
