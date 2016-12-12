@@ -69,10 +69,10 @@ metadoc.return_ball()
 ```
 
 ## Trustworthiness Check
-Since it's painful watching humans be all aggrevated about those fake news making the rounds, Metadoc does a rather crude background check on article sources. This means compiling a simple blacklist-lookup and `whois` data on the domain. Blacklists taken into account include the widely discredited [PropOrNot](http://www.propornot.com/p/the-list.html). The whole concept is very much alarming in itself. Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. That means we are conservative here. The resulting metadata should be taken with lots of salt. Let's put it like [Don DeLillo would](http://www.theparisreview.org/interviews/1887/don-delillo-the-art-of-fiction-no-135-don-delillo) – because "lists are a form of cultural hysteria."
+Since it's painful watching humans be all aggrevated about those fake news making the rounds, Metadoc does a rather crude background check on article sources. This means compiling a simple blacklist-lookup and `whois` data on the domain. Blacklists taken into account include the widely discredited [PropOrNot](http://www.propornot.com/p/the-list.html). Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. The resulting metadata should be taken with lots of salt. To put it in the words of [Don DeLillo](http://www.theparisreview.org/interviews/1887/don-delillo-the-art-of-fiction-no-135-don-delillo) – "lists are a form of cultural hysteria."
 
 ## Purpose
-This humble library is used in the context of a larger news-related software undertaking. We're synthesizing what we dub "audience-evaluated content" with automated metadata and a hint of machine learning. Machine-in-the-loop, if you will. Sounds like bullshit, but it's totally not. If you're intrigued and might want to work with us, feel free to drop a line to p at psolbach dot com.
+This humble library is used in the context of a larger news-related software undertaking. We're synthesizing what we dub "audience-evaluated content" with automated metadata. Machine-in-the-loop, if you will. Sounds like bullshit, but it's totally not. If you're intrigued and might want to work with us, feel free to drop a line to p at psolbach dot com.
 
 ## Install
 Requires python 3.5.
