@@ -13,7 +13,7 @@ from .pos import AveragedPerceptronTagger
 
 tokenizer = RegexpTokenizer(r'\w+')
 sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
-perceptron_tagger = AveragedPerceptronTaipdgger(autoload=True)
+perceptron_tagger = AveragedPerceptronTagger(autoload=True)
 
 def isPunct(word):
   pattern = r"(`|\.|#|\$|%|&|\'|\(|\)|\*|\||\+|,|-|—|/|:|;|<|=|>|\?|@|\[|\]|\^|_|`|{|}|~|”|“|’)"
