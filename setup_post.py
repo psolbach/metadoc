@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import nltk
-from metadoc.etract.pos import do_train
+from metadoc.extract.pos import do_train
 
 REQUIRED_CORPORA = [
   'brown', # Required for FastNPExtractor

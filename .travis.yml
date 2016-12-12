@@ -13,6 +13,7 @@ before_script:
   - python -m nltk.downloader averaged_perceptron_tagger words maxent_ne_chunker
 # command to run tests
 script:
+  - python setup_post.py
   - py.test --cov=metadoc -v tests
 after_success:
   - codecov

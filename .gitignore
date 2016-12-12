@@ -1,6 +1,7 @@
 .DS_Store
 .cache
 **/__pycache__
+**.pickle
 *.egg
 *.egg-info
 *-sdist
