@@ -145,7 +145,8 @@ class AveragedPerceptronTagger(object):
         if not tag:
           features = self._get_features(i, word, context, prev, prev2)
           tag = self.model.predict(features)
-        tokens.append((word, tag))
+
+        tokens.append((word, tag.strip()))
         prev2 = prev
         prev = tag
 
@@ -156,11 +157,11 @@ class AveragedPerceptronTagger(object):
     IO classification isn't as accurate here, since we're not differentiating between PERSON and ORGANIZATION.
     Still, this is fast and in many cases suited to the task.
 
-    [('The', 'DT\n'), ('extraordinary', 'JJ\n'), ('phenomenon', 'NN\n'), ('of', 'IN\n'), ('fake', 'JJ\n'), 
-    ('news', 'NN\n'), ('spread', 'NN\n'), ('by', 'IN\n'), ('Facebook', 'NNP\n'), ('and', '\n'), ('other', 'JJ\n'), 
-    ('social', 'JJ\n'), ('media', 'NNS\n'), ('during', 'IN\n'), ('the', 'DT\n'), ('2016', 'CD\n'), ('presidential', 'JJ\n'), 
-    ('election', 'NN\n'), ('has', 'VBZ\n'), ('been', 'VBN\n'), ('largely', 'RB\n'), ('portrayed', 'VBN\n'), ('as', 'IN\n'), 
-    ('a', 'DT\n'), ('lucky', 'JJ\n'), ('break', 'NN\n'), ('for', 'IN\n'), ('Donald', 'NNP\n'), ('Trump', 'NNP\n')]
+    [('The', 'DT'), ('extraordinary', 'JJ'), ('phenomenon', 'NN'), ('of', 'IN'), ('fake', 'JJ'), 
+    ('news', 'NN'), ('spread', 'NN'), ('by', 'IN'), ('Facebook', 'NNP'), ('and', ''), ('other', 'JJ'), 
+    ('social', 'JJ'), ('media', 'NNS'), ('during', 'IN'), ('the', 'DT'), ('2016', 'CD'), ('presidential', 'JJ'), 
+    ('election', 'NN'), ('has', 'VBZ'), ('been', 'VBN'), ('largely', 'RB'), ('portrayed', 'VBN'), ('as', 'IN'), 
+    ('a', 'DT'), ('lucky', 'JJ'), ('break', 'NN'), ('for', 'IN'), ('Donald', 'NNP'), ('Trump', 'NNP')]
     '''
 
     ent, entities = [], []
@@ -168,7 +169,7 @@ class AveragedPerceptronTagger(object):
     push_ent = lambda x: entities.append(" ".join(ent))
 
     for i, tag in enumerate(tags):
-      if tag[1] == "NNP\n":
+      if tag[1] == "NNP":
         ent.append(tag[0])
         if i == tags_len:
           push_ent(ent)

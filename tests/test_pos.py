@@ -27,7 +27,7 @@ class MetadocPerceptronTest(asynctest.TestCase):
     tags = self.perceptron_tagger.tag(test_sentence)
     entities = self.perceptron_tagger.named_entities(tags)
     
-    assert tags[len(tags)-1][1] == "NNP\n"
+    assert tags[len(tags)-1][1] == "NNP"
     assert "Donald Trump" in entities
 
   @asynctest.ignore_loop

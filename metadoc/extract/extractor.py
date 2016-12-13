@@ -49,9 +49,9 @@ class Extractor(object):
     self.fulltext = libextract_nodes[0].text_content()
 
     entities = EntityExtractor(self.fulltext)
-    entities.get_scored_entities() # AveragePerceptron Tagger
-    self.keywords = entities.get_keywords() # Above median, top 5
-    self.names = entities.get_names() # Above median
+    entities.get_scored_entities() # Averaged Perceptron Tagger
+    self.keywords = entities.get_keywords() # Above median?
+    self.names = entities.get_names() # Filter top
 
   def extract_metadata(self):
     """Sniff for essential and additional metadata via
