@@ -10,6 +10,7 @@ from setuptools.command.install import install as _install
 version = '0.3.4'
 
 def _post_install(dir):
+  return
   # call([sys.executable, '__install__.py'],
   #   cwd=os.path.join(dir, 'metadoc'))
 
