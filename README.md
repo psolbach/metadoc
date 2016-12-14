@@ -80,7 +80,7 @@ Requires python 3.5.
 #### Using pip
 ```shell
 pip install metadoc
-curl -L git.io/v1Mzq | python3
+curl -L git.io/v1Muh | python3
 ```
 
 ## Develop
