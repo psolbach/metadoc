@@ -80,6 +80,7 @@ Requires python 3.5.
 #### Using pip
 ```shell
 pip install metadoc
+curl -L git.io/v1Mzq | python3
 ```
 
 ## Develop
@@ -95,8 +96,8 @@ apt-get install -y python3 libxml2-dev libxslt-dev libtiff-dev libjpeg-dev webp 
 #### Then
 ```shell
 pip3 install -r requirements.txt
-python setup_post.py
-python run.py => serving on port 6060
+python metadoc/__install__.py
+python run.py => serving @ 6060
 ```
 
 ## Todo
