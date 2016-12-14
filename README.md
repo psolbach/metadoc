@@ -104,7 +104,7 @@ python run.py => serving @ 6060
 * Page concatenation is needed in order to properly calculate wordcount and reading time.
 * Authenticity heuristic with sharecount deviance detection (requires state).
 * ~~Perf: Worst offender is nltk's pos tagger. Roll own w/ Average Perceptron.~~
-* ~~Newspaper's summarize is doing a poor job, fulltext is slow. Move to libextract?~~
+* ~~Newspaper's summarize produces pullquotes, fulltext takes a while. Move to libextract?~~
 
 ---
 
