@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import nltk
+import time
 from metadoc.extract.pos import do_train
 
 REQUIRED_CORPORA = [
@@ -14,7 +15,8 @@ REQUIRED_CORPORA = [
 ]
 
 for each in REQUIRED_CORPORA:
-  print(('Downloading "{0}"'.format(each)))
+  print(('[+] Downloading corpus:  "{0}"'.format(each)))
   nltk.download(each)
 
-do_train() # Averaged Perceptron Tagger
+print(('[+] Training tagger now.')
+do_train()

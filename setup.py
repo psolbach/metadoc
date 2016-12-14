@@ -7,11 +7,11 @@ from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
-version = '0.3.1'
+version = '0.3.4'
 
 def _post_install(dir):
-  call([sys.executable, 'setup_post.py'],
-    cwd=os.path.join(dir, 'metadoc'))
+  # call([sys.executable, '__install__.py'],
+  #   cwd=os.path.join(dir, 'metadoc'))
 
 class CustomInstall(_install):
   """Do stuff after setup."""
