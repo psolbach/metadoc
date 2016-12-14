@@ -18,5 +18,5 @@ for each in REQUIRED_CORPORA:
   print(('[+] Downloading corpus:  "{0}"'.format(each)))
   nltk.download(each)
 
-print(('[+] Training tagger now.')
+print('[+] Training tagger now.')
 do_train()
