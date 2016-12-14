@@ -97,7 +97,7 @@ apt-get install -y python3 libxml2-dev libxslt-dev libtiff-dev libjpeg-dev webp 
 ```shell
 pip3 install -r requirements.txt
 python metadoc/__install__.py
-python run.py => serving @ 6060
+python serve.py => serving @ 6060
 ```
 
 ## Todo
