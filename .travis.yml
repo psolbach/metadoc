@@ -12,7 +12,6 @@ before_script:
   - python -m nltk.downloader brown punkt maxent_treebank_pos_tagger wordnet stopwords averaged_perceptron_tagger words maxent_ne_chunker
 # command to run tests
 script:
-  - python metadoc/__install__.py
   - py.test --cov=metadoc -v tests
 after_success:
   - codecov
