@@ -92,9 +92,13 @@ curl -L git.io/v1Muh | python3
 ```shell
 brew install python3 libxml2 libxslt libtiff libjpeg webp little-cms2
 ```
-#### Linux
+#### Ubuntu
 ```shell
 apt-get install -y python3 libxml2-dev libxslt-dev libtiff-dev libjpeg-dev webp whois
+```
+#### Debian
+```shell
+dnf install libxml2-devel libxslt-devel libtiff-devel libjpeg-devel libjpeg-turbo-devel libwebp whois
 ```
 #### Then
 ```shell
