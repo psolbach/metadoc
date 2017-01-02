@@ -23,7 +23,7 @@ class EntityExtractor(object):
     self.stopwords = set(nltk.corpus.stopwords.words())
     self.top_fraction = 70 # consider top candidate keywords only
     self.sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
-    self.sentences = sent_detector.tokenize(text)
+    self.sentences = self.sent_detector.tokenize(text)
 
   def _calculate_word_scores(self, word_list):
     """Quick and dirty, inspired by Sujit Pal's RAKE implementation.
