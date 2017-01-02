@@ -3,7 +3,6 @@
 
 import nltk
 import time
-from metadoc.extract.pos import do_train
 
 def install():
   REQUIRED_CORPORA = [
@@ -19,6 +18,7 @@ def install():
     print(('[+] Downloading corpus:  "{0}"'.format(each)))
     nltk.download(each)
 
+  from metadoc.extract.pos import do_train
   print('[+] Training tagger now.')
   do_train()
 

@@ -12,7 +12,7 @@ import random
 import logging
 import os
 
-PICKLE = os.path.join(os.path.dirname(__file__), "data/tagger-0.3.4.pickle")
+PICKLE = os.path.join(os.path.dirname(__file__), "data/tagger-0.3.5.pickle")
 TRAINING_SET = os.path.join(os.path.dirname(__file__), "data/training_set.txt")
 
 logging.basicConfig(level=logging.INFO)
