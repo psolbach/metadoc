@@ -96,7 +96,7 @@ brew install python3 libxml2 libxslt libtiff libjpeg webp little-cms2
 ```shell
 apt-get install -y python3 libxml2-dev libxslt-dev libtiff-dev libjpeg-dev webp whois
 ```
-#### Debian
+#### Fedora/Debian
 ```shell
 dnf install libxml2-devel libxslt-devel libtiff-devel libjpeg-devel libjpeg-turbo-devel libwebp whois
 ```
