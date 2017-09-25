@@ -11,7 +11,6 @@ import pickle
 import random
 import logging
 import os
-import ipdb
 
 PICKLE = os.path.join(os.path.dirname(__file__), "data/tagger-0.3.6.pickle")
 TRAINING_SET = os.path.join(os.path.dirname(__file__), "data/training_set.txt")
