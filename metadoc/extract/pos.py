@@ -11,6 +11,7 @@ import pickle
 import random
 import logging
 import os
+import ipdb
 
 PICKLE = os.path.join(os.path.dirname(__file__), "data/tagger-0.3.6.pickle")
 TRAINING_SET = os.path.join(os.path.dirname(__file__), "data/training_set.txt")
@@ -187,6 +188,7 @@ class AveragedPerceptronTagger(object):
     :param save_loc: If not ``None``, saves a pickled model in this location.
     :param nr_iter: Number of training iterations.
     '''
+
     self._make_tagdict(sentences)
     self.model.classes = self.classes
     for iter_ in range(nr_iter):
@@ -280,6 +282,7 @@ class AveragedPerceptronTagger(object):
       for word, tag in zip(words, tags):
         counts[word][tag] += 1
         self.classes.add(tag)
+    
     freq_thresh = 20
     ambiguity_thresh = 0.97
 

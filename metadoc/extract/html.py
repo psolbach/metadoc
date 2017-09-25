@@ -22,7 +22,7 @@ class HtmlMeta(object):
     return dict(ChainMap(*items))
 
   def _get_metatag_item(self, node):
-    name = node.xpath('@property' or '@itemprop' or '@name')
+    name = node.xpath('@property') or node.xpath('@itemprop') or node.xpath('@name')
     content = node.xpath('@content')
 
     return {name[0]: content[0]} \
