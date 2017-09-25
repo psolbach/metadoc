@@ -56,6 +56,8 @@ class Extractor(object):
   def extract_metadata(self):
     """Sniff for essential and additional metadata via
     either metatags and or json-ld"""
+    
+    title_breaks = [":", "-", "–", "/"]
     html_meta = HtmlMeta(self.html)
     html_meta.extract()
 
@@ -63,8 +65,9 @@ class Extractor(object):
       or html_meta.metatags.get("article:author") \
       or html_meta.metatags.get("author")
 
-    self.title = html_meta.jsonld.get("headline") or html_meta.title
-    self.image = html_meta.metatags.get("twitter:image") or html_meta.jsonld.get("thumbnailUrl")
+    title = html_meta.jsonld.get("headline") or html_meta.title
+    self.title = re.split(r'(:+|-+|–+|/+)', title)[0].strip()
+    self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
 
   def get_contenthash(self):
     """Generate md5 hash over title and body copy in order to keep track

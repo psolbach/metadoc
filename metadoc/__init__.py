@@ -9,6 +9,7 @@ __license__ = 'MIT'
 import asyncio
 import concurrent
 import requests
+import urllib.parse
 
 from .domain import Domaintools
 from .extract import Extractor
@@ -95,9 +96,18 @@ class Metadoc(object):
 
   def _request_url(self):
     """In case no html parameter was provided to the constructor"""
-    req = requests.get(self.url)
+
+    p = urllib.parse.urlparse(self.url, 'http')
+    netloc = p.netloc or p.path
+    path = p.path if p.netloc else ''
+    if not netloc.startswith('www.'):
+        netloc = 'www.' + netloc
+
+    p = urllib.parse.ParseResult('http', netloc, path, *p[3:])
+    url = p.geturl()
+
+    req = requests.get(url)
     if req.status_code != 200:
-      raise Exception('Requesting article body \
-        failed with {1} status code.'.format(req.status_code))
+      raise Exception('Requesting article body failed with {} status code.'.format(req.status_code))
 
     self.html = req.text # after except
