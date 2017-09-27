@@ -66,6 +66,7 @@ class Extractor(object):
       or html_meta.metatags.get("author")
 
     title = html_meta.jsonld.get("headline") or html_meta.title
+    self.description = html_meta.metatags.get("description")
     self.title = re.split(r'(:+|-+|–+|/+)', title)[0].strip()
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
 

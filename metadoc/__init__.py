@@ -77,6 +77,7 @@ class Metadoc(object):
 
       "text": {
         "fulltext": getattr(self.extractor, "fulltext", None),
+        "summary": getattr(self.extractor, "description", "No summary found."),
         "reading_time": getattr(self.extractor, "reading_time", None),
         "contenthash": getattr(self.extractor, "contenthash", None)
       },
@@ -106,7 +107,11 @@ class Metadoc(object):
     p = urllib.parse.ParseResult('http', netloc, path, *p[3:])
     url = p.geturl()
 
-    req = requests.get(url)
+    req = requests.get(url, headers={
+      'Accept-Encoding': 'identity, gzip, deflate, *',
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    })
+
     if req.status_code != 200:
       raise Exception('Requesting article body failed with {} status code.'.format(req.status_code))
 
