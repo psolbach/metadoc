@@ -98,13 +98,13 @@ class Metadoc(object):
   def _request_url(self):
     """In case no html parameter was provided to the constructor"""
 
-    p = urllib.parse.urlparse(self.url, 'http')
+    p = urllib.parse.urlparse(self.url)
     netloc = p.netloc or p.path
     path = p.path if p.netloc else ''
     if not netloc.startswith('www.'):
         netloc = 'www.' + netloc
 
-    p = urllib.parse.ParseResult('http', netloc, path, *p[3:])
+    p = urllib.parse.ParseResult(p.scheme, netloc, path, *p[3:])
     url = p.geturl()
 
     req = requests.get(url, headers={
