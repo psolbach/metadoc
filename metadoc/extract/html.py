@@ -16,6 +16,7 @@ class HtmlMeta(object):
     self.document = lxml.html.fromstring(html, parser=self.parser)
     self._jsonld_xpath = lxml.etree.XPath('descendant-or-self::script[@type="application/ld+json"]')
     self._metatag_xpath = lxml.etree.XPath("//meta")
+    self._links_xpath = lxml.etree.XPath("//link")
 
   def _extract_items(self, get_item, xpath):
     items = [item for item in map(get_item, xpath(self.document)) if item]
@@ -24,6 +25,13 @@ class HtmlMeta(object):
   def _get_metatag_item(self, node):
     name = node.xpath('@property') or node.xpath('@itemprop') or node.xpath('@name')
     content = node.xpath('@content')
+
+    return {name[0]: content[0]} \
+      if (name and content) else None
+
+  def _get_link_item(self, node):
+    name = node.xpath('@rel')
+    content = node.xpath('@href')
 
     return {name[0]: content[0]} \
       if (name and content) else None
@@ -38,5 +46,6 @@ class HtmlMeta(object):
   def extract(self):
     self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)
     self.jsonld = self._extract_items(self._get_jsonld_item, self._jsonld_xpath)
+    self.links = self._extract_items(self._get_link_item, self._links_xpath)
     self.title = self.extract_title()
     return

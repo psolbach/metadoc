@@ -8,11 +8,11 @@ import json
 import logging
 import requests
 import signal
+import time
 
 from .providers import providers
 
-logging.basicConfig(level=logging.WARNING)
-logging.getLogger("requests").setLevel(logging.WARNING)
+logging.getLogger("requests").setLevel(logging.DEBUG)
 
 class ActivityCount(object):
   """Gather activity/share stats from social APIs"""
@@ -26,6 +26,8 @@ class ActivityCount(object):
     asyncio.set_event_loop(self.loop)
 
   async def async_get_all(self, loop):
+    start_time = time.time()
+    logging.info("--- social module %s seconds ---" % (time.time() - start_time))
     self.establish_client(loop)
     
     for provider in providers:
@@ -37,6 +39,8 @@ class ActivityCount(object):
     self.loop.run_until_complete(asyncio.gather(*pending, loop=self.loop))
     self.client.close()
     self.loop.close()
+
+    logging.info("--- social module %s seconds ---" % (time.time() - start_time))
 
   async def get_json(self, url):
     async with self.client.get(url) as response:

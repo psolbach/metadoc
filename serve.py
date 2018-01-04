@@ -18,14 +18,45 @@ bottle.BaseRequest.MEMFILE_MAX = 1024 * 1024 # up max POST payload size to 1MB
 def error404(error):
   return json.dumps({'code': 404,'message': 'Params html or title missing.'})
 
-@post('/article')
-def article():
+@post('/social')
+def social_article():
+  """POST data url required, html optional"""
+  response.content_type = 'application/json'
+  url = request.forms.get("url")
+  
+  if not url:
+    abort(404)
+
+  metadoc = Metadoc(url=url)
+  metadoc.query_social()
+
+  payload = metadoc.return_ball() # Preserve order
+  return json.dumps(payload)
+
+@post('/extract')
+def extract_article():
+  """POST data url required, html optional"""
+  response.content_type = 'application/json'
+  url = request.forms.get("url")
+  
+  if not url:
+    abort(404)
+
+  metadoc = Metadoc(url=url)
+  metadoc.query_domain()
+  metadoc.query_extract()
+
+  payload = metadoc.return_ball() # Preserve order
+  return json.dumps(payload)
+
+@post('/full')
+def full_article():
   """POST data url required, html optional"""
   response.content_type = 'application/json'
   url, html = request.forms.get("url"), request.forms.get("html")
   
   if not url:
-      abort(404)
+    abort(404)
 
   metadoc = Metadoc(url=url, html=html)
   metadoc.query_all()

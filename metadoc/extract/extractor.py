@@ -3,9 +3,11 @@
 
 import re
 import asyncio
+import logging
 import lxml
 import nltk
 import math
+import time
 import hashlib
 
 from langdetect import detect
@@ -13,6 +15,8 @@ from libextract.api import extract
 
 from .ner import EntityExtractor
 from .html import HtmlMeta
+
+logging.getLogger("requests").setLevel(logging.DEBUG)
 
 class Extractor(object):
   """Entity recognition, pullquote extraction etc.
@@ -67,6 +71,8 @@ class Extractor(object):
 
     title = html_meta.jsonld.get("headline") or html_meta.title
     self.description = html_meta.metatags.get("description")
+    self.canonical_url = html_meta.links.get("canonical")
+    import ipdb; ipdb.set_trace()
     self.title = re.split(r'(:+|-+|–+|/+)', title)[0].strip()
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
 
@@ -85,12 +91,14 @@ class Extractor(object):
     self.reading_time = math.floor(wordcount / 300 * 60)
 
   def get_all(self):
+    start_time = time.time()
     self.sanitize_html()
     self.extract_text()
     self.extract_metadata()
     self.detect_language()
     self.get_contenthash()
     self.get_reading_time()
+    logging.info("--- extraction module %s seconds ---" % (time.time() - start_time))
     return
 
   async def async_get_all(self, loop):

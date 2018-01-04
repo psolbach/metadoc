@@ -7,6 +7,7 @@ __author__ = 'Paul Solbach'
 __license__ = 'MIT'
 
 import asyncio
+import time
 import concurrent
 import requests
 import urllib.parse
@@ -16,7 +17,7 @@ from .extract import Extractor
 from .social import ActivityCount
 
 import logging
-logging.basicConfig(level=logging.WARN)
+logging.basicConfig(level=logging.DEBUG)
 
 class Metadoc(object):
   def __init__(self, url=None, html=None, **kwargs):
@@ -45,7 +46,7 @@ class Metadoc(object):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-    for c in [self.activity, self.extractor, self.domain]:
+    for c in [self.extractor, self.domain, self.activity]:
       subtasks.append(c.async_get_all(loop))
 
     loop.run_until_complete(asyncio.wait(subtasks, loop=loop))
@@ -71,6 +72,7 @@ class Metadoc(object):
       "url": self.url,
       "title": getattr(self.extractor, "title", None),
       "authors": getattr(self.extractor, "authors", None),
+      "canonical_url": getattr(self.extractor, "canonical_url", None),
       "image": getattr(self.extractor, "image", None),
       "social": getattr(self.activity, "responses", None),
       "language": getattr(self.extractor, "language", None),

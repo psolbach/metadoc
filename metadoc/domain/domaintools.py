@@ -3,10 +3,14 @@
 
 import asyncio
 import math
+import time
+import logging
 import tldextract
 from datetime import datetime, timedelta
 from .lookup import whois_date_registered
 from .check import check_credibility
+
+logging.getLogger("requests").setLevel(logging.DEBUG)
 
 class Domaintools(object):
   """Gather various metadata like whois informaion
@@ -28,6 +32,7 @@ class Domaintools(object):
     self.credibility = check_credibility(self.domain)
 
   def get_all(self):
+    start_time = time.time()
     if not self.domain: return
     self.get_date_registered()
     self.check_credibility()
@@ -35,6 +40,8 @@ class Domaintools(object):
     if self.date_registered:
       self.recalculate_fake_confidence()
       self.date_registered_iso = self.date_registered.isoformat()
+
+    logging.info("--- domain module %s seconds ---" % (time.time() - start_time))
 
   def recalculate_fake_confidence(self):
     # Adds .2 to fake_confidence if website was registered delta 1y
