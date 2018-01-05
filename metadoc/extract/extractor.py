@@ -72,7 +72,6 @@ class Extractor(object):
     title = html_meta.jsonld.get("headline") or html_meta.title
     self.description = html_meta.metatags.get("description")
     self.canonical_url = html_meta.links.get("canonical")
-    import ipdb; ipdb.set_trace()
     self.title = re.split(r'(:+|-+|–+|/+)', title)[0].strip()
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
 
