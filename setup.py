@@ -7,7 +7,8 @@ from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
-version = '0.3.6'
+version_file = open(os.path.join(mypackage_root_dir, 'VERSION'))
+version = version_file.read().strip()
 
 def _post_install(dir):
   return
