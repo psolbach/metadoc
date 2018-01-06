@@ -9,6 +9,7 @@ def whois_date_registered(domain):
   try:
     query = whois.query(domain) # silently fails in corporate env, vocally fails behind proxy
   except Exception as e:
+    query = None
     pass
 
   # if query.creation_date == "before aug-1996": query.creation_date = datetime.datetime(1996) # .co.uk edge case
