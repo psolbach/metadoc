@@ -107,8 +107,8 @@ class Metadoc(object):
     p = urllib.parse.urlparse(self.url)
     netloc = p.netloc or p.path
     path = p.path if p.netloc else ''
-    if not netloc.startswith('www.'):
-        netloc = 'www.' + netloc
+    # if not netloc.startswith('www.'):
+    #     netloc = 'www.' + netloc
 
     p = urllib.parse.ParseResult(p.scheme, netloc, path, *p[3:])
     url = p.geturl()

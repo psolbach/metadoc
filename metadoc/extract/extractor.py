@@ -5,7 +5,6 @@ import re
 import asyncio
 import logging
 import lxml
-import nltk
 import math
 import time
 import hashlib
@@ -30,9 +29,12 @@ class Extractor(object):
     """Langdetect is non-deterministic, so to achieve a higher probability
     we attempt detection multiple times and only report success if we get identical results.
     """
-    nondet_attempts = [detect(self.fulltext) for i in range(0,2)]
-    is_unique = len(set(nondet_attempts)) == 1
-    self.language = nondet_attempts[0] if is_unique else False
+    try:
+        nondet_attempts = [detect(self.fulltext) for i in range(0,2)]
+        is_unique = len(set(nondet_attempts)) == 1
+        self.language = nondet_attempts[0] if is_unique else False
+    except:
+        pass
 
   def sanitize_html(self):
     # Lxml bails out on html w/ emojis

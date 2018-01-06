@@ -10,6 +10,7 @@ import requests
 import signal
 import time
 
+from aiohttp import ClientSession
 from .providers import providers
 
 logging.getLogger("requests").setLevel(logging.DEBUG)
@@ -20,34 +21,20 @@ class ActivityCount(object):
     self.url = url or None
     self.responses = []
 
-  def establish_client(self, loop):
-    self.loop = asyncio.new_event_loop()
-    self.client = aiohttp.ClientSession(loop=self.loop)
-    asyncio.set_event_loop(self.loop)
-
-  async def async_get_all(self, loop):
-    start_time = time.time()
-    logging.info("--- social module %s seconds ---" % (time.time() - start_time))
-    self.establish_client(loop)
-    
+  def async_get_all(self, loop):
+    activity_tasks = []
     for provider in providers:
       url = provider["endpoint"].format(self.url)
-      asyncio.ensure_future(self.collect_sharecount(url, provider), loop=self.loop)
+      task = asyncio.ensure_future(self.collect_sharecount(url, provider))
+      activity_tasks.append(task)
 
-    # loop over all providers
-    pending = asyncio.Task.all_tasks(loop=self.loop)
-    self.loop.run_until_complete(asyncio.gather(*pending, loop=self.loop))
-    self.client.close()
-    self.loop.close()
-
-    logging.info("--- social module %s seconds ---" % (time.time() - start_time))
+    return asyncio.gather(*activity_tasks)
 
   async def get_json(self, url):
-    async with self.client.get(url) as response:
-      assert response.status == 200
-      logging.debug("Got response for URL {0} with statuscode {1}".format(url, response.status))
-      response = await response.read()
-      return response.decode('utf-8')
+    async with ClientSession() as session:
+      async with session.get(url) as response:
+        response = await response.read()
+        return response
 
   async def collect_sharecount(self, url, provider):
     response = await self.get_json(url)
