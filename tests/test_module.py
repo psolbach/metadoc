@@ -6,6 +6,7 @@ import asynctest
 import pytest
 
 from asynctest.mock import patch
+from metadoc.__install__ import install
 from metadoc import Metadoc
 
 class MetadocModuleTest(asynctest.TestCase):
@@ -58,3 +59,8 @@ class MetadocModuleTest(asynctest.TestCase):
   def test_no_html(self):
     metadoc = Metadoc(url=self.url)
     metadoc.query_all()
+
+  @asynctest.ignore_loop
+  def test_install(self):
+    install_result = install()
+    assert True

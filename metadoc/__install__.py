@@ -21,6 +21,7 @@ def install():
   from metadoc.extract.pos import do_train
   print('[+] Training tagger now.')
   do_train()
+  return 
 
 if __name__ == "__main__":
   install()
