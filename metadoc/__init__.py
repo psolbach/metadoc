@@ -58,8 +58,12 @@ class Metadoc(object):
   def query_domain(self):
     self.domain.get_all()
 
-  async def query_social(self):
-    await self.activity.async_get_all(asyncio.get_event_loop())
+  def query_social(self):
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+    loop.run_until_complete(self.activity.async_get_all(loop))
+    loop.close()
 
   def query_extract(self):
     self.extractor.get_all()
