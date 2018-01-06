@@ -12,6 +12,7 @@ from nltk.tokenize import RegexpTokenizer
 from .pos import AveragedPerceptronTagger
 
 tokenizer = RegexpTokenizer(r'\w+')
+nltk.data.path.append("/var/task/nltk_data")
 
 def isPunct(word):
   pattern = r"(`|\.|#|\$|%|&|\'|\(|\)|\*|\||\+|,|-|—|/|:|;|<|=|>|\?|@|\[|\]|\^|_|`|{|}|~|”|“|’)"
