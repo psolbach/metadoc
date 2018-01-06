@@ -34,26 +34,27 @@ class MetadocModuleTest(asynctest.TestCase):
     assert self.metadoc.extractor
 
   @asynctest.ignore_loop
-  async def test_social(self):
-    await self.metadoc.query_social()
+  def test_social(self):
+    self.metadoc.query_social()
     assert self.metadoc.activity
 
   @asynctest.ignore_loop
-  async def test_domain(self):
+  def test_domain(self):
     self.metadoc.query_domain()
     assert self.metadoc.domain
 
   @asynctest.ignore_loop
-  async def test_no_url_fail(self):
+  def test_no_url_fail(self):
     with pytest.raises(AttributeError):
       Metadoc()
 
   @asynctest.ignore_loop
-  async def test_invalid_url_fail(self):
+  def test_invalid_url_fail(self):
     with pytest.raises(Exception):
       from metadoc import Metadoc
       foo = Metadoc(url="https://theintercept.com/404/", html=None)
 
-  async def test_no_html(self):
+  @asynctest.ignore_loop
+  def test_no_html(self):
     metadoc = Metadoc(url=self.url)
     metadoc.query_all()
