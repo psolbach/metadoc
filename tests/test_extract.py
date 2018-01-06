@@ -20,6 +20,12 @@ class MetadocExtractorTest(asynctest.TestCase):
   def test_init(self):
     assert self.extractor.html == self.article_html
 
+  @asynctest.ignore_loop
+  def test_without_ft(self):
+    self.extractor.fulltext = ""
+    self.extractor.detect_language()
+    assert self.extractor
+
   async def test_get_all_local(self):
     await self.extractor.async_get_all(self.loop)
     assert self.extractor.contenthash == "61ffed47a1a3e32e29829665ffa1e76e"
