@@ -14,7 +14,6 @@ before_script:
 script:
   - py.test --cov=metadoc -v tests
 after_success:
-  - codecov
   - coveralls
 notifications:
   email: false
