@@ -44,7 +44,7 @@ class Extractor(object):
         u"\U0001F680-\U0001F6FF"  # transport & map symbols
         u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
       "]+", flags=re.UNICODE)
-  
+
     self.html = emoji_pattern.sub(r'', self.html)
 
   def extract_text(self):
@@ -62,7 +62,7 @@ class Extractor(object):
   def extract_metadata(self):
     """Sniff for essential and additional metadata via
     either metatags and or json-ld"""
-    
+
     title_breaks = [":", "-", "–", "/"]
     html_meta = HtmlMeta(self.html)
     html_meta.extract()
@@ -76,6 +76,8 @@ class Extractor(object):
     self.canonical_url = html_meta.links.get("canonical")
     self.title = re.split(r'(:+|\|+|–+|/+)', title)[0].strip()
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
+    self.published_date = html_meta.published_date
+    self.modified_date = html_meta.modified_date
 
   def get_contenthash(self):
     """Generate md5 hash over title and body copy in order to keep track
