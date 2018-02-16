@@ -28,7 +28,7 @@ class Metadoc(object):
 
     self.html = html or None
     self.url = url or None
-    
+
     if not url:
       raise AttributeError('Missing \"url\" attribute.')
 
@@ -80,19 +80,20 @@ class Metadoc(object):
       "image": getattr(self.extractor, "image", None),
       "social": getattr(self.activity, "responses", None),
       "language": getattr(self.extractor, "language", None),
-
+      "published_date": getattr(self.extractor, "published_date", None),
+      "modified_date": getattr(self.extractor, "modified_date", None),
       "text": {
         "fulltext": getattr(self.extractor, "fulltext", None),
         "summary": getattr(self.extractor, "description", "No summary found."),
         "reading_time": getattr(self.extractor, "reading_time", None),
         "contenthash": getattr(self.extractor, "contenthash", None)
       },
-      
+
       "entities": {
         "names": getattr(self.extractor, "names", None),
         "keywords": getattr(self.extractor, "keywords", None),
       },
-      
+
       "domain": {
         "name": getattr(self.domain, "domain", None),
         "credibility": getattr(self.domain, "credibility", None),
