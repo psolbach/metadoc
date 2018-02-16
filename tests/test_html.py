@@ -24,7 +24,8 @@ class MetadocHtmMetaTest(asynctest.TestCase):
             "tests/fixtures/nytimes/skeleton-ghana-jamaica.html",
             "tests/fixtures/wired.com/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science.html",
             "tests/fixtures/theverge.com/spacex-falcon-9-launch-starlink-microsat-2a-2b-paz-watch-live.html",
-            "tests/fixtures/faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html"
+            "tests/fixtures/faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html",
+            "tests/fixtures/invalid/invalid.html"
         ]
         objs = [get_html_meta(path) for path in paths]
 
@@ -36,6 +37,7 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[4].extract_pub_date() == "2018-02-15T20:40:04+00:00"
         assert objs[5].extract_pub_date() == "2018-02-15T18:54:21+00:00"
         assert objs[6].extract_pub_date() == "2018-02-15T08:22:05+00:00"
+        assert objs[7].extract_pub_date() == None
 
         # modified_date
         assert objs[0].extract_mod_date() == "2018-02-16T09:51:54+00:00"
@@ -45,3 +47,4 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[4].extract_mod_date() == None
         assert objs[5].extract_mod_date() == None
         assert objs[6].extract_mod_date() == "2018-02-15T09:29:16+00:00"
+        assert objs[7].extract_mod_date() == None
