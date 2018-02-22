@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import imp
+import sys
+
+# overwrite sqlite with dummy modules, for AWS Lambda
+sys.modules["sqlite"] = imp.new_module("sqlite")
+sys.modules["sqlite3.dbapi2"] = imp.new_module("sqlite.dbapi2")
+import nltk
+
 import difflib
 import operator
-import nltk
+import os
 import numpy
 import string
 import re
@@ -12,7 +20,10 @@ from nltk.tokenize import RegexpTokenizer
 from .pos import AveragedPerceptronTagger
 
 tokenizer = RegexpTokenizer(r'\w+')
-nltk.data.path.append("/var/task/nltk_data")
+
+# add path, for AWS Lambda
+LOCAL_DATA_PATH = os.path.join(os.path.dirname(__file__), "data")
+nltk.data.path.append(LOCAL_DATA_PATH)
 
 def isPunct(word):
   pattern = r"(`|\.|#|\$|%|&|\'|\(|\)|\*|\||\+|,|-|—|/|:|;|<|=|>|\?|@|\[|\]|\^|_|`|{|}|~|”|“|’)"
