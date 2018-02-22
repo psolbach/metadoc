@@ -4,14 +4,14 @@
 import nltk
 import time
 
-def install():
+def install_nltk_sets():
   REQUIRED_CORPORA = [
     'brown', # Required for FastNPExtractor
     'punkt', # Required for WordTokenizer
     'wordnet', # Required for lemmatization and Wordnet
     'maxent_ne_chunker',
     'stopwords',
-    'words' 
+    'words'
   ]
 
   for each in REQUIRED_CORPORA:
@@ -23,4 +23,5 @@ def install():
   do_train()
   return
 
-if __name__ == "__main__": install()
+if __name__ == "__main__":
+    install_nltk_sets()
