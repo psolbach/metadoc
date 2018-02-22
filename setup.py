@@ -56,9 +56,10 @@ setup(
     'nltk==3.2.1',
     'pytest==3.0.5',
     'pytest-cov==2.4.0',
-    'numpy==1.11.2',
+    'python-dateutil==2.6.1',
+    'numpy==1.13.3',
     'tldextract==2.0.2',
-    'requests==2.12.2',
+    'requests==2.18.4',
     'whois==0.7'
   ]
 )
