@@ -1,15 +1,11 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-import asyncio
 import asynctest
-import pytest
-from metadoc.__install__ import install
+from metadoc.install import install_nltk_sets
 
 class MetadocInstallTest(asynctest.TestCase):
   def setUp(self):
     return
 
   @asynctest.ignore_loop
-  def test_install(self):    
-    install()
+  def test_install(self):
+    install_nltk_sets()

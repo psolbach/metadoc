@@ -1,0 +1,2 @@
+recursive-include metadoc/extract/data *
+#global-exclude *.zip
