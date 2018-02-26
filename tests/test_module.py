@@ -1,12 +1,6 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-import asyncio
 import asynctest
 import pytest
-
-from asynctest.mock import patch
-from metadoc.__install__ import install
 from metadoc import Metadoc
 
 class MetadocModuleTest(asynctest.TestCase):
@@ -15,9 +9,9 @@ class MetadocModuleTest(asynctest.TestCase):
     article_path = "tests/fixtures/theintercept.com/laura-ingraham-lifezette.html"
     with open(article_path, 'r') as article:
       self.article_html=article.read()
-    
+
     self.metadoc = Metadoc(url=self.url, html=self.article_html)
-  
+
   @asynctest.ignore_loop
   def test_init(self):
     assert self.metadoc.url == self.url
@@ -59,8 +53,3 @@ class MetadocModuleTest(asynctest.TestCase):
   def test_no_html(self):
     metadoc = Metadoc(url=self.url)
     metadoc.query_all()
-
-  @asynctest.ignore_loop
-  def test_install(self):
-    install_result = install()
-    assert True
