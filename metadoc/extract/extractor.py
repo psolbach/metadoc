@@ -71,10 +71,9 @@ class Extractor(object):
       or html_meta.metatags.get("article:author") \
       or html_meta.metatags.get("author")
 
-    title = html_meta.jsonld.get("headline") or html_meta.title
+    self.title = html_meta.jsonld.get("headline") or html_meta.title
     self.description = html_meta.metatags.get("description")
     self.canonical_url = html_meta.links.get("canonical")
-    self.title = re.split(r'(:+|\|+|–+|/+)', title)[0].strip()
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
     self.published_date = html_meta.published_date
     self.modified_date = html_meta.modified_date
