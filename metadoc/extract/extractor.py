@@ -77,6 +77,7 @@ class Extractor(object):
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
     self.published_date = html_meta.published_date
     self.modified_date = html_meta.modified_date
+    self.scraped_date = html_meta.scraped_date
 
   def get_contenthash(self):
     """Generate md5 hash over title and body copy in order to keep track

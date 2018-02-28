@@ -82,6 +82,7 @@ class Metadoc(object):
       "language": getattr(self.extractor, "language", None),
       "published_date": getattr(self.extractor, "published_date", None),
       "modified_date": getattr(self.extractor, "modified_date", None),
+      "scraped_date": getattr(self.extractor, "scraped_date", None),
       "text": {
         "fulltext": getattr(self.extractor, "fulltext", None),
         "summary": getattr(self.extractor, "description", "No summary found."),

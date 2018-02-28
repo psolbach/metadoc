@@ -3,6 +3,7 @@
 
 import json
 import lxml.etree, lxml.html
+from datetime import datetime
 from dateutil.parser import parse
 from dateutil.tz import tzoffset
 from collections import ChainMap
@@ -49,14 +50,17 @@ class HtmlMeta(object):
         title = self.document.xpath("(//title)[1]//text()")
         return title[0] if len(title) else None
 
+    def _format_date(self, date_in):
+        date = parse(date_in) if type(date_in) is str else date_in
+        return date.astimezone().astimezone(
+                    tzoffset(None, 0)).replace(microsecond=0).isoformat()
+
     def _query_date(self, xpath_rules):
         for xpath_rule in xpath_rules:
             dates = self.document.xpath(xpath_rule)
             if len(dates) > 0:
                 try:
-                    date = parse(dates[0].get("content"))
-                    return date.astimezone().astimezone(
-                                tzoffset(None, 0)).replace(microsecond=0).isoformat()
+                    return self._format_date(dates[0].get("content"))
                 except:
                     pass
         return None
@@ -86,4 +90,5 @@ class HtmlMeta(object):
         self.title = self.extract_title()
         self.published_date = self.extract_pub_date()
         self.modified_date = self.extract_mod_date()
+        self.scraped_date = self._format_date(datetime.now())
         return
