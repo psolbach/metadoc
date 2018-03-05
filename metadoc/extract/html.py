@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import json
 import lxml.etree, lxml.html
 from datetime import datetime
@@ -13,10 +12,14 @@ class HtmlMeta(object):
     Needs work, e.g. handling multiple @property=author tags,
     detect if author content is a social media destination.
     """
-    def __init__(self, html, encoding="UTF-8"):
+    def __init__(self, html, encoding="UTF-8", tree=None):
         self.html = html or None
-        self.parser = lxml.html.HTMLParser(encoding=encoding)
-        self.document = lxml.html.fromstring(html, parser=self.parser)
+        if tree is not None:
+            # reuse tree already parsed
+            self.document = tree
+        else:
+            self.parser = lxml.html.HTMLParser(encoding=encoding)
+            self.document = lxml.html.fromstring(html, parser=self.parser)
         self._jsonld_xpath = lxml.etree.XPath('descendant-or-self::script[@type="application/ld+json"]')
         self._metatag_xpath = lxml.etree.XPath("//meta")
         self._links_xpath = lxml.etree.XPath("//link")

@@ -10,7 +10,7 @@ import time
 import hashlib
 
 from langdetect import detect
-from libextract.api import extract
+from goose3 import Goose, Configuration
 
 from .ner import EntityExtractor
 from .html import HtmlMeta
@@ -24,6 +24,24 @@ class Extractor(object):
     self.html = html or None
     self.title = title or None
     self.entities = []
+    self.keywords = []
+    self.names = []
+    self.fulltext = None
+    self.language = None
+    self.description = None
+    self.canonical_url = None
+    self.image = None
+    self.published_date = None
+    self.modified_date = None
+    self.scraped_date = None
+    self.contenthash = None
+    self.reading_time = None
+
+    config = Configuration()
+    config.enable_image_fetching = False
+    self.goose = Goose(config=config)
+
+    self.tree = None
 
   def detect_language(self):
     """Langdetect is non-deterministic, so to achieve a higher probability
@@ -51,8 +69,9 @@ class Extractor(object):
     """Parse fulltext, do keyword extraction using the newspaper lib
     => newspaper.readthedocs.io
     """
-    libextract_nodes = list(extract(self.html.encode("utf-8")))
-    self.fulltext = libextract_nodes[0].text_content()
+    res = self.goose.extract(url=None, raw_html=self.html.encode("utf-8"))
+    self.tree = res.raw_doc
+    self.fulltext = res.cleaned_text
 
     entities = EntityExtractor(self.fulltext)
     entities.get_scored_entities() # Averaged Perceptron Tagger
@@ -63,8 +82,7 @@ class Extractor(object):
     """Sniff for essential and additional metadata via
     either metatags and or json-ld"""
 
-    title_breaks = [":", "-", "–", "/"]
-    html_meta = HtmlMeta(self.html)
+    html_meta = HtmlMeta(self.html, tree=self.tree)
     html_meta.extract()
 
     self.authors = html_meta.jsonld.get("authors") \
