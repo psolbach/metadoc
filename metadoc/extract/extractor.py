@@ -47,6 +47,9 @@ class Extractor(object):
     """Langdetect is non-deterministic, so to achieve a higher probability
     we attempt detection multiple times and only report success if we get identical results.
     """
+    if self.language:
+        return
+
     try:
         nondet_attempts = [detect(self.fulltext) for i in range(0,2)]
         is_unique = len(set(nondet_attempts)) == 1
@@ -72,6 +75,7 @@ class Extractor(object):
     res = self.goose.extract(url=None, raw_html=self.html.encode("utf-8"))
     self.tree = res.raw_doc
     self.fulltext = res.cleaned_text
+    self.language = res.meta_lang
 
     entities = EntityExtractor(self.fulltext)
     entities.get_scored_entities() # Averaged Perceptron Tagger
