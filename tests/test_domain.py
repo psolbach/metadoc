@@ -1,15 +1,12 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import os
-import asyncio
-import asynctest
 import datetime
 
-from asynctest.mock import patch
+import unittest
+from unittest.mock import patch
 from metadoc.domain import Domaintools
 
-class MetadocDomaintoolsTest(asynctest.TestCase):
+class MetadocDomaintoolsTest(unittest.TestCase):
 
   def setUp(self):
     article_path = "tests/fixtures/theintercept.com/laura-ingraham-lifezette.html"
@@ -20,17 +17,15 @@ class MetadocDomaintoolsTest(asynctest.TestCase):
 
     with open(article_path, 'r') as article:
       self.article_html=article.read()
-  
-  @asynctest.ignore_loop
+
   def test_init(self):
     assert self.domaintools.url == self.url
     assert self.domaintools.domain == "theintercept.com"
 
-  @asynctest.ignore_loop
   @patch('metadoc.domain.domaintools.whois_date_registered')
-  async def test_get_all_local(self, _mocked_func):
+  def test_get_all_local(self, _mocked_func):
     _mocked_func.return_value = self.date_registered
-    await self.domaintools.async_get_all(self.loop)
+    self.domaintools.get_all()#self.loop)
     assert self.domaintools.date_registered == self.date_registered
 
     credibility_resp = {
@@ -41,11 +36,10 @@ class MetadocDomaintoolsTest(asynctest.TestCase):
     assert self.domaintools.credibility == credibility_resp
     assert self.domaintools.date_registered == self.date_registered
 
-  async def test_get_all_remote(self):
-    await self.domaintools.async_get_all(self.loop)
+  def test_get_all_remote(self):
+    self.domaintools.get_all()
     assert self.domaintools.date_registered is not self.date_registered
 
-  @asynctest.ignore_loop
   def test_new_domain(self):
     today = datetime.datetime.now()
     self.domaintools.date_registered = today

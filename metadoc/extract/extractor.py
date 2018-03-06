@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import re
-import asyncio
 import logging
 import lxml
 import math
@@ -125,7 +122,3 @@ class Extractor(object):
     self.get_reading_time()
     logging.info("--- extraction module %s seconds ---" % (time.time() - start_time))
     return
-
-  async def async_get_all(self, loop):
-    asyncio.set_event_loop(loop)
-    return await loop.run_in_executor(None, self.get_all)

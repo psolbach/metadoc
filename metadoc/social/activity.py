@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import aiohttp
 import asyncio
 import jmespath
@@ -21,7 +19,7 @@ class ActivityCount(object):
     self.url = url or None
     self.responses = []
 
-  def async_get_all(self, loop):
+  def get_all(self, loop):
     activity_tasks = []
     for provider in providers:
       url = provider["endpoint"].format(self.url)
