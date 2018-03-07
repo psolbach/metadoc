@@ -23,8 +23,7 @@ class ActivityCount(object):
     activity_tasks = []
     for provider in providers:
       url = provider["endpoint"].format(self.url)
-      task = asyncio.ensure_future(self.collect_sharecount(url, provider))
-      activity_tasks.append(task)
+      activity_tasks.append(self.collect_sharecount(url, provider))
 
     return asyncio.gather(*activity_tasks)
 
