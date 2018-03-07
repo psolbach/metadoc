@@ -25,7 +25,7 @@ class HtmlMeta(object):
         self._links_xpath = lxml.etree.XPath("//link")
 
         self.links = None
-        self.jsonld = None
+        self.jsonld = {}
         self.links = None
 
     def _extract_items(self, get_item, xpath):
@@ -47,7 +47,11 @@ class HtmlMeta(object):
           if (name and content) else None
 
     def _get_jsonld_item(self, node):
-        return json.loads(node.xpath('string()'))
+        ld = json.loads(node.text.strip())
+        if type(ld) is list:
+            for item in[i for i in ld if i.get("@type") == "NewsArticle"]:
+                return item
+        return ld if ld else {}
 
     def extract_title(self):
         title = self.document.xpath("(//title)[1]//text()")
@@ -69,6 +73,7 @@ class HtmlMeta(object):
         return None
 
     def extract_pub_date(self):
+        res = None
         xpaths = [
             "//meta[@name='date']",
             "//meta[@property='article:published_time']",
@@ -76,15 +81,26 @@ class HtmlMeta(object):
             "//meta[@name='parsely-pub-date']",
             "//meta[@name='DC.date.issued']",
         ]
-        return self._query_date(xpaths)
+        res = self._query_date(xpaths)
+        if res is None:
+            ld_date = self.jsonld.get("datePublished") or self.jsonld.get("dateCreated")
+            if ld_date:
+                res = self._format_date(ld_date)
+        return res
 
     def extract_mod_date(self):
+        res = None
         xpaths = [
             "//meta[@property='article:modified_time']",
             "//meta[@property='article:modified']",
             "//meta[@name='last-modified']",
         ]
-        return self._query_date(xpaths)
+        res = self._query_date(xpaths)
+        if res is None:
+            ld_date = self.jsonld.get("dateModified")
+            if ld_date:
+                res = self._format_date(ld_date)
+        return res
 
     def extract(self):
         self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)

@@ -95,6 +95,7 @@ class Extractor(object):
     self.canonical_url = html_meta.links.get("canonical")
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
     self.published_date = html_meta.published_date
+
     self.modified_date = html_meta.modified_date
     self.scraped_date = html_meta.scraped_date
 
