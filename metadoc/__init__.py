@@ -42,12 +42,13 @@ class Metadoc(object):
   def query_all(self):
     """Combine all available resources"""
     subtasks = []
-
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-    for c in [self.extractor, self.domain, self.activity]:
-      subtasks.append(c.async_get_all(loop))
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
+    subtasks.append(loop.run_in_executor(executor, self.extractor.get_all))
+    subtasks.append(loop.run_in_executor(executor, self.domain.get_all))
+    subtasks.append(self.activity.get_all(loop))
 
     loop.run_until_complete(asyncio.wait(subtasks, loop=loop))
     loop.close()
@@ -62,7 +63,7 @@ class Metadoc(object):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-    loop.run_until_complete(self.activity.async_get_all(loop))
+    loop.run_until_complete(self.activity.get_all(loop))
     loop.close()
 
   def query_extract(self):

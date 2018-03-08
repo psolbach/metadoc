@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import re
-import asyncio
 import logging
 import lxml
 import math
@@ -10,7 +7,7 @@ import time
 import hashlib
 
 from langdetect import detect
-from libextract.api import extract
+from goose3 import Goose, Configuration
 
 from .ner import EntityExtractor
 from .html import HtmlMeta
@@ -24,11 +21,32 @@ class Extractor(object):
     self.html = html or None
     self.title = title or None
     self.entities = []
+    self.keywords = []
+    self.names = []
+    self.fulltext = None
+    self.language = None
+    self.description = None
+    self.canonical_url = None
+    self.image = None
+    self.published_date = None
+    self.modified_date = None
+    self.scraped_date = None
+    self.contenthash = None
+    self.reading_time = None
+
+    config = Configuration()
+    config.enable_image_fetching = False
+    self.goose = Goose(config=config)
+
+    self.tree = None
 
   def detect_language(self):
     """Langdetect is non-deterministic, so to achieve a higher probability
     we attempt detection multiple times and only report success if we get identical results.
     """
+    if self.language:
+        return
+
     try:
         nondet_attempts = [detect(self.fulltext) for i in range(0,2)]
         is_unique = len(set(nondet_attempts)) == 1
@@ -51,8 +69,10 @@ class Extractor(object):
     """Parse fulltext, do keyword extraction using the newspaper lib
     => newspaper.readthedocs.io
     """
-    libextract_nodes = list(extract(self.html.encode("utf-8")))
-    self.fulltext = libextract_nodes[0].text_content()
+    res = self.goose.extract(url=None, raw_html=self.html.encode("utf-8"))
+    self.tree = res.raw_doc
+    self.fulltext = res.cleaned_text
+    self.language = res.meta_lang
 
     entities = EntityExtractor(self.fulltext)
     entities.get_scored_entities() # Averaged Perceptron Tagger
@@ -63,8 +83,7 @@ class Extractor(object):
     """Sniff for essential and additional metadata via
     either metatags and or json-ld"""
 
-    title_breaks = [":", "-", "–", "/"]
-    html_meta = HtmlMeta(self.html)
+    html_meta = HtmlMeta(self.html, tree=self.tree)
     html_meta.extract()
 
     self.authors = html_meta.jsonld.get("authors") \
@@ -76,6 +95,7 @@ class Extractor(object):
     self.canonical_url = html_meta.links.get("canonical")
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
     self.published_date = html_meta.published_date
+
     self.modified_date = html_meta.modified_date
     self.scraped_date = html_meta.scraped_date
 
@@ -103,7 +123,3 @@ class Extractor(object):
     self.get_reading_time()
     logging.info("--- extraction module %s seconds ---" % (time.time() - start_time))
     return
-
-  async def async_get_all(self, loop):
-    asyncio.set_event_loop(loop)
-    return await loop.run_in_executor(None, self.get_all)

@@ -16,7 +16,7 @@ class MetadocActivityCountTest(asynctest.TestCase):
   def setUp(self):
     self.url = "https://theintercept.com/2016/11/26/laura-ingraham-lifezette/"
     self.activity = ActivityCount(url=self.url)
-  
+
   @asynctest.ignore_loop
   def test_init(self):
     assert self.activity.url == self.url
@@ -44,6 +44,6 @@ class MetadocActivityCountTest(asynctest.TestCase):
       assert test_metric_count == returned_metric_count
 
   async def test_get_all_remote(self):
-    await self.activity.async_get_all(self.loop)
+    await self.activity.get_all(self.loop)
     assert len(self.activity.responses) > 0
 

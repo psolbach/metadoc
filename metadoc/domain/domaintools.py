@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-import asyncio
 import math
 import time
 import logging
@@ -36,7 +33,7 @@ class Domaintools(object):
     if not self.domain: return
     self.get_date_registered()
     self.check_credibility()
-    
+
     if self.date_registered:
       self.recalculate_fake_confidence()
       self.date_registered_iso = self.date_registered.isoformat()
@@ -50,7 +47,3 @@ class Domaintools(object):
 
     confidence = self.credibility.get("fake_confidence", 0)
     self.credibility["fake_confidence"] = float(confidence) + .2
-
-  async def async_get_all(self, loop):
-    asyncio.set_event_loop(loop)
-    return await loop.run_in_executor(None, self.get_all)

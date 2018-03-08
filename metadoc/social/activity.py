@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import aiohttp
 import asyncio
 import jmespath
@@ -16,39 +14,39 @@ from .providers import providers
 logging.getLogger("requests").setLevel(logging.DEBUG)
 
 class ActivityCount(object):
-  """Gather activity/share stats from social APIs"""
-  def __init__(self, url=None):
-    self.url = url or None
-    self.responses = []
+    """Gather activity/share stats from social APIs"""
 
-  def async_get_all(self, loop):
-    activity_tasks = []
-    for provider in providers:
-      url = provider["endpoint"].format(self.url)
-      task = asyncio.ensure_future(self.collect_sharecount(url, provider))
-      activity_tasks.append(task)
+    def __init__(self, url=None):
+        self.url = url or None
+        self.responses = []
 
-    return asyncio.gather(*activity_tasks)
+    def get_all(self, loop):
+        activity_tasks = []
+        for provider in providers:
+            url = provider["endpoint"].format(self.url)
+            task = asyncio.ensure_future(self.collect_sharecount(url, provider))
+            activity_tasks.append(task)
 
-  async def get_json(self, url):
-    async with ClientSession() as session:
-      async with session.get(url) as response:
-        response = await response.read()
-        return response
+        return asyncio.gather(*activity_tasks)
 
-  async def collect_sharecount(self, url, provider):
-    response = await self.get_json(url)
-    j = json.loads(response)
+    async def get_json(self, url):
+        async with ClientSession() as session:
+            async with session.get(url) as response:
+                return await response.read()
 
-    data = {
-      "provider": provider["provider"],
-      "metrics": []
-    }
+    async def collect_sharecount(self, url, provider):
+        response = await self.get_json(url)
+        j = json.loads(response)
 
-    for m in provider["metrics"]:
-      data["metrics"].append({
-        "count": jmespath.search(m["path"], j),
-        "label": m["label"]
-      })
-    
-    self.responses.append(data)
+        data = {
+            "provider": provider["provider"],
+            "metrics": []
+        }
+
+        for m in provider["metrics"]:
+            data["metrics"].append({
+            "count": jmespath.search(m["path"], j),
+            "label": m["label"]
+            })
+
+        self.responses.append(data)
