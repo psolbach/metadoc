@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 import os.path
 import sys
+import re
 from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
-
-version_file = open('VERSION')
-version = version_file.read().strip()
+main_py = open('metadoc/__init__.py').read()
+metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", main_py))
 
 def _post_install():
         from metadoc.install import install_nltk_sets
@@ -22,7 +22,7 @@ class CustomInstall(_install):
 
 setup(
     name='metadoc',
-    version=version,
+    version=metadata["version"],
     description="Post-truth era news article metadata service.",
     long_description="",
     classifiers=[ # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -35,10 +35,10 @@ setup(
         "Environment :: Web Environment",
     ],
     keywords=["scraping", "metadata", "news article"],
-    author='Paul Solbach',
+    author=metadata["author"],
     author_email='p@psolbach.com',
     url='https://github.com/psolbach/metadoc',
-    license='MIT',
+    license=metadata["license"],
     cmdclass={'install': CustomInstall, 'develop': CustomInstall},
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
