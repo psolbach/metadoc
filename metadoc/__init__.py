@@ -5,6 +5,7 @@ __title__ = 'Metadoc - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
+__version__ = '0.5.0'
 
 import asyncio
 import time
@@ -101,7 +102,9 @@ class Metadoc(object):
         "credibility": getattr(self.domain, "credibility", None),
         "date_registered": getattr(self.domain, "date_registered_iso", None),
         "favicon": "https://logo.clearbit.com/{0}?size=200".format(getattr(self.domain, "domain", None)),
-      }
+      },
+
+      "__version__": __version__
     }
 
   def _request_url(self):
