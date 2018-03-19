@@ -1,5 +1,4 @@
 aiohttp==1.1.5
-asynctest==0.9.0
 bottle==0.12.10
 python-dateutil==2.6.1
 jmespath==0.9.0
@@ -7,8 +6,6 @@ langdetect==1.0.7
 goose3==3.0.9
 nltk==3.2.1
 numpy==1.13.3
-pytest==3.0.5
-pytest-cov==2.4.0
 requests==2.18.4
 tldextract==2.0.2
 whois==0.7

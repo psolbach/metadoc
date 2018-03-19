@@ -102,7 +102,7 @@ dnf install libxml2-devel libxslt-devel libtiff-devel libjpeg-devel libjpeg-turb
 ```
 #### Then
 ```shell
-pip3 install -r requirements.txt
+pip3 install -r requirements-dev.txt
 python metadoc/__install__.py
 python serve.py => serving @ 6060
 ```

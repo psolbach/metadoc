@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get install -y python3 libxml2-dev libxslt1-dev libtiff-dev libjpeg-dev webp whois
 # command to install dependencies
 install:
-  - pip3 install -r requirements.txt
+  - pip3 install -r requirements-dev.txt
   - pip3 install codecov coveralls
 before_script:
   - python -m nltk.downloader brown punkt maxent_treebank_pos_tagger wordnet stopwords averaged_perceptron_tagger words maxent_ne_chunker
