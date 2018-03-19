@@ -14,6 +14,12 @@ def _post_install():
         from metadoc.install import install_nltk_sets
         install_nltk_sets()
 
+class DevInstall(_install):
+    def run(self):
+        call(["pip install -r requirements-dev.txt --no-clean"], shell=True)
+        self.execute(_post_install, (), msg="Installing nltk sets!")
+        _install.run(self)
+
 class CustomInstall(_install):
     def run(self):
         call(["pip install -r requirements.txt --no-clean"], shell=True)
@@ -39,7 +45,7 @@ setup(
     author_email='p@psolbach.com',
     url='https://github.com/psolbach/metadoc',
     license=metadata["license"],
-    cmdclass={'install': CustomInstall, 'develop': CustomInstall},
+    cmdclass={'install': CustomInstall, 'develop': DevInstall},
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     zip_safe=False
