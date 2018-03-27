@@ -5,7 +5,7 @@ __title__ = 'Metadoc - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
-__version__ = '0.5.0'
+__version__ = '0.6.0'
 
 import asyncio
 import time
@@ -56,6 +56,13 @@ class Metadoc(object):
 
   def return_ball(self):
     return self._render()
+
+  def return_social(self):
+    return {
+      "url": self.url,
+      "social": getattr(self.activity, "responses", None),
+      "__version__": __version__
+    }
 
   def query_domain(self):
     self.domain.get_all()
