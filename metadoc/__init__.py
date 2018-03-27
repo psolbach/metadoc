@@ -5,7 +5,7 @@ __title__ = 'Metadoc - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
-__version__ = '0.5.0'
+__version__ = '0.6.0'
 
 import asyncio
 import time
