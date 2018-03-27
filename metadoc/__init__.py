@@ -57,6 +57,13 @@ class Metadoc(object):
   def return_ball(self):
     return self._render()
 
+  def return_social(self):
+    return {
+      "url": self.url,
+      "social": getattr(self.activity, "responses", None),
+      "__version__": __version__
+    }
+
   def query_domain(self):
     self.domain.get_all()
 

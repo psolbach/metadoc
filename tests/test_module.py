@@ -34,6 +34,12 @@ class MetadocModuleTest(asynctest.TestCase):
     assert self.metadoc.activity
 
   @asynctest.ignore_loop
+  def test_social_return(self):
+    self.metadoc.query_social()
+    result = self.metadoc.return_social()
+    assert list(result.keys()) == ["url", "social", "__version__"]
+
+  @asynctest.ignore_loop
   def test_domain(self):
     self.metadoc.query_domain()
     assert self.metadoc.domain
