@@ -57,6 +57,10 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[8].modified_date == "2018-02-16T17:16:57+00:00"
         assert objs[9].modified_date == None
 
-
         # title
         assert objs[8].title == "Bundeswehr bereitet sich auf den Kampf gegen Killer-Roboter vor"
+
+        # authors
+        #for x, obj in enumerate(objs):
+        #    print(x, obj.metatags)
+

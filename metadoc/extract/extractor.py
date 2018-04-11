@@ -90,7 +90,7 @@ class Extractor(object):
       or html_meta.metatags.get("article:author") \
       or html_meta.metatags.get("author")
 
-    self.title = html_meta.jsonld.get("headline") or html_meta.title
+    self.title = html_meta.title
     self.description = html_meta.metatags.get("description")
     self.canonical_url = html_meta.links.get("canonical")
     self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")

@@ -26,7 +26,13 @@ class HtmlMeta(object):
 
         self.links = None
         self.jsonld = {}
-        self.links = None
+        self.metatags = {}
+
+    @property
+    def title(self):
+        return self.jsonld.get("headline") \
+            or self.metatags.get("og:title") \
+                or self.extract_title()
 
     def _extract_items(self, get_item, xpath):
         items = [item for item in map(get_item, xpath(self.document)) if item]
@@ -54,12 +60,8 @@ class HtmlMeta(object):
         return ld if ld else {}
 
     def extract_title(self):
-        txpaths = ["//meta[@property='og:title']/@content", "(//title)[1]//text()"]
-        for xp in txpaths:
-            title = self.document.xpath(xp)
-            if len(title):
-                return title[0]
-        return None
+        title = self.document.xpath("(//title)[1]//text()")
+        return title[0] if len(title) else None
 
     def _format_date(self, date_in):
         date = parse(date_in) if type(date_in) is str else date_in
@@ -110,7 +112,6 @@ class HtmlMeta(object):
         self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)
         self.jsonld = self._extract_items(self._get_jsonld_item, self._jsonld_xpath)
         self.links = self._extract_items(self._get_link_item, self._links_xpath)
-        self.title = self.extract_title()
         self.published_date = self.extract_pub_date()
         self.modified_date = self.extract_mod_date()
         self.scraped_date = self._format_date(datetime.now())

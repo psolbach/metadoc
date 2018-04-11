@@ -2,4 +2,4 @@
 # -*- coding: utf-8 -*-
 
 from metadoc.extract.pos import do_train
-do_train()
+#do_train()
