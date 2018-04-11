@@ -20,18 +20,23 @@ class MetadocHtmMetaTest(asynctest.TestCase):
     @asynctest.ignore_loop
     def test_extract(self):
         paths = [
-            "tests/fixtures/guardian.com/florida-shooting-suspect-charged-questions-nikolas-cruz.html",
-            "tests/fixtures/zeit.de/pressefreiheit-tuerkei-inhaftierte-journalisten-deniz-yuecel-freedeniz.html",
-            "tests/fixtures/theintercept.com/iphones-secretly-send-call-history-to-apple-security-firm-says.html",
-            "tests/fixtures/nytimes/skeleton-ghana-jamaica.html",
-            "tests/fixtures/wired.com/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science.html",
-            "tests/fixtures/theverge.com/spacex-falcon-9-launch-starlink-microsat-2a-2b-paz-watch-live.html",
-            "tests/fixtures/faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html",
-            "tests/fixtures/time.com/jared-kushner-security-clearance-trump-kelly.html",
-            "tests/fixtures/netzpolitik.org/index.html",
-            "tests/fixtures/invalid/invalid.html"
+            "guardian.com/florida-shooting-suspect-charged-questions-nikolas-cruz.html",
+            "zeit.de/pressefreiheit-tuerkei-inhaftierte-journalisten-deniz-yuecel-freedeniz.html",
+            "theintercept.com/iphones-secretly-send-call-history-to-apple-security-firm-says.html",
+            "nytimes/skeleton-ghana-jamaica.html",
+            "wired.com/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science.html",
+            "theverge.com/spacex-falcon-9-launch-starlink-microsat-2a-2b-paz-watch-live.html",
+            "faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html",
+            "time.com/jared-kushner-security-clearance-trump-kelly.html",
+            "netzpolitik.org/index.html",
+            "invalid/invalid.html",
+            "bloomberg.com/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable",
+            "buzzfeed.com/so-viel-dreck",
+            "bostonreview.net/thad-williamson-almost-inevitable-failure-justice",
+            "washingtonpost.com/i-need-loyalty-james-comeys-riveting-prepared-testimony-about-what-trump-asked-him-annotated.html",
+            "washingtonpost.com/trump-to-nominate-carson-to-lead-u-s-housing-urban-policy.html",
         ]
-        objs = [get_html_meta(path) for path in paths]
+        objs = [get_html_meta("tests/fixtures/"+path) for path in paths]
 
         # published_data
         assert objs[0].published_date == "2018-02-16T00:01:52+00:00"
@@ -58,9 +63,23 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[9].modified_date == None
 
         # title
+        assert objs[4].title == "Inside the Mind of Amanda Feilding, Countess of Psychedelic Science"
         assert objs[8].title == "Bundeswehr bereitet sich auf den Kampf gegen Killer-Roboter vor"
+        assert objs[9].title == None
 
         # authors
+        assert objs[2].authors == "Kim Zetter"
+        assert objs[3].authors == "Randal C. Archibold"
+        assert objs[5].authors == "Loren Grush"
+        assert objs[8].authors == "Alexander Fanta"
+        assert objs[9].authors == None
+        assert objs[10].authors == ["Tim Ross", "Ian Wishart"]
+        assert objs[11].authors == "Becky Barnicoat" #None # link stripped
+        assert objs[12].authors == "Thad Williamson"
+        assert objs[13].authors == ["Amber Phillips", "Peter W. Stevenson"]
+        assert objs[14].authors == "Elise Viebeck"
+
         #for x, obj in enumerate(objs):
-        #    print(x, obj.metatags)
+        #    #print(x, obj.jsonld)
+        #    print(x, obj.authors)
 
