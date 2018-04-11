@@ -86,10 +86,7 @@ class Extractor(object):
     html_meta = HtmlMeta(self.html, tree=self.tree)
     html_meta.extract()
 
-    self.authors = html_meta.jsonld.get("authors") \
-      or html_meta.metatags.get("article:author") \
-      or html_meta.metatags.get("author")
-
+    self.authors = html_meta.authors
     self.title = html_meta.title
     self.description = html_meta.metatags.get("description")
     self.canonical_url = html_meta.links.get("canonical")

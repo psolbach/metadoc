@@ -34,6 +34,31 @@ class HtmlMeta(object):
             or self.metatags.get("og:title") \
                 or self.extract_title()
 
+    @property
+    def authors(self):
+        # extract from jsonld
+        ld_authors = self.jsonld.get("author", {})
+        ld_authors = [a["name"] for a in ld_authors] if type(ld_authors) == list else ld_authors.get("name", False)
+        # get a value from trove
+        authors = ld_authors \
+            or self.metatags.get("author") \
+                or self.metatags.get("article:author") \
+                    or self.metatags.get("dcterms.creator") \
+                        or self.jsonld.get("authors") # intercept
+        # strip links
+        if type(authors) != list:
+            authors = authors if not str(authors).startswith("http") else None
+
+        if not authors:
+            # washingtonpost
+            xauthors = self.document.xpath("(//span[@itemprop='author'])[1]//span[@itemprop='name']/text()")
+            if xauthors:
+                authors = xauthors
+
+        if type(authors) == list and len(authors) == 1:
+            authors = authors[0]
+        return authors
+
     def _extract_items(self, get_item, xpath):
         items = [item for item in map(get_item, xpath(self.document)) if item]
         return dict(ChainMap(*items))
