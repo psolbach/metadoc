@@ -28,6 +28,7 @@ class MetadocHtmMetaTest(asynctest.TestCase):
             "tests/fixtures/theverge.com/spacex-falcon-9-launch-starlink-microsat-2a-2b-paz-watch-live.html",
             "tests/fixtures/faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html",
             "tests/fixtures/time.com/jared-kushner-security-clearance-trump-kelly.html",
+            "tests/fixtures/netzpolitik.org/index.html",
             "tests/fixtures/invalid/invalid.html"
         ]
         objs = [get_html_meta(path) for path in paths]
@@ -41,7 +42,8 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[5].published_date == "2018-02-15T18:54:21+00:00"
         assert objs[6].published_date == "2018-02-15T08:22:05+00:00"
         assert objs[7].published_date == "2018-02-28T03:11:27+00:00"
-        assert objs[8].published_date == None
+        assert objs[8].published_date == "2018-02-16T13:46:24+00:00"
+        assert objs[9].published_date == None
 
         # modified_date
         assert objs[0].modified_date == "2018-02-16T09:51:54+00:00"
@@ -52,4 +54,9 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[5].modified_date == "2018-02-15T18:54:21+00:00"
         assert objs[6].modified_date == "2018-02-15T09:29:16+00:00"
         assert objs[7].modified_date == "2018-02-28T15:45:06+00:00"
-        assert objs[8].modified_date == None
+        assert objs[8].modified_date == "2018-02-16T17:16:57+00:00"
+        assert objs[9].modified_date == None
+
+
+        # title
+        assert objs[8].title == "Bundeswehr bereitet sich auf den Kampf gegen Killer-Roboter vor"

@@ -54,8 +54,12 @@ class HtmlMeta(object):
         return ld if ld else {}
 
     def extract_title(self):
-        title = self.document.xpath("(//title)[1]//text()")
-        return title[0] if len(title) else None
+        txpaths = ["//meta[@property='og:title']/@content", "(//title)[1]//text()"]
+        for xp in txpaths:
+            title = self.document.xpath(xp)
+            if len(title):
+                return title[0]
+        return None
 
     def _format_date(self, date_in):
         date = parse(date_in) if type(date_in) is str else date_in
