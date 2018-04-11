@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="en"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="The Almost Inevitable Failure of Justice from Boston Review. The persistence of black poverty has become a permanent feature of U.S. democracy. We need an expanded political imagination to dismantle it." />
+<meta name="keywords" content="The Almost Inevitable Failure of Justice, Boston Review" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://bostonreview.net/class-inequality-race/thad-williamson-almost-inevitable-failure-justice" />
+<meta property="fb:pages" content="157819100911932" />
+<meta property="og:site_name" content="Boston Review" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Almost Inevitable Failure of Justice" />
+<meta property="og:url" content="https://bostonreview.net/class-inequality-race/thad-williamson-almost-inevitable-failure-justice" />
+<meta property="og:description" content="The persistence of black poverty has become a permanent feature of U.S. democracy. We need an expanded political imagination to dismantle it." />
+<meta property="og:updated_time" content="2018-02-23T11:27:42-05:00" />
+<meta property="og:image" content="https://bostonreview.net/sites/default/files/williamson4.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@BostonReview" />
+<meta name="twitter:creator" content="@BostonReview" />
+<meta name="twitter:title" content="The Almost Inevitable Failure of Justice" />
+<meta name="twitter:url" content="https://bostonreview.net/class-inequality-race/thad-williamson-almost-inevitable-failure-justice" />
+<meta name="twitter:description" content="The persistence of black poverty has become a permanent feature of U.S. democracy. We need an expanded political imagination to dismantle it." />
+<meta name="twitter:image" content="https://bostonreview.net/sites/default/files/williamson4.jpg" />
+<meta property="article:published_time" content="2018-02-22T15:32:21-05:00" />
+<meta property="article:modified_time" content="2018-02-23T11:27:42-05:00" />
+<meta name="dcterms.title" content="The Almost Inevitable Failure of Justice" />
+<meta name="dcterms.creator" content="Thad Williamson" />
+<meta name="dcterms.description" content="The persistence of black poverty has become a permanent feature of U.S. democracy. We need an expanded political imagination to dismantle it." />
+<meta name="dcterms.date" content="2018-02-22T15:32-05:00" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://bostonreview.net/class-inequality-race/thad-williamson-almost-inevitable-failure-justice" />
+
+<title>The Almost Inevitable Failure of Justice | Boston Review</title>
+
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6423534/7686552/css/fonts.css">
+
+<link type="text/css" rel="stylesheet" href="https://bostonreview.net/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://bostonreview.net/sites/default/files/css/css_qz8Zo67ulYD-UKEzvEGs5s6TXrpknTvuYaGcvJhvG60.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://bostonreview.net/sites/default/files/css/css_NCOSdpoQnWWQHVcfG2o2skDLf8YSjSAlOAadPoELzbo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://bostonreview.net/sites/default/files/css/css_h5DdXD06W4Sl453RvvB1sul4XtL6ovSN9aNVfZoWcH8.css" media="all" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/br_hhog/assets/release/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/sites/all/themes/br_hhog/assets/release/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/sites/all/themes/br_hhog/assets/release/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/sites/all/themes/br_hhog/assets/release/images/favicons/manifest.json">
+<link rel="mask-icon" href="/sites/all/themes/br_hhog/assets/release/images/favicons/safari-pinned-tab.svg"><link rel="shortcut icon" href="/sites/all/themes/br_hhog/assets/release/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/sites/all/themes/br_hhog/assets/release/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0095d1">
+
+
+<!-- begin doubleclick code -->
+
+<script>
+
+// initialization from DoubleClick
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var gptAdSlots = [];
+
+// more initialization from DoubleClick
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+// set up specific ads
+googletag.cmd.push(function() {
+	var mapping_promotop = googletag.sizeMapping().
+			addSize([(728 + 30),0], [[728, 90], [1, 1]]).
+			addSize([0,0], [[320, 50], [1, 1]]).
+			build();
+
+	var mapping_billboard = googletag.sizeMapping().
+			addSize([(970 + 30),0], [[970, 250], [1, 1]]).
+			addSize([0,0], [[300, 250], [1, 1]]).
+			build();
+
+	gptAdSlots[0] = googletag.defineSlot('/18269578/Large_Banner', [728, 90], 'div-gpt-ad-promotop').defineSizeMapping(mapping_promotop).addService(googletag.pubads());
+	gptAdSlots[1] = googletag.defineSlot('/18269578/Rectangle_Across_Site', [300, 250], 'div-gpt-ad-rectangle').addService(googletag.pubads());
+	gptAdSlots[2] = googletag.defineSlot('/18269578/Billboard', [970, 250], 'div-gpt-ad-billboard').defineSizeMapping(mapping_billboard).addService(googletag.pubads());
+	gptAdSlots[3] = googletag.defineSlot('/18269578/Large_Banner', [728, 90], 'div-gpt-ad-home-bottom').addService(googletag.pubads());
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+});
+
+// handle resize events and refresh specific ad slots when necessary
+var googleTagResizeTimer;
+var googleTagRefreshAdSlots = function() {
+	googletag.cmd.push(function() {
+		googletag.pubads().refresh([gptAdSlots[0]]); // promotop (leaderboard) slot
+		googletag.pubads().refresh([gptAdSlots[2]]); // billboard slot
+	});
+};
+var googleTagHandleResize = function() {
+	clearTimeout(googleTagResizeTimer);
+	googleTagResizeTimer = setTimeout(googleTagRefreshAdSlots, 1000); 
+};
+window.addEventListener('resize', googleTagHandleResize);
+
+</script>
+
+<!-- end doubleclick code -->
+
+<!-- begin google analytics code -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-953371-1', 'auto', { 'allowLinker': true });
+ga('require', 'linker');
+ga('linker:autoLink', ['bostonreview.net', 'ezsubscription.com']);
+ga('send', 'pageview');
+</script>
+<!-- end google analytics code -->
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-8690 node-type-articles" >
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=125813361939";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="page" class="html not-front not-logged-in no-sidebars page-node page-node- page-node-8690 node-type-articles">
+	<div class="menupane-wrap">
+		
+<div class="promotop">
+	<div class="wrap">
+		<div class="ad-container ad-promotop">
+			<div id="div-gpt-ad-promotop">
+				<script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-promotop'); }); </script>
+			</div>
+		</div>
+	</div>
+</div>
+			
+
+<div class="header header_default">
+	<div class="wrap">
+		<div class="header-title">
+			<a href="/" class="header-logo"><img src="/sites/all/themes/br_hhog/assets/release/images/BR_logo.svg" alt="Boston Review"></a>
+			<p>A Political and Literary Forum</p>
+					</div>
+		<div class="header-navs">
+			<div class="header-navs-primary">
+				<a href="#" class="header-menulink btn btn_yellowblack" id="header-menulink">
+					<i class="header-menulink-icon" aria-hidden="true"></i><span class="hider"> Menu</span>
+				</a>
+								<a href="#" class="header-searchlink" id="header-searchlink"><i class="fa fa-search fa-2x" aria-hidden="true"></i><span class="hider"> Search</span></a>
+				<div class="header-support">
+					<a class="header-support-donate" href="/donate/" onclick="ga('send', 'event', 'donate', 'click', 'header');">Donate</a>
+					<a class="header-support-shop" href="/store/" onclick="ga('send', 'event', 'shop', 'click', 'header');">Shop</a>
+					<a class="header-support-member" href="/membership/" onclick="ga('send', 'event', 'member', 'click', 'header');">Join</a>
+				</div>
+			</div>
+			<div class="header-navs-secondary">
+				<div class="header-newsletter">
+							<form action="//bostonreview.us12.list-manage.com/subscribe/post?u=aea7c9cffc2113645a66ab631&amp;id=2cb428c5ad" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<input type="email" name="EMAIL" placeholder="Join our email newsletter" class="newsletterEmail"><input type="submit" value="&#xf054" name="subscribe" class="newsletterSubmit">
+			<ul style="display:none;">
+				<li><input type="checkbox" value="1" name="group[1793][1]" checked="checked"><label>Weekly Newsletter</label></li>
+				<li><input type="checkbox" value="2" name="group[1793][2]" checked="checked"><label>Poetry Matters: Weekly Poetry Newsletter</label></li>
+				<li><input type="checkbox" value="4" name="group[1793][4]"><label>Boston Events: Boston Review-sponsored events in the Boston area</label></li>
+				<li><input type="checkbox" value="8" name="group[1793][8]" checked="checked"><label>Reading List: Deep dives from Boston Review's archives, hand-picked by our editors</label></li>
+				<li><input type="checkbox" value="16" name="group[1793][16]" checked="checked"><label>Special Offers from Boston Review</label></li>
+			</ul>
+			<div style="position:absolute;left:-3000px;" aria-hidden="true"><input type="text" name="b_aea7c9cffc2113645a66ab631_2cb428c5ad" tabindex="-1" value=""></div>
+		</form>
+					</div>
+									<ul class="header-social">
+													<li><a href="https://www.facebook.com/bostonreview/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+													<li><a href="https://twitter.com/BostonReview/" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											</ul>
+							</div>
+		</div>
+	</div>
+</div>
+		<div class="main">
+			
+
+
+
+
+	<div class="topbuffer" id="topbuffer"></div>
+	
+
+	
+	<div class="wrap">
+		<div class="innercols">
+			<div class="innercols-primary">
+				<div class="innercols-primary-inner">
+											<div class="view view-br-hhog-article-detail-view view-id-br_hhog_article_detail_view view-display-id-default view-dom-id-62d54d3f219245f652040af8c3a100ce">
+        
+  
+  
+      <div class="view-content">
+      
+	
+	<div class="detailcols" id="detailcols">
+		<div class="detailcols-primary">
+			<div class="detailcols-primary-inner">
+
+				<div class="detail-intro" id="detail-intro">
+					<div class="detail-intro-img" id="detail-intro-img" style="background-image:url();">
+						<img src="https://bostonreview.net/sites/default/files/styles/br_hhog_featured/public/williamson4.jpg?itok=N--u5Voe" alt="The Almost Inevitable Failure of Justice">
+						<div class="detail-intro-img-accents" aria-hidden="true">
+							<div class="accent accent_1"></div>
+							<div class="accent accent_2"></div>
+							<div class="accent accent_3"></div>
+							<div class="accent accent_4"></div>
+						</div>
+					</div>
+					<div class="detail-intro-text" id="detail-intro-text">
+													<h2><a href="/class-inequality">Class &amp; Inequality</a></h2>
+												<h1>The Almost Inevitable Failure of Justice</h1>
+												<p class="detail-intro-text-date-printonly">
+							February 22, 2018						</p>
+													<p class="detail-intro-text-author">
+								<a href="/author/thad-williamson">Thad Williamson</a>							</p>
+																	</div>
+				</div>
+
+									<div class="detail-body" id="detail-body">
+						<div class="detail-secondary-mobile" id="detail-secondary-mobile">
+							<div class="detail-secondary-mobile-topper">
+																	<div class="detail-date">
+										<p>Feb 22, 2018</p>
+									</div>
+								
+																	<div class="detail-readtime">
+										<p><i class="detail-readtime-clock" aria-hidden="true"></i>15 Min read time</p>
+									</div>
+															</div>
+
+							
+															<div class="detail-tags">
+									<h5>Topics:</h5>
+									<div class="item-list"><ul><li class="first"><a href="/tags/race" typeof="Concept" property="prefLabel" datatype="">race</a></li>
+<li><a href="/tags/fifty-years-mlk" typeof="Concept" property="prefLabel" datatype="">fifty years since mlk</a></li>
+<li class="last"><a href="/tags/poverty" typeof="Concept" property="prefLabel" datatype="">poverty</a></li>
+</ul></div>								</div>
+							
+							<div class="detail-share">
+								<h5>Share:</h5>
+								<div class="detail-share-icons detail-share-icons-primary">
+									<div class="addthis_inline_share_toolbox"></div>
+								</div>
+							</div>
+						</div>
+
+													<p class="caption caption_first">
+								<em>Image: <a href="https://www.flickr.com/photos/shutterrunner/4324677652/in/photolist-7Aa6ZN-eiZwjt-4smpgZ-bWFrvx-4skWiv-asZ4j-ej6gxJ-8AQBh7-7ybn51-buABba-4Bpe-aCW8JT-8dGnBs-9qXbNR-aCZZJj-9uEXuH-vHYLH-vHYJz-7e9LbF-4smoLt-eiGgze-75vQaS-8AU2Rn-9wgtNq-qYnca-9wdnFx-9wgsjq-9xgdaN-9wdoQ2-9vmG3D-9wgrbC-9wdoyR-9wdquv-bWFsUe-ej6gDq-eiMZfs-9wgqHh-9wdspR-7B5eBY-9wgsrY-9wdshV-9wdphk-aCZZGy-9wdrRV-21Qstj-9wgtfE-o94ib-9wgqBs-9uF9eg-9x5Vte">Shutter Runner</a></em>							</p>
+						
+													<div class="detailsummary">
+								<p>The persistence of black poverty has become a permanent feature of U.S. democracy. We need an expanded political imagination to dismantle it.</p>							</div>
+						
+						
+						
+						
+								<p><em>This essay is featured in&nbsp;</em>Boston Review&rsquo;s<em>&nbsp;print issue,&nbsp;</em><a href="https://bostonreview.net/forum-v">Fifty Years Since MLK</a><em>.&nbsp;<a href="https://store.bostonreview.net/backissues/fifty-years-since-mlk">Order your copy today.</a></em></p>
+
+<hr />
+<p><em>Dark Ghettos: Injustice, Dissent, and Reform</em><br />
+Tommie Shelby<br />
+<a href="http://www.hup.harvard.edu/catalog.php?isbn=9780674970502">Harvard University Press, $29.95 (cloth)</a></p>
+
+<p>In his final book, <em>Where Do We Go From Here</em> (1967), Martin Luther King, Jr., warned that the struggle for black equality had moved into a more difficult phase that would test the moral commitments of white America to democracy. King commented that, for most whites, the battles over school desegregation and the Civil Rights Act had merely &ldquo;been a struggle to treat the Negro with a degree of decency, not of equality&rdquo;:</p>
+
+<blockquote>
+<p>White America was ready to demand that the Negro should be spared the lash of brutality and coarse degradation, but it had never been truly committed to helping him out of poverty, exploitation or all forms of discrimination.</p>
+</blockquote>
+
+<p>King&rsquo;s warning about the thinness of the country&rsquo;s commitment to democracy was combined with a profound optimism that ending poverty and creating a truly free society was within reach&mdash;that Americans might at last choose justice. His optimism was consonant with and informed by social and policy analysis of the time. Three years earlier, the Johnson administration had launched its War on Poverty, and in <em>Where Do We Go From Here</em>, King quoted the analysis of Hyman Bookbinder&mdash;from President Lyndon B. Johnson&rsquo;s Office of Economic Opportunity&mdash;that &ldquo;the poor can stop being poor if the rich are willing to become even richer at a slower rate.&rdquo;</p>
+<pullquote>
+<p>The question for us is the same as it was for King fifty years ago: &lsquo;Where do we go from here?&rsquo;</p>
+</pullquote>
+
+<p>Twenty years later, when William Julius Wilson published <em>The Truly Disadvantaged</em>, his landmark assessment of the causes and consequences of ghetto poverty, it may have still been possible to view inner-city poverty as simply unfinished business from the civil rights movement. After all, African Americans had made substantial economic gains since the 1960s, and Ronald Reagan&rsquo;s presidency could be seen as an aberration, the last vestige of reaction against inevitable social change. In his successful 1988 run for the presidency, Reagan&rsquo;s vice president, George H. W. Bush, even allowed that he was haunted by the fate of ghetto children.</p>
+
+<p>But today, after another thirty years, it is hard not to fear that the persistence of racial injustice and U.S. poverty is anything but a permanent feature of our democracy. There have been pilot and demonstration programs, tax incentives, competitive grant initiatives, and other policy steps aimed at steering investment toward low-income communities. Indeed, the initiatives of the Clinton administration&mdash;such as the Community Development Financial Institutions Fund, HOPE VI, New Market Tax Credits, and Moving to Opportunity&mdash;were followed by Promise Zones, Promise Neighborhoods, and Choice Neighborhoods in the Obama administration. Especially under Obama, federal programs sought to induce localities to engage in comprehensive planning, adopt best practices, and provide holistic support to neighborhoods and families involved in or impacted by community redevelopment efforts.</p>
+
+<p>These initiatives generally had decent intentions, but their most notable quality is their sheer modesty relative to need. None of them, alone or together, represent the kind of massive assault on urban poverty briefly championed by the Office of Economic Opportunity in the 1960s. The federal government continues to spend much more money supporting suburban homeowners through the mortgage interest tax deduction than it does programs aimed at &ldquo;transforming&rdquo; urban communities.</p>
+<pullquote>
+<p>The lopsided distribution of wealth characteristic of U.S. capitalism must be on the table in any discussion about realizing social justice&mdash;including the discussion of ghetto poverty.</p>
+</pullquote>
+
+<p>Most tellingly, not even Democratic administrations have set tangible goals for reducing poverty nationwide. Rather than imagine full-scale national initiatives (such as the massive job program that some within Johnson&rsquo;s administration wanted at the heart of the War on Poverty), liberal social policy has, at its best, been content with relatively marginal change in a limited number of communities. At worst, it has drifted away from concern with what John Rawls termed in 1971 the &ldquo;background structure&rdquo; of social justice&mdash;our fundamental political and economic institutions&mdash;to the decidedly secondary question of the behavior and activities of the poor themselves. Clinton&rsquo;s 1996 welfare reform law, for example, featured a framework far more oriented toward coercion and sanctions than crafting effective pathways to prosperity.</p>
+
+<p>Despite near-universal handwringing over the persistence of ghetto poverty over the past three decades, official national policy has been de facto fatalism. This is not just a policy failure. In Rawlsian terms, it is a failure of basic justice because it is a failure of shared moral commitments to liberty, equality, and respect for the inherent dignity of all persons.</p>
+
+<p align="center"><strong>&bull;&nbsp;&bull;&nbsp;&bull;</strong></p>
+
+<p>Philosopher Tommie Shelby, author of <em>Dark Ghettos: Injustice, Dissent, and Reform</em> (2017), uses a Rawlsian framework to challenge the dominant understanding of the &ldquo;ghetto&rdquo; and its residents. In keeping with the tradition of critique by African American social scientists from Horace R. Cayton, Jr., and St. Clair Drake to Kenneth and Mamie Clark, Shelby uses the term &ldquo;ghetto&rdquo; to refer to &ldquo;black, high poverty metropolitan neighborhoods&rdquo; that suffer &ldquo;from a relative lack of nearby or readily accessible goods, services, and opportunities that are needed for human flourishing.&rdquo; His book tackles some of the thorniest issues in urban social policy&mdash;residential integration, the so-called &ldquo;culture of poverty,&rdquo; reproduction, family, joblessness, crime and punishment, and cultural expressions of dissent&mdash;from a principled egalitarian position. He is consistently informed by a determination to show respect for inner-city residents and their actual and potential agency as equal citizens.</p>
+
+<p>The result is instructive and pathbreaking in three key respects. First, Shelby considers the moral implications of U.S. society&rsquo;s failure to provide basic justice to a significant portion of its citizens. To what extent and under what circumstances, then is it reasonable to ask such citizens to comply with state policies that reflect injustice?</p>
+
+<p>Second, Shelby takes up the more ambitious task of developing an account of &ldquo;corrective justice&rdquo;&mdash;how the failure to provide basic justice can be rectified&mdash;and a corresponding account of &ldquo;political ethics,&rdquo; or the &ldquo;principles and values that should guide individuals as they respond to social injustices.&rdquo;</p>
+<pullquote>
+<p>Is it reasonable to ask citizens to comply with state policies that reflect injustice?</p>
+</pullquote>
+
+<p>Third, Shelby calls for renewed attention to the centrality of race in understanding the U.S. failure to provide basic justice. The reluctance of many white Americans to view persons of color as fully equal citizens, entitled to basic social and economic rights and opportunities, has led to the presumption, embedded in the design and implementation of safety-net policies, that there is something inherently wrong or deficient with the behavior of poor persons, especially poor persons of color.</p>
+
+<p>Shelby&rsquo;s assessment of the U.S. welfare state and the persistence of ghetto poverty thus runs as follows: as a matter of justice, all Americans are entitled to substantially equal opportunities. At a minimum, this includes decent material background conditions combined with a guarantee of a basic income or equivalent device, but it also includes what Rawls termed &ldquo;fair equality of opportunity,&rdquo; namely that access to life-shaping opportunities should not be contingent on the socioeconomic status of one&rsquo;s parents.</p>
+
+<p>The very existence and persistence of the urban ghetto, however, shows that the United States does not provide this background justice. In fact, the social policies it employs largely fail to show respect for low-income Americans, especially low-income African Americans. Instead, they are often paternalistic, requiring recipients to adhere to certain socially acceptable behaviors in order to access benefits. Some programs go even further and aim at the &ldquo;cultural reform&rdquo; of their participants and the inner city itself.</p>
+
+<p>Shelby argues that ghetto residents are well within their rights when they refuse to comply with such paternalistic policies. In a just society, access to basic needs such as housing and food should not be contingent on compliance with mainstream behavioral norms. Indeed, defiance of mainstream values is often, Shelby believes, a legitimate (if often misrecognized) expression of protest against injustice. Shelby&rsquo;s hope is that such protest, following some promising early steps made by Black Lives Matter, will coalesce into a tangible political force that calls attention to the injustice of current social arrangements.</p>
+
+<p>Importantly, Shelby makes a distinction between the &ldquo;medical model&rdquo; of assessing poverty and economic disadvantage and what he terms the &ldquo;systemic-injustice&rdquo; model. Most policy discourse sees the &ldquo;background structure&rdquo; of society as given and then looks for efficient ways to treat social ills such as unemployment. A systemic-injustice perspective, in contrast, scrutinizes the core institutional factors that shape the distribution of opportunities: the distribution of wealth, the organization of the economy and labor market, the organization of public education and of local government, and conceivably much else as well.</p>
+
+<p>Shelby might have added that &ldquo;medical model&rdquo; policy prescriptions are often doomed to fail because isolated policy improvements will almost never overcome deeply flawed structural arrangements. And he might have usefully extended the argument in two directions.</p>
+<pullquote>
+<p>On the ground, seeking structural justice in a deeply flawed regime inevitably involves moral compromise.</p>
+</pullquote>
+
+<p>First, Shelby&rsquo;s critique of ghetto poverty stops short of a reckoning with the failures of welfare-state capitalism itself. The lopsided distribution of wealth characteristic of U.S. capitalism must be on the table in any discussion about realizing social justice&mdash;including the discussion of ghetto poverty. Rawls himself argued that welfare-state capitalism is incompatible with justice, partly because it never realizes its own stated aspirations and partly because its reliance on post-tax redistribution creates a debilitating, unstable dynamic of mutual resentment between more and less prosperous citizens. (See <em>Property-Owning Democracy: Rawls and Beyond</em>, edited by Martin O&rsquo;Neill and Thad Williamson, for extended discussion). In other words, a politics that aims to create a just background structure needs to have a clear, positive account of the basic institutional configurations of a just political economy. The economic policy program released by the Movement for Black Lives is an impressive initial effort to begin mapping that background structure.</p>
+
+<p>Second, Shelby doesn&rsquo;t ask whether, in the absence of a mass movement capable of putting fundamental issues on the table, policymakers can overcome political resistance to addressing structural injustice. After all, partisan and resource constraints almost inevitably lead even the best-intentioned policymakers back to some version of the medical model.</p>
+
+<p align="center"><strong>&bull;&nbsp;&bull;&nbsp;&bull;</strong></p>
+
+<p><em>Almost</em> inevitably. But not literally inevitably. Consider Richmond, Virginia, which has an overall poverty rate of 25 percent and a child poverty rate of approximately 40 percent. From the formation of the Mayor&rsquo;s Anti-Poverty Commission under former mayor Dwight C. Jones, to the launch and development of the Office of Community Wealth Building (OCWB), a city agency charged with moving thousands of residents out of poverty in the coming decade, the city has drawn attention for its efforts to fight poverty.</p>
+
+<p>Full disclosure: I am not an impartial observer. I served on the Mayor&rsquo;s Anti-Poverty Commission, chaired one of its task forces, and was lead author of its final report. In 2014 I began a two-year term as the first director of the Office of Community Wealth Building while on leave from the University of Richmond. I now serve part-time as a senior policy advisor for current mayor Levar M. Stoney, who has championed expanding the effort.</p>
+
+<p>OCWB does three things that are relatively unique in the policy world. First, it openly embraces a structural understanding of concentrated poverty in Richmond. The commission&rsquo;s report documents the historical factors&mdash;such as redlining, resistance to school integration, and white flight&mdash;that produced neighborhoods in which the average income is less than 10,000 dollars a year and nearly 100 percent of residents are persons of color. Likewise, its policy recommendations focus squarely on those structural factors that reproduce poverty: underemployment, substandard public education, substandard provision of public housing, and substandard provision (or nonexistence) of public transportation. This orientation was by design. As lead author of the commission&rsquo;s report, I (like several colleagues in the effort) was determined to keep the focus on structural underemployment and related factors rather than on the behaviors or &ldquo;culture&rdquo; of residents living in poverty.</p>
+
+<p>Second, OCWB and the City of Richmond have set ambitious policy targets: cutting overall poverty 40 percent by the year 2030 and child poverty 50 percent by the same year. This entails moving 1,000 <em>additional</em> people a year out of poverty relative to the status quo and maintaining that movement each year for a decade. The aspiration is to create a virtuous circle in which more local residents working and earning good money strengthens the city tax base, more stable families help strengthen school performance for the city&rsquo;s children, and more resources are available to reinvest in ongoing needs. Achieving this level of change will require not just one or two new programs, but scrutiny and change in multiple policy arenas, at multiple levels of government.</p>
+<pullquote>
+<p>The experiments in Richmond aim&nbsp;to&nbsp;transform communities of concentrated poverty through a people-centered process.</p>
+</pullquote>
+
+<p>Third, OCWB has made a good-faith effort to engage people in poverty as partners. The Maggie L. Walker Citizens Advisory Board (CAB) gives low-income residents a voice in the design and implementation process of the various workforce, educational, housing, and transportation initiatives led or championed by the office. In 2014 the Richmond City Council codified the CAB as a permanent advisory body, and by law, over half of its members must reside in high-poverty neighborhoods. Thus the initiative aims to build community wealth in the very neighborhoods that have been historically underinvested in and to transform communities of concentrated poverty through a people-centered process.</p>
+
+<p>Surprisingly perhaps given the existing political climate, this explicitly structural approach&mdash;which is informed by the same kinds of concerns that animate Shelby&rsquo;s work&mdash;has gained traction in a city whose entire history has been defined by systemic, race-based inequity and by efforts to resist and overcome injustices. The very boldness of the charge has helped build significant support. In spring of 2017, the Commonwealth of Virginia set aside 7.5 million dollars to support localities undertaking community wealth building initiatives with matching grants; the City of Richmond received nearly 2 million dollars of this funding from the Virginia Department of Social Services, allowing for a substantial expansion of its workforce development program in the current fiscal year. The work of OCWB has also received significant interest and recognition from national publications and organizations.</p>
+
+<p>But as OCWB engages the substance of its work&mdash;helping connect underemployed residents to living-wage jobs&mdash;practical challenges blur the distinction between the medical model and the structural approach. For instance, to access the supplementary resources OCWB offers (such as training, transportation, and child care), a low-income resident must commit to seeking employment. This requirement is essential to its political viability but is also, I would argue, morally defensible given the scarcity of resources. Richmond does not have sufficient funds to provide all residents a basic income, nor would there be political support for such an approach.</p>
+
+<p>On the ground, seeking structural justice in a deeply flawed regime inevitably involves a practical reconciliation&mdash;if not moral compromise&mdash;with those aspects of the social structure that policymakers cannot realistically impact. Success in this context often involves wise discernment and then aggressive action on those things that are within policymakers&rsquo; sphere of influence.</p>
+
+<p align="center"><strong>&bull;&nbsp;&bull;&nbsp;&bull;</strong></p>
+
+<p>So what is the endgame?</p>
+
+<p>We may need not one but two modes of political ethics for addressing ghetto poverty. The first is exactly what Shelby proposes: more and more citizens calling for bold structural change and building political support for significant redistribution and reallocation of resources. The second, less explored, is an ethic for policymakers trying to advance structural change within the messy terrain of existing local democratic politics. This might mean being able to express a structural approach in terms that adherents to a medical model will understand. And it might mean adhering to some of the same norms (such as evaluations or cost&ndash;benefit analyses) from that model that are a precondition of maintaining political and financial support. Intellectual clarity is a great virtue in that context, but ideological purity generally is not.</p>
+<pullquote>
+<p>King&rsquo;s warning about the thinness of the country&rsquo;s commitment to democracy was combined with a profound optimism that Americans might at last choose justice.</p>
+</pullquote>
+
+<p>If there were already a strong consensus and social commitment to Rawlsian-style liberal egalitarianism, Shelby&rsquo;s call for the abolition of ghetto poverty would not be necessary. Quite evidently, such a consensus is lacking. The persistence of the ghetto and the rise of Trumpism reinforce the notion that society can be usefully divided into &ldquo;these people&rdquo; and &ldquo;those people.&rdquo; It is these very divisions, which are antithetical to the strong sense of solidarity a Rawlsian regime requires, that Trumpist politics seeks to exploit, highlight, and perpetuate.</p>
+
+<p>A robust answer to Trumpism will thus require building a broader and bolder political coalition capable of both naming and addressing structural injustices. Shelby&rsquo;s powerful analysis must be brought into dialogue with other recent work focused on the discontent of the &ldquo;white working class,&rdquo; victims of economic displacement, and the working class more generally outside of the urban ghetto.</p>
+
+<p>It will also require a decidedly bolder flavor of progressive politics at the national level. While the Richmond example shows the potential of local efforts in addressing core structural justice, it is the larger-order national policies that set the context in which localities must operate. With a bundle of bold strategies, the federal government must play the lead role in any effort truly designed to replace the ghetto with a more just distribution of resources and opportunities. Shelby leaves those strategies to others. But policymakers and politicians should take his moral message of abolitionism to heart. To fail to do so is to acquiesce to the persistence of deep injustice&mdash;economic and racial&mdash;for yet another generation.</p>
+
+<p align="center"><strong>&bull;&nbsp;&bull;&nbsp;&bull;</strong></p>
+
+<p>The question for us is the same as it was for King fifty years ago: &ldquo;Where do we go from here?&rdquo; King believed that poverty could be abolished in a reasonably fast period of time, with an expenditure of resources and effort that would be significant, even costly, yet well within the nation&rsquo;s capacity.</p>
+
+<p>The missing ingredient now, as then, is sufficient political will and imagination. &ldquo;There is nothing but a lack of social vision to prevent us from paying an adequate wage to every American citizen whether he be a hospital worker, laundry worker, maid or day laborer,&rdquo; King wrote in <em>Where Do We Go From Here</em>. &ldquo;There is nothing except shortsightedness to prevent us from guaranteeing an annual minimum&mdash;and <em>livable</em>&mdash;income for every American family.&rdquo;</p>
+
+<p>As King knew, pilot projects and small adjustments do not address systemic injustice or suffice to combat centuries of accumulated injustice. What is required is a resource and policy commitment commensurate with the scale of the issues being addressed, combined with the ethical and political determination to remold &ldquo;a recalcitrant status quo with bruised hands until we have fashioned it into a brotherhood.&rdquo;</p>
+
+<hr />
+<p><em>This essay is featured in&nbsp;</em>Boston Review&rsquo;s<em>&nbsp;print issue,&nbsp;</em><a href="https://bostonreview.net/forum-v">Fifty Years Since MLK</a><em>.&nbsp;<a href="https://store.bostonreview.net/backissues/fifty-years-since-mlk">Order your copy today.</a></em></p>
+						
+						
+													<div class="view view-br-hhog-latest-promo-general view-id-br_hhog_latest_promo_general view-display-id-default view-dom-id-639f97473d382fc2f3ecd2c85e83ad1b">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class="promogeneral">
+				<h2>While we have you...</h2>
+
+<p>...we need your help. You might have noticed the absence of paywalls at <em>Boston Review</em>. We are committed to staying free for all our readers. Now we are going one step further to become completely ad-free. This means you will always be able to read us without roadblocks or barriers to entry. It also means that we count on you, our readers, for support.&nbsp;<strong><span class="highlighter">If you like what you read here, help us keep it free for everyone by making a donation.</span></strong> No amount is too small. You will be helping us cultivate a public sphere that honors pluralism of thought for a diverse and discerning public.</p>
+
+<p class="rtecenter"><br />
+<a class="btn btn_big" href="/donate/" target="_blank">Support Boston Review</a></p>	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>						
+					</div>
+				
+				<div class="detail-share-end">
+					<div class="detail-share-end-icons" id="detail-share-end-icons">
+						<div class="addthis_inline_share_toolbox_z8oc"></div>
+					</div>
+				</div>
+
+				
+				
+				<div class="detailbottom" id="detailbottom">
+									</div>
+
+			</div>
+		</div>
+		<div class="detailcols-secondary">
+
+							<div class="detail-date">
+					<p>February 22, 2018</p>
+				</div>
+			
+							<div class="detail-readtime">
+					<p><i class="detail-readtime-clock" aria-hidden="true"></i>15 Min read time</p>
+				</div>
+			
+			
+							<div class="detail-tags">
+					<h5>Topics</h5>
+					<div class="item-list"><ul><li class="first"><a href="/tags/race" typeof="Concept" property="prefLabel" datatype="">race</a></li>
+<li><a href="/tags/fifty-years-mlk" typeof="Concept" property="prefLabel" datatype="">fifty years since mlk</a></li>
+<li class="last"><a href="/tags/poverty" typeof="Concept" property="prefLabel" datatype="">poverty</a></li>
+</ul></div>				</div>
+			
+			<div class="detail-share">
+				<h5>Share</h5>
+				<div class="detail-share-icons" id="detail-share-icons-secondary">
+					<div class="addthis_inline_share_toolbox"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+    </div>
+  
+  
+  
+  
+  
+  
+</div>					
+						
+				</div>
+			</div>
+			<div class="innercols-secondary" id="innercols-secondary">
+				<div class="innercols-secondary-inner" id="innercols-secondary-inner">
+					  <div class="region region-br-hhog-general-col-extras">
+    <div id="block-br-hhog-module-br-hhog-ad-rectangle" class="block block-br-hhog-module">
+
+    
+  <div class="content">
+    
+<div class="rectanglead">
+	<div class="rectanglead-inner">
+		<div class="ad-container ad-rectangle">
+			<div id="div-gpt-ad-rectangle">
+				<script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-rectangle'); }); </script>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+<div id="block-br-hhog-module-br-hhog-newsletter-general" class="block block-br-hhog-module">
+
+    
+  <div class="content">
+    
+<div class="featurednewsletter">
+	<div class="wrap">
+		<div class="featurednewsletter-inner">
+			<div class="featurednewsletter-accents" aria-hidden="true">
+				<div class="accent accent_1"></div>
+				<div class="accent accent_2"></div>
+				<div class="accent accent_3"></div>
+				<div class="accent accent_4"></div>
+				<div class="accent accent_5"></div>
+			</div>
+			<div class="featurednewsletter-content">
+				<div class="featurednewsletter-icon"></div>
+									<h4>Sign Up for Our <span class="wrapmobl">Newsletter</span></h4>
+													<p>Vital reading on politics, literature, <span class="wrapmobl">and more in your inbox</span></p>
+										<form action="//bostonreview.us12.list-manage.com/subscribe/post?u=aea7c9cffc2113645a66ab631&amp;id=2cb428c5ad" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<input type="email" name="EMAIL" placeholder="Enter Email" class="newsletterEmail"><input type="submit" value="Sign Up" name="subscribe" class="newsletterSubmit">
+			<ul style="display:none;">
+				<li><input type="checkbox" value="1" name="group[1793][1]" checked="checked"><label>Weekly Newsletter</label></li>
+				<li><input type="checkbox" value="2" name="group[1793][2]" checked="checked"><label>Poetry Matters: Weekly Poetry Newsletter</label></li>
+				<li><input type="checkbox" value="4" name="group[1793][4]"><label>Boston Events: Boston Review-sponsored events in the Boston area</label></li>
+				<li><input type="checkbox" value="8" name="group[1793][8]" checked="checked"><label>Reading List: Deep dives from Boston Review's archives, hand-picked by our editors</label></li>
+				<li><input type="checkbox" value="16" name="group[1793][16]" checked="checked"><label>Special Offers from Boston Review</label></li>
+			</ul>
+			<div style="position:absolute;left:-3000px;" aria-hidden="true"><input type="text" name="b_aea7c9cffc2113645a66ab631_2cb428c5ad" tabindex="-1" value=""></div>
+		</form>
+				</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+<div id="block-br-hhog-module-br-hhog-related-popular" class="block block-br-hhog-module">
+
+    
+  <div class="content">
+    <div class="view view-br-hhog-most-related-view view-id-br_hhog_most_related_view view-display-id-default view-dom-id-501ad99052523ffc1986f9b1ec062e37">
+        
+  
+  
+      <div class="view-content">
+      
+		<div class="relatedpopular">
+		<p class="relatedpopular-title">
+			Related Articles		</p>
+		<ul>
+							
+				<li>
+										<h4><a href="/race/christopher-lebron-black-panther">‘Black Panther’ Is Not the Movie We Deserve</a></h4>
+																<p class="relatedpopular-authors">
+							<a href="/author/christopher-lebron">Christopher Lebron</a>						</p>
+									</li>
+
+							
+				<li>
+										<h4><a href="/race/ed-pavlic/baldwins-lonely-country">Baldwin’s Lonely Country</a></h4>
+																<p class="relatedpopular-authors">
+							<a href="/author/ed-pavlic">Ed Pavlić</a>						</p>
+									</li>
+
+							
+				<li>
+										<h4><a href="/class-inequality/dani-rodrik-rescuing-economics-neoliberalism">Rescuing Economics from Neoliberalism</a></h4>
+																<p class="relatedpopular-authors">
+							<a href="/author/dani-rodrik">Dani Rodrik</a>						</p>
+									</li>
+
+							
+				<li>
+										<h4><a href="/race-gender-sexuality/walter-johnson-guns-family">Guns in the Family</a></h4>
+																<p class="relatedpopular-authors">
+							<a href="/author/walter-johnson">Walter Johnson</a>						</p>
+									</li>
+
+					</ul>
+	</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-br-hhog-module-br-hhog-promo-tile-general" class="block block-br-hhog-module">
+
+    
+  <div class="content">
+    <div class="view view-br-hhog-promo-tile-view view-id-br_hhog_promo_tile_view view-display-id-default view-dom-id-f9181de68c2255b74ad088772bf10657">
+        
+  
+  
+      <div class="view-content">
+      
+	<div class="promotilestandalone">
+		
+		<div class="tile tile_promo tile_standalone">
+			<div class="tile-inner">
+				<a href="https://www.bostonreview.net/membership" class="tile-inner-linkcover"></a>
+
+				<div class="tile-icon tile-icon_megaphone">
+						
+						<div class="tile-icon-inner"></div>
+									</div>	
+				
+				<div class="tile-promotitle">
+					<h3>
+						Love Boston Review?					</h3>
+				</div>
+
+									<div class="tile-quote">
+						Then you’ll love our new membership program! Join us to support engaged discussion on critical issues. You’ll also enjoy exclusive membership benefits.					</div>
+						
+									<div class="tile-promobutton">
+						<a href="https://www.bostonreview.net/membership" class="btn btn_big btn_blackblue">Get Started</a>
+					</div>											
+							</div>
+		</div>
+
+	</div>
+	
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<div class="view view-br-hhog-featured-slider-view view-id-br_hhog_featured_slider_view view-display-id-default view-dom-id-e98c13b3b4aac23aab833d576a2c0b03">
+        
+  
+  
+      <div class="view-content">
+      
+		<div class="featuredslider">
+		<div class="wrap">
+			<div class="sectiontitle">
+				<h2>
+					<a href="/race">More In Race</a>				</h2>
+			</div>
+			<div class="featuredslider-tiles">
+				<div class="featuredslider-carousel carousel" data-carousel-continuous-scroll="0" data-carousel-resize="callthisback">
+					<div class="carousel-slides-viewport">
+						<div class="carousel-slides">
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/chad-kautzer-political-philosophy-self-defense" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/Kautzer%20feature.jpg?itok=TTZKOiAL);">
+											<a href="/race/chad-kautzer-political-philosophy-self-defense" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/chad-kautzer-political-philosophy-self-defense">A Political Philosophy of Self-Defense</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/chad-kautzer">Chad Kautzer</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/brandon-m-terry-mlk-now" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/terry2.png?itok=0HyWWkiS);">
+											<a href="/race/brandon-m-terry-mlk-now" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/brandon-m-terry-mlk-now">MLK Now</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/brandon-m-terry">Brandon M. Terry</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race-podcast/cornel-west-brother-martin-was-blues-man" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/west1.jpg?itok=nRuLKNiW);">
+											<a href="/race-podcast/cornel-west-brother-martin-was-blues-man" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race-podcast/cornel-west-brother-martin-was-blues-man">Brother Martin Was a Blues Man</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/cornel-west">Cornel West</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race-gender-sexuality/walter-johnson-guns-family" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/Johnson--Guns_feature.jpg?itok=FcLM9f6k);">
+											<a href="/race-gender-sexuality/walter-johnson-guns-family" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race-gender-sexuality/walter-johnson-guns-family">Guns in the Family</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/walter-johnson">Walter Johnson</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/brandon-m-terry-cost-canonizing-mlk" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/thepoliticalking.jpg?itok=pKpNK-Xb);">
+											<a href="/race/brandon-m-terry-cost-canonizing-mlk" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/brandon-m-terry-cost-canonizing-mlk">The Cost of Canonizing MLK</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/brandon-m-terry">Brandon M. Terry</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/robin-d-g-kelley-coates-and-west-jackson" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/CoatesWest1.png?itok=qBMV1Iqe);">
+											<a href="/race/robin-d-g-kelley-coates-and-west-jackson" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/robin-d-g-kelley-coates-and-west-jackson">Coates and West in Jackson</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/robin-d-g-kelley">Robin D. G. Kelley</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/ed-pavlic/baldwins-lonely-country" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/Pavlic%20on%20Baldwin_feature.jpg?itok=2PaJ6vYx);">
+											<a href="/race/ed-pavlic/baldwins-lonely-country" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/ed-pavlic/baldwins-lonely-country">Baldwin’s Lonely Country</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/ed-pavlic">Ed Pavlić</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/christopher-lebron-black-panther" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/LeBron%20Black%20Panther.jpg?itok=Mxp6wAT3);">
+											<a href="/race/christopher-lebron-black-panther" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/christopher-lebron-black-panther">‘Black Panther’ Is Not the Movie We Deserve</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/christopher-lebron">Christopher Lebron</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/race/aziz-rana-against-national-security-citizenship" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/RanaVietnam_feature.jpg?itok=f0awcmUP);">
+											<a href="/race/aziz-rana-against-national-security-citizenship" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/race/aziz-rana-against-national-security-citizenship">Against National Security Citizenship</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/aziz-rana">Aziz Rana</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>						
+    </div>
+  
+  
+  
+  
+  
+  
+</div><div class="view view-br-hhog-featured-slider-view view-id-br_hhog_featured_slider_view view-display-id-default view-dom-id-f6aa88bc690b889aa71f2f3915928826">
+        
+  
+  
+      <div class="view-content">
+      
+		<div class="featuredslider">
+		<div class="wrap">
+			<div class="sectiontitle">
+				<h2>
+					<a href="/class-inequality">More In Class &amp; Inequality</a>				</h2>
+			</div>
+			<div class="featuredslider-tiles">
+				<div class="featuredslider-carousel carousel" data-carousel-continuous-scroll="0" data-carousel-resize="callthisback">
+					<div class="carousel-slides-viewport">
+						<div class="carousel-slides">
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality-race/mehrsa-baradaran-bad-check-black-america" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/nixon2.jpg?itok=75U10n20);">
+											<a href="/class-inequality-race/mehrsa-baradaran-bad-check-black-america" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality-race/mehrsa-baradaran-bad-check-black-america">A Bad Check for Black America</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/mehrsa-baradaran">Mehrsa Baradaran</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/felicia-wong-half-century-anti-tax-orthodoxy-wrong" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/taxcuts1.jpg?itok=m6hpYMib);">
+											<a href="/class-inequality/felicia-wong-half-century-anti-tax-orthodoxy-wrong" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/felicia-wong-half-century-anti-tax-orthodoxy-wrong">Half a Century of Anti-tax Orthodoxy Is Wrong</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/felicia-wong">Felicia Wong</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/suzanne-berger-globalization-survived-populism" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/Berger_feature_0.jpg?itok=1SjSa316);">
+											<a href="/class-inequality/suzanne-berger-globalization-survived-populism" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/suzanne-berger-globalization-survived-populism">Globalization Survived Populism Once Before—and It Can Again</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/suzanne-berger">Suzanne Berger</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/samuel-moyn-mark-lilla-and-crisis-liberalism" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/lillafinal2.jpg?itok=58jdorJr);">
+											<a href="/class-inequality/samuel-moyn-mark-lilla-and-crisis-liberalism" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/samuel-moyn-mark-lilla-and-crisis-liberalism">Mark Lilla and the Crisis of Liberalism</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/samuel-moyn">Samuel Moyn</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/clara-hendrickson-gig-economys-great-delusion" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/IMG_7928.jpg?itok=4YDLnb2Y);">
+											<a href="/class-inequality/clara-hendrickson-gig-economys-great-delusion" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/clara-hendrickson-gig-economys-great-delusion">The Gig Economy&#039;s Great Delusion</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/clara-hendrickson">Clara Hendrickson</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/dani-rodrik-rescuing-economics-neoliberalism" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/Thatcher_Reagan_Camp_David_sofa_1984.jpg?itok=8lHKNp9I);">
+											<a href="/class-inequality/dani-rodrik-rescuing-economics-neoliberalism" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/dani-rodrik-rescuing-economics-neoliberalism">Rescuing Economics from Neoliberalism</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/dani-rodrik">Dani Rodrik</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/lenore-palladino-who-watching-wall-street" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/palladino2.jpg?itok=V7DF43mJ);">
+											<a href="/class-inequality/lenore-palladino-who-watching-wall-street" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/lenore-palladino-who-watching-wall-street">Who Is Watching Wall Street?</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/lenore-palladino">Lenore Palladino</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/class-inequality/k-sabeel-rahman-monopoly-men" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/bezosfinal1.jpg?itok=pcy9h6YV);">
+											<a href="/class-inequality/k-sabeel-rahman-monopoly-men" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/class-inequality/k-sabeel-rahman-monopoly-men">Monopoly Men</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/k-sabeel-rahman">K. Sabeel Rahman</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+															
+								<div class="carousel-slide featuredslider-tile tile">
+									<div class="tile-inner" data-same-height="2">
+										<a href="/reading-lists-class-inequality/boston-review-our-top-ten-reads-inequality-2017" class="tile-inner-linkcover"></a>
+										<div class="tile-img" style="background-image:url(https://bostonreview.net/sites/default/files/styles/br_hhog_tile/public/classlist2017.png?itok=b0gPcrgt);">
+											<a href="/reading-lists-class-inequality/boston-review-our-top-ten-reads-inequality-2017" class="tile-img-linkcover"></a>
+										</div>
+										<div class="tile-content"  data-same-height="3">
+																							<h3>
+													<a href="/reading-lists-class-inequality/boston-review-our-top-ten-reads-inequality-2017">Our Top Ten Reads on Inequality in 2017</a>
+												</h3>
+																																		<p class="tile-author">
+													<a href="/author/boston-review">Boston Review</a>												</p>
+																					</div>
+									</div>
+								</div>		
+														
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>						
+    </div>
+  
+  
+  
+  
+  
+  
+</div>		
+		
+
+		</div>
+		
+<div class="promobottom">
+	<div class="wrap">
+		<div class="promobottom-title">
+			<a href="/" class="promobottom-logo"><img src="/sites/all/themes/br_hhog/assets/release/images/BR_logo.svg" alt="Boston Review Logo"></a>
+			<p>Copyright &copy; 1993-2018 Boston Review and its authors.</p>
+		</div>
+		<div class="promobottom-support">
+			<p class="promobottom-support-title"><a href="/support/">Support Boston Review</a></p>
+			<a href="/membership/" onclick="ga('send', 'event', 'member', 'click', 'footer');" class="btn btn_big btn_yellowblack"><span>Become a Member</span></a>
+			<p class="promobottom-support-closer"><a href="/donate/">Make a tax-deductible donation today <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+		</div>
+	</div>
+</div>
+		
+<div class="footer">
+	<div class="wrap">
+		<div class="footer-primary">
+																						<div class="footer-primary-menu">	
+							<ul>
+																										<li><a href="/class-inequality">Class &amp; Inequality</a></li>
+																										<li><a href="/education-opportunity">Education &amp; Opportunity</a></li>
+																										<li><a href="/fiction">Fiction</a></li>
+																										<li><a href="/forum">Forum</a></li>
+																										<li><a href="/gender-sexuality">Gender &amp; Sexuality</a></li>
+																										<li><a href="/global-justice">Global Justice</a></li>
+															</ul>
+						</div>
+											<div class="footer-primary-menu">	
+							<ul>
+																										<li><a href="/law-justice">Law &amp; Justice</a></li>
+																										<li><a href="/literature-culture">Literature &amp; Culture</a></li>
+																										<li><a href="/philosophy-religion">Philosophy &amp; Religion</a></li>
+																										<li><a href="/podcast">Podcast</a></li>
+																										<li><a href="/poetry">Poetry</a></li>
+															</ul>
+						</div>
+											<div class="footer-primary-menu">	
+							<ul>
+																										<li><a href="/politics">Politics</a></li>
+																										<li><a href="/race">Race</a></li>
+																										<li><a href="/reading-lists">Reading Lists</a></li>
+																										<li><a href="/science-nature">Science &amp; Nature</a></li>
+																										<li><a href="/war-security">War &amp; Security</a></li>
+															</ul>
+						</div>
+														</div>
+		<div class="footer-secondary">
+			<div class="footer-secondary-links">		
+																					
+							<div class="footer-secondary-links-menu">
+								<ul class="links"><li class="menu-2317 first"><a href="/about" title="">About</a></li>
+<li class="menu-2307"><a href="http://bostonreview.net/store" title="">Store</a></li>
+<li class="menu-2312"><a href="http://bostonreview.net/membership" title="">Membership</a></li>
+<li class="menu-2313"><a href="/current-issue" title="">Print</a></li>
+<li class="menu-2316 last"><a href="https://bostonreview.net/podcast" title="">Podcast</a></li>
+</ul>					
+							</div>
+							
+							<div class="footer-secondary-links-menu">
+								<ul class="links"><li class="menu-2314 first"><a href="https://bostonreview.net/contests" title="">Contests</a></li>
+<li class="menu-2311"><a href="https://bostonreview.net/events" title="">Events</a></li>
+<li class="menu-2315"><a href="https://bostonreview.net/advertising" title="">Advertise</a></li>
+<li class="menu-2873 last"><a href="http://www.bostonreview.net/br-book" title="">BR Books</a></li>
+</ul>					
+							</div>
+																		
+								
+			</div>
+							<div class="footer-secondary-social">
+					<ul>
+													<li><a href="https://www.facebook.com/bostonreview/" target="_blank" rel="noopener noreferrer" title="Facebook"><span><i class="fa fa-facebook" aria-hidden="true"></i></span> Facebook</a></li>
+													<li><a href="https://twitter.com/BostonReview/" target="_blank" rel="noopener noreferrer" title="Twitter"><span><i class="fa fa-twitter" aria-hidden="true"></i></span> Twitter</a></li>
+											</ul>
+				</div>
+					</div>
+	</div>
+</div>		
+	</div>
+	<div class="menupane-mask" id="menupane-mask"></div>
+</div>
+
+
+<div class="menupane-pane" id="menupane-pane">
+	<div class="menupane-inner" id="menupane-inner">
+		<a href="#" class="menupane-close" id="menupane-close"><span><i class="fa fa-close" aria-hidden="true"></i></span></a>
+		<div class="menupane-title">
+			<a href="/" class="menupane-logo"><img src="/sites/all/themes/br_hhog/assets/release/images/BR_logo_black.svg" alt="Boston Review"></a>
+			<p>A Political and Literary Forum</p>
+		</div>
+		<div class="menupane-search" id="menupane-search">
+			<h5>Search</h5>
+			<form method="get" action="#" id="menupane-searchform">
+				<input type="text" name="menupane-searchform-keywords" id="menupane-searchform-keywords" placeholder="Looking for something?"><button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		<div class="menupane-menu nano" id="menupane-menu">
+			<div class="overthrow nano-content" id="nano-content">
+				<div class="menupane-menu-secondaries">
+					<ul class="links"><li class="menu-2306 first"><a href="/about" title="">About</a></li>
+<li class="menu-2310"><a href="http://bostonreview.net/store" title="">Store</a></li>
+<li class="menu-2309"><a href="http://bostonreview.net/membership" title="">Membership</a></li>
+<li class="menu-2308 last"><a href="/current-issue" title="">Print</a></li>
+</ul>				</div>
+				<div class="menupane-menu-cats">
+											<ul>
+																				<li><a href="/class-inequality">Class &amp; Inequality</a></li>
+																				<li><a href="/education-opportunity">Education &amp; Opportunity</a></li>
+																				<li><a href="/fiction">Fiction</a></li>
+																				<li><a href="/forum">Forum</a></li>
+																				<li><a href="/gender-sexuality">Gender &amp; Sexuality</a></li>
+																				<li><a href="/global-justice">Global Justice</a></li>
+																				<li><a href="/law-justice">Law &amp; Justice</a></li>
+																				<li><a href="/literature-culture">Literature &amp; Culture</a></li>
+																				<li><a href="/philosophy-religion">Philosophy &amp; Religion</a></li>
+																				<li><a href="/podcast">Podcast</a></li>
+																				<li><a href="/poetry">Poetry</a></li>
+																				<li><a href="/politics">Politics</a></li>
+																				<li><a href="/race">Race</a></li>
+																				<li><a href="/reading-lists">Reading Lists</a></li>
+																				<li><a href="/science-nature">Science &amp; Nature</a></li>
+																				<li><a href="/war-security">War &amp; Security</a></li>
+												</ul>
+									</div>
+				<div class="menupane-menu-promo">
+					<p><a href="/support/">Make a tax-deductible donation today</a></p>
+					<a href="/support/" class="btn btn_big btn_blueblack"><span>Donate Today!</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="printfooter">
+	<div class="printfooter-inner">
+		<p>
+		<img src="/sites/all/themes/br_hhog/assets/release/images/BR_logo_black.svg" alt="Boston Review">
+		<strong>Printing Note:</strong> For best printing results try turning on any options your web browser's print dialog makes available for printing backgrounds and background graphics.
+		</p>
+	</div>
+</div>
+
+
+<div class="shareiconsbar" id="shareiconsbar">
+	<div class="wrap">
+		<div class="shareiconsbar-icons">
+			<div class="addthis_inline_share_toolbox"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"aea7c9cffc2113645a66ab631","lid":"2cb428c5ad"}) })</script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://bostonreview.net/sites/default/files/js/js_vSmhpx_T-AShyt_WMW5_TcwwxJP1imoVOa8jvwL_mxE.js"></script>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57ed3f6a4a7f6894"></script>
+<script type="text/javascript" src="https://bostonreview.net/sites/default/files/js/js_tSlYD3UwGLhZpXTw6m6mJbPx3jyEZMDGzm5NvmbEg7c.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"br_hhog","theme_token":"3aIt_sXIBPCw7uL4Cr4PFWpbiVwiz-08ybqwn2DsHYE","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.2\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"https:\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-57ed3f6a4a7f6894":1,"sites\/all\/themes\/br_hhog\/assets\/release\/js\/vendor.js":1,"sites\/all\/themes\/br_hhog\/assets\/release\/js\/plugins.js":1,"sites\/all\/themes\/br_hhog\/assets\/release\/js\/main.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/themes\/br_hhog\/assets\/release\/css\/main.css":1}}});
+//--><!]]>
+</script>
+
+</body>
+</html>
