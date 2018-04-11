@@ -35,6 +35,7 @@ class MetadocHtmMetaTest(asynctest.TestCase):
             "bostonreview.net/thad-williamson-almost-inevitable-failure-justice",
             "washingtonpost.com/i-need-loyalty-james-comeys-riveting-prepared-testimony-about-what-trump-asked-him-annotated.html",
             "washingtonpost.com/trump-to-nominate-carson-to-lead-u-s-housing-urban-policy.html",
+            "bellingcat.com/six-months-medical-facilities-still-fire.html",
         ]
         objs = [get_html_meta("tests/fixtures/"+path) for path in paths]
 
@@ -74,12 +75,27 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[8].authors == "Alexander Fanta"
         assert objs[9].authors == None
         assert objs[10].authors == ["Tim Ross", "Ian Wishart"]
-        assert objs[11].authors == "Becky Barnicoat" #None # link stripped
+        assert objs[11].authors == "Becky Barnicoat"
         assert objs[12].authors == "Thad Williamson"
         assert objs[13].authors == ["Amber Phillips", "Peter W. Stevenson"]
         assert objs[14].authors == "Elise Viebeck"
+        assert objs[15].authors == None # link stripped
 
-        #for x, obj in enumerate(objs):
-        #    #print(x, obj.jsonld)
-        #    print(x, obj.authors)
+        # summary
+        assert objs[8].description.startswith("Wissenschafter und Aktivisten warnen seit") == True
+        assert objs[9].description == ""
+
+        # canonical url
+        assert objs[4].canonical_url == "https://www.wired.com/story/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science/"
+        assert objs[9].canonical_url == None
+
+        # images
+        assert objs[6].image == "http://media2.faz.net/ppmedia/1912312546/1.5445566/article_multimedia_overview/scoring-teaser.png"
+        assert objs[9].image== None
+
+        """for x, obj in enumerate(objs):
+            #print(x, obj.jsonld)
+            print(x, obj.canonical_url)
+            print(x, obj.image)"""
+
 

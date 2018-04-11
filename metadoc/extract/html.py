@@ -24,7 +24,7 @@ class HtmlMeta(object):
         self._metatag_xpath = lxml.etree.XPath("//meta")
         self._links_xpath = lxml.etree.XPath("//link")
 
-        self.links = None
+        self.links = {}
         self.jsonld = {}
         self.metatags = {}
 
@@ -33,6 +33,20 @@ class HtmlMeta(object):
         return self.jsonld.get("headline") \
             or self.metatags.get("og:title") \
                 or self.extract_title()
+
+    @property
+    def description(self):
+        return self.metatags.get("og:description") \
+            or self.metatags.get("description", "").strip()
+
+    @property
+    def canonical_url(self):
+        return self.links.get("canonical")
+
+    @property
+    def image(self):
+        return self.metatags.get("og:image") \
+            or self.jsonld.get("thumbnailUrl")
 
     @property
     def authors(self):
@@ -58,6 +72,48 @@ class HtmlMeta(object):
         if type(authors) == list and len(authors) == 1:
             authors = authors[0]
         return authors
+
+    @property
+    def published_date(self):
+        res = None
+        xpaths = [
+            "//meta[@name='date']/@content",
+            "//meta[@property='article:published_time']/@content",
+            "//meta[@property='article:published']/@content",
+            "//meta[@name='parsely-pub-date']/@content",
+            "//meta[@name='DC.date.issued']/@content",
+            "//time[@itemprop='datePublished']/@datetime",
+        ]
+        res = self._query_date(xpaths)
+        if res is None:
+            ld_date = self.jsonld.get("datePublished") or self.jsonld.get("dateCreated")
+            if ld_date:
+                res = self._format_date(ld_date)
+        return res
+
+    @property
+    def modified_date(self):
+        res = None
+        xpaths = [
+            "//meta[@property='article:modified_time']/@content",
+            "//meta[@property='article:modified']/@content",
+            "//meta[@name='last-modified']/@content",
+        ]
+        res = self._query_date(xpaths)
+        if res is None:
+            ld_date = self.jsonld.get("dateModified")
+            if ld_date:
+                res = self._format_date(ld_date)
+        return res
+
+    @property
+    def scraped_date(self):
+        return self._format_date(datetime.now())
+
+    def extract(self):
+        self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)
+        self.jsonld = self._extract_items(self._get_jsonld_item, self._jsonld_xpath)
+        self.links = self._extract_items(self._get_link_item, self._links_xpath)
 
     def _extract_items(self, get_item, xpath):
         items = [item for item in map(get_item, xpath(self.document)) if item]
@@ -98,46 +154,7 @@ class HtmlMeta(object):
             dates = self.document.xpath(xpath_rule)
             if len(dates) > 0:
                 try:
-                    return self._format_date(dates[0].get("content"))
+                    return self._format_date(str(dates[0]))#.get("content"))
                 except:
                     pass
         return None
-
-    def extract_pub_date(self):
-        res = None
-        xpaths = [
-            "//meta[@name='date']",
-            "//meta[@property='article:published_time']",
-            "//meta[@property='article:published']",
-            "//meta[@name='parsely-pub-date']",
-            "//meta[@name='DC.date.issued']",
-        ]
-        res = self._query_date(xpaths)
-        if res is None:
-            ld_date = self.jsonld.get("datePublished") or self.jsonld.get("dateCreated")
-            if ld_date:
-                res = self._format_date(ld_date)
-        return res
-
-    def extract_mod_date(self):
-        res = None
-        xpaths = [
-            "//meta[@property='article:modified_time']",
-            "//meta[@property='article:modified']",
-            "//meta[@name='last-modified']",
-        ]
-        res = self._query_date(xpaths)
-        if res is None:
-            ld_date = self.jsonld.get("dateModified")
-            if ld_date:
-                res = self._format_date(ld_date)
-        return res
-
-    def extract(self):
-        self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)
-        self.jsonld = self._extract_items(self._get_jsonld_item, self._jsonld_xpath)
-        self.links = self._extract_items(self._get_link_item, self._links_xpath)
-        self.published_date = self.extract_pub_date()
-        self.modified_date = self.extract_mod_date()
-        self.scraped_date = self._format_date(datetime.now())
-        return
