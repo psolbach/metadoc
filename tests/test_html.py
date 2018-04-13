@@ -69,16 +69,16 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[9].title == None
 
         # authors
-        assert objs[2].authors == "Kim Zetter"
-        assert objs[3].authors == "Randal C. Archibold"
-        assert objs[5].authors == "Loren Grush"
-        assert objs[8].authors == "Alexander Fanta"
+        assert objs[2].authors == ["Kim Zetter"]
+        assert objs[3].authors == ["Randal C. Archibold"]
+        assert objs[5].authors == ["Loren Grush"]
+        assert objs[8].authors == ["Alexander Fanta"]
         assert objs[9].authors == None
         assert objs[10].authors == ["Tim Ross", "Ian Wishart"]
-        assert objs[11].authors == "Becky Barnicoat"
-        assert objs[12].authors == "Thad Williamson"
+        assert objs[11].authors == ["Becky Barnicoat"]
+        assert objs[12].authors == ["Thad Williamson"]
         assert objs[13].authors == ["Amber Phillips", "Peter W. Stevenson"]
-        assert objs[14].authors == "Elise Viebeck"
+        assert objs[14].authors == ["Elise Viebeck"]
         assert objs[15].authors == None # link stripped
 
         # summary

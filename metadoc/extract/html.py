@@ -69,8 +69,12 @@ class HtmlMeta(object):
             if xauthors:
                 authors = xauthors
 
-        if type(authors) == list and len(authors) == 1:
-            authors = authors[0]
+        if authors:
+            # ensure list
+            if type(authors) != list:
+                authors = [authors]
+            # strip links
+            authors = [a for a in authors if a.startswith("http") == False]
         return authors
 
     @property
