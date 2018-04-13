@@ -49,26 +49,25 @@ class HtmlMeta(object):
         return self.metatags.get("og:image") \
             or self.jsonld.get("thumbnailUrl")
 
-    @property
-    def authors(self):
+    def _extract_ld_authors(self):
         # extract from jsonld
         ld_authors = self.jsonld.get("author", {})
+        # sanitize ld structure
+        if type(ld_authors) == str:
+            ld_authors = {"name": ld_authors}
         ld_authors = [a["name"] for a in ld_authors] if type(ld_authors) == list else ld_authors.get("name", False)
+        return ld_authors
+
+    @property
+    def authors(self):
         # get a value from trove
-        authors = ld_authors \
+        authors = self._extract_ld_authors() \
             or self.metatags.get("author") \
                 or self.metatags.get("article:author") \
                     or self.metatags.get("dcterms.creator") \
-                        or self.jsonld.get("authors") # intercept
-        # strip links
-        if type(authors) != list:
-            authors = authors if not str(authors).startswith("http") else None
-
-        if not authors:
-            # washingtonpost
-            xauthors = self.document.xpath("(//span[@itemprop='author'])[1]//span[@itemprop='name']/text()")
-            if xauthors:
-                authors = xauthors
+                        or self.metatags.get("article:authorName") \
+                            or self.metatags.get("citation_author") \
+                                or self.jsonld.get("authors") # intercept
 
         if authors:
             # ensure list
@@ -76,7 +75,14 @@ class HtmlMeta(object):
                 authors = [authors]
             # strip links
             authors = [a for a in authors if a.startswith("http") == False]
-        return authors
+
+        if not authors:
+            # washingtonpost
+            xauthors = self.document.xpath("(//span[@itemprop='author'])[1]//span[@itemprop='name']/text()")
+            if xauthors:
+                authors = xauthors
+
+        return authors if authors else []
 
     @property
     def published_date(self):

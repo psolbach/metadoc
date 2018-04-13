@@ -36,6 +36,10 @@ class MetadocHtmMetaTest(asynctest.TestCase):
             "washingtonpost.com/i-need-loyalty-james-comeys-riveting-prepared-testimony-about-what-trump-asked-him-annotated.html",
             "washingtonpost.com/trump-to-nominate-carson-to-lead-u-s-housing-urban-policy.html",
             "bellingcat.com/six-months-medical-facilities-still-fire.html",
+            "slate.com/how_facebook_s_news_feed_algorithm_works.html",
+            "mashable.com/australia-heat-records-bom.html",
+            "telegraph.co.uk/When-Stephen-Fry-met-Jony-Ive-the-self-confessed-fanboi-meets-Apples-newly-promoted-chief-design-officer.html",
+            "nautil.us/the-strange-persistence-of-first-languages.html",
         ]
         objs = [get_html_meta("tests/fixtures/"+path) for path in paths]
 
@@ -73,13 +77,17 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[3].authors == ["Randal C. Archibold"]
         assert objs[5].authors == ["Loren Grush"]
         assert objs[8].authors == ["Alexander Fanta"]
-        assert objs[9].authors == None
+        assert objs[9].authors == []
         assert objs[10].authors == ["Tim Ross", "Ian Wishart"]
         assert objs[11].authors == ["Becky Barnicoat"]
         assert objs[12].authors == ["Thad Williamson"]
         assert objs[13].authors == ["Amber Phillips", "Peter W. Stevenson"]
         assert objs[14].authors == ["Elise Viebeck"]
-        assert objs[15].authors == None # link stripped
+        assert objs[15].authors == [] # link stripped
+        assert objs[16].authors == ["Will Oremus"]
+        assert objs[17].authors == ["Johnny Lieu"]
+        assert objs[18].authors == ["Stephen Fry"]
+        assert objs[19].authors == ["Julie Sedivy"]
 
         # summary
         assert objs[8].description.startswith("Wissenschafter und Aktivisten warnen seit") == True
