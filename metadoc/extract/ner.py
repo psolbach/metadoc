@@ -3,15 +3,16 @@
 
 import imp
 import sys
+import os
 
-# overwrite sqlite with dummy modules, for AWS Lambda
-sys.modules["sqlite"] = imp.new_module("sqlite")
-sys.modules["sqlite3.dbapi2"] = imp.new_module("sqlite.dbapi2")
+if os.environ.get("LAMBDA_TASK_ROOT", False):
+    # overwrite sqlite with dummy modules, for AWS Lambda
+    sys.modules["sqlite"] = imp.new_module("sqlite")
+    sys.modules["sqlite3.dbapi2"] = imp.new_module("sqlite.dbapi2")
 import nltk
 
 import difflib
 import operator
-import os
 import numpy
 import string
 import re
