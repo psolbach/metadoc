@@ -35,18 +35,22 @@ class ActivityCount(object):
                 return await response.read()
 
     async def collect_sharecount(self, url, provider):
-        response = await self.get_json(url)
-        j = json.loads(response)
+        try:
+            response = await self.get_json(url)
+            j = json.loads(response)
 
-        data = {
-            "provider": provider["provider"],
-            "metrics": []
-        }
+            data = {
+                "provider": provider["provider"],
+                "metrics": []
+            }
 
-        for m in provider["metrics"]:
-            data["metrics"].append({
-            "count": jmespath.search(m["path"], j),
-            "label": m["label"]
-            })
+            for m in provider["metrics"]:
+                data["metrics"].append({
+                "count": jmespath.search(m["path"], j),
+                "label": m["label"]
+                })
+            self.responses.append(data)
+        except Exception as exc:
+            logging.error("Collecting sharecount failed!")
+            logging.exception(exc)
 
-        self.responses.append(data)
