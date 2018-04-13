@@ -40,6 +40,7 @@ class MetadocHtmMetaTest(asynctest.TestCase):
             "mashable.com/australia-heat-records-bom.html",
             "telegraph.co.uk/When-Stephen-Fry-met-Jony-Ive-the-self-confessed-fanboi-meets-Apples-newly-promoted-chief-design-officer.html",
             "nautil.us/the-strange-persistence-of-first-languages.html",
+            "businessinsider.com/dropbox-vp-todd-jackson-leaves-for-first-round-capital-2018-4.html",
         ]
         objs = [get_html_meta("tests/fixtures/"+path) for path in paths]
 
@@ -88,6 +89,7 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[17].authors == ["Johnny Lieu"]
         assert objs[18].authors == ["Stephen Fry"]
         assert objs[19].authors == ["Julie Sedivy"]
+        assert objs[20].authors == ["Becky Peterson, Business Insider"]
 
         # summary
         assert objs[8].description.startswith("Wissenschafter und Aktivisten warnen seit") == True
