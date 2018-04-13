@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import json
+import logging
 import lxml.etree, lxml.html
 from datetime import datetime
 from dateutil.parser import parse
@@ -138,10 +139,20 @@ class HtmlMeta(object):
           if (name and content) else None
 
     def _get_jsonld_item(self, node):
-        ld = json.loads(node.text.strip())
-        if type(ld) is list:
-            for item in[i for i in ld if i.get("@type") == "NewsArticle"]:
-                return item
+        ld = None
+        try:
+            ld_text = node.text.strip()
+            # sanitize if neccessary
+            if ld_text.find("<![CDATA[") > -1:
+                ld_text = ld_text[ld_text.find("{"):ld_text.rfind("}")+1]
+
+            ld = json.loads(ld_text)
+            if type(ld) is list:
+                for item in[i for i in ld if i.get("@type") == "NewsArticle"]:
+                    return item
+        except Exception as exc:
+            logging.error("JSON-LD parsing failed")
+            logging.exception(exc)
         return ld if ld else {}
 
     def extract_title(self):
