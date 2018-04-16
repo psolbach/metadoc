@@ -20,17 +20,29 @@ class MetadocHtmMetaTest(asynctest.TestCase):
     @asynctest.ignore_loop
     def test_extract(self):
         paths = [
-            "tests/fixtures/guardian.com/florida-shooting-suspect-charged-questions-nikolas-cruz.html",
-            "tests/fixtures/zeit.de/pressefreiheit-tuerkei-inhaftierte-journalisten-deniz-yuecel-freedeniz.html",
-            "tests/fixtures/theintercept.com/iphones-secretly-send-call-history-to-apple-security-firm-says.html",
-            "tests/fixtures/nytimes/skeleton-ghana-jamaica.html",
-            "tests/fixtures/wired.com/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science.html",
-            "tests/fixtures/theverge.com/spacex-falcon-9-launch-starlink-microsat-2a-2b-paz-watch-live.html",
-            "tests/fixtures/faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html",
-            "tests/fixtures/time.com/jared-kushner-security-clearance-trump-kelly.html",
-            "tests/fixtures/invalid/invalid.html"
+            "guardian.com/florida-shooting-suspect-charged-questions-nikolas-cruz.html",
+            "zeit.de/pressefreiheit-tuerkei-inhaftierte-journalisten-deniz-yuecel-freedeniz.html",
+            "theintercept.com/iphones-secretly-send-call-history-to-apple-security-firm-says.html",
+            "nytimes/skeleton-ghana-jamaica.html",
+            "wired.com/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science.html",
+            "theverge.com/spacex-falcon-9-launch-starlink-microsat-2a-2b-paz-watch-live.html",
+            "faz.net/dass-wir-ueberwacht-werden-ist-klar-aber-von-wem-und-wie-eine-spurensuche-15445555.html",
+            "time.com/jared-kushner-security-clearance-trump-kelly.html",
+            "netzpolitik.org/index.html",
+            "invalid/invalid.html",
+            "bloomberg.com/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable",
+            "buzzfeed.com/so-viel-dreck",
+            "bostonreview.net/thad-williamson-almost-inevitable-failure-justice",
+            "washingtonpost.com/i-need-loyalty-james-comeys-riveting-prepared-testimony-about-what-trump-asked-him-annotated.html",
+            "washingtonpost.com/trump-to-nominate-carson-to-lead-u-s-housing-urban-policy.html",
+            "bellingcat.com/six-months-medical-facilities-still-fire.html",
+            "slate.com/how_facebook_s_news_feed_algorithm_works.html",
+            "mashable.com/australia-heat-records-bom.html",
+            "telegraph.co.uk/When-Stephen-Fry-met-Jony-Ive-the-self-confessed-fanboi-meets-Apples-newly-promoted-chief-design-officer.html",
+            "nautil.us/the-strange-persistence-of-first-languages.html",
+            "businessinsider.com/dropbox-vp-todd-jackson-leaves-for-first-round-capital-2018-4.html",
         ]
-        objs = [get_html_meta(path) for path in paths]
+        objs = [get_html_meta("tests/fixtures/"+path) for path in paths]
 
         # published_data
         assert objs[0].published_date == "2018-02-16T00:01:52+00:00"
@@ -41,7 +53,8 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[5].published_date == "2018-02-15T18:54:21+00:00"
         assert objs[6].published_date == "2018-02-15T08:22:05+00:00"
         assert objs[7].published_date == "2018-02-28T03:11:27+00:00"
-        assert objs[8].published_date == None
+        assert objs[8].published_date == "2018-02-16T13:46:24+00:00"
+        assert objs[9].published_date == None
 
         # modified_date
         assert objs[0].modified_date == "2018-02-16T09:51:54+00:00"
@@ -52,4 +65,47 @@ class MetadocHtmMetaTest(asynctest.TestCase):
         assert objs[5].modified_date == "2018-02-15T18:54:21+00:00"
         assert objs[6].modified_date == "2018-02-15T09:29:16+00:00"
         assert objs[7].modified_date == "2018-02-28T15:45:06+00:00"
-        assert objs[8].modified_date == None
+        assert objs[8].modified_date == "2018-02-16T17:16:57+00:00"
+        assert objs[9].modified_date == None
+
+        # title
+        assert objs[4].title == "Inside the Mind of Amanda Feilding, Countess of Psychedelic Science"
+        assert objs[8].title == "Bundeswehr bereitet sich auf den Kampf gegen Killer-Roboter vor"
+        assert objs[9].title == None
+
+        # authors
+        assert objs[2].authors == ["Kim Zetter"]
+        assert objs[3].authors == ["Randal C. Archibold"]
+        assert objs[5].authors == ["Loren Grush"]
+        assert objs[8].authors == ["Alexander Fanta"]
+        assert objs[9].authors == []
+        assert objs[10].authors == ["Tim Ross", "Ian Wishart"]
+        assert objs[11].authors == ["Becky Barnicoat"]
+        assert objs[12].authors == ["Thad Williamson"]
+        assert objs[13].authors == ["Amber Phillips", "Peter W. Stevenson"]
+        assert objs[14].authors == ["Elise Viebeck"]
+        assert objs[15].authors == [] # link stripped
+        assert objs[16].authors == ["Will Oremus"]
+        assert objs[17].authors == ["Johnny Lieu"]
+        assert objs[18].authors == ["Stephen Fry"]
+        assert objs[19].authors == ["Julie Sedivy"]
+        assert objs[20].authors == ["Becky Peterson, Business Insider"]
+
+        # summary
+        assert objs[8].description.startswith("Wissenschafter und Aktivisten warnen seit") == True
+        assert objs[9].description == ""
+
+        # canonical url
+        assert objs[4].canonical_url == "https://www.wired.com/story/inside-the-mind-of-amanda-feilding-countess-of-psychedelic-science/"
+        assert objs[9].canonical_url == None
+
+        # images
+        assert objs[6].image == "http://media2.faz.net/ppmedia/1912312546/1.5445566/article_multimedia_overview/scoring-teaser.png"
+        assert objs[9].image== None
+
+        """for x, obj in enumerate(objs):
+            #print(x, obj.jsonld)
+            print(x, obj.canonical_url)
+            print(x, obj.image)"""
+
+

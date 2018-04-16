@@ -1,0 +1,2531 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 modePublish"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 modePublish"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 modePublish"> <![endif]-->
+<!--[if IE 9]> <html class="no-js modePublish"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js gt-ie9 modePublish"><!--<![endif]-->
+  
+
+
+
+
+
+  <head>
+    <meta charset="utf-8">
+
+    
+
+    
+    
+    <!-- Begin comScore Tag -->
+    <script>
+      document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+    </script>
+    <script>
+    if (typeof COMSCORE !== 'undefined') {
+      COMSCORE.beacon({
+        c1:"2", c2: "18406752", c4: "http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html"
+      });
+    } else {
+      (function (w, d) {
+        d.addEventListener('DOMContentLoaded', function(event) {
+          var img = d.createElement('img');
+          img.src = 'http://b.scorecardresearch.com/p?c1=2&c2=18406752&c3=&c4=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html&c5=&c6=&c15=&cj=1';
+          d.body.appendChild(img);
+        });
+      } (window, document));
+    }
+    </script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=18406752&c3=&c4=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html&c5=&c6=&c15=&cj=1" />
+    </noscript>
+    <!-- End comScore Tag -->
+    
+    
+
+
+    
+    
+    <!--  Quantcast Tag -->
+        <script>
+         var ezt = ezt ||[];
+
+         (function(){
+           var elem = document.createElement('script');
+           elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-fw53_-Tq3MNK1";
+           elem.async = true;
+           elem.type = "text/javascript";
+           var scpt = document.getElementsByTagName('script')[0];
+           scpt.parentNode.insertBefore(elem,scpt);
+         }());
+
+
+         ezt.push({qacct: 'p-fw53_-Tq3MNK1',
+               uid: ''
+                   });
+        </script>
+        <noscript>
+          <img src="//pixel.quantserve.com/pixel/p-fw53_-Tq3MNK1.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+        </noscript>
+    <!-- End Quantcast Tag -->
+    
+    
+
+    <script>
+      //Reload to canonical if you try to paste in the print page
+      if (window.location.search.indexOf("print") > -1) {
+        if (document.referrer.indexOf("http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html") != 0) {
+          window.location = "http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html";
+        }
+      }
+      //-- Stop hiding script -->
+    </script>
+    <script type="text/javascript">
+      var slate_public_url = "http://www.slate.com/";
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How Facebook&rsquo;s news feed algorithm works.</title>
+
+     
+
+    <meta name="description" content="Every time you open Facebook, one of the world&rsquo;s most influential, controversial, and misunderstood algorithms springs into action. It scans and collec ..." />
+    <meta name="keywords" content="technology" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+    
+
+    
+    
+    
+    <script>
+      
+      var commercialNode = 'news/cover_story';
+      
+      var commercialPageType = 'article';
+      var selectedText = "";
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '166975463695820');
+      fbq('track', 'ViewContent', {
+        commercial_node: window.commercialNode,
+        referrer: document.referrer
+      });
+    </script>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Facebook OG -->
+    <meta id="ogtitle" property="og:title" content="Who Really Controls What You See in Your Facebook Feed&mdash;and Why They Keep Changing It &nbsp;&nbsp;" />
+    
+
+    <meta property="article:publisher" content="http://www.facebook.com/Slate" />
+    <meta name="apple-itunes-app" content="app-id=357555242, affiliate-data=ct=Smart%20Banner&pt=31813800, app-argument=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html">
+
+    
+    <meta property="article:author" content="https://www.facebook.com/will.oremus" />
+    
+
+    <meta property="og:type" content="article" />
+    <meta id="ogurl" property="og:url" content="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html" />
+    <meta id="ogimage" property="og:image" content="http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.promo-large.jpg" />
+    <meta property="og:site_name" content="Slate Magazine" />
+    <meta id="ogdescription" property="og:description" content="Every time you open Facebook, one of the world&rsquo;s most influential, controversial, and misunderstood algorithms springs into action. It scans and collec ..." />
+    <meta property="fb:app_id" content="142011022527753"/>
+    <meta property="fb:pages" content="21516776437,711394545628094,56053044701,120640827984,413841452120931,535016903252160,1560656284178338,167180693332391,189846847729626,166438367103268,120285331895306,67474598472,449418205094008,209239152886928,614061598677636">
+    <!-- Twitter -->
+    <meta name="twitter:card" value="summary_large_image" />
+    <meta name="twitter:site" value="@slate" />
+    
+    <meta name="twitter:creator" value="@WillOremus" />
+    
+    <meta name="twitter:url" value="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html" />
+    <meta name="twitter:title" value="Who Really Controls What You See in Your Facebook Feed&mdash;and Why They Keep Changing It &amp;nbsp;&amp;nbsp;" />
+    <meta name="twitter:description" value="Every time you open Facebook, one of the world&rsquo;s most influential, controversial, and misunderstood algorithms springs into action. It scans and collec ..." />
+    <meta name="twitter:image" value="http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.promo-large.jpg" />
+    
+    <meta name="tw-line" content="Who controls your Facebook feed&mdash;and why they keep changing it. @WillOremus reports:" />
+
+      
+    <meta name="fb-share" content="Why are you seeing this FB post, instead of another? This article explains." />
+
+    
+
+    <link type="text/css" href="http://static.cdnslate.com/etc/designs/slate/css/story.07e867d1.17b8a172.css" rel="stylesheet" />
+    
+    
+    
+    <style type="text/css">.social a .count { display: none !important; }</style>
+    
+    <script id="slate-webfont-base-localstorage-js">!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_base_css_cache&&localStorage.font_base_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_base_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_base_css_cache=n.responseText,localStorage.font_base_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_base_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://static.cdnslate.com/etc/designs/slate/css/slate-fonts-base.bcb407b3.bcb407b3.css";window.localStorage&&localStorage.font_base_css_cache||document.cookie.indexOf("font_base_css_cache")>-1?n():e(document,"DOMContentLoaded",n)}();
+      // Load Apres Light for Mobile
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+        !function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_mobile_css_cache&&localStorage.font_mobile_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_mobile_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_mobile_css_cache=n.responseText,localStorage.font_mobile_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_mobile_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://static.cdnslate.com/etc/designs/slate/css/slate-fonts-mobile.015046cd.015046cd.css";window.localStorage&&localStorage.font_mobile_css_cache||document.cookie.indexOf("font_mobile_css_cache")>-1?n():e(document,"DOMContentLoaded",n)}();
+      }
+    </script>
+    <noscript id="slate-font-base"><link rel="stylesheet" id="slate-font-base-css" href="http://static.cdnslate.com/etc/designs/slate/css/slate-fonts-base.bcb407b3.bcb407b3.css" type="text/css" media="all"><link rel="stylesheet" id="slate-font-mobile-css" href="http://static.cdnslate.com/etc/designs/slate/css/slate-fonts-mobile.015046cd.015046cd.css" type="text/css" media="max-width: 1023px"></noscript>
+    
+    
+    
+    <script src="http://static.cdnslate.com/etc/designs/slate/js/optimizely-functions.f9396468.js"></script>
+      
+        <script src="https://cdn.optimizely.com/js/37441550.js"></script>
+      
+    
+    <script data-ad-site="slate" src="http://static.cdnslate.com/etc/designs/slate/js/libs/require.js"></script>
+    <script>
+    requirejs.createNode = function (config, moduleName) {
+      var node = config.xhtml ?
+                 document.createElementNS('http://www.w3.org/1999/xhtml', 'html:script') :
+                 document.createElement('script');
+
+      node.type = config.scriptType || 'text/javascript';
+      node.charset = 'utf-8';
+      node.async = true;
+
+      if (moduleName == "slateAds") {
+        node.setAttribute('data-ad-site', 'slate');
+        node.setAttribute('data-ad-page-type', 'responsive');
+      }
+      return node;
+    };
+    requirejs.config({
+      "baseUrl": "http://static.cdnslate.com/etc/designs/slate/js",
+      "waitSeconds": 0,
+      "paths": {
+        "jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min",
+        "jqueryui": "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min",
+        "modernizr": "/etc/designs/slate/js/libs/modernizr-2.6.1.min",
+        "announcements": "/etc/designs/slate/js/announcements",
+        "slate": "/etc/designs/slate/lib",
+        "hogan": "libs/hogan-2.0.0",
+        "facebook": "//connect.facebook.net/en_US/all",
+        "twitter": "//platform.twitter.com/widgets",
+        "livefyre": "//cdn.livefyre.com/Livefyre",
+        "newbrightcoveplayer": "components/brightcovevideosingle/newbrightcoveplayer",
+        "brightcove": "https://sadmin.brightcove.com/js/BrightcoveExperiences",
+        "brightcovetracking": "/etc/designs/slate/js/components/brightcovevideosingle/brightcovetracking",
+        "videojs-omniture": "/etc/designs/slate/js/components/brightcovevideosingle/videojs.analytic.omniture",
+        "mobileredirection": "libs/redirection_mobile_1.0.0.min",
+        
+          
+          
+            "outbrain": [
+              "//widgets.outbrain.com/outbrain",
+              "nooooo"
+            ],
+          
+        
+        "shared": "http://static.cdnslate.com/etc/designs/shared/js",
+        "instafeed": "/etc/designs/slate/js/instafeed",
+        "campaigns": "http://campaigns.slate.com/campaigns/slate",
+        "clipboard": "libs/zeroclipboard/ZeroClipboard.min",
+        "waypoints": "libs/jquery-plugins/jquery.waypoints",
+        //janrain
+        "rpxnow": window.location.protocol === 'https:' ? 'https://rpxnow.com/load/login.slate.com?noext' : 'http://widget-cdn.rpxnow.com/load/login.slate.com?noext',
+        'promise': 'requirejs-promise',
+        'youtube': "/etc/designs/slate/js/youtube",
+        'youtubeapi' : "https://www.youtube.com/iframe_api?noext",
+        "keywee": "https://dc8xl0ndzn2cb.cloudfront.net/js/slate/v0/keywee.min",
+        "amplitude": "//d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.0-min.gz",
+        "slateAds": [
+          "http://ads.cdnslate.com/wp-srv/ad/loaders/latest/js/min/loader.min.js?noext",
+          "showme"
+        ]
+      },
+      "shim": {
+        "devicemode": ["modernizr"],
+        "hcs/script": ["jquery", "modernizr", "devicemode"],
+        "libs/jquery-plugins/jquery.browser": ["jquery"],
+        "hcs/plugins/jquery.transit": ["jquery"],
+        "hcs/plugins/SGFootnote.jquery": ["jquery"],
+        "hcs/plugins/SGSocialIcons.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGNavDropdown.jquery": ["jquery"],
+        "hcs/plugins/SGRollup.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGGlobalNav.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGLightbox.jquery": ["jquery"],
+        "hcs/plugins/jQuery.highlighter": ["jquery"],
+        "hcs/libs/swipe": ["jquery"],
+        "hcs/libs/magnific": ["jquery"],
+        "hcs/plugins/jquery.swipebox": ["jquery"],
+        "hcs/plugins/SGBigSlider.jquery": ["jquery", "hcs/script", "hcs/libs/swipe"],
+        "hcs/plugins/jquery.placeholder.min": ["jquery"],
+        "libs/jquery-plugins/jquery.timeago": ["jquery"],
+        "libs/jquery-plugins/jquery.form": ["jquery"],
+        "libs/jquery-plugins/jquery.cookie": ["jquery"],
+        "libs/jquery-plugins/jquery.fittext": ["jquery"],
+        "libs/jquery-plugins/jquery.backgroundSize": ["jquery"],
+        "libs/jquery-plugins/jquery.flexslider": ["jquery"],
+        "libs/jquery-plugins/purl": ["jquery"],
+        "libs/jquery-plugins/jquery.colorbox": [ "jquery" ],
+        "libs/jquery-plugins/jquery.sticky": ["jquery"],
+        "libs/jquery-plugins/jquery.autoComplete": ["jquery"],
+        "libs/jquery-plugins/jquery.boxfit": ["jquery"],
+        "libs/jquery-plugins/jquery.dateformat": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt.extra": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt.bg": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt.widget": ["jquery"],
+        "libs/jquery-plugins/jquery.storageapi": ["jquery"],
+        "libs/jquery-plugins/jquery.ba-throttle-debounce": ["jquery"],
+        "libs/jquery-plugins/jquery.visible": ["jquery"],
+        "libs/jquery-plugins/jquery.event.move": ["jquery"],
+        "libs/jquery-plugins/jquery.twentytwenty": ["jquery"],
+        "facebook": {
+            deps: ["site-bottom"],
+            exports: "FB"
+        },
+        "livefyre": {
+            exports: "fyre"
+        },
+        "brightcove": {
+            "exports": "brightcove"
+        },
+        "mobileredirection": {
+                "exports": "mobileredirection"
+        },
+        "hogan": {
+          	"exports": "Hogan"
+        },
+        "outbrain": {
+          "exports": "OBR"
+        }
+      },
+      map: {
+        '*': {
+          'css': 'libs/require-css/css'
+        }
+      }
+    });
+
+    
+    define("config", {
+      "env": {
+        "edit": false,
+        "environment": "prod"
+      },
+      "janrain": {
+        "siteConfig": {
+          "enabled": true,
+          "propertyId": "login.slate.com",
+          "raceConditionTimeout": +"1500".replace(/\D/gi, ''),
+          "jsNamespace": "slateJanrain",
+          "userMessage": ""
+        },
+        "appUrl": "https://login.slate.com",
+        "tokenUrl": "http://www.slate.com",
+        "capture": {
+          "appId": "dbuhzej2qm7k436x6jg4qpef3f",
+          "captureServer": "https://profile.slate.com",
+          "clientId": "sskdd3tv7ekxx8mt6gq5hnu7mdxpmpha",
+          "accessTokenLifeHours": +"730".replace(/\D/gi, ''),
+          "returnExperienceUserData": "uuid,displayName,email".split(",").map(function(item) { return item.trim(); }),
+          "flowVersion": "HEAD",
+          "httpLoadUrl": 'http://widget-cdn.rpxnow.com/load/login.slate.com',
+          "httpsLoadUrl": 'https://rpxnow.com/load/login.slate.com'
+        },
+        "federate": {
+          "federate": true,
+          "federateServer": "https://slate.janrainsso.com/",
+          "federateXdReceiver": "http://www.slate.com/modules/xd_receiver.html",
+          "federateLogoutUri": "http://www.slate.com/modules/sso_logout.html"
+        }
+      },
+      "myslate": {
+        "site_base_domain": "slate.com",
+        "site_path": "/",
+        "site_url": "//www.slate.com/",
+        "myslate_domain": "//my.slate.com/",
+        "myslateTokenPath": "proxies/livefyre/token/",
+        "myslateJanrainTokenPath": "proxies/janrain/token/",
+        "myslateVerifyPath": "proxies/janrain/verify/",
+        "myslateSubscriptionsManagePath": "subscriptions/manage/",
+        "myslatePageInfoPath": "users/slate_page_info/",
+        "myslatePopularAuthorsPath": "articles/popular_authors/",
+        "myslateEventsPath": "subscriptions/events/",
+        "myslateRecommendationsPath": "recommendations/get_combined_json/",
+        "myslateIscrollRecommendationsPath": "contentapi/recommendations/v2/",
+        "myslateSegmentsPath": "store/segments/",
+        "myslateUserUpdatePath": "users/update/",
+        "myslatePartnersPath": "recommendations/partner_links/",
+        "myslate_https": true,
+        "fb_xd_receiver": "http://www.slate.com/xd_receiver.htm",
+        "fb_app_id": 142011022527753,
+      },
+      "iscroll": {
+        "hideStoryEvents": "",
+        "showThirdParties": true,
+        "hideScripts": "",
+        "disabled": false,
+        "mobile": true,
+        "bannerHTML": ""
+      },
+      "livefyre": {
+        "network": "slate.fyre.co",
+        "jsSourceUrl": "http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js",
+        "siteId": "337720",
+        "loadTiming": "immediate"
+      },
+      "campaigns": {
+        "domain":"campaigns.slate.com",
+        "loadTiming": "immediate"
+      },
+      "site": {
+        "site": "slate",
+        "title": "Slate",
+        "staticUrl": "http://static.cdnslate.com",
+        "omniturePrefix": "sl"
+      },
+      "data_domain": "http://www.slate.com/",
+      "page": {
+        "articleId": "100160103003",
+        "roadblocked": false,
+        "embeddedContent": false,
+        "slateplus": false,
+        "enableIssueCollector": false,
+        "contentCreated": "2016-01-03T20:02:00"
+      },
+      "ads": {
+        "showme": false,
+        "enableHomepageViewability": false,
+        "enableStoryViewability": true,
+        "viewabilityEnabled": true,
+        "viewability": {
+          "leaderboardRollup": true,
+          "leaderboardRollupDisabledList": "",
+          "refreshInterval": "30",
+          "refreshPolar": false,
+          "testPageList": "news,life,arts,sports,technology,blogs,business,science,doublex,podvideo,podcasts,biztech,authors,archive,news,briefing,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts",
+          "lazyload": {
+            "homepageBB": true,
+            "leaderboard_2": true,
+            "tiffTiles": true,
+            "rightflex": true,
+            "billboard": false
+          }
+        },
+        "enablePageFair": false
+      },
+      
+      "banner": {
+        "showBanner": true,
+        "storyCount": 1,
+        "restDays": 30,
+        "showSlatePlus": false,
+        "messages": ['Support Dahlia Lithwick’s Supreme Court coverage. <a href="https://my.slate.com/plus?utm_medium=link&amp;utm_campaign=plus_support&amp;utm_content=Dahlia&amp;utm_source=ribbon">Join Slate Plus today.</a>', '<em><strong>Slate</strong></em> is made possible by the support of readers like you. <a href="https://my.slate.com/plus?utm_medium=link&amp;utm_campaign=plus_support&amp;utm_content=possible&amp;utm_source=ribbon">Click here to do your part.</a>', 'Overwhelmed and exhausted? <a href="https://my.slate.com/plus?utm_medium=link&amp;utm_campaign=plus_support&amp;utm_content=overwhelmed&amp;utm_source=ribbon">Join Slate Plus as we try to make sense of each day’s insanity.</a>', '<a href="https://my.slate.com/plus?utm_medium=link&amp;utm_campaign=plus_support&amp;utm_content=tireless&amp;utm_source=ribbon">Support our tireless, fearless, yet somehow fun-to-read coverage of Trump’s America.</a>', 'We’ve been holding Trump to account all year. Help us keep going. <a href="https://my.slate.com/plus?utm_medium=link&amp;utm_campaign=plus_support&amp;utm_content=account&amp;utm_source=ribbon">Become a member.</a>']
+      },
+      
+      "_log": [],
+      "log": function(data) {
+        requirejs(["config"], function(config) {
+          if (typeof console != "undefined" && typeof console.log != "undefined") {
+            console.log(data);
+          }
+          config._log.push(data);
+        });
+      }
+    });
+    </script>
+    <script src="http://static.cdnslate.com/etc/designs/slate/js/main.min.137bcc43.js"></script>
+
+    
+    
+
+    <script>
+    
+    requirejs(['config'], function(config) {
+      var documentDomain = 'slate.com';
+      if (config.janrain.siteConfig.enabled) {
+        documentDomain = config.myslate.site_base_domain;
+      }
+      document.domain = documentDomain;
+    });
+    
+    </script>
+    
+    
+
+
+<script type="text/javascript" language="javascript">
+requirejs([
+  'jquery',
+  'config',
+  's_code',
+  'libs/jquery-plugins/jquery.cookie'
+], function($, config, s, unused) {
+
+        s.currencyCode="usd";
+        s.charSet="utf-8";
+        s.trackDownloadLinks=true;
+        s.trackExternalLinks=true;
+        s.trackInlineStats=true;
+        s.linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls";
+        s.linkInternalFilters="javascript:,slate.com,traffic.outbrain.com";
+        s.linkTrackVars="none";
+        s.linkTrackEvents="none";
+        s.pageName="technology:article - 20160103 - how facebook’s news feed algorithm works.";
+        s.channel="sl - technology";
+        s.server="www.slate.com";
+        s.prop2="cover story";
+        s.prop3="article";
+        s.prop4="slate";
+        s.prop5="will oremus";
+        s.prop12="100160103003";
+        s.prop13="how facebook’s news feed algorithm works.";
+        s.prop14="1";
+        s.prop34="4.17.11";
+        s.prop36="general";
+        s.prop39="news/cover_story";
+        s.prop40="technology, cover story, facebook, social media, social networks, algorithms";
+        s.hier1="technology|cover story|article";
+        s.eVar8="will oremus";
+        s.eVar17="article";
+    s.prop75 = "1";
+    s.eVar4 = "1";
+    s.prop32 = $.cookie('spf') || 'false';
+    /**
+     * Check for AdBlock
+     */
+    if (typeof placeAd2 === 'undefined') {
+      $.cookie('spf', true, {
+        expires: 365,
+        path: '/',
+        domain: config.myslate.site_base_domain
+      });
+    }
+});
+</script>
+
+
+    
+    
+        <script>
+            requirejs(["sgads"], function(slateads) {
+                slateads.wire("http://ads.cdnslate.com/wp-srv/ad/loaders/latest/js/min/loader.min.js");
+            });
+        </script>
+    
+
+    <script>               
+      var _isNavMoving = false; // acts as a global (sorry) mutex for keeping track of when our nav panels are moving around. Allows us to prevent overlapping actions.
+    </script>
+
+    <!-- Google Sitemap -->
+    <meta name="google-site-verification" content="jXqoqqPSmx_PWchRdG-IXu-X616Ee2Ptf_AiElI9LzQ" />
+
+    
+
+    <link rel="canonical" href="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html" />
+    
+      <link rel="standout" href="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html" />
+    
+    <link rel="image_src" href="http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.thumbnail-small.jpg" />
+
+    <!-- Parsely -->
+        <meta name='parsely-page' content='{
+  "title": "Who Really Controls What You See in Your Facebook Feed\u2014and Why They Keep Changing It   ",
+  "link": "http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html",
+  "image_url": "http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.thumbnail-small.jpg",
+  "type": "post",
+  "post_id": "100160103003",
+  "pub_date": "2016-01-03T20:02:00Z",
+  "section": "Cover Story",
+  "authors": ["Will Oremus"],
+  "tags": [
+    "technology",
+    "cover story",
+    "facebook",
+    "social media",
+    "social networks",
+    "algorithms",
+    "AdNode:news/cover_story",
+    "Section:Technology"
+  ]
+}'/>
+    
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Technology (RSS 2.0)" href="http://www.slate.com/articles/technology.fulltext.all.rss" />
+
+    
+    <script>var wp_meta_data = {"authors":["Will Oremus"],"contentType":"article","page_id":"100160103003","keywords":"Cover Story,technology,cover story,facebook,social media,social networks,algorithms,Technology,technology","section":"Technology","rubric":"Cover Story"};</script>
+
+    
+
+    
+
+      
+    
+      <script type="text/javascript">
+        var teadsEnabled = true;
+        requirejs(["jquery","myslate"], function($,myslate) {
+            if(myslate.isSlatePlusUser) {
+                teadsEnabled = false;
+            }
+        });
+        </script>
+    
+      
+        <script type="application/ld+json">
+        {"@context":"http://schema.org","url":"http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html","@type":"Article","mainEntityOfPage":"True","articleBody":"Every time you open Facebook, one of the world\u2019s most influential, controversial, and misunderstood algorithms springs into action. It scans and collects everything posted in the past week by each of your friends, everyone you follow, each group you belong to, and every Facebook page you\u2019ve liked. For the average Facebook user, that\u2019s more than 1,500 posts. If you have several hundred friends, it could be as many as 10,000. Then, according to a closely guarded and constantly shifting formula, Facebook\u2019s news feed algorithm ranks them all, in what it believes to be the precise order of how likely you are to find each post worthwhile. Most users will only ever see the top few hundred. No one outside Facebook knows for sure how it does this, and no one inside the company will tell you. And yet the results of this automated ranking process shape the social lives and reading habits of more than 1 billion daily active users\u2014one-fifth of the world\u2019s adult population. The algorithm\u2019s viral power has turned the media industry upside down, propelling startups like BuzzFeed and Vox to national prominence while 100-year-old newspapers wither and die. It fueled the stratospheric rise of billion-dollar companies like Zynga and LivingSocial\u2014only to suck the helium from them a year or two later with a few adjustments to its code, leaving behind empty-pocketed investors and laid-off workers. Facebook\u2019s news feed algorithm can be tweaked to make us happy or sad; it can expose us to new and challenging ideas or insulate us in ideological bubbles. And yet, for all its power, Facebook\u2019s news feed algorithm is surprisingly inelegant, maddeningly mercurial, and stubbornly opaque. It remains as likely as not to serve us posts we find trivial, irritating, misleading, or just plain boring. And Facebook knows it. Over the past several months, the social network has been running a test in which it shows some users the top post in their news feed alongside one other, lower-ranked post, asking them to pick the one they\u2019d prefer to read. The result? The algorithm\u2019s rankings correspond to the user\u2019s preferences \u201csometimes,\u201d Facebook acknowledges, declining to get more specific. When they don\u2019t match up, the company says, that points to \u201can area for improvement.\u201d \u201cSometimes\u201d isn\u2019t the success rate you might expect for such a vaunted and feared bit of code. The news feed algorithm\u2019s outsize influence has given rise to a strand of criticism that treats it as if it possessed a mind of its own\u2014as if it were some runic form of intelligence, loosed on the world to pursue ends beyond the ken of human understanding. At a time when Facebook and other Silicon Valley giants increasingly filter our choices and guide our decisions through machine-learning software, when tech titans like Elon Musk and scientific laureates like Stephen Hawking are warning of the existential threat posed by A.I., the word itself\u2014algorithm\u2014has begun to take on an eerie affect. Algorithms, in the popular imagination, are mysterious, powerful entities that stand for all the ways technology and modernity both serve our every desire and threaten the values we hold dear. The reality of Facebook\u2019s algorithm is somewhat less fantastical, but no less fascinating. I had a rare chance recently to spend time with Facebook\u2019s news feed team at their Menlo Park, California, headquarters and see what it actually looks like when they make one of those infamous, market-moving \u201ctweaks\u201d to the algorithm\u2014why they do it, how they do it, and how they decide whether it worked. A glimpse into its inner workings sheds light not only on the mechanisms of Facebook\u2019s news feed, but on the limitations of machine learning, the pitfalls of data-driven decision making, and the moves Facebook is increasingly making to collect and address feedback from individual human users, including a growing panel of testers that are becoming Facebook\u2019s equivalent of the Nielsen family. Facebook\u2019s algorithm, I learned, isn\u2019t flawed because of some glitch in the system. It\u2019s flawed because, unlike the perfectly realized, sentient algorithms of our sci-fi fever dreams, the intelligence behind Facebook\u2019s software is fundamentally human. Humans decide what data goes into it, what it can do with that data, and what they want to come out the other end. When the algorithm errs, humans are to blame. When it evolves, it\u2019s because a bunch of humans read a bunch of spreadsheets, held a bunch of meetings, ran a bunch of tests, and decided to make it better. And if it does keep getting better? That\u2019ll be because another group of humans keeps telling them about all the ways it\u2019s falling short: us. When I arrive at Facebook\u2019s sprawling, Frank Gehry\u2013designed office in Menlo Park, I\u2019m met by a lanky 37-year-old man whose boyish countenance shifts quickly between an earnest smile and an expression of intense focus. Tom Alison is director of engineering for the news feed; he\u2019s in charge of the humans who are in charge of the algorithm. Alison steers me through a maze of cubicles and open minikitchens toward a small conference room, where he promises to demystify the Facebook algorithm\u2019s true nature. On the way there, I realize I need to use the bathroom and ask for directions. An involuntary grimace crosses his face before he apologizes, smiles, and says, \u201cI\u2019ll walk you there.\u201d At first I think it\u2019s because he doesn\u2019t want me to get lost. But when I emerge from the bathroom, he\u2019s still standing right outside, and it occurs to me that he\u2019s not allowed to leave me unattended.    For the same reason\u2014Facebook\u2019s fierce protection of trade secrets\u2014Alison cannot tell me much about the actual code that composes the news feed algorithm. He can, however, tell me what it does, and why\u2014and why it\u2019s always changing. He starts, as engineers often do, at the whiteboard. \u201cWhen you study computer science, one of the first algorithms you learn is a sorting algorithm,\u201d Alison says. He scribbles a list of positive integers in dry erase: 4, 1, 3, 2, 5 The simple task at hand: devise an algorithm to sort these numbers into ascending order. \u201cHuman beings know how to do this,\u201d Alison says. \u201cWe just kind of do it in our heads.\u201d Computers, however, must be told precisely how. That requires an algorithm: a set of concrete instructions by which a given problem may be solved. The algorithm Alison shows me is called \u201cbubble sort,\u201d and it works like this: For each number in the set, starting with the first one, compare it to the number that follows, and see if they\u2019re in the desired order. If not, reverse them. Repeat steps 1 and 2 until you\u2019re able to proceed through the set from start to end without reversing any numbers. The virtue of bubble sort is its simplicity. The downside: If your data set is large, it\u2019s computationally inefficient and time-consuming. Facebook, for obvious reasons, does not use bubble sort. It does use a sorting algorithm to order the set of all posts that could appear in your news feed when you open the app. But that\u2019s the trivial part\u2014a minor subalgorithm within the master algorithm. The nontrivial part is assigning all those posts a numerical value in the first place. That, in short, is the job of the news feed ranking team: to devise a system capable of assigning any given Facebook post a \u201crelevancy score\u201d specific to any given Facebook user. That\u2019s a hard problem, because what\u2019s relevant to you\u2014a post from your childhood friend or from a celebrity you follow\u2014might be utterly irrelevant to me. For that, Alison explains, Facebook uses a different kind of algorithm, called a prediction algorithm. (Facebook\u2019s news feed algorithm, like Google\u2019s search algorithm or Netflix\u2019s recommendation algorithm, is really a sprawling complex of software made up of smaller algorithms.) \u201cLet\u2019s say I ask you to pick the winner of a future basketball game, Bulls vs. Lakers,\u201d Alison begins. \u201cBulls,\u201d I blurt. Alison laughs, but then he nods vigorously. My brain has taken his input and produced an immediate verbal output, perhaps according to some impish algorithm of its own. (The human mind\u2019s algorithms are far more sophisticated than anything Silicon Valley has yet devised, but they\u2019re also heavily reliant on heuristics and notoriously prone to folly.) Random guessing is fine when you\u2019ve got nothing to lose, Alison says. But let\u2019s say there was a lot of money riding on my basketball predictions, and I was making them millions of times a day. I\u2019d need a more systematic approach. \u201cYou\u2019re probably going to start by looking at historical data,\u201d he says. \u201cYou\u2019re going to look at the win-loss record of each team, the records of the individual players, who\u2019s injured, who\u2019s on a streak.\u201d Maybe you\u2019ll take into account environmental factors: Who\u2019s the home team? Is one squad playing on short rest, or after a cross-country flight? Your prediction algorithm might incorporate all of these factors and more. If it\u2019s good, it will not only predict the game\u2019s winner, but tell you its degree of confidence in the result. That\u2019s analogous to what Facebook\u2019s news feed algorithm does when it tries to predict whether you\u2019ll like a given post. I ask Alison how many variables\u2014\u201dfeatures,\u201d in machine-learning lingo\u2014Facebook\u2019s algorithm takes into account. \u201cHundreds,\u201d he says. It doesn\u2019t just predict whether you\u2019ll actually hit the like button on a post based on your past behavior. It also predicts whether you\u2019ll click, comment, share, or hide it, or even mark it as spam. It will predict each of these outcomes, and others, with a certain degree of confidence, then combine them all to produce a single relevancy score that\u2019s specific to both you and that post. Once every possible post in your feed has received its relevancy score, the sorting algorithm can put them in the order that you\u2019ll see them on the screen. The post you see at the top of your feed, then, has been chosen over thousands of others as the one most likely to make you laugh, cry, smile, click, like, share, or comment. Yet no matter how meticulously you construct an algorithm, there are always going to be data to which you aren\u2019t privy: the coaches\u2019 game plans, how Derrick Rose\u2019s knee is feeling that day, whether the ball is properly inflated. In short, the game isn\u2019t played by data. It\u2019s played by people. And people are too complex for any algorithm to model. Facebook\u2019s prediction algorithm faces still another complication, this one a little more epistemological. The relevancy score is meant to be analogous to the likelihood that the Bulls will win the game. That\u2019s a discrete outcome that\u2019s fully measurable: They either win or they don\u2019t. Facebook\u2019s ranking algorithm used to try to predict a similarly measurable outcome: whether you\u2019d interact in some way with the post in question. Interactions, the humans behind Facebook\u2019s news feed figured, are a good indicator that a given post has struck a chord. They also happen to be the fuel that drives the Facebook economy: clicks, likes, shares, and comments are what make posts go viral, turn individual users into communities, and drive traffic to the advertisers that Facebook relies on for revenue. But those interactions are only a rough proxy for what Facebook users actually want. What if people \u201clike\u201d posts that they don\u2019t really like, or click on stories that turn out to be unsatisfying? The result could be a news feed that optimizes for virality, rather than quality\u2014one that feeds users a steady diet of candy, leaving them dizzy and a little nauseated, liking things left and right but gradually growing to hate the whole silly game. How do you optimize against that? It was late 2013, and Facebook was the hottest company in the world. The social network had blown past 1 billion users and gone public at a valuation of more than $100 billion. It had spent the past year building a revamped mobile app that quickly surpassed Google Search and Google Maps as the nation\u2019s most popular. No longer just a way to keep in touch with friends, Facebook had become, in effect, the global newspaper of the 21st century: an up-to-the-minute feed of news, entertainment, and personal updates from friends and loved ones, automatically tailored to the specific interests of each individual user. Inside the company, the people in charge of the news feed were thrilled with the growth. But while users\u2019 engagement was skyrocketing, it wasn\u2019t clear whether their overall satisfaction with Facebook was keeping pace. People were liking more things on Facebook than ever. But were they liking Facebook less? To understand how that question arose, you have to rewind to 2006. Facebook\u2014which was originally little more than a massive compendium of profile pages and groups, something like Myspace\u2014built the news feed in that year as a hub for updates about your friends\u2019 activities on the site. Users bristled at the idea that their status updates, profile picture changes, and flirtatious notes on one another\u2019s pages would be blasted into the feeds of all of their friends, but Facebook pressed on.  Even then, not everything your friends did made it into your news feed. To avoid overwhelming people with hundreds of updates every day, Facebook built a crude algorithm to filter them based on how likely they were to be of interest. With no real way to measure that\u2014the like button came three years later\u2014the company\u2019s engineers simply made assumptions based on their own intuition. Early criteria for inclusion of a post in your news feed included how recent it was and how many of your friends it mentioned. Over time, the team tried tweaking those assumptions and testing how the changes affected the amount of time users spent on the site. But with no way to assess which sorts of posts were delighting people and which were boring, offending, or confusing them, the engineers were essentially throwing darts.  The like button wasn\u2019t just a new way for users to interact on the site. It was a way for Facebook to enlist its users in solving the problem of how best to filter their own news feeds. That users didn\u2019t realize they were doing this was perhaps the most ingenious part. If Facebook had told users they had to rank and review their friends\u2019 posts to help the company determine how many other people should see them, we would have found the process tedious and distracting. Facebook\u2019s news feed algorithm was one of the first to surreptitiously enlist users in personalizing their experience\u2014and influencing everyone else\u2019s.  Suddenly the algorithm had a way to identify the most popular posts\u2014and make them go \u201cviral,\u201d a term previously applied to things that were communicated from person to person, rather that broadcast algorithmically to a mass audience. Yet Facebook employees weren\u2019t the only ones who could see what it took for a given post to go viral. Publishers, advertisers, hoaxsters, and even individual users began to glean the elements that viral posts tended to have in common\u2014the features that seemed to trigger reflexive likes from large numbers of friends, followers, and even random strangers. Many began to tailor their posts to get as many likes as possible. Social-media consultants sprung up to advise people on how to game Facebook\u2019s algorithm: the right words to use, the right time to post, the right blend of words and pictures. \u201cLIKE THIS,\u201d a feel-good post would implore, and people would do it, even if they didn\u2019t really care that much about the post. It wasn\u2019t long before Facebook users\u2019 feeds began to feel eerily similar: all filled with content that was engineered to go viral, much of it mawkish or patronizing. Drowned out were substance, nuance, sadness, and anything that provoked thought or emotions beyond a simple thumbs-up. Engagement metrics were up\u2014way up\u2014but was this really what the news feed should be optimizing for? The question preoccupied Chris Cox, an early Facebook employee and the news feed\u2019s intellectual architect. \u201cLooking at likes, clicks, comments, and shares is one way of determining what people are interested in,\u201d Cox, 33, tells me via email. (He\u2019s now Facebook\u2019s chief product officer.) \u201cBut we knew there were places where this was imperfect. For example, you may read a tragic post that you don\u2019t want to click like, comment on, or share, but if we asked you, you would say that it really mattered to you to have read it. A couple of years ago, we knew we needed to look at more than just likes and clicks to improve how News Feed worked for these kinds of cases.\u201d An algorithm can optimize for a given outcome, but it can\u2019t tell you what that outcome should be. Only humans can do that. Cox and the other humans behind Facebook\u2019s news feed decided that their ultimate goal would be to show people all the posts that really matter to them and none of the ones that don\u2019t. They knew that might mean sacrificing some short-term engagement\u2014and maybe revenue\u2014in the name of user satisfaction. With Facebook raking in money, and founder and CEO Mark Zuckerberg controlling a majority of the voting shares, the company had the rare luxury to optimize for long-term value. But that still left the question of how exactly to do it. Media organizations have historically defined what matters to their audience through their own editorial judgment. Press them on what makes a story worthwhile, and they\u2019ll appeal to values such as truth, newsworthiness, and public interest. But Cox and his colleagues at Facebook have taken pains to avoid putting their own editorial stamp on the news feed. Instead, their working definition of what matters to any given Facebook user is just this: what he or she would rank at the top of their feeds given the choice. \u201cThe perfect way to solve this problem would be to ask everyone which stories they wanted to see and which they didn\u2019t, but that\u2019s not possible or practical,\u201d Cox says. Instead, Facebook decided to ask some people which stories they wanted to see and which they didn\u2019t. There were about 1,000 of those people, and until recently, most of them lived in Knoxville, Tennessee. Now they\u2019re everywhere. Adam Mosseri, Facebook\u2019s 32-year-old director of product for news feed, is Alison\u2019s less technical counterpart\u2014a \u201cfuzzie\u201d rather than a \u201ctechie,\u201d in Silicon Valley parlance. He traffics in problems and generalities, where Alison deals in solutions and specifics. He\u2019s the news feed\u2019s resident philosopher. The push to humanize the news feed\u2019s inputs and outputs began under Mosseri\u2019s predecessor, Will Cathcart. (I wrote about several of those innovations here.) Cathcart started by gathering more subtle forms of behavioral data: not just whether someone clicked, but how long he spent reading a story once he clicked on it; not just whether he liked it, but whether he liked it before or after reading. For instance: Liking a post before you\u2019ve read it, Facebook learned, corresponds much more weakly to your actual sentiment than liking it afterward. After taking the reins in late 2013, Mosseri\u2019s big initiative was to set up what Facebook calls its \u201cfeed quality panel.\u201d It began in summer 2014 as a group of several hundred people in Knoxville whom the company paid to come in to an office every day and provide continual, detailed feedback on what they saw in their news feeds. (Their location was, Facebook says, a \u201chistorical accident\u201d that grew out of a pilot project in which the company partnered with an unnamed third-party subcontractor.) Mosseri and his team didn\u2019t just study their behavior. They also asked them questions to try to get at why they liked or didn\u2019t like a given post, how much they liked it, and what they would have preferred to see instead. \u201cThey actually write a little paragraph about every story in their news feed,\u201d notes Greg Marra, product manager for the news feed ranking team. (This is the group that\u2019s becoming Facebook\u2019s equivalent of Nielsen families.)  \u201cThe question was, \u2018What might we be missing?\u2019 \u201d Mosseri says. \u201c\u2018Do we have any blind spots?\u2019\u201d For instance, he adds, \u201cWe know there are some things you see in your feed that you loved and you were excited about, but you didn\u2019t actually interact with.\u201d Without a way to measure that, the algorithm would devalue such posts in favor of others that lend themselves more naturally to likes and clicks. But what signal could Facebook use to capture that information? Mosseri deputized product manager Max Eulenstein and user experience researcher Lauren Scissors to oversee the feed quality panel and ask it just those sorts of questions. For instance, Eulenstein used the panel to test the hypothesis that the time a user spends looking at a story in her news feed might be a good indicator that she likes it, even if she didn\u2019t actually click like. \u201cWe speculated that it might be, but you could think of reasons why it wouldn\u2019t be, too,\u201d Eulenstein tells me. \u201cIt might be that there are scary or shocking stories that you stare at, but don\u2019t want to see.\u201d The feed quality panelists\u2019 ratings allowed Eulenstein and Scissors to not only confirm their hunch, but to examine the subtleties in the correlation, and to begin to quantify it. \u201cIt\u2019s not as simple as, \u20185 seconds is good, 2 seconds is bad,\u2019 \u201d Eulenstein explains. \u201cIt has more to do with the amount of time you spend on a story relative to the other stories in your news feed.\u201d The research also revealed the need to control for the speed of users\u2019 Internet connections, which can make it seem like they\u2019re spending a long time on a given story when they\u2019re actually just waiting for the page to load. Out of that research emerged a tweak that Facebook revealed in June, in which the algorithm boosted the rankings of stories that users spent more time viewing in their feeds. Within months, Mosseri and his team had grown so reliant on the panel\u2019s feedback that they took it nationwide, paying a demographically representative sample of people around the country to rate and review their Facebook feeds on a daily basis from their own homes. By late summer 2015, Facebook disbanded the Knoxville group and began to expand the feed quality panel overseas. Mosseri\u2019s instinct was right: The news feed algorithm had blind spots that Facebook\u2019s data scientists couldn\u2019t have identified on their own. It took a different kind of data\u2014qualitative human feedback\u2014to begin to fill them in. Crucial as the feed quality panel has become to Facebook\u2019s algorithm, the company has grown increasingly aware that no single source of data can tell it everything. It has responded by developing a sort of checks-and-balances system in which every news feed tweak must undergo a battery of tests among different types of audiences, and be judged on a variety of different metrics. That balancing act is the task of the small team of news feed ranking engineers, data scientists, and product managers who come to work every day in Menlo Park. They\u2019re people like Sami Tas, a software engineer whose job is to translate the news feed ranking team\u2019s proposed changes into language that a computer can understand. This afternoon, as I look over his shoulder, he\u2019s walking me through a problem that might seem so small as to be trivial. It is exactly the sort of small problem, however, that Facebook now considers critical. Most of the time, when people see a story they don\u2019t care about in their news feed, they scroll right past it. Some stories irk them enough that they\u2019re moved to click on the little drop-down menu at the top right of the post and select \u201cHide post.\u201d Facebook\u2019s algorithm considers that a strong negative signal and endeavors to show them fewer posts like that in the future. Not everyone uses Facebook the same way, however. Facebook\u2019s data scientists were aware that a small proportion of users\u20145 percent\u2014were doing 85 percent of the hiding. When Facebook dug deeper, it found that a small subset of those 5 percent were hiding almost every story they saw\u2014even ones they had liked and commented on. For these \u201csuperhiders,\u201d it turned out, hiding a story didn\u2019t mean they disliked it; it was simply their way of marking the post \u201cread,\u201d like archiving a message in Gmail. Yet their actions were biasing the data that Facebook relied on to rank stories. Intricate as it is, the news feed algorithm does not attempt to individually model each user\u2019s behavior. It treats your likes as identical in value to mine, and the same is true of our hides. For the superhiders, however, the ranking team decided to make an exception. Tas was tasked with tweaking the code to identify this small group of people and to discount the negative value of their hides. That might sound like a simple fix. But the algorithm is so precious to Facebook that every tweak to the code must be tested\u2014first in an offline simulation, then among a tiny group of Facebook employees, then on a small fraction of all Facebook users\u2014before it goes live. At each step, the company collects data on the change\u2019s effect on metrics ranging from user engagement to time spent on the site to ad revenue to page-load time. Diagnostic tools are set up to detect an abnormally large change on any one of these crucial metrics in real time, setting off a sort of internal alarm that automatically notifies key members of the news feed team. Once a change like Tas\u2019 has been tested on each of these audiences, he\u2019ll present the resulting data at one of the news feed team\u2019s weekly \u201cranking meetings\u201d and field a volley questions from Mosseri, Allison, Marra, and his other colleagues as to its effect on various metrics. If the team is satisfied that the change is a positive one, free of unintended consequences, the engineers in charge of the code on the iOS, Android, and Web teams will gradually roll it out to the public at large. Even then, Facebook can\u2019t be sure that the change won\u2019t have some subtle, longer-term effect that it had failed to anticipate. To guard against this, it maintains a \u201choldout group\u201d\u2014a small proportion of users who don\u2019t see the change for weeks or months after the rest of us. To speak of Facebook\u2019s news feed algorithm in the singular, then, can be misleading. It isn\u2019t just that the algorithm is really a collection of hundreds of smaller algorithms solving the smaller problems that make up the larger problem of what stories to show people. It\u2019s that, thanks to all the tests and holdout groups, there are more than a dozen different versions of that master algorithm running in the world at any given time. Tas\u2019 \u201chide stories\u201d tweak was announced July 31, and his post about it on Facebook\u2019s \u201cNews Feed FYI\u201d blog passed largely unnoticed by the public at large. Presumably, however, the superhiders of the world are now marginally more satisfied with their news feeds, and thus more likely to keep using Facebook, sharing stories with friends, and viewing the ads that keep the company in business. Facebook\u2019s feed quality panel has given the company\u2019s news feed team richer, more human data than it ever had before. Tas and the rest of the ranking team are growing more skillful at finding and fixing the algorithm\u2019s blind spots. But there is one other group of humans that Facebook is turning to more and more as it tries to keep the news feed relevant: ordinary users like you and me. The survey that Facebook has been running over the past six months\u2014asking a subset of users to choose their favorite among two side-by-side posts\u2014is an attempt to gather the same sort of data from a much wider sample than is possible through the feed quality panel. But the increasing involvement of ordinary users isn\u2019t only on the input side of the equation. Over the past two years, Facebook has been giving users more power to control their news feeds\u2019 output as well. The algorithm is still the driving force behind the ranking of posts in your feed. But Facebook is increasingly giving users the ability to fine-tune their own feeds\u2014a level of control it had long resisted as onerous and unnecessary. Facebook has spent seven years working on improving its ranking algorithm, Mosseri says. It has machine-learning wizards developing logistic regressions to interpret how users\u2019 past behavior predicts what posts they\u2019re likely to engage with in the future. \u201cWe could spend 10 more years\u2014and we will\u2014trying to improve those [machine-learning techniques],\u201d Mosseri says. \u201cBut you can get a lot of value right now just by simply asking someone: \u2018What do you want to see? What do you not want to see? Which friends do you always want to see at the top of your feed?\u2019 \u201d Those are now questions that Facebook allows every user to answer for herself. You can now \u201cunfollow\u201d a friend whose posts you no longer want to see, \u201csee less\u201d of a certain kind of story, and designate your favorite friends and pages as \u201csee first,\u201d so that their posts will appear at the top of your feed every time you log in. How to do all of these things is not immediately obvious to the casual user: You have to click a tiny gray down arrow in the top right corner of a post to see those options. Most people never do. But as the limitations of the fully automated feed have grown clearer, Facebook has grown more comfortable highlighting these options via occasional pop-up reminders with links to explanations and help pages. It is also testing new ways for users to interact with the news feed, including alternate, topic-based news feeds and new buttons to convey reactions other than like. The shift is partly a defensive one. The greatest challenges to Facebook\u2019s dominance in recent years\u2014the upstarts that threaten to do to Facebook what Facebook did to Myspace\u2014have eschewed this sort of data-driven approach altogether. Instagram, which Facebook acquired in 2012 in part to quell the threat posed by its fast-growing popularity, simply shows you every photo from every person you follow in chronological order. Snapchat has eclipsed Facebook as teens\u2019 social network of choice by eschewing virality and automated filtering in favor of more intimate forms of digital interaction. Facebook is not the only data-driven company to run up against the limits of algorithmic optimization in recent years. Netflix\u2019s famous movie-recommendation engine has come to rely heavily on humans who are paid to watch movies all day and classify them by genre. To counterbalance the influence of Amazon\u2019s automated A/B tests, CEO Jeff Bezos places outsize importance on the specific complaints of individual users and maintains a public email address for that very purpose. It would be premature to declare the age of the algorithm over before it really began, but there has been a change in velocity. Facebook\u2019s Mosseri, for his part, rejects the buzzword \u201cdata-driven\u201d in reference to decision making; he prefers \u201cdata-informed.\u201d Facebook\u2019s news feed ranking team believes the change in its approach is paying off. \u201cAs we continue to improve news feed based on what people tell us, we are seeing that we\u2019re getting better at ranking people\u2019s news feeds; our ranking is getting closer to how people would rank stories in their feeds themselves,\u201d says Scissors, the user experience researcher who helps to ovesee the feed quality panel. There\u2019s a potential downside, however, to giving users this sort of control: What if they\u2019re mistaken, as humans often are, about what they really want to see? What if Facebook\u2019s database of our online behaviors really did know us better, at least in some ways, than we knew ourselves? Could giving people the news feed they say they want actually make it less addictive than it was before? Mosseri tells me he\u2019s not particularly worried about that. The data so far, he explains, suggest that placing more weight on surveys and giving users more options have led to an increase in overall engagement and time spent on the site. While the two goals may seem to be in tension in the short term, \u201cWe find that qualitiative improvements to the news feed look like they correlate with long-term engagement.\u201d That may be a happy coincidence if it continues to hold true. But if there\u2019s one thing that Facebook has learned in 10 years of running the news feed, it\u2019s that data never tell the full story, and the algorithm will never be perfect. What looks like it\u2019s working today might be unmasked as a mistake tomorrow. And when it does, the humans who go to work every day in Menlo Park will read a bunch of spreadsheets, hold a bunch of meetings, ran a bunch of tests\u2014and then change the algorithm once again.","headline":"Who Really Controls What You See in Your Facebook Feed\u2014and Why They Keep Changing It   ","datePublished":"2016-01-03T20:02:00-05:00","author":"Will Oremus","image":{"@list":["http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.promo-mediumlarge.jpg"]}}
+        </script>
+      
+
+    
+
+
+    <!-- BEGIN Krux Control Tag for "Slate" -->
+    <script class="kxct" data-id="KGU_SbHX" data-timing="async" data-version="3.0" type="text/javascript">
+      window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+      (function(){
+        var k=document.createElement('script');k.type='text/javascript';k.async=true;
+        k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/KGU_SbHX.js';
+        var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+      }());
+
+      
+      window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+      (function(){
+          function retrieve(n){
+            var m, k='kxslate_'+n;
+            if(window.localStorage){
+                return window.localStorage[k] || "";
+            }else if(navigator.cookieEnabled){
+                m = document.cookie.match(k+'=([^;]*)');
+                return (m && unescape(m[1])) || "";
+            }else{
+                return '';
+            }
+          }
+          Krux.user = retrieve('user');
+          Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+      })();
+    </script>
+    <!-- END Krux Controltag -->
+
+    
+    <link rel="amphtml" href="http://amp.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html">
+    
+
+    <!-- Amplitude -->
+    <script>
+    require(['amplitude'], function(amplitude) {
+      var amplitudeOptions = {
+       saveEvents: true,
+       includeUtm: true,
+       includeReferrer: true,
+       includeGclid: true,
+       saveParamsReferrerOncePerSession: false,
+       domain: '.slate.com'
+      };
+      amplitude.getInstance().init('5a7cb616c0717cb7f4f0eee43d9f4e1c', null, amplitudeOptions);
+      window.amplitude = amplitude; // You can bind the amplitude object to window if you want to use it directly.
+
+      
+    });
+    </script>
+    <!-- End Amplitude -->
+
+  </head>
+
+  
+
+  
+
+
+  <body class="article story">
+
+    <input type="hidden" id="currPath" value="/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works"/>
+    <!-- HCS: shared/roll_ups/tablet -->
+    <!-- This is the header bar we always show in tablet mode -->
+    <header class="roll-up" id="tablet_header">
+      <div class="container">
+        <div class="main">
+
+        </div>
+        <div class="sidebar">
+          
+
+
+
+
+
+
+
+
+
+
+
+<section class="nav-panel" >
+  <div class="nav-header">
+    <a class="slate-logo" href="/">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" width="119" height="37" viewBox="0 0 258 80" style="margin: 8px 0 0 8px;">
+          <title>Slate logo</title>
+          <path fill="#FFF" d="M257.9 18.8h-23.3v12.7h23.3V48h-23.3v13.1h23.3V78h-43V2h43v16.7zM205.7 2v16.7h-16.1v59H170v-59h-16.1V2h51.8zm-85.8 0h13.3L161.9 78h-21l-5.7-16.7h-15.3v-15H130L120 17.1V2zm-55.5 0H84v59.1h26.5V78H64.4V2zM26 18.1a5.6 5.6 0 0 0-2.4 4.8c0 1.4.4 2.5 1.2 3.3.8.9 1.8 1.7 3.1 2.3 1.3.6 2.8 1.2 4.4 1.7 1.7.4 3.3 1 4.9 1.5 6.4 2.1 11 5 14 8.6 3 3.5 4.5 8.2 4.5 14 0 3.9-.7 7.4-2 10.5A22 22 0 0 1 48 73c-2.5 2.3-5.5 4-9.2 5.2A45.2 45.2 0 0 1 0 71.4l8.4-15.8a34 34 0 0 0 8.7 5.8c2.9 1.3 5.7 2 8.5 2 3.2 0 5.6-.8 7.1-2.3a6.8 6.8 0 0 0 1.8-8c-.4-.8-1-1.6-2-2.3a16 16 0 0 0-3.7-2l-5.4-2-7.5-2.6c-2.4-1-4.6-2.3-6.5-3.9a18 18 0 0 1-4.5-6A21.6 21.6 0 0 1 3 24.8c0-3.7.6-7.1 1.8-10.2A22.7 22.7 0 0 1 18.3 1.8C21.6.6 25.2 0 29.2 0a47.3 47.3 0 0 1 23.4 6.1l-7.8 15.4c-2.1-1.7-4.3-3-6.4-3.9a17 17 0 0 0-6.2-1.2 10 10 0 0 0-6.2 1.8z"/>
+        </svg>
+      
+    </a>
+    <a href="#" class="user-link "></a>
+    <a href="#" class="search-link "></a>
+    <a href="#" class="global-nav-handle "></a>
+    <div class="buttons">
+      
+      <span class="link option"><a class="first nav-option sign-in-link" href="#">Sign In</a></span>
+      <span class="link option"><a href="#" class="nav-option sign-up-link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+        </div>
+      </div><!-- /.container -->
+    </header><!-- /.header.roll-up -->
+    <!-- HCS END: shared/roll_ups/tablet -->
+    
+    <div class="top">
+
+      
+        
+          <div class="ad banner leaderboard" data-ad-type="leaderboard" data-ad-mode="large"></div>
+        
+        
+      
+
+    </div><!-- end #top -->
+    
+    <!-- HCS END: layouts/shared/top -->
+    
+    
+    
+
+
+<!-- this is the rollup for basic article, no multipart fun -->
+<header class="roll-up with-dropdown" id="article_rollup">
+  <div class="container">
+    
+    <div class="main">
+      <div class="title-container">
+
+        <div class="front">
+          
+            
+            
+            
+            
+            
+              <div class="titles centered-titles">
+                <h1 class="primary centered-primary">Who Really Controls What You See in Your Facebook Feed—and Why They Keep Changing It &nbsp;&nbsp;</h1>
+              </div>
+            
+          
+        </div>
+
+        <div class="back">
+          
+            
+            
+            
+            
+              <div class="titles centered-titles">
+                <h1 class="primary centered-primary">Who Really Controls What You See in Your Facebook Feed—and Why They Keep Changing It &nbsp;&nbsp;</h1>
+              </div>
+            
+          
+        </div>
+
+      </div>
+
+      
+
+
+<div class="social social-with-popup sharing-buttons">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Who+Really+Controls+What+You+See+in+Your+Facebook+Feed%E2%80%94and+Why+They+Keep+Changing+It+%C2%A0%C2%A0&p[summary]=Every+time+you+open+Facebook,+one+of+the+world&rsquo;s+most+influential,+controversial,+and+misunderstood+algorithms+springs+into+action.+It+scans+and+collec+...&p[ref]=sl_live&p[images][0]=http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg&p[url]=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html&u=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_fb_ru" class="facebook first">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+
+    <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A&count=none&via=slate&url=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_tw_ru" class="twitter">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+    </div>
+
+    
+      <a href="#comments" class="comments">
+        <span class="icon"></span>
+      </a>
+    
+
+     <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0AWho%20Really%20Controls%20What%20You%20See%20in%20Your%20Facebook%20Feed%E2%80%94and%20Why%20They%20Keep%20Changing%20It%20%C2%A0%C2%A0%0Ahttp://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_em_ru" class="email">
+        <span class="icon"></span>
+      </a>
+</div>
+
+
+    </div>
+    <div class="sidebar">
+      
+
+
+
+
+
+
+
+
+
+
+
+<section class="nav-panel" >
+  <div class="nav-header">
+    <a class="slate-logo" href="/">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" width="119" height="37" viewBox="0 0 258 80" style="margin: 8px 0 0 8px;">
+          <title>Slate logo</title>
+          <path fill="#FFF" d="M257.9 18.8h-23.3v12.7h23.3V48h-23.3v13.1h23.3V78h-43V2h43v16.7zM205.7 2v16.7h-16.1v59H170v-59h-16.1V2h51.8zm-85.8 0h13.3L161.9 78h-21l-5.7-16.7h-15.3v-15H130L120 17.1V2zm-55.5 0H84v59.1h26.5V78H64.4V2zM26 18.1a5.6 5.6 0 0 0-2.4 4.8c0 1.4.4 2.5 1.2 3.3.8.9 1.8 1.7 3.1 2.3 1.3.6 2.8 1.2 4.4 1.7 1.7.4 3.3 1 4.9 1.5 6.4 2.1 11 5 14 8.6 3 3.5 4.5 8.2 4.5 14 0 3.9-.7 7.4-2 10.5A22 22 0 0 1 48 73c-2.5 2.3-5.5 4-9.2 5.2A45.2 45.2 0 0 1 0 71.4l8.4-15.8a34 34 0 0 0 8.7 5.8c2.9 1.3 5.7 2 8.5 2 3.2 0 5.6-.8 7.1-2.3a6.8 6.8 0 0 0 1.8-8c-.4-.8-1-1.6-2-2.3a16 16 0 0 0-3.7-2l-5.4-2-7.5-2.6c-2.4-1-4.6-2.3-6.5-3.9a18 18 0 0 1-4.5-6A21.6 21.6 0 0 1 3 24.8c0-3.7.6-7.1 1.8-10.2A22.7 22.7 0 0 1 18.3 1.8C21.6.6 25.2 0 29.2 0a47.3 47.3 0 0 1 23.4 6.1l-7.8 15.4c-2.1-1.7-4.3-3-6.4-3.9a17 17 0 0 0-6.2-1.2 10 10 0 0 0-6.2 1.8z"/>
+        </svg>
+      
+    </a>
+    <a href="#" class="user-link "></a>
+    <a href="#" class="search-link "></a>
+    <a href="#" class="global-nav-handle "></a>
+    <div class="buttons">
+      
+      <span class="link option"><a class="first nav-option sign-in-link" href="#">Sign In</a></span>
+      <span class="link option"><a href="#" class="nav-option sign-up-link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+    </div>
+  </div><!-- /.container -->
+  <a href="#" class="mobile-social-toggle"><span></span></a> <!-- only shown in mobile -->
+</header><!-- /.header.roll-up -->
+
+
+
+
+<div class="page">
+  
+  <article class="main" data-stream-index="0" data-story-id="story-100160103003" id="story-0">
+    
+    <div class="start-story" data-stream-index="0" id="start-story-0"></div>
+    
+    
+    <div class="parsys contentWellTop iparsys"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys contentWellTop iparsys"><div class="renderHtml section">
+
+<style>
+@media (min-width: 641px) {
+.custom .landing-header.thin.rollup .sponsor-logo img {
+    height: 25px;
+    width: auto;
+}
+}
+
+@media (max-width: 640px) {
+.custom .landing-header.thin.rollup .sponsor-logo img {
+    height: auto;
+    max-width: 100px;
+    position: absolute;
+    right: auto;
+    top: 15px;
+    left: 155px;
+}
+}
+</style> 
+</div>
+
+</div>
+</div>
+</div>
+
+    
+
+
+
+<header class="article-header" id="article_header">
+    
+    <div class="meta">
+        <div class="prop-name print-only"><a href="http://www.slate.com">Slate</a></div><div class="prop-name"><a href="http://www.slate.com/articles/news_and_politics/cover_story.html">Cover Story</a></div><div class="prop-desc">Read this first.</div><div class="pub-date">Jan. 3 2016 8:02 PM</div>
+    </div>
+    
+    
+    <h1 class="hed">Who Controls Your Facebook Feed</h1>
+    
+
+
+ <div class="social social-with-popup sharing-buttons header_social">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Who+Really+Controls+What+You+See+in+Your+Facebook+Feed%E2%80%94and+Why+They+Keep+Changing+It+%C2%A0%C2%A0&p[summary]=Every+time+you+open+Facebook,+one+of+the+world&rsquo;s+most+influential,+controversial,+and+misunderstood+algorithms+springs+into+action.+It+scans+and+collec+...&p[ref]=sl_live&p[images][0]=http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg&p[url]=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_fb_top" class="facebook">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+    <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A&count=none&via=slate&url=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_tw_top" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html"><span class="count"></span></a>
+    </div>
+    
+      <a href="#comments" class="comments">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    
+ </div>
+
+
+
+    <h2 class="dek">A small team of engineers in Menlo Park. A panel of anonymous power users around the world. And, increasingly, you.</h2>
+    
+    <div class="byline" id="main_byline">
+        By <a rel="author" href="http://www.slate.com/authors.will_oremus.html">Will Oremus</a>
+    </div>
+    
+    
+
+
+
+
+
+  
+  
+  
+
+
+<div class="social horiz-counts-mobile centered sharing-buttons">
+  
+    <div class="comments">
+      <a class="mobile-comments" href="#comments">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    </div>
+  
+  <div class="facebook">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Who+Really+Controls+What+You+See+in+Your+Facebook+Feed%E2%80%94and+Why+They+Keep+Changing+It+%C2%A0%C2%A0&p[summary]=Every+time+you+open+Facebook,+one+of+the+world&rsquo;s+most+influential,+controversial,+and+misunderstood+algorithms+springs+into+action.+It+scans+and+collec+...&p[ref]=sl_live&p[images][0]=http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg&p[url]=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html&u=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_mob_fb_top" class="share facebook" target="_blank">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+  </div>
+  <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A&count=none&via=slate&url=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_mob_tw_top" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html"><span class="count"></span></a>
+  </div>
+
+  
+  <div class="whatsapp">
+    <a href="whatsapp://send?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A%20http%3A%2F%2Fwww.slate.com%2Farticles%2Ftechnology%2Fcover_story%2F2016%2F01%2Fhow_facebook_s_news_feed_algorithm_works.html%3Fwpsrc%3Dsh_all_mob_wa_top" class="whatsapp">
+       <span class="icon"></span>
+    </a>
+  </div>
+  
+  
+
+  <div class="email">
+    <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0AWho%20Really%20Controls%20What%20You%20See%20in%20Your%20Facebook%20Feed%E2%80%94and%20Why%20They%20Keep%20Changing%20It%20%C2%A0%C2%A0%0Ahttp://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_mob_em_top" class="email">
+      <span class="icon"></span>
+      <span class="count">&nbsp;</span>
+    </a>
+  </div>
+</div>
+
+
+</header><!-- /header -->
+
+
+<section class="content">
+    <div class="parsys iparsys editorsNote"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys iparsys editorsNote">
+</div>
+</div>
+</div>
+
+    
+    <div class="newbody body parsys">
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="160103_FT_Facebook-Algorithm" alt="Facebook algorithm" src="/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.promo-xlarge2.jpg" > <p class="credit">Photo illustration by Lisa Larson-Walker. Photo by Tang Ming Tung/Getty Images.</p> 
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text text-1 parbase section">
+
+<p>Every time you open Facebook, one of the world&rsquo;s most influential, controversial, and misunderstood algorithms springs into action. It scans and collects everything posted in the past week by each of your friends, everyone you follow, each group you belong to, and every Facebook page you&rsquo;ve liked. For the average Facebook user, that&rsquo;s more than 1,500 posts. If you have several hundred friends, it could be as many as 10,000. Then, according to a closely guarded and constantly shifting formula, Facebook&rsquo;s news feed algorithm ranks them all, in what it believes to be the precise order of how likely you are to find each post worthwhile. Most users will only ever see the top few hundred.</p>
+
+
+</div>
+
+
+
+
+<section class="about-the-author fancy inline with-head">
+  <a class="header author-toggle" href="http://www.slate.com/authors.will_oremus.html">
+    <header>
+      <img src="/content/dam/slate/Authors/will_oremus-authorbio.png" alt="Will Oremus" class="author-photo" />
+      <span class="name">Will Oremus</span>
+    </header>
+  </a>
+  <div class="author-bio"><p>Will Oremus is <b><i>Slate</i></b>’s senior technology writer. Email him at <a href="mailto:will.oremus@slate.com">will.oremus@slate.com</a> or follow him on <a href="http://twitter.com/#!/WillOremus">Twitter</a>.</p>
+</div>
+    <ul class="follow-links">
+    
+    
+      <li><a href="https://www.facebook.com/will.oremus" class="follow facebook" data-show-count="true" data-lang="en"></a></li>
+    
+    
+      <li><a href="https://twitter.com/WillOremus" class="follow twitter" data-show-count="true" data-lang="en"></a></li>
+    
+    
+      
+      <li><a href="http://www.slate.com/authors.will_oremus.slateplus.html" class="follow slateplus"></a></li>
+      
+    
+      <li><a href="http://picks.slate.com/authors/will-oremus" class="follow picks"></a></li>
+    
+      
+    </ul>
+</section> <!-- /.about-the-author -->
+
+
+<div class="text-2 text parbase section">
+
+<p>No one outside Facebook knows for sure how it does this, and no one inside the company will tell you. And yet the results of this automated ranking process shape the social lives and reading habits of more than 1 billion daily active users&mdash;one-fifth of the world&rsquo;s adult population. The algorithm&rsquo;s viral power has turned the media industry upside down, propelling startups like <em>BuzzFeed</em> and <em>Vox </em>to national prominence while 100-year-old newspapers wither and die. It fueled the stratospheric rise of billion-dollar companies like Zynga and LivingSocial&mdash;only to suck the helium from them a year or two later with a few adjustments to its code, leaving behind empty-pocketed investors and laid-off workers. Facebook&rsquo;s news feed algorithm can be tweaked to <a href="http://www.slate.com/articles/health_and_science/science/2014/06/facebook_unethical_experiment_it_made_news_feeds_happier_or_sadder_to_manipulate.html">make us happy or sad</a>; it can expose us to new and challenging ideas or insulate us in <a href="https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en">ideological bubbles</a>.</p>
+
+
+</div>
+
+<div class="renderHtml section">
+
+
+    <script type="text/javascript">requirejs(['http://www.slate.com/features/2014/05/simple_quiz/quizzes/facebook/facebook.quiz.js']);</script>
+    <div class="simple_quiz" data-slug="facebook" data-quiz-path="/features/2014/05/simple_quiz/quizzes/facebook">
+    	<p style="padding:4em 10%;width:80%;background-color:#57828D;text-align:center;text-tranform:uppercase;color:white;font-size:4em;">Loading Quiz ...</p>
+    </div>
+   
+</div>
+
+
+
+
+<div class="tablet-ad">
+    
+      <span class="adv"> Advertisement </span> <br>
+    
+    
+<div id="slug_midarticleflex" class="ad " data-ad-type="midarticleflex" data-ad-mode="tabletPortrait"></div>
+
+    
+      
+<div id="slug_mob_bigbox" class="ad " data-ad-type="mob_bigbox" data-ad-mode="mobile"></div>
+
+    
+</div>
+
+
+<div class="text-3 text parbase section">
+
+<p>And yet, for all its power, Facebook&rsquo;s news feed algorithm is surprisingly inelegant, maddeningly mercurial, and stubbornly opaque. It remains as likely as not to serve us posts we find trivial, irritating, misleading, or just plain boring. And Facebook knows it. Over the past several months, the social network has been running a test in which it shows some users the top post in their news feed alongside one other, lower-ranked post, asking them to pick the one they&rsquo;d prefer to read. The result? The algorithm&rsquo;s rankings correspond to the user&rsquo;s preferences &ldquo;sometimes,&rdquo; Facebook acknowledges, declining to get more specific. When they don&rsquo;t match up, the company says, that points to &ldquo;an area for improvement.&rdquo;</p>
+
+
+</div>
+
+<div class="text parbase text-4 section">
+
+<p>&ldquo;Sometimes&rdquo; isn&rsquo;t the success rate you might expect for such a vaunted and feared bit of code. The news feed algorithm&rsquo;s outsize influence has given rise to a strand of criticism that treats it as if it possessed a mind of its own&mdash;as if it were some runic form of intelligence, loosed on the world to pursue ends beyond the ken of human understanding. At a time when Facebook and other Silicon Valley giants increasingly filter our choices and guide our decisions through <a href="http://www.slate.com/blogs/future_tense/2015/11/09/google_s_tensorflow_is_open_source_and_it_s_about_to_be_a_huge_huge_deal.html">machine-learning software</a>, when tech titans like Elon Musk and scientific laureates like Stephen Hawking are warning of the <a href="http://www.theverge.com/2014/8/3/5965099/elon-musk-compares-artificial-intelligence-to-nukes">existential threat posed by A.I</a>., the word itself&mdash;<em>algorithm</em>&mdash;has begun to take on an eerie affect. Algorithms, in the popular imagination, are mysterious, powerful entities that stand for all the ways technology and modernity both serve our every desire and threaten the values we hold dear.</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pullquotebox section">
+ 
+
+<aside class="pullquote">
+
+  <p class="quote">A panel of news feed testers has become Facebook’s equivalent of the Nielsen family.</p>
+  
+  
+</aside>
+</div>
+
+<div class="text parbase text-5 section">
+
+<p>The reality of Facebook&rsquo;s algorithm is somewhat less fantastical, but no less fascinating. I had a rare chance recently to spend time with Facebook&rsquo;s news feed team at their Menlo Park, California, headquarters and see what it actually looks like when they make one of those infamous, market-moving &ldquo;tweaks&rdquo; to the algorithm&mdash;why they do it, how they do it, and how they decide whether it worked. A glimpse into its inner workings sheds light not only on the mechanisms of Facebook&rsquo;s news feed, but on the limitations of machine learning, the pitfalls of data-driven decision making, and the moves Facebook is increasingly making to collect and address feedback from individual human users, including a growing panel of testers that are becoming Facebook&rsquo;s equivalent of the Nielsen family.</p>
+
+
+</div>
+
+<div class="text text-6 parbase section">
+
+<p>Facebook&rsquo;s algorithm, I learned, isn&rsquo;t flawed because of some glitch in the system. It&rsquo;s flawed because, unlike the perfectly realized, sentient algorithms of our <a href="http://www.slate.com/articles/technology/books/2013/10/dave_eggers_tech_novel_the_circle_reviewed.html">sci-fi fever dreams</a>, the intelligence behind Facebook&rsquo;s software is fundamentally human. Humans decide what data goes into it, what it can do with that data, and what they want to come out the other end. When the algorithm errs, humans are to blame. When it evolves, it&rsquo;s because a bunch of humans read a bunch of spreadsheets, held a bunch of meetings, ran a bunch of tests, and decided to make it better. And if it does keep getting better? That&rsquo;ll be because another group of humans keeps telling them about all the ways it&rsquo;s falling short: us.</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 354px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="160103_FT_Facebook-Spot-Self" alt="160103_FT_Facebook-Spot-Self" src="/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Spot-Self.jpg.CROP.original-original.jpg" >
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+
+
+
+<div class="tablet-ad">
+    
+      <span class="adv"> Advertisement </span> <br>
+    
+    
+<div  class="ad  midarticleflex-2" data-ad-type="midarticleflex|2" data-ad-mode="tabletPortrait"></div>
+
+    
+      
+<div  class="ad  mob_bigbox-2" data-ad-type="mob_bigbox|2" data-ad-mode="mobile"></div>
+
+    
+</div>
+
+
+<div class="text parbase text-7 section">
+
+<p>When I arrive at Facebook&rsquo;s sprawling, Frank Gehry&ndash;designed office in Menlo Park, I&rsquo;m met by a lanky 37-year-old man whose boyish countenance shifts quickly between an earnest smile and an expression of intense focus. Tom Alison is director of engineering for the news feed; he&rsquo;s in charge of the humans who are in charge of the algorithm.</p>
+
+
+</div>
+
+<div class="text parbase text-8 section">
+
+<p>Alison steers me through a maze of cubicles and open minikitchens toward a small conference room, where he promises to demystify the Facebook algorithm&rsquo;s true nature. On the way there, I realize I need to use the bathroom and ask for directions. An involuntary grimace crosses his face before he apologizes, smiles, and says, &ldquo;I&rsquo;ll walk you there.&rdquo; At first I think it&rsquo;s because he doesn&rsquo;t want me to get lost. But when I emerge from the bathroom, he&rsquo;s still standing right outside, and it occurs to me that he&rsquo;s not allowed to leave me unattended. &nbsp;&nbsp;</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="151230_FT_Facebook-Office-Helicopter" alt="The Facebook office in Menlo Park, California." src="/content/dam/slate/articles/technology/future_tense/2015/12/151230_FT_Facebook-Office-Helicopter.jpg.CROP.promo-xlarge2.jpg" > <figcaption class="caption"><span>The Facebook office in Menlo Park, California.</span></figcaption>  <p class="credit">Photo by Christophe Wu/Facebook</p> 
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text parbase text-9 section">
+
+<p>For the same reason&mdash;Facebook&rsquo;s fierce protection of trade secrets&mdash;Alison cannot tell me much about the actual code that composes the news feed algorithm. He can, however, tell me what it does, and why&mdash;and why it&rsquo;s always changing. He starts, as engineers often do, at the whiteboard.</p>
+
+
+</div>
+
+<div class="text parbase text-10 section">
+
+<p>&ldquo;When you study computer science, one of the first algorithms you learn is a sorting algorithm,&rdquo; Alison says. He scribbles a list of positive integers in dry erase:</p>
+
+
+</div>
+
+
+
+
+<div class="tablet-ad">
+    
+      <span class="adv"> Advertisement </span> <br>
+    
+    
+<div  class="ad  midarticleflex-3" data-ad-type="midarticleflex|3" data-ad-mode="tabletPortrait"></div>
+
+    
+      
+<div  class="ad  mob_bigbox-3" data-ad-type="mob_bigbox|3" data-ad-mode="mobile"></div>
+
+    
+</div>
+
+
+<div class="text-11 text parbase section">
+
+<p style="margin-left: 40px;">4, 1, 3, 2, 5</p>
+
+
+</div>
+
+<div class="text-12 text parbase section">
+
+<p>The simple task at hand: devise an algorithm to sort these numbers into ascending order. &ldquo;Human beings know how to do this,&rdquo; Alison says. &ldquo;We just kind of do it in our heads.&rdquo;</p>
+
+
+</div>
+
+<div class="text-13 text parbase section">
+
+<p>Computers, however, must be told precisely how. That requires an algorithm: a set of concrete instructions by which a given problem may be solved. The algorithm Alison shows me is called &ldquo;bubble sort,&rdquo; and it works like this:</p>
+
+
+</div>
+
+<div class="text text-14 parbase section">
+
+<ol>
+<li>For each number in the set, starting with the first one, compare it to the number that follows, and see if they&rsquo;re in the desired order.</li>
+<li>If not, reverse them.</li>
+<li>Repeat steps 1 and 2 until you&rsquo;re able to proceed through the set from start to end without reversing any numbers.</li>
+</ol>
+
+
+</div>
+
+
+
+
+<div class="tablet-ad">
+    
+      <span class="adv"> Advertisement </span> <br>
+    
+    
+<div  class="ad  midarticleflex-4" data-ad-type="midarticleflex|4" data-ad-mode="tabletPortrait"></div>
+
+    
+      
+<div  class="ad  mob_bigbox-4" data-ad-type="mob_bigbox|4" data-ad-mode="mobile"></div>
+
+    
+</div>
+
+
+<div class="text text-15 parbase section">
+
+<p>The virtue of bubble sort is its simplicity. The downside: If your data set is large, it&rsquo;s computationally inefficient and time-consuming. Facebook, for obvious reasons, does not use bubble sort. It does use a sorting algorithm to order the set of all posts that could appear in your news feed when you open the app. But that&rsquo;s the trivial part&mdash;a minor subalgorithm within the master algorithm. The nontrivial part is assigning all those posts a numerical value in the first place. That, in short, is the job of the news feed ranking team: to devise a system capable of assigning any given Facebook post a &ldquo;relevancy score&rdquo; specific to any given Facebook user.</p>
+
+
+</div>
+
+<div class="text parbase text-16 section">
+
+<p>That&rsquo;s a hard problem, because what&rsquo;s relevant to you&mdash;a post from your childhood friend or from a celebrity you follow&mdash;might be utterly irrelevant to me. For that, Alison explains, Facebook uses a different kind of algorithm, called a prediction algorithm. (Facebook&rsquo;s news feed algorithm, like Google&rsquo;s search algorithm or Netflix&rsquo;s recommendation algorithm, is really a sprawling complex of software made up of smaller algorithms.)</p>
+
+
+</div>
+
+<div class="text parbase text-17 section">
+
+<p>&ldquo;Let&rsquo;s say I ask you to pick the winner of a future basketball game, Bulls vs. Lakers,&rdquo; Alison begins. &ldquo;Bulls,&rdquo; I blurt. Alison laughs, but then he nods vigorously. My brain has taken his input and produced an immediate verbal output, perhaps according to some impish algorithm of its own. (The human mind&rsquo;s algorithms are far more sophisticated than anything Silicon Valley has yet devised, but they&rsquo;re also <a href="http://www.amazon.com/dp/0374533555/?tag=slatmaga-20">heavily reliant on heuristics</a> and notoriously prone to folly.)</p>
+
+
+</div>
+
+<div class="text parbase text-18 section">
+
+<p>Random guessing is fine when you&rsquo;ve got nothing to lose, Alison says. But let&rsquo;s say there was a lot of money riding on my basketball predictions, and I was making them millions of times a day. I&rsquo;d need a more systematic approach. &ldquo;You&rsquo;re probably going to start by looking at historical data,&rdquo; he says. &ldquo;You&rsquo;re going to look at the win-loss record of each team, the records of the individual players, who&rsquo;s injured, who&rsquo;s on a streak.&rdquo; Maybe you&rsquo;ll take into account environmental factors: Who&rsquo;s the home team? Is one squad playing on short rest, or after a cross-country flight? Your prediction algorithm might incorporate all of these factors and more. If it&rsquo;s good, it will not only predict the game&rsquo;s winner, but tell you its degree of confidence in the result.</p>
+
+
+</div>
+
+
+
+
+<div class="tablet-ad">
+    
+      <span class="adv"> Advertisement </span> <br>
+    
+    
+<div  class="ad  midarticleflex-5" data-ad-type="midarticleflex|5" data-ad-mode="tabletPortrait"></div>
+
+    
+      
+<div  class="ad  mob_bigbox-5" data-ad-type="mob_bigbox|5" data-ad-mode="mobile"></div>
+
+    
+</div>
+
+
+<div class="text parbase text-19 section">
+
+<p>That&rsquo;s analogous to what Facebook&rsquo;s news feed algorithm does when it tries to predict whether you&rsquo;ll like a given post. I ask Alison how many variables&mdash;&rdquo;features,&rdquo; in machine-learning lingo&mdash;Facebook&rsquo;s algorithm takes into account. &ldquo;Hundreds,&rdquo; he says.</p>
+
+
+</div>
+
+<div class="pagebreak section">
+
+</div>
+
+<div class="text parbase section text-20">
+
+<p>It doesn&rsquo;t just predict whether you&rsquo;ll actually hit the like button on a post based on your past behavior. It also predicts whether you&rsquo;ll click, comment, share, or hide it, or even mark it as spam. It will predict each of these outcomes, and others, with a certain degree of confidence, then combine them all to produce a single relevancy score that&rsquo;s specific to both you and that post. Once every possible post in your feed has received its relevancy score, the sorting algorithm can put them in the order that you&rsquo;ll see them on the screen. The post you see at the top of your feed, then, has been chosen over thousands of others as the one most likely to make you laugh, cry, smile, click, like, share, or comment.</p>
+
+
+</div>
+
+<div class="pullquotebox section">
+ 
+
+<aside class="pullquote">
+
+  <p class="quote">What if people “like” posts that they don’t really like?</p>
+  
+  
+</aside>
+</div>
+
+<div class="text parbase text-21 section">
+
+<p>Yet no matter how meticulously you construct an algorithm, there are always going to be data to which you aren&rsquo;t privy: the coaches&rsquo; game plans, how <a href="http://espn.go.com/espn/feature/story/_/id/11694655/derrick-rose-new-player-new-man-ready-end-cycle-injuries">Derrick Rose&rsquo;s knee</a> is feeling that day, whether <a href="http://espn.go.com/boston/story/_/id/12202450/nfl-says-new-england-patriots-had-inflated-footballs-afc-championship-game">the ball is properly inflated</a>. In short, the game isn&rsquo;t played by data. It&rsquo;s played by people. And people are too complex for any algorithm to model.</p>
+
+
+</div>
+
+<div class="text-22 text parbase section">
+
+<p>Facebook&rsquo;s prediction algorithm faces still another complication, this one a little more epistemological. The relevancy score is meant to be analogous to the likelihood that the Bulls will win the game. That&rsquo;s a discrete outcome that&rsquo;s fully measurable: They either win or they don&rsquo;t. Facebook&rsquo;s ranking algorithm used to try to predict a similarly measurable outcome: whether you&rsquo;d interact in some way with the post in question. Interactions, the humans behind Facebook&rsquo;s news feed figured, are a good indicator that a given post has struck a chord. They also happen to be the fuel that drives the Facebook economy: clicks, likes, shares, and comments are what make posts go viral, turn individual users into communities, and drive traffic to the advertisers that Facebook relies on for revenue.</p>
+
+
+</div>
+
+
+
+
+<div class="tablet-ad">
+    
+      <span class="adv"> Advertisement </span> <br>
+    
+    
+<div  class="ad  midarticleflex-6" data-ad-type="midarticleflex|6" data-ad-mode="tabletPortrait"></div>
+
+    
+      
+<div  class="ad  mob_bigbox-6" data-ad-type="mob_bigbox|6" data-ad-mode="mobile"></div>
+
+    
+</div>
+
+
+<div class="text text-23 parbase section">
+
+<p>But those interactions are only a rough proxy for what Facebook users actually want. What if people &ldquo;like&rdquo; posts that they don&rsquo;t really like, or click on stories that turn out to be unsatisfying? The result could be a news feed that optimizes for virality, rather than quality&mdash;one that feeds users a steady diet of candy, leaving them dizzy and a little nauseated, liking things left and right but gradually growing to hate the whole silly game. How do you optimize against that?</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 200px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="160103_FT_Facebook-Spot-Like" alt="160103_FT_Facebook-Spot-Like" src="/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Spot-Like.jpg.CROP.original-original.jpg" >
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text-24 text parbase section">
+
+<p>It was late 2013, and Facebook was the hottest company in the world. The social network had blown past 1 billion users and gone public at a valuation of more than $100 billion. It had spent the past year building a revamped mobile app that quickly surpassed Google Search and Google Maps as the nation&rsquo;s most popular. No longer just a way to keep in touch with friends, Facebook had become, in effect, the global newspaper of the 21<sup>st</sup> century: an up-to-the-minute feed of news, entertainment, and personal updates from friends and loved ones, automatically tailored to the specific interests of each individual user.</p>
+
+
+</div>
+
+<div class="text-25 text parbase section">
+
+<p>Inside the company, the people in charge of the news feed were thrilled with the growth. But while users&rsquo; engagement was skyrocketing, it wasn&rsquo;t clear whether their overall satisfaction with Facebook was keeping pace. People were liking more things on Facebook than ever. But were they liking Facebook less?</p>
+
+
+</div>
+
+<div class="text parbase text-26 section">
+
+<p>To understand how that question arose, you have to rewind to 2006. Facebook&mdash;which was originally little more than a massive compendium of profile pages and groups, something like Myspace&mdash;built the news feed in that year as a hub for updates about your friends&rsquo; activities on the site. Users bristled at the idea that their status updates, profile picture changes, and flirtatious notes on one another&rsquo;s pages would be blasted into the feeds of all of their friends, but Facebook pressed on.&nbsp;</p>
+
+
+</div>
+
+<div class="text parbase text-27 section">
+
+<p>Even then, not everything your friends did made it into your news feed. To avoid overwhelming people with hundreds of updates every day, Facebook built a crude algorithm to filter them based on how likely they were to be of interest. With no real way to measure that&mdash;the like button came three years later&mdash;the company&rsquo;s engineers simply made assumptions based on their own intuition. Early criteria for inclusion of a post in your news feed included how recent it was and how many of your friends it mentioned. Over time, the team tried tweaking those assumptions and testing how the changes affected the amount of time users spent on the site. But with no way to assess which sorts of posts were delighting people and which were boring, offending, or confusing them, the engineers were essentially throwing darts.&nbsp;</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="151230_FT_Facebook-Mosseri-Whiteboard" alt="151230_FT_Facebook-Mosseri-Whiteboard" src="/content/dam/slate/articles/technology/future_tense/2015/12/151230_FT_Facebook-Mosseri-Whiteboard.jpg.CROP.promo-xlarge2.jpg" > <figcaption class="caption"><span>Adam Mosseri (standing), the director of product for news feed, with his team of product managers. Clockwise from far left: Greg Marra, Vibhi Kant, Uzma Barlaskar, Chris Tosswill, Mosseri, Scott Thomson, and Sammi Krug.</span></figcaption>  <p class="credit">Photo by Christophe Wu/Facebook</p> 
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text text-28 parbase section">
+
+<p>The like button wasn&rsquo;t just a new way for users to interact on the site. It was a way for Facebook to enlist its users in solving the problem of how best to filter their own news feeds. That users didn&rsquo;t realize they were doing this was perhaps the most ingenious part. If Facebook had told users they had to rank and review their friends&rsquo; posts to help the company determine how many other people should see them, we would have found the process tedious and distracting. Facebook&rsquo;s news feed algorithm was one of the first to surreptitiously enlist users in personalizing their experience&mdash;and influencing everyone else&rsquo;s.&nbsp;</p>
+
+
+</div>
+
+<div class="text parbase text-29 section">
+
+<p>Suddenly the algorithm had a way to identify the most popular posts&mdash;and make them go &ldquo;viral,&rdquo; a term previously applied to things that were communicated from person to person, rather that broadcast algorithmically to a mass audience. Yet Facebook employees weren&rsquo;t the only ones who could see what it took for a given post to go viral. Publishers, advertisers, hoaxsters, and even individual users began to glean the elements that viral posts tended to have in common&mdash;the features that seemed to trigger reflexive likes from large numbers of friends, followers, and even random strangers. Many began to tailor their posts to get as many likes as possible. Social-media consultants sprung up to advise people on how to game Facebook&rsquo;s algorithm: the right words to use, the right time to post, the right blend of words and pictures. &ldquo;LIKE THIS,&rdquo; a feel-good post would implore, and people would do it, even if they didn&rsquo;t really care that much about the post. It wasn&rsquo;t long before Facebook users&rsquo; feeds <a href="http://www.theatlantic.com/technology/archive/2013/12/why-are-upworthy-headlines-suddenly-everywhere/282048/">began to feel eerily similar</a>: all filled with content that was <a href="https://www.postplanner.com/content-marketing-lessons-top-10-most-viral-blog-posts/">engineered to go viral</a>, much of it mawkish or patronizing. Drowned out were substance, nuance, sadness, and anything that provoked thought or emotions beyond a simple thumbs-up.</p>
+
+
+</div>
+
+<div class="text parbase text-30 section">
+
+<p>Engagement metrics were up&mdash;way up&mdash;but was this really what the news feed should be optimizing for? The question preoccupied Chris Cox, an early Facebook employee and the news feed&rsquo;s intellectual architect. &ldquo;Looking at likes, clicks, comments, and shares is one way of determining what people are interested in,&rdquo; Cox, 33, tells me via email. (He&rsquo;s now Facebook&rsquo;s chief product officer.) &ldquo;But we knew there were places where this was imperfect.&nbsp;For example, you may read a tragic post that you don&rsquo;t want to click like, comment on, or share, but if we asked you, you would say that it really mattered to you to have read it. A couple of years ago, we knew we needed to look at more than just likes and clicks to improve how News Feed worked for these kinds of cases.&rdquo;</p>
+
+
+</div>
+
+<div class="text parbase text-31 section">
+
+<p>An algorithm can optimize for a given outcome, but it can&rsquo;t tell you what that outcome should be. Only humans can do that. Cox and the other humans behind Facebook&rsquo;s news feed decided that their ultimate goal would be to show people all the posts that really matter to them and none of the ones that don&rsquo;t. They knew that might mean sacrificing some short-term engagement&mdash;and maybe revenue&mdash;in the name of user satisfaction. With Facebook raking in money, and <a href="http://qz.com/192779/how-mark-zuckerbergs-control-of-facebook-lets-him-print-money/">founder and CEO Mark Zuckerberg controlling a majority of the voting shares</a>, the company had the rare luxury to optimize for long-term value. But that still left the question of how exactly to do it.</p>
+
+
+</div>
+
+<div class="text parbase text-32 section">
+
+<p>Media organizations have historically defined what matters to their audience through their own editorial judgment. Press them on what makes a story worthwhile, and they&rsquo;ll appeal to values such as truth, newsworthiness, and public interest. But Cox and his colleagues at Facebook have taken pains to avoid putting their own editorial stamp on the news feed. Instead, their working definition of what matters to any given Facebook user is just this: what he or she would rank at the top of their feeds given the choice. &ldquo;The perfect way to solve this problem would be to ask everyone which stories they wanted to see and which they didn&rsquo;t, but that&rsquo;s not possible or practical,&rdquo; Cox says. Instead, Facebook decided to ask <em>some</em> people which stories they wanted to see and which they didn&rsquo;t. There were about 1,000 of those people, and until recently, most of them lived in Knoxville, Tennessee. Now they&rsquo;re everywhere.</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 200px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="160103_FT_Facebook-Spot-Anon" alt="160103_FT_Facebook-Spot-Anon" src="/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Spot-Anon.jpg.CROP.original-original.jpg" >
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text parbase section text-33">
+
+<p>Adam Mosseri, Facebook&rsquo;s 32-year-old director of product for news feed, is Alison&rsquo;s less technical counterpart&mdash;a &ldquo;fuzzie&rdquo; rather than a &ldquo;techie,&rdquo; in Silicon Valley parlance. He traffics in problems and generalities, where Alison deals in solutions and specifics. He&rsquo;s the news feed&rsquo;s resident philosopher.</p>
+
+
+</div>
+
+<div class="text parbase text-34 section">
+
+<p>The push to humanize the news feed&rsquo;s inputs and outputs began under Mosseri&rsquo;s predecessor, Will Cathcart. (I wrote about <a href="http://www.slate.com/articles/technology/technology/2014/04/facebook_news_feed_edgerank_facebook_algorithms_facebook_machine_learning.html">several of those innovations here</a>.) Cathcart started by gathering more subtle forms of behavioral data: not just whether someone clicked, but how long he spent reading a story once he clicked on it; not just whether he liked it, but whether he liked it before or after reading. For instance: Liking a post before you&rsquo;ve read it, Facebook learned, corresponds much more weakly to your actual sentiment than liking it afterward.</p>
+
+
+</div>
+
+<div class="text parbase text-35 section">
+
+<p>After taking the reins in late 2013, Mosseri&rsquo;s big initiative was to set up what Facebook calls its &ldquo;feed quality panel.&rdquo; It began in summer 2014 as a group of several hundred people in Knoxville whom the company paid to come in to an office every day and provide continual, detailed feedback on what they saw in their news feeds. (Their location was, Facebook says, a &ldquo;historical accident&rdquo; that grew out of a pilot project in which the company partnered with an unnamed third-party subcontractor.) Mosseri and his team didn&rsquo;t just study their behavior. They also asked them questions to try to get at <em>why</em> they liked or didn&rsquo;t like a given post, <em>how much </em>they liked it, and what they would have preferred to see instead. &ldquo;They actually write a little paragraph about every story in their news feed,&rdquo; notes Greg Marra, product manager for the news feed ranking team. (This is the group that&rsquo;s becoming Facebook&rsquo;s equivalent of Nielsen families.)</p>
+
+
+</div>
+
+<div class="text parbase text-36 section">
+
+<p>&nbsp;&ldquo;The question was, &lsquo;What might we be missing?&rsquo; &rdquo; Mosseri says. &ldquo;&lsquo;Do we have any blind spots?&rsquo;&rdquo; For instance, he adds, &ldquo;We know there are some things you see in your feed that you loved and you were excited about, but you didn&rsquo;t actually interact with.&rdquo; Without a way to measure that, the algorithm would devalue such posts in favor of others that lend themselves more naturally to likes and clicks. But what signal could Facebook use to capture that information?</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="151230_FT_Facebook-Eulenstein-Scissors" alt="151230_FT_Facebook-Eulenstein-Scissors" src="/content/dam/slate/articles/technology/future_tense/2015/12/151230_FT_Facebook-Eulenstein-Scissors.jpg.CROP.promo-xlarge2.jpg" > <figcaption class="caption"><span>Max Eulenstein, product manager, and Lauren Scissors, user experience researcher, in a conference room near their team’s work space.</span></figcaption>  <p class="credit">Photo by Christophe Wu/Facebook</p> 
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text parbase text-37 section">
+
+<p>Mosseri deputized product manager Max Eulenstein and user experience researcher Lauren Scissors to oversee the feed quality panel and ask it just those sorts of questions. For instance, Eulenstein used the panel to test the hypothesis that the time a user spends looking at a story in her news feed might be a good indicator that she likes it, even if she didn&rsquo;t actually click like. &ldquo;We speculated that it might be, but you could think of reasons why it wouldn&rsquo;t be, too,&rdquo; Eulenstein tells me. &ldquo;It might be that there are scary or shocking stories that you stare at, but don&rsquo;t want to see.&rdquo; The feed quality panelists&rsquo; ratings allowed Eulenstein and Scissors to not only confirm their hunch, but to examine the subtleties in the correlation, and to begin to quantify it. &ldquo;It&rsquo;s not as simple as, &lsquo;5 seconds is good, 2 seconds is bad,&rsquo; &rdquo; Eulenstein explains. &ldquo;It has more to do with the amount of time you spend on a story relative to the other stories in your news feed.&rdquo; The research also revealed the need to control for the speed of users&rsquo; Internet connections, which can make it seem like they&rsquo;re spending a long time on a given story when they&rsquo;re actually just waiting for the page to load. Out of that research emerged <a href="http://newsroom.fb.com/news/2015/06/news-feed-fyi-taking-into-account-time-spent-on-stories/">a tweak that Facebook revealed in June</a>, in which the algorithm boosted the rankings of stories that users spent more time viewing in their feeds.</p>
+
+
+</div>
+
+<div class="pagebreak section">
+
+</div>
+
+<div class="text parbase text-38 section">
+
+<p>Within months, Mosseri and his team had grown so reliant on the panel&rsquo;s feedback that they took it nationwide, paying a demographically representative sample of people around the country to rate and review their Facebook feeds on a daily basis from their own homes. By late summer 2015, Facebook disbanded the Knoxville group and began to expand the feed quality panel overseas. Mosseri&rsquo;s instinct was right: The news feed algorithm had blind spots that Facebook&rsquo;s data scientists couldn&rsquo;t have identified on their own. It took a different kind of data&mdash;qualitative human feedback&mdash;to begin to fill them in.</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 354px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="160103_FT_Facebook-Spot-Test" alt="160103_FT_Facebook-Spot-Test" src="/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Spot-Test.jpg.CROP.original-original.jpg" >
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text parbase text-39 section">
+
+<p>Crucial as the feed quality panel has become to Facebook&rsquo;s algorithm, the company has grown increasingly aware that no single source of data can tell it everything. It has responded by developing a sort of checks-and-balances system in which every news feed tweak must undergo a battery of tests among different types of audiences, and be judged on a variety of different metrics.</p>
+
+
+</div>
+
+<div class="text-40 text parbase section">
+
+<p>That balancing act is the task of the small team of news feed ranking engineers, data scientists, and product managers who come to work every day in Menlo Park. They&rsquo;re people like Sami Tas, a software engineer whose job is to translate the news feed ranking team&rsquo;s proposed changes into language that a computer can understand. This afternoon, as I look over his shoulder, he&rsquo;s walking me through a problem that might seem so small as to be trivial. It is exactly the sort of small problem, however, that Facebook now considers critical.</p>
+
+
+</div>
+
+<div class="text text-41 parbase section">
+
+<p>Most of the time, when people see a story they don&rsquo;t care about in their news feed, they scroll right past it. Some stories irk them enough that they&rsquo;re moved to click on the little drop-down menu at the top right of the post and select &ldquo;Hide post.&rdquo; Facebook&rsquo;s algorithm considers that a strong negative signal and endeavors to show them fewer posts like that in the future.</p>
+
+
+</div>
+
+<div class="text-42 text parbase section">
+
+<p>Not everyone uses Facebook the same way, however. Facebook&rsquo;s data scientists were aware that a small proportion of users&mdash;5 percent&mdash;were doing 85 percent of the hiding. When Facebook dug deeper, it found that a small subset of those 5 percent were hiding almost every story they saw&mdash;even ones they had liked and commented on. For these &ldquo;superhiders,&rdquo; it turned out, hiding a story didn&rsquo;t mean they disliked it; it was simply their way of marking the post &ldquo;read,&rdquo; like archiving a message in Gmail.</p>
+
+
+</div>
+
+<div class="text-43 text parbase section">
+
+<p>Yet their actions were biasing the data that Facebook relied on to rank stories. Intricate as it is, the news feed algorithm does not attempt to individually model each user&rsquo;s behavior. It treats your likes as identical in value to mine, and the same is true of our hides. For the superhiders, however, the ranking team decided to make an exception. Tas was tasked with tweaking the code to identify this small group of people and to discount the negative value of their hides.</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="151230_FT_Facebook-Newsfeed-Team" alt="151230_FT_Facebook-Newsfeed-Team" src="/content/dam/slate/articles/technology/future_tense/2015/12/151230_FT_Facebook-Newsfeed-Team.jpg.CROP.promo-xlarge2.jpg" > <figcaption class="caption"><span>The news feed engireering and design team. Left to right, back row: Shilin Ding, Meihong Wang, David Vickrey, Lars Backstrom, and Sami Tas. Left to right, front row: Amey Dharwadker, Geoff Teehan, and Sanjeet Hajarnis.</span></figcaption>  <p class="credit">Photo by Christophe Wu/Facebook</p> 
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text parbase text-44 section">
+
+<p>That might sound like a simple fix. But the algorithm is so precious to Facebook that every tweak to the code must be tested&mdash;first in an offline simulation, then among a tiny group of Facebook employees, then on a small fraction of all Facebook users&mdash;before it goes live. At each step, the company collects data on the change&rsquo;s effect on metrics ranging from user engagement to time spent on the site to ad revenue to page-load time. Diagnostic tools are set up to detect an abnormally large change on any one of these crucial metrics in real time, setting off a sort of internal alarm that automatically notifies key members of the news feed team.</p>
+
+
+</div>
+
+<div class="text parbase text-45 section">
+
+<p>Once a change like Tas&rsquo; has been tested on each of these audiences, he&rsquo;ll present the resulting data at one of the news feed team&rsquo;s weekly &ldquo;ranking meetings&rdquo; and field a volley questions from Mosseri, Allison, Marra, and his other colleagues as to its effect on various metrics. If the team is satisfied that the change is a positive one, free of unintended consequences, the engineers in charge of the code on the iOS, Android, and Web teams will gradually roll it out to the public at large.</p>
+
+
+</div>
+
+<div class="text parbase section text-46">
+
+<p>Even then, Facebook can&rsquo;t be sure that the change won&rsquo;t have some subtle, longer-term effect that it had failed to anticipate. To guard against this, it maintains a &ldquo;holdout group&rdquo;&mdash;a small proportion of users who don&rsquo;t see the change for weeks or months after the rest of us.</p>
+
+
+</div>
+
+<div class="text parbase text-47 section">
+
+<p>To speak of Facebook&rsquo;s news feed algorithm in the singular, then, can be misleading. It isn&rsquo;t just that the algorithm is really a collection of hundreds of smaller algorithms solving the smaller problems that make up the larger problem of what stories to show people. It&rsquo;s that, thanks to all the tests and holdout groups, there are more than a dozen different versions of that master algorithm running in the world at any given time. Tas&rsquo; &ldquo;hide stories&rdquo; tweak was announced July 31, and his post about it on <a href="http://newsroom.fb.com/news/2015/07/news-feed-fyi-a-better-understanding-of-hide/">Facebook&rsquo;s &ldquo;News Feed FYI&rdquo; blog</a> passed largely unnoticed by the public at large. Presumably, however, the superhiders of the world are now marginally more satisfied with their news feeds, and thus more likely to keep using Facebook, sharing stories with friends, and viewing the ads that keep the company in business.</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 200px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="160103_FT_Facebook-Spot-Trending" alt="160103_FT_Facebook-Spot-Trending" src="/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Spot-Trending.jpg.CROP.original-original.jpg" >
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text parbase text-48 section">
+
+<p>Facebook&rsquo;s feed quality panel has given the company&rsquo;s news feed team richer, more human data than it ever had before. Tas and the rest of the ranking team are growing more skillful at finding and fixing the algorithm&rsquo;s blind spots. But there is one other group of humans that Facebook is turning to more and more as it tries to keep the news feed relevant: ordinary users like you and me.</p>
+
+
+</div>
+
+<div class="text parbase text-49 section">
+
+<p>The survey that Facebook has been running over the past six months&mdash;asking a subset of users to choose their favorite among two side-by-side posts&mdash;is an attempt to gather the same sort of data from a much wider sample than is possible through the feed quality panel. But the increasing involvement of ordinary users isn&rsquo;t only on the input side of the equation. Over the past two years, Facebook has been giving users more power to control their news feeds&rsquo; output as well.</p>
+
+
+</div>
+
+<div class="text parbase text-50 section">
+
+<p>The algorithm is still the driving force behind the ranking of posts in your feed. But Facebook is increasingly giving users the ability to fine-tune their own feeds&mdash;a level of control it had long resisted as onerous and unnecessary. Facebook has spent seven years working on improving its ranking algorithm, Mosseri says. It has machine-learning wizards developing logistic regressions to interpret how users&rsquo; past behavior predicts what posts they&rsquo;re likely to engage with in the future. &ldquo;We could spend 10 more years&mdash;and we will&mdash;trying to improve those [machine-learning techniques],&rdquo; Mosseri says. &ldquo;But you can get a lot of value right now just by simply asking someone: &lsquo;What do you want to see? What do you not want to see? Which friends do you always want to see at the top of your feed?&rsquo; &rdquo;</p>
+
+
+</div>
+
+<div class="pullquotebox section">
+ 
+
+<aside class="pullquote">
+
+  <p class="quote">The age of the algorithm is not over, but there has been a change in velocity.</p>
+  
+  
+</aside>
+</div>
+
+<div class="text-51 text parbase section">
+
+<p>Those are now questions that Facebook allows every user to answer for herself. You can now &ldquo;unfollow&rdquo; a friend whose posts you no longer want to see, &ldquo;see less&rdquo; of a certain kind of story, and designate your favorite friends and pages as &ldquo;see first,&rdquo; so that their posts will appear at the top of your feed every time you log in. How to do all of these things is not immediately obvious to the casual user: You have to click a tiny gray down arrow in the top right corner of a post to see those options. Most people never do. But as the limitations of the fully automated feed have grown clearer, Facebook has grown more comfortable highlighting these options via occasional pop-up reminders with links to explanations and help pages. It is also testing new ways for users to interact with the news feed, including alternate, <a href="http://www.theverge.com/2015/12/29/10683722/facebook-news-feed-customize-interests-update-shopping">topic-based news feeds</a> and new buttons to convey <a href="http://www.slate.com/blogs/future_tense/2015/10/08/facebook_unveils_emoji_based_reactions.html">reactions other than like.</a></p>
+
+
+</div>
+
+<div class="text-52 text parbase section">
+
+<p>The shift is partly a defensive one. The greatest challenges to Facebook&rsquo;s dominance in recent years&mdash;the upstarts that threaten to do to Facebook what Facebook did to Myspace&mdash;have eschewed this sort of data-driven approach altogether. Instagram, which Facebook acquired in 2012 in part to <a href="http://www.slate.com/articles/technology/technology/2012/04/facebook_instagram_deal_mark_zuckerberg_s_plan_to_rule_mobile_sharing_.html">quell the threat</a> posed by its fast-growing popularity, simply shows you every photo from every person you follow in chronological order. Snapchat has eclipsed Facebook as teens&rsquo; social network of choice by eschewing virality and automated filtering in favor of more intimate forms of digital interaction.</p>
+
+
+</div>
+
+<div class="text-53 text parbase section">
+
+<p>Facebook is not the only data-driven company to run up against the limits of algorithmic optimization in recent years. Netflix&rsquo;s famous movie-recommendation engine has come to rely heavily on humans who are paid to watch movies all day and classify them by genre. To counterbalance the influence of Amazon&rsquo;s automated A/B tests, CEO Jeff Bezos places outsize importance on the specific complaints of individual users and maintains <a href="http://www.bloomberg.com/bw/articles/2013-10-10/jeff-bezos-and-the-age-of-amazon-excerpt-from-the-everything-store-by-brad-stone">a public email address</a> for that very purpose. It would be premature to declare the age of the algorithm over before it really began, but there has been a change in velocity. Facebook&rsquo;s Mosseri, for his part, rejects the buzzword &ldquo;data-driven&rdquo; in reference to decision making; he prefers &ldquo;data-informed.&rdquo;</p>
+
+
+</div>
+
+<div class="parbase image slate_image section">
+
+
+ <div class=" none">
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> <img src_tag_name="src" title="151230_FT_Facebook-Alison-Mosseri-Backstrom" alt="151230_FT_Facebook-Alison-Mosseri-Backstrom" src="/content/dam/slate/articles/technology/future_tense/2015/12/151230_FT_Facebook-Alison-Mosseri-Backstrom.jpg.CROP.promo-xlarge2.jpg" > <figcaption class="caption"><span>Engineering director Tom Alison, product director Adam Mosseri, and engineering director Lars Backstrom in the Saint Frank coffee shop in Facebook’s Building 20.</span></figcaption>  <p class="credit">Photo by Christophe Wu/Facebook</p> 
+        </figure>
+        </div>
+        <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+</div>
+
+<div class="text text-54 parbase section">
+
+<p>Facebook&rsquo;s news feed ranking team believes the change in its approach is paying off. &ldquo;As we continue to improve news feed based on what people tell us, we are seeing that we&rsquo;re getting better at ranking people&rsquo;s news feeds; our ranking is getting closer to how people would rank stories in their feeds themselves,&rdquo; says Scissors, the user experience researcher who helps to ovesee the feed quality panel.</p>
+
+
+</div>
+
+<div class="text parbase text-55 section">
+
+<p>There&rsquo;s a potential downside, however, to giving users this sort of control: What if they&rsquo;re mistaken, as humans often are, about what they really want to see? What if Facebook&rsquo;s database of our online behaviors really did know us better, at least in some ways, than we knew ourselves? Could giving people the news feed they say they want actually make it less addictive than it was before?</p>
+
+
+</div>
+
+<div class="text parbase text-56 section">
+
+<p>Mosseri tells me he&rsquo;s not particularly worried about that. The data so far, he explains, suggest that placing more weight on surveys and giving users more options have led to an increase in overall engagement and time spent on the site. While the two goals may seem to be in tension in the short term, &ldquo;We find that qualitiative improvements to the news feed look like they correlate with long-term engagement.&rdquo; That may be a happy coincidence if it continues to hold true. But if there&rsquo;s one thing that Facebook has learned in 10 years of running the news feed, it&rsquo;s that data never tell the full story, and the algorithm will never be perfect. What looks like it&rsquo;s working today might be unmasked as a mistake tomorrow. And when it does, the humans who go to work every day in Menlo Park&nbsp;will read a bunch of spreadsheets, hold a bunch of meetings, ran a bunch of tests&mdash;and then change the algorithm once again.</p>
+
+
+</div>
+</div>
+
+    
+    
+    <script>
+        requirejs(["jquery"], function($) {
+            function getDropCappedString(firstParagraphObj) {
+                var textString = firstParagraphObj.html().trim();
+                if (textString.length > 0) {
+                    var firstLetter = textString[0].match(/[A-Za-z0-9]/);
+                    if (firstLetter != null) {
+                        return '<span class="drop-capped">' +
+                            firstLetter + '</span>' + textString.substr(1);
+                    }
+                }
+                return null;
+            };
+
+
+            $(function() {
+                var $p = $(".main div.body div.text:first p:first");
+                if ($p.length != 0 && $p.find("span.drop-capped").length==0 ) {
+                   var newString = getDropCappedString($p);
+                   if (newString != null && 1 < 2) {
+                       $p.html(newString);
+                   }
+                }
+                if($(".main div.body div.sectionheader").length!=0) {
+                    //apply to first par of each section of fresca
+                    $(".main div.body div.sectionheader").each(
+                            function(index) {
+                                if($(this).nextAll("div.text").first().find("p:first span.drop-capped").length==0)  {
+                                    var $p = $(this).nextAll("div.text").first().find("p:first"),
+                                     newString = getDropCappedString($p);
+                                    if (newString != null) {
+                                        $p.html(newString);
+                                    }
+                                }
+                            }
+                    )
+                }
+
+            });
+        });
+    </script>
+    
+</section>
+<div class="end-story" data-stream-index="0" id="end-story-0"></div>
+<footer>
+    
+
+
+    
+    <div class="pagination">
+        
+        <div class="pagination-container">
+        <div class="single-page"><a href="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.single.html">SINGLE PAGE</a></div>
+            <ul class="pages">
+                
+                
+                <li class="number active"><a href="#">1</a></li>
+                
+                <li class="number"><a href="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.2.html">2</a></li>
+                
+                <li class="number"><a href="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.3.html">3</a></li>
+                
+                <li class="next"><a href="http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.2.html">NEXT</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            requirejs(["jquery","myslate"], function($,myslate) {
+                myslate.paginate();
+            });
+        </script>
+        
+        
+
+    </div><!-- /.pagination -->
+
+    
+      
+
+
+    <div class="social social-with-popup sharing-buttons social-footer">
+
+      <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Who+Really+Controls+What+You+See+in+Your+Facebook+Feed%E2%80%94and+Why+They+Keep+Changing+It+%C2%A0%C2%A0&p[summary]=Every+time+you+open+Facebook,+one+of+the+world&rsquo;s+most+influential,+controversial,+and+misunderstood+algorithms+springs+into+action.+It+scans+and+collec+...&p[ref]=sl_live&p[images][0]=http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg&p[url]=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_fb_bot" class="facebook">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A&count=none&via=slate&url=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_dt_tw_bot" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html"><span class="count"></span></a>
+    </div>
+      
+        <a href="#comments" class="comments">
+          <span class="icon"></span>
+          <span class="count"></span>
+        </a>
+      
+    </div>
+
+
+
+    
+
+    
+   
+
+
+
+
+
+
+  
+  
+  
+
+<div class="social horiz-counts-mobile centered sharing-buttons">
+  
+    <div class="comments">
+      <a class="mobile-comments" href="#comments">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    </div>
+  
+  <div class="facebook">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Who+Really+Controls+What+You+See+in+Your+Facebook+Feed%E2%80%94and+Why+They+Keep+Changing+It+%C2%A0%C2%A0&p[summary]=Every+time+you+open+Facebook,+one+of+the+world&rsquo;s+most+influential,+controversial,+and+misunderstood+algorithms+springs+into+action.+It+scans+and+collec+...&p[ref]=sl_live&p[images][0]=http://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg&p[url]=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html&u=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_mob_fb_bot" class="share facebook" target="_blank">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+  </div>
+  <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A&count=none&via=slate&url=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_mob_tw_bot" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html"><span class="count"></span></a>
+  </div>
+
+  
+  
+  <div class="whatsapp">
+    <a href="whatsapp://send?text=Who%20controls%20your%20Facebook%20feed%E2%80%94and%20why%20they%20keep%20changing%20it.%20%40WillOremus%20reports%3A%20http%3A%2F%2Fwww.slate.com%2Farticles%2Ftechnology%2Fcover_story%2F2016%2F01%2Fhow_facebook_s_news_feed_algorithm_works.html%3Fwpsrc%3Dsh_all_mob_wa_bot" class="whatsapp">
+       <span class="icon"></span>
+    </a>
+  </div>
+  
+
+  <div class="email">
+    <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0AWho%20Really%20Controls%20What%20You%20See%20in%20Your%20Facebook%20Feed%E2%80%94and%20Why%20They%20Keep%20Changing%20It%20%C2%A0%C2%A0%0Ahttp://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html?wpsrc=sh_all_mob_em_bot" class="email">
+      <span class="icon"></span>
+      <span class="count">&nbsp;</span>
+    </a>
+  </div>
+</div>
+
+
+    
+    
+    
+
+    
+    
+    
+</footer>
+
+
+
+
+
+<div id="comments" class="comments-container" data-lf-hash="MzM3NzIwOmNxLTEwMDE2MDEwMzAwMw==">
+  <div id="livefyre">
+  	<div class="button-container lf-loader" style="text-align:center;">
+      <button class="push-button comments-push-button" style="padding: 0 15px;">Load Comments</button>
+    </div>
+  </div>
+  <div id="powered_by_livefyre_new"><a href="http://livefyre.com" target="_blank">Powered by Livefyre</a></div>
+</div>
+
+<div id="right-rail">
+  <div id="comments-ads" class="comments-ads-container">
+  </div>
+  <div id="comments-bigbox" class="comments-bigbox-container">
+    <div class="ad bigbox" data-ad-mode="desktop" data-ad-type="bigbox"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+requirejs(['config', 'jquery', 'slatelivefyre'], function(config, $, slatelivefyre) {
+  $('#livefyre .lf-loader').html([
+    '<div style="color: #999;">Loading...</div>',
+    '<div style="color: #999; font-size: smaller; margin: 20px auto">',
+    'Are Slate\'s comments not loading even after a few seconds? ',
+    '<br/><a target="_blank" href="http://www.slate.com/features/browser-data-comment.html" class="issue-collector" data-issue-collector-value="11019">',
+    'Send us your browser and operating system information.</a>',
+    '</div>'
+  ].join(''));
+
+  $.extend(config.livefyre, {
+    collectionMeta: 'eyJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IldobyBSZWFsbHkgQ29udHJvbHMgV2hhdCBZb3UgU2VlIGluIFlvdXIgRmFjZWJvb2sgRmVlZOKAlGFuZCBXaHkgVGhleSBLZWVwIENoYW5naW5nIEl0IFx1MDAyNm5ic3A7XHUwMDI2bmJzcDsiLCJ1cmwiOiJodHRwOi8vd3d3LnNsYXRlLmNvbS9hcnRpY2xlcy90ZWNobm9sb2d5L2NvdmVyX3N0b3J5LzIwMTYvMDEvaG93X2ZhY2Vib29rX3NfbmV3c19mZWVkX2FsZ29yaXRobV93b3Jrcy5odG1sP3dwaXNyY1x1MDAzZGxmIiwidGFncyI6InRlY2hub2xvZ3ksY292ZXIgc3RvcnksZmFjZWJvb2ssc29jaWFsIG1lZGlhLHNvY2lhbCBuZXR3b3JrcyxhbGdvcml0aG1zIiwiY2hlY2tzdW0iOiIxNDY5M2U5YzlhMTllNThkNjY0NmFjOWYzMjk2OTNiYSIsImFydGljbGVJZCI6ImNxLTEwMDE2MDEwMzAwMyJ9.ndWdIV3MwsYOrG-irmyOy7vA-nvDjW8JbKwcGfR-qKc'
+  });
+
+  if (config.iscroll.disabled) {
+    slatelivefyre.loadLivefyre(config.page.articleId, config.livefyre.collectionMeta);
+  }
+});
+</script>
+
+
+
+
+
+    <div class="parsys iparsys contentWellBottom"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys iparsys contentWellBottom">
+</div>
+</div>
+</div>
+
+    
+
+    
+    <div class="noAutoRefresh" data-ad-type="teads" data-ad-mode="all" id="slug_teads"></div>
+    <div class="bottom" id="bottom-0">
+    </div>
+    
+
+  </article><!-- /.main -->
+  
+  <aside class="sidebar" id="main_sidebar">
+    <div class="sidebar-wrapper">
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<section class="nav-panel" id='slate_logo'>
+  <div class="nav-header">
+    <a class="slate-logo" href="/">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" width="119" height="37" viewBox="0 0 258 80" style="margin: 8px 0 0 8px;">
+          <title>Slate logo</title>
+          <path fill="#FFF" d="M257.9 18.8h-23.3v12.7h23.3V48h-23.3v13.1h23.3V78h-43V2h43v16.7zM205.7 2v16.7h-16.1v59H170v-59h-16.1V2h51.8zm-85.8 0h13.3L161.9 78h-21l-5.7-16.7h-15.3v-15H130L120 17.1V2zm-55.5 0H84v59.1h26.5V78H64.4V2zM26 18.1a5.6 5.6 0 0 0-2.4 4.8c0 1.4.4 2.5 1.2 3.3.8.9 1.8 1.7 3.1 2.3 1.3.6 2.8 1.2 4.4 1.7 1.7.4 3.3 1 4.9 1.5 6.4 2.1 11 5 14 8.6 3 3.5 4.5 8.2 4.5 14 0 3.9-.7 7.4-2 10.5A22 22 0 0 1 48 73c-2.5 2.3-5.5 4-9.2 5.2A45.2 45.2 0 0 1 0 71.4l8.4-15.8a34 34 0 0 0 8.7 5.8c2.9 1.3 5.7 2 8.5 2 3.2 0 5.6-.8 7.1-2.3a6.8 6.8 0 0 0 1.8-8c-.4-.8-1-1.6-2-2.3a16 16 0 0 0-3.7-2l-5.4-2-7.5-2.6c-2.4-1-4.6-2.3-6.5-3.9a18 18 0 0 1-4.5-6A21.6 21.6 0 0 1 3 24.8c0-3.7.6-7.1 1.8-10.2A22.7 22.7 0 0 1 18.3 1.8C21.6.6 25.2 0 29.2 0a47.3 47.3 0 0 1 23.4 6.1l-7.8 15.4c-2.1-1.7-4.3-3-6.4-3.9a17 17 0 0 0-6.2-1.2 10 10 0 0 0-6.2 1.8z"/>
+        </svg>
+      
+    </a>
+    <a href="#" class="user-link sidebar-handle"></a>
+    <a href="#" class="search-link sidebar-handle"></a>
+    <a href="#" class="global-nav-handle sidebar-handle"></a>
+    <div class="buttons">
+      
+      <span class="link option"><a class="first nav-option sign-in-link" href="#">Sign In</a></span>
+      <span class="link option"><a href="#" class="nav-option sign-up-link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+      
+
+      
+      
+
+<div class="parsys iparsys contentSidebar"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys iparsys contentSidebar"><div class="rightrailstories section">
+
+<section class="items">
+  
+
+  
+
+  
+ </section>
+
+
+ 
+<script type="text/javascript">
+requirejs(['jquery'], function($) {
+  if (mobileMode()) {
+    $(".rightrailstories section").remove();
+  }
+});
+</script>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+      
+    </div><!-- /.sidebar-wrapper -->
+  </aside><!-- /.sidebar -->
+  
+  
+  
+  	
+
+  <footer id="article_footer_tiles">
+    
+  </footer>
+
+
+  
+    <img width="0" height="0" src="https://pv.surveywall-api.survata.com/s?eid=2ca7ac88-8963-4abf-acff-c1114097be96">
+  
+
+  
+</div><!-- /.page -->
+
+
+
+<!-- HCS: layout -->
+  
+    <style type="text/css">
+      body > .bottom {
+        text-align: center;
+        padding: 10px 0;
+      }
+      .bottom > #slug_leaderboard_2 {
+        position: relative;
+        width: auto;
+        text-align: center;
+      }
+    </style>
+
+    
+      <div class="bottom">
+        
+          
+            <div class="ad leaderboard-3" data-ad-type="leaderboard|3" data-ad-mode="desktop"></div>
+          
+          
+        
+      </div>
+    
+
+
+
+<footer class="slate-footer slate-footer--top">
+  <div class="container">
+    <div class="slate-footer__follow-slate">
+          <span class="label">FOLLOW SLATE</span>
+          <ul class="list-unstyled slate-footer__social-icons">
+            <li class="twitter">
+              <a href="https://twitter.com/slate" target="_blank"><span class="sr-only">Twitter</span></a>
+            </li>
+            <li class="facebook">
+              <a href="http://www.facebook.com/Slate" target="_blank"><span class="sr-only">Facebook</span></a>
+            </li>
+            <li class="instagram">
+              <a href="https://instagram.com/slate" target="_blank"><span class="sr-only">Instagram</span></a>
+            </li>
+          </ul>
+    </div>
+
+    <div id="slug_interstitial" data-ad-type="interstitial" data-ad-mode="all" style="display: none;"></div>
+
+    <div class="slate-footer__slate-on">
+      <span class="label">SLATE ON</span>
+      <ul class="list-unstyled">
+        <li><a href="http://itunes.apple.com/us/app/slate-com/id357555242?mt=8">IPHONE</a></li>
+        <li><a href="https://market.android.com/details?id=com.wapo.slate.android">ANDROID</a></li>
+        <li><a href="http://www.amazon.com/gp/product/B000IOMTC0?ie=UTF8&tag=slatmaga-20&link_code=as3&camp=211189&creative=373489&creativeASIN=B000IOMTC0/">KINDLE</a></li>
+      </ul>
+    </div>
+
+    <ul class="slate-footer__reprints list-unstyled">
+      <li><a href="http://www.slatereprints.com">Reprints</a></li>
+      <li><a href="mailto:advertise@slate.com">Advertise with us</a></li>
+    </ul>
+
+  </div><!-- close wrapper -->
+</footer><!-- footer base -->
+
+
+
+  
+
+
+<footer class="slate-footer slate-footer--bottom">
+  <div class="container">
+      <div class="slate-footer__links">
+        <ul class="list-unstyled">
+          <li><a href="/articles/news_and_politics/slate_fare/2006/08/about_us.html">ABOUT US</a></li>
+          <li><a href="/articles/briefing/contact_us/2006/08/whereto_find_slate_staff.html">CONTACT US</a></li>
+          <li><a href="/articles/news_and_politics/slate_fare/2008/04/a_job_for_you_at_slate.html">WORK WITH US</a></li>
+          <li><a href="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_terms_of_service.html">USER AGREEMENT</a></li>
+          <li><a href="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html">PRIVACY POLICY</a></li>
+          <li><a href="/articles/briefing/slate_fare/2011/12/commenting_on_slate_frequently_asked_questions.html">FAQ</a></li>
+        </ul>
+        <ul class="list-unstyled">
+          <li><a href="mailto:feedback@slate.com">FEEDBACK</a></li>
+          <li><a href="/articles/news_and_politics/corrections.html">CORRECTIONS</a></li>
+        </ul>
+      </div><!-- -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571.199 70.048" widht="165" height="24">
+        <title>Slate Group logo</title>
+		<!-- "SLATE" -->
+		<path fill="#ffffff" d="M22.88 15.93a8.853 8.853 0 0 1 5.456-1.585 14.944 14.944 0 0 1 5.456 1.1 21.337 21.337 0 0 1 5.632 3.388l6.865-13.464a45.495 45.495 0 0 0-10.297-4.004A41.8 41.8 0 0 0 25.696 0a27.269 27.269 0 0 0-9.548 1.584 20.41 20.41 0 0 0-7.216 4.444 19.847 19.847 0 0 0-4.576 6.865 23.513 23.513 0 0 0-1.627 8.932 18.804 18.804 0 0 0 1.54 8.14 15.72 15.72 0 0 0 4.046 5.324 20.586 20.586 0 0 0 5.72 3.388q3.211 1.277 6.556 2.331 2.816.97 4.796 1.761a14.136 14.136 0 0 1 3.213 1.715 5.629 5.629 0 0 1 1.76 2.024 5.997 5.997 0 0 1-1.54 6.996q-2.069 1.937-6.292 1.937a18.4 18.4 0 0 1-7.48-1.672 29.972 29.972 0 0 1-7.656-5.104L0 62.569a39.956 39.956 0 0 0 23.32 7.48 33.759 33.759 0 0 0 10.869-1.627 23.148 23.148 0 0 0 8.096-4.577 19.268 19.268 0 0 0 5.015-7.084 23.885 23.885 0 0 0 1.716-9.241q0-7.567-3.916-12.276-3.916-4.706-12.364-7.524-2.113-.703-4.268-1.32a23.708 23.708 0 0 1-3.872-1.45 9.2 9.2 0 0 1-2.773-1.981 4.11 4.11 0 0 1-1.055-2.904 4.933 4.933 0 0 1 2.112-4.136zm204.076.526V1.849h-37.752v66.352h37.752V53.592h-20.504V42.153h20.504V27.544h-20.504V16.456h20.504zM56.64 1.849v66.352h40.562V53.592H73.888V1.849H56.64zm124.384 0h-45.583v14.608h14.167v51.744h17.248V16.457h14.168V1.849zm-75.504 0v13.088l8.898 25.543h-8.898v13.112h13.466l5.089 14.609h18.392L117.211 1.849H105.52z"></path>
+		<!-- "GROUP" -->
+		<path fill="#ffffff" opacity="0.6" d="M270.331 31.064h34.232a95.19 95.19 0 0 1-.44 9.592 34.029 34.029 0 0 1-1.76 8.008 31.953 31.953 0 0 1-5.015 9.196 29.34 29.34 0 0 1-7.436 6.688 34.916 34.916 0 0 1-9.373 4.092 40.212 40.212 0 0 1-10.735 1.408 37.707 37.707 0 0 1-14.124-2.552 31.852 31.852 0 0 1-10.956-7.172 32.468 32.468 0 0 1-7.128-11.088 38.618 38.618 0 0 1-2.553-14.3 39.003 39.003 0 0 1 2.508-14.212A31.199 31.199 0 0 1 244.68 9.68a32.404 32.404 0 0 1 11.132-7.128A39.507 39.507 0 0 1 270.331 0a35.996 35.996 0 0 1 18.216 4.488q7.832 4.488 12.408 13.904l-16.368 6.776q-2.29-5.455-5.94-7.832a14.909 14.909 0 0 0-8.316-2.376 16.698 16.698 0 0 0-7.04 1.452 15.268 15.268 0 0 0-5.412 4.136 19.86 19.86 0 0 0-3.52 6.468 26.33 26.33 0 0 0-1.276 8.448 26.704 26.704 0 0 0 1.1 7.832 17.67 17.67 0 0 0 3.3 6.248 14.868 14.868 0 0 0 5.456 4.092 18.43 18.43 0 0 0 7.568 1.452 20.908 20.908 0 0 0 4.928-.572 12.98 12.98 0 0 0 4.269-1.848 10.518 10.518 0 0 0 3.124-3.3 13.226 13.226 0 0 0 1.671-4.928h-14.168zM368.89 68.2h-21.472l-16.455-25.52V68.2h-17.249V1.848h26.84a26.356 26.356 0 0 1 9.68 1.628 18.228 18.228 0 0 1 10.868 10.956 22.697 22.697 0 0 1 1.365 7.92q0 7.57-3.653 12.276t-10.78 6.38zm-37.927-36.696h3.255q5.103 0 7.833-2.112a7.223 7.223 0 0 0 2.728-6.072 7.224 7.224 0 0 0-2.728-6.072q-2.73-2.112-7.833-2.112h-3.255zm38.191 3.52a34.19 34.19 0 0 1 21.868-32.34 42.18 42.18 0 0 1 29.612 0 34.995 34.995 0 0 1 11.66 7.436 34.035 34.035 0 0 1 7.611 11.132 34.668 34.668 0 0 1 2.729 13.773 34.66 34.66 0 0 1-2.729 13.771 34.018 34.018 0 0 1-7.611 11.132 34.974 34.974 0 0 1-11.66 7.437 42.187 42.187 0 0 1-29.612 0 34.32 34.32 0 0 1-21.868-32.34zm18.04 0a17.67 17.67 0 0 0 1.496 7.304 18.268 18.268 0 0 0 9.988 9.636 19.193 19.193 0 0 0 20.328-3.828 18.127 18.127 0 0 0 4.092-5.808 17.685 17.685 0 0 0 1.496-7.304 17.689 17.689 0 0 0-1.496-7.304 18.162 18.162 0 0 0-4.092-5.808 19.354 19.354 0 0 0-20.328-3.828 18.267 18.267 0 0 0-9.988 9.636 17.674 17.674 0 0 0-1.497 7.304zm81.575-33.176v36.08q0 2.904.22 5.94a16.248 16.248 0 0 0 1.32 5.5 9.14 9.14 0 0 0 3.475 4.004 12.26 12.26 0 0 0 6.689 1.54 12.027 12.027 0 0 0 6.643-1.54 9.549 9.549 0 0 0 3.477-4.004 15.67 15.67 0 0 0 1.364-5.5q.218-3.037.22-5.94V1.848h17.16v38.456q0 15.489-7.084 22.616t-21.78 7.128q-14.697 0-21.824-7.128t-7.128-22.616V1.848zM537.936 68.2h-17.248V1.848h27.456q11.175 0 17.116 5.808t5.94 16.368q0 10.56-5.94 16.368T548.144 46.2h-10.208zm0-35.904h5.72q9.504 0 9.504-8.272t-9.504-8.272h-5.72z"></path>
+</svg>
+
+      <p class="copyright">Slate is published by The Slate Group, a Graham Holdings Company. All contents &copy;
+        2018  The Slate Group LLC. All rights reserved.</p>
+
+  </div><!-- close wrapper -->
+</footer> <!-- /.footer-base-toc -->
+
+
+
+
+
+
+<!-- HCS END: layout -->
+<!-- HCS: layouts/shared/bottom -->
+
+<div id="signIn"></div>
+<script>
+
+
+requirejs(["jquery", "hcs/libs/iscroll-lite", "modernizr", "hcs/script", "hcs/plugins/SGGlobalNav.jquery", "hcs/plugins/jQuery.highlighter","hcs/plugins/SGGlobalNav.jquery","libs/jquery-plugins/jquery.timeago","announcements","myslate"], function($, iScroll, unused0, unused1, unused2, unused3, unused4, unused5, announcements, myslate) {
+  $(document).ready(function() {
+    announcements.deleteOldCookies();
+    
+    $("span.timeago").timeago();
+  });
+  function pageLoadedForScrolling(){
+
+
+    scroller = new iScroll('main_sidebar', {
+      hScroll: false,
+      hScrollbar: false,
+      bounce: false
+    });
+
+    if(!mobileMode() && tabletMode() && $('html').hasClass('touch')){
+      // Nav gets iScroll if we're on an actual tablet.
+      window.tabletScroller = new iScroll('nav_sections', {
+        hScroll: false,
+        hScrollbar: false,
+        bounce: false,
+        onBeforeScrollStart: function (e) {
+          var target = e.target;
+          while (target.nodeType != 1) target = target.parentNode;
+
+          if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+          e.preventDefault();
+        }
+      });
+    }
+
+  }
+
+  // We institute fancy scrolling on iscroll only on mobile webkit.
+
+  // Webkit detection script
+  Modernizr.addTest('webkit', function(){
+    return RegExp(" AppleWebKit/").test(navigator.userAgent);
+  });
+
+  // Mobile Webkit
+  Modernizr.addTest('mobile', function(){
+    return RegExp(" Mobile/").test(navigator.userAgent);
+  });
+
+  if(Modernizr.webkit && Modernizr.mobile){
+    if (document.addEventListener){
+      document.addEventListener('DOMContentLoaded', function () { setTimeout(pageLoadedForScrolling, 200); }, false);
+    } else if (document.attachEvent){
+      document.attachEvent('DOMContentLoaded', function () { setTimeout(pageLoadedForScrolling, 200); }, false);
+    }
+  }
+
+
+
+  $(function(){
+
+    if ($('body').hasClass('home')
+        || $('body').hasClass('landing')
+        || $('body').hasClass('settings')) {
+      $('.nav-header').SGGlobalNav({
+        noRollup: true, // Need to tell the homepage and landing etc that there's no rollup here, which causes things to behave differently.
+        noBurgerScroll: $('body').hasClass('no-burger-scroll'),
+        isSlatePlusUser: myslate.isSlatePlusUser
+      });
+    } else {
+      $('.nav-header').SGGlobalNav({
+        isSlatePlusUser: myslate.isSlatePlusUser
+      });
+    }
+
+
+    // Input field placeholder plugin to account for placeholder fallbacks.
+    jQuery(document).ready(function($) {
+      $(".field-with-placeholder").placeholder();
+    });
+
+
+    $('.content').highlighter({
+      'selector': '.highlighter-container',
+      'noHighlightIds': $('#podcast-slateplus-page'),
+      'minWords': 0,
+      'complete': function (data) {
+        // Here we have the selected string for use.
+        // console.log(data);
+        selectedText = data;
+      }
+    });
+
+  });
+
+
+  $(document).ready(function() {
+    $(".sticky").each(function() {
+      var stickyTop = $(".sticky").offset().top; // returns number
+      $(window).scroll(function() { // scroll event
+        var windowTop = $(window).scrollTop() + 57 + parseInt($(".sticky").css("margin-top").split("px")[0]); // returns number
+        if (stickyTop < windowTop) {
+          $(".sticky").css({ position: "fixed", top: "53px" });
+        } else {
+          $(".sticky").css("position","static");
+        }
+      });
+    })
+  });
+
+  watchSocialWelcomeNotifications();
+
+});
+    </script>
+
+    
+    
+
+    <script>
+requirejs(["jquery", "myslate", "hcs/script", "hcs/plugins/SGNavDropdown.jquery",
+		"hcs/plugins/SGBigSlider.jquery","hcs/plugins/SGFootnote.jquery","hcs/plugins/SGRollup.jquery",
+		"hcs/plugins/SGNavDropdown.jquery","hcs/plugins/SGLightbox.jquery"],
+		function($, myslate, unused0, unused1, unused2, unused3, unused4, unused5, unused6) {
+
+    $(function(){
+
+      $('.footnote').SGFootnote();
+      var multipartArticleRollup = $('#article_rollup');
+
+      var subHed = $('#sub_hed');
+      if(subHed.length > 0){
+        subHed.SGNavDropdown({ // Multipart rollup triggered by tapping the subhed.
+          extraId: 'subhed', // Used to name events inside the plugin, so we can be sure to bind/unbind the correct stuff.
+          targetId: '#multipart_nav', // The thing to show.
+          leftOffset: function(){ return $('#sub_hed').position().left; },
+          topOffset: function(){ return $('#sub_hed').position().top + $('#sub_hed').outerHeight(true); },
+          onShow: function(){
+            $('#multipart_nav').css('position', 'absolute');
+            $('#multipart_nav').css('height', 'auto');
+            $('#multipart_nav').css('overflow', 'auto');
+            // subHed.find('.toggle').addClass('open-toggle');
+          },
+          onHide: function(){
+            // subHed.find('.toggle').removeClass('open-toggle');
+          }
+        });
+      }
+
+      if($('#article_header').length > 0){
+        // The roll up.
+        $('#main_sidebar').SGRollup({ // The main element assigned to this plugin is used to trigger the drop of the rollup on desktop mode.
+          rollupEl: multipartArticleRollup,
+          topOffset: $('#slate_logo').height(),
+          leftOffset: $('#article_header').offset().left,
+          tablet: {el: $('#article_header'), topOffset: $('#article_header').height()}, // Indicate the visibility triggers for tablet mode.
+          mobile: {el: $('#tablet_header'), topOffset: $('#tablet_header').height()},// Indicate the visibility triggers for mobile mode.
+          onHide: function(){
+            // On roll back up make sure to hide the nav if it's open, assuming it was opened by the rollup toggle.
+            if(multipartArticleRollup.data('plugin_SGNavDropdown').isTargetVisible() && $('#multipart_nav').data('openedByRollup')){
+              multipartArticleRollup.data('plugin_SGNavDropdown').close();
+            }
+          }
+        });
+      }
+
+    // Multipart dropdown triggered by the rollup in the multipart nav.
+      multipartArticleRollup.SGNavDropdown({
+        targetId: '#multipart_nav', // The thing to show.
+        extraSpecificHandle: '.handle',
+        extraId: 'multipart', // Used to name events inside the plugin, so we can be sure to bind/unbind the correct stuff.
+        leftOffset: function(){ return multipartArticleRollup.find('.main').offset().left; },
+        topOffset: function(){
+          return multipartArticleRollup.outerHeight(true)
+        },
+        onShow: function(){
+          $('#multipart_nav').css('position', ''); // undo the absolute bit we might have affixed in subHed.SGNavDropdown().
+          $('#multipart_nav').addClass('fixed').data('openedByRollup', true);
+          $('#multipart_nav').css('max-height', (mobileMode() ? $(window).outerHeight(true) + 10 : $(window).height() - $('#article_rollup').height()));
+          $('#multipart_nav').css('overflow', 'scroll');
+          if(mobileMode()){
+            $('#multipart_nav').css('right', 0);
+          }
+        },
+        onHide: function(){
+          $('#multipart_nav').data('openedByRollup', false);
+        }
+      });
+
+
+
+
+
+      // Trigger the slideshow lightbox for from the .slideshow-preview example.
+        $('#slideshow_preview_link').SGLightbox({
+          type: 'slideshow',
+          slideshowElement: $('#the_slideshow')
+        });
+
+
+      watchMobileRollupSocialToggle();
+
+      $('.expandable').find('.toggle').click(function(e){
+        $(this).closest('.social').toggleClass('visible');
+        $('#main_byline').toggle();
+        e.preventDefault();
+      });
+
+      $('.full-width').setFullWidth();
+
+    });
+});
+    </script>
+    <script>
+    // Manage the social horizontal toggles on the landing pages.
+requirejs(["jquery", "hcs/script"],
+		function($, unused0) {
+
+      $(function(){
+        $('.social').find('.toggle').click(function(e){
+          e.preventDefault();
+          $(this).closest('.social').toggleClass('visible');
+        });
+      });
+});
+    </script>
+
+
+    
+    <!-- Parsely -->
+    
+
+
+
+
+
+
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="slate.com"></div>
+</div>
+
+<script>
+  var parselyLoaded = false,
+      parselyActionname = 'noniscrollstory';
+
+  
+
+
+  
+
+  // Call Parsely Onload Handler
+  PARSELY = {
+    autotrack: false,
+    onload: function() {
+      parselyLoaded = true;
+      PARSELY.beacon.trackPageView(parselyEvent);
+    }
+  };
+
+  // Load Parsely API Script
+  (function(s, p, d) {
+    var h=d.location.protocol, i=p+"-"+s,
+        e=d.getElementById(i), r=d.getElementById(p+"-root"),
+        u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+        :"static."+p+".com";
+    if (e) return;
+    e = d.createElement(s); e.id = i; e.async = true;
+    e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+  })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+    
+
+
+
+<div class="nav-header" id="magic_nav_header">
+  <a class="slate-logo" href="/"><span class="logo">Slate</span></a>
+  <div class="buttons"></div>
+</div><!-- /.nav-header -->
+<!-- HCS: layouts/shared/nav/nav -->
+<div id="nav_sections"></div>
+<!-- HCS END: layouts/shared/nav/nav -->
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<section class="nav-panel" id='nav_header_for_rollup_magic'>
+  <div class="nav-header">
+    <a class="slate-logo" href="/">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" width="119" height="37" viewBox="0 0 258 80" style="margin: 8px 0 0 8px;">
+          <title>Slate logo</title>
+          <path fill="#FFF" d="M257.9 18.8h-23.3v12.7h23.3V48h-23.3v13.1h23.3V78h-43V2h43v16.7zM205.7 2v16.7h-16.1v59H170v-59h-16.1V2h51.8zm-85.8 0h13.3L161.9 78h-21l-5.7-16.7h-15.3v-15H130L120 17.1V2zm-55.5 0H84v59.1h26.5V78H64.4V2zM26 18.1a5.6 5.6 0 0 0-2.4 4.8c0 1.4.4 2.5 1.2 3.3.8.9 1.8 1.7 3.1 2.3 1.3.6 2.8 1.2 4.4 1.7 1.7.4 3.3 1 4.9 1.5 6.4 2.1 11 5 14 8.6 3 3.5 4.5 8.2 4.5 14 0 3.9-.7 7.4-2 10.5A22 22 0 0 1 48 73c-2.5 2.3-5.5 4-9.2 5.2A45.2 45.2 0 0 1 0 71.4l8.4-15.8a34 34 0 0 0 8.7 5.8c2.9 1.3 5.7 2 8.5 2 3.2 0 5.6-.8 7.1-2.3a6.8 6.8 0 0 0 1.8-8c-.4-.8-1-1.6-2-2.3a16 16 0 0 0-3.7-2l-5.4-2-7.5-2.6c-2.4-1-4.6-2.3-6.5-3.9a18 18 0 0 1-4.5-6A21.6 21.6 0 0 1 3 24.8c0-3.7.6-7.1 1.8-10.2A22.7 22.7 0 0 1 18.3 1.8C21.6.6 25.2 0 29.2 0a47.3 47.3 0 0 1 23.4 6.1l-7.8 15.4c-2.1-1.7-4.3-3-6.4-3.9a17 17 0 0 0-6.2-1.2 10 10 0 0 0-6.2 1.8z"/>
+        </svg>
+      
+    </a>
+    <a href="#" class="user-link sidebar-handle"></a>
+    <a href="#" class="search-link sidebar-handle"></a>
+    <a href="#" class="global-nav-handle sidebar-handle"></a>
+    <div class="buttons">
+      
+      <span class="link option"><a class="first nav-option sign-in-link" href="#">Sign In</a></span>
+      <span class="link option"><a href="#" class="nav-option sign-up-link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+
+    <div id="nav_animation_mask">
+
+    </div>
+
+    
+    <span class='highlighter-container'>
+      <div class="social social-with-popup sharing-buttons">
+        <a href="#" data-share="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.htmlhttp://www.slate.com/content/dam/slate/articles/technology/future_tense/2016/01/160103_FT_Facebook-Algorithm.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg&p[title]=Who+Really+Controls+What+You+See+in+Your+Facebook+Feed%E2%80%94and+Why+They+Keep+Changing+It+%C2%A0%C2%A0&p[summary]=Every+time+you+open+Facebook%2C+one+of+the+world%E2%80%99s+most+influential%2C+controversial%2C+and+misunderstood+algorithms+springs+into+action.+It+scans+and+collec+..." class="facebook share highlighter">
+          <span class="icon"></span>
+        </a>
+        <a href="#" data-share="http://twitter.com/share?url=http://www.slate.com/articles/technology/cover_story/2016/01/how_facebook_s_news_feed_algorithm_works.html&count=none&via=slate" class="twitter">
+          <span class="icon"></span>
+        </a>
+        
+          <a href="#comments" class="comments" style="display: none;">
+            <span class="icon"></span>
+          </a>
+        
+      </div>
+        <div class="arrow-border"></div>
+        <div class="arrow"></div>
+    </span>
+    
+<!-- HCS END: layouts/shared/bottom -->
+
+    
+
+  
+<!--
+Page Loading starts on 2018/04/13 08:36:41, Total time elapsed to render is 0.37668332 seconds, Server: pub2.slate.com
+-->
+  </body>
+</html>

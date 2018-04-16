@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import json
+import logging
 import lxml.etree, lxml.html
 from datetime import datetime
 from dateutil.parser import parse
@@ -24,9 +25,106 @@ class HtmlMeta(object):
         self._metatag_xpath = lxml.etree.XPath("//meta")
         self._links_xpath = lxml.etree.XPath("//link")
 
-        self.links = None
+        self.links = {}
         self.jsonld = {}
-        self.links = None
+        self.metatags = {}
+
+    @property
+    def title(self):
+        return self.jsonld.get("headline") \
+            or self.metatags.get("og:title") \
+                or self.extract_title()
+
+    @property
+    def description(self):
+        return self.metatags.get("og:description") \
+            or self.metatags.get("description", "").strip()
+
+    @property
+    def canonical_url(self):
+        return self.links.get("canonical")
+
+    @property
+    def image(self):
+        return self.metatags.get("og:image") \
+            or self.jsonld.get("thumbnailUrl")
+
+    def _extract_ld_authors(self):
+        # extract from jsonld
+        ld_authors = self.jsonld.get("author", {})
+        # sanitize ld structure
+        if type(ld_authors) == str:
+            ld_authors = {"name": ld_authors}
+        ld_authors = [a["name"] for a in ld_authors] if type(ld_authors) == list else ld_authors.get("name", False)
+        return ld_authors
+
+    @property
+    def authors(self):
+        # get a value from trove
+        authors = self._extract_ld_authors() \
+            or self.metatags.get("author") \
+                or self.metatags.get("article:author") \
+                    or self.metatags.get("dcterms.creator") \
+                        or self.metatags.get("article:authorName") \
+                            or self.metatags.get("citation_author") \
+                                or self.jsonld.get("authors") # intercept
+
+        if authors:
+            # ensure list
+            if type(authors) != list:
+                authors = [authors]
+            # strip links
+            authors = [a for a in authors if a.startswith("http") == False]
+
+        if not authors:
+            # washingtonpost
+            xauthors = self.document.xpath("(//span[@itemprop='author'])[1]//span[@itemprop='name']/text()")
+            if xauthors:
+                authors = xauthors
+
+        return authors if authors else []
+
+    @property
+    def published_date(self):
+        res = None
+        xpaths = [
+            "//meta[@name='date']/@content",
+            "//meta[@property='article:published_time']/@content",
+            "//meta[@property='article:published']/@content",
+            "//meta[@name='parsely-pub-date']/@content",
+            "//meta[@name='DC.date.issued']/@content",
+            "//time[@itemprop='datePublished']/@datetime",
+        ]
+        res = self._query_date(xpaths)
+        if res is None:
+            ld_date = self.jsonld.get("datePublished") or self.jsonld.get("dateCreated")
+            if ld_date:
+                res = self._format_date(ld_date)
+        return res
+
+    @property
+    def modified_date(self):
+        res = None
+        xpaths = [
+            "//meta[@property='article:modified_time']/@content",
+            "//meta[@property='article:modified']/@content",
+            "//meta[@name='last-modified']/@content",
+        ]
+        res = self._query_date(xpaths)
+        if res is None:
+            ld_date = self.jsonld.get("dateModified")
+            if ld_date:
+                res = self._format_date(ld_date)
+        return res
+
+    @property
+    def scraped_date(self):
+        return self._format_date(datetime.now())
+
+    def extract(self):
+        self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)
+        self.jsonld = self._extract_items(self._get_jsonld_item, self._jsonld_xpath)
+        self.links = self._extract_items(self._get_link_item, self._links_xpath)
 
     def _extract_items(self, get_item, xpath):
         items = [item for item in map(get_item, xpath(self.document)) if item]
@@ -47,10 +145,20 @@ class HtmlMeta(object):
           if (name and content) else None
 
     def _get_jsonld_item(self, node):
-        ld = json.loads(node.text.strip())
-        if type(ld) is list:
-            for item in[i for i in ld if i.get("@type") == "NewsArticle"]:
-                return item
+        ld = None
+        try:
+            ld_text = node.text.strip()
+            # sanitize if neccessary
+            if ld_text.find("<![CDATA[") > -1:
+                ld_text = ld_text[ld_text.find("{"):ld_text.rfind("}")+1]
+
+            ld = json.loads(ld_text)
+            if type(ld) is list:
+                for item in[i for i in ld if i.get("@type") == "NewsArticle"]:
+                    return item
+        except Exception as exc:
+            logging.error("JSON-LD parsing failed")
+            logging.exception(exc)
         return ld if ld else {}
 
     def extract_title(self):
@@ -67,47 +175,7 @@ class HtmlMeta(object):
             dates = self.document.xpath(xpath_rule)
             if len(dates) > 0:
                 try:
-                    return self._format_date(dates[0].get("content"))
+                    return self._format_date(str(dates[0]))#.get("content"))
                 except:
                     pass
         return None
-
-    def extract_pub_date(self):
-        res = None
-        xpaths = [
-            "//meta[@name='date']",
-            "//meta[@property='article:published_time']",
-            "//meta[@property='article:published']",
-            "//meta[@name='parsely-pub-date']",
-            "//meta[@name='DC.date.issued']",
-        ]
-        res = self._query_date(xpaths)
-        if res is None:
-            ld_date = self.jsonld.get("datePublished") or self.jsonld.get("dateCreated")
-            if ld_date:
-                res = self._format_date(ld_date)
-        return res
-
-    def extract_mod_date(self):
-        res = None
-        xpaths = [
-            "//meta[@property='article:modified_time']",
-            "//meta[@property='article:modified']",
-            "//meta[@name='last-modified']",
-        ]
-        res = self._query_date(xpaths)
-        if res is None:
-            ld_date = self.jsonld.get("dateModified")
-            if ld_date:
-                res = self._format_date(ld_date)
-        return res
-
-    def extract(self):
-        self.metatags = self._extract_items(self._get_metatag_item, self._metatag_xpath)
-        self.jsonld = self._extract_items(self._get_jsonld_item, self._jsonld_xpath)
-        self.links = self._extract_items(self._get_link_item, self._links_xpath)
-        self.title = self.extract_title()
-        self.published_date = self.extract_pub_date()
-        self.modified_date = self.extract_mod_date()
-        self.scraped_date = self._format_date(datetime.now())
-        return

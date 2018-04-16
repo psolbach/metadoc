@@ -82,20 +82,16 @@ class Extractor(object):
   def extract_metadata(self):
     """Sniff for essential and additional metadata via
     either metatags and or json-ld"""
-
     html_meta = HtmlMeta(self.html, tree=self.tree)
     html_meta.extract()
 
-    self.authors = html_meta.jsonld.get("authors") \
-      or html_meta.metatags.get("article:author") \
-      or html_meta.metatags.get("author")
-
-    self.title = html_meta.jsonld.get("headline") or html_meta.title
-    self.description = html_meta.metatags.get("description")
-    self.canonical_url = html_meta.links.get("canonical")
-    self.image = html_meta.metatags.get("og:image") or html_meta.jsonld.get("thumbnailUrl")
+    # data
+    self.authors = html_meta.authors
+    self.title = html_meta.title
+    self.description = html_meta.description
+    self.canonical_url = html_meta.canonical_url
+    self.image = html_meta.image
     self.published_date = html_meta.published_date
-
     self.modified_date = html_meta.modified_date
     self.scraped_date = html_meta.scraped_date
 
@@ -122,4 +118,3 @@ class Extractor(object):
     self.get_contenthash()
     self.get_reading_time()
     logging.info("--- extraction module %s seconds ---" % (time.time() - start_time))
-    return

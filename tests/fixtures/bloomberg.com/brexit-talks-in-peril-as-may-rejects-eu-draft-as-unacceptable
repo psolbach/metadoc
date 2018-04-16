@@ -1,0 +1,760 @@
+
+        <!doctype html>
+        <html xmlns:og="http://ogp.me/ns#" lang="en">
+            <head>
+                <link href="/manifest.json" rel="manifest">
+                <script type="application/ld+json">
+        {"@context":"http://schema.org","@type":"NewsArticle","author":[{"@type":"Person","name":"Tim Ross"},{"@type":"Person","name":"Ian Wishart"}],"dateCreated":"2018-02-28T12:43:31.155Z","dateModified":"2018-02-28T16:28:52.014Z","datePublished":"2018-02-28T12:43:31.155Z","description":"U.K. Prime Minister Theresa May vowed she will never accept a draft Brexit agreement published by the European Union on Wednesday, raising the prospect that the negotiations are heading for a breakdown. The pound fell.","headline":"Brexit Talks in Peril After May Rejects EU Draft Deal","image":{"@type":"ImageObject","url":"https://assets.bwbx.io/s3/javelin/public/javelin/images/social-default-a4f15fa7ee.jpg","width":1200,"height":630},"mainEntityOfPage":"https://www.bloomberg.com/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable","publisher":{"@type":"Organization","name":"Bloomberg","logo":{"@type":"ImageObject","url":"https://assets.bwbx.io/s3/javelin/public/javelin/images/bloomberg-logo-amp-e995e81f26.png","width":262,"height":60}}}
+    </script>
+                
+        <link href="https://assets.bwbx.io" rel="preconnect" crossorigin>
+        <link href="https://www.bbthat.com" rel="preconnect" crossorigin>
+        <link href="https://nav.bloomberg.com" rel="preconnect" crossorigin>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/experiments/experiments-88dd5c0bee.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                <link rel="stylesheet" type="text/css" href="https://assets.bwbx.io/font-service/css/BWHaasText-55Roman,BWHaasText-56Italic,BWHaasHead-55Roman,BWHaasHead-56Italic,BWHaasHead-75Bold,BWHaasHead-95Black,BW Haas Text Mono A-55 Roman,TiemposTextWeb-Regular,TiemposTextWeb-RegularItalic,TiemposHeadlineWeb-Bold,AvenirNext-Demi,supriasans-regular-web,supriasans-black-web,PublicoText-Roman-Web,PublicoText-Italic-Web,PublicoText-Bold-Web,Bloomberg Logotypes-Medium,BWHaasGrotesk-95Black-Web,BWHaasGrotesk-75Bold-Web,BWHaasGrotesk-55Roman-Web/font-face.css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/application/application-08d1bf1521.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/font-service/css/Bloomberg,BWHaasText-55Roman,BWHaasHead-75Bold,BWHaasHead-95Black,AvenirNext-Demi/font-face.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://nav.bloomberg.com/public/stylesheets/bb-global-nav-209742668c.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://www.bbthat.com/assets/v1.4.0/that.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/abstract/abstract-762d163070.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/author_tout/author_tout-c6e448ba2b.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/author_tout/author_tout-e273b6df99.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/author_details/author_details-f6d8baf35e.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/body-cfa9f847b6.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/newsletter_tout-7104a5317e.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/outstream_ad-c21b3ed6be.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/body-75cdc2b544.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/in_article_ad-238ed3378a.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/body-5d67f9f853.large_desktop.css" media="(min-width:1281px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/body-e886f59cb3.tablet-desktop.css" media="(min-width:761px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/mobile_ads-10915d4c59.tablet-desktop.css" media="(min-width:761px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/body-b820c41d19.tablet.css" media="(min-width:761px) and (max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/in_article_ad-302586dffe.tablet.css" media="(min-width:761px) and (max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/in_article_ad-b789d79511.mobile-tablet.css" media="(max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/body-6689773bd7.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/in_article_ad-a8500fe5ea.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/mobile_ads-95f94f08a6.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/body/basic/newsletter_tout-12eaa8fd13.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/charts/charts-9cc89e34a6.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/charts/charts-2a9dffa69a.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/charts/charts-6724cab530.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/video/video-ada3b27501.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/video/video-d88c002e2c.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/video/video-36691f1d24.large_desktop.css" media="(min-width:1281px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/video/video-86bf2ad2f7.tablet.css" media="(min-width:761px) and (max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/video/video-b10ee21246.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/text_only/text_only-e169350d35.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/text_only/text_only-2feccae3d6.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/text_only/text_only-6a33ad34f5.small_desktop.css" media="(min-width:1021px) and (max-width:1280px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/text_only/text_only-b17a45ed53.large_desktop.css" media="(min-width:1281px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/text_only/text_only-13bc91fa5b.tablet.css" media="(min-width:761px) and (max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ledes/basic/text_only/text_only-5763675d95.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/recirc/recirc-f69a644ec7.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/sticky_video/sticky_video-abccaf05bd.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ads/terminal_tout/terminal_tout-f96d849049.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ads/terminal_tout/terminal_tout-b55b132f21.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ads/secure_tip_tout/secure_tip_tout-0250568d0e.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/themes/politics/politics-5bafa23bfb.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/recirc/recirc-f69a644ec7.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/nav/bb/nav-e804800f4a.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/image_viewer/image_viewer-1e5746c2c1.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/image_viewer/image_viewer-058810df2a.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/image_viewer/image_viewer-94b75c625f.mobile-tablet.css" media="(max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/image_viewer/image_viewer-eeba583cbe.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/breaking_news_placeholder/breaking_news-07c1b1eccf.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/layout/basic/basic-bcfea0e55a.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/layout/basic/basic-c95315608b.desktop.css" media="(min-width:1021px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/layout/basic/basic-dc74d44610.small_desktop.css" media="(min-width:1021px) and (max-width:1280px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/layout/basic/basic-52967ea5ad.large_desktop.css" media="(min-width:1281px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/layout/basic/basic-b58b2a9999.tablet.css" media="(min-width:761px) and (max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/layout/basic/basic-364753bead.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/pianola/pianola_css-b3b06f00e4.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ads/leaderboard/leaderboard-f7160e7776.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ads/leaderboard/leaderboard-290beb4fc2.tablet-desktop.css" media="(min-width:761px)" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/ads/native/native-15685ecbee.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/lazy_images/lazy_image-7dc0452705.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/truste/truste-5a6952f5b8.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/truste/truste-323c682892.small_desktop.css" media="(min-width:1021px) and (max-width:1280px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/truste/truste-5679a9f67c.large_desktop.css" media="(min-width:1281px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/truste/truste-932ba91b49.tablet.css" media="(min-width:761px) and (max-width:1020px)" property="stylesheet" rel="stylesheet" type="text/css">
+<link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/components/truste/truste-53c717658f.mobile.css" media="(max-width:760px)" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/font-service/css/Bloomberg/font-face.css" media="all" property="stylesheet" rel="stylesheet" type="text/css"><link href="https://nav.bloomberg.com/public/stylesheets/bb-global-footer-af4496cb6b.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/unsupportedBrowserMessage/unsupportedBrowserMessage-ce08ced21c.css" media="all" property="stylesheet" rel="stylesheet" type="text/css">
+                <link href="https://assets.bwbx.io/s3/javelin/public/javelin/css/print/print-ffa68fd905.css" media="print" property="stylesheet" rel="stylesheet" type="text/css">
+                
+        <title>Brexit Talks in Peril After May Rejects EU Draft Deal - Bloomberg</title>
+        <link rel="canonical" href="https://www.bloomberg.com/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable">
+        <meta name="description" content="U.K. Prime Minister Theresa May vowed she will never accept a draft Brexit agreement published by the European Union on Wednesday, raising the prospect that the negotiations are heading for a breakdown. The pound fell.">
+        <meta name="iso-8601-publish-date" content="2018-02-28T12:43:31.155Z">
+        <meta name="checksum" content="f8f51053e7551b373ed7af43a357a43c">
+        <meta name="validatedAt" content="2018-04-11T12:07:03.023Z">
+        <meta name="referrer" content="unsafe-url">
+        <meta name="referrer" content="always">
+        <meta property="al:android:url" content="bloomberg://www.bloomberg.com/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable?utm_medium=applink&utm_source=facebook">
+        <meta property="al:android:package" content="com.bloomberg.android.plus">
+        <meta property="al:android:app_name" content="Bloomberg">
+        <meta property="og:description" content="U.K. Prime Minister Theresa May vowed she will never accept a draft Brexit agreement published by the European Union on Wednesday, raising the prospect that the negotiations are heading for a breakdown. The pound fell.">
+        <meta property="og:image" content="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGIqBkTYVBos/v1/1200x800.jpg">
+        <meta property="og:site_name" content="Bloomberg.com">
+        <meta property="og:title" content="Brexit Talks in Peril After May Rejects EU Draft Deal">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://www.bloomberg.com/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable">
+        <meta name="fb:status" content="Theresa May pushed hard against the EU's version of Brexit.">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:description" content="U.K. Prime Minister Theresa May vowed she will never accept a draft Brexit agreement published by the European Union on Wednesday, raising the prospect that the negotiations are heading for a breakdown. The pound fell.">
+        <meta name="twitter:image" content="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGIqBkTYVBos/v1/1200x800.jpg">
+        <meta name="twitter:site" content="@bpolitics">
+        <meta name="twitter:title" content="Brexit Talks in Peril After May Rejects EU Draft Deal">
+        <meta name="parsely-title" content="Brexit Talks in Peril After May Rejects EU Draft Deal">
+        <meta name="parsely-link" content="https://www.bloomberg.com/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable">
+        <meta name="parsely-type" content="post">
+        <meta name="parsely-image-url" content="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGIqBkTYVBos/v1/1200x800.jpg">
+        <meta name="parsely-pub-date" content="2018-02-28T12:43:31.155Z">
+        <meta name="parsely-section" content="politics">
+        <meta name="parsely-tags" content="Brexit,Europe,Theresa May,Ireland,Northern Ireland,British Pound Spot,London,Conservative,Michel Jean Barnier,Sales Tax,Secondary Brand: politics,Region: Global,Page: article">
+        <meta name="parsely-post-id" content="P4V20J6K50XT01">
+        <meta name="parsely-author" content="Tim Ross">
+<meta name="parsely-author" content="Ian Wishart">
+        
+        <script type="text/javascript">
+            (function(w) {
+                w.dataLayer = w.dataLayer || [];
+                w.dataLayer.push({"adcode":"politics/story","author":"Tim Ross and Ian Wishart","publishedAt":"2018-02-28T12:43:31.155Z","storyId":"P4V20J6K50XT01","contentType":"content-article","pageType":"content","template":"javelin-article-html","topic":"Brexit","attributor":"bn","brand":"politics","secondaryBrands":"politics","franchise":null,"categories":"","transporter":"false","refresh":"false","headline":"Brexit Talks in Peril After May Rejects EU Draft Deal","slug":"2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable","tags":"Brexit,Europe,Theresa May,Ireland,Northern Ireland,British Pound Spot,London,Conservative,Michel Jean Barnier,Sales Tax,politics","siteId":"bpol","resourceType":"article","resourceId":"P4V20J6K50XT01"});
+            })(window);
+        </script>
+    
+        
+    <link rel="icon"
+        type="image/png"
+        href="https://assets.bwbx.io/s3/javelin/public/javelin/images/favicon-black-12c7d129b0.png">
+    
+    
+                <link rel="amphtml" href="https://www.bloomberg.com/amp/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable" />
+                
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-itunes-app" content="app-id=281941097, affiliate-data=ct=smartbanner_mobileweb&pt=8949&utm_source=smart_banner">
+    
+                
+        <meta name="sailthru.title" content="Brexit Talks in Peril After May Rejects EU Draft Deal">
+        <meta name="sailthru.author" content="Tim Ross,Ian Wishart">
+        <meta name="sailthru.tags" content="Brexit,Europe,Theresa May,Ireland,Northern Ireland,British Pound Spot,London,Conservative,Michel Jean Barnier,Sales Tax,politics">
+        <meta name="keywords" content="Brexit,Europe,Theresa May,Ireland,Northern Ireland,British Pound Spot,London,Conservative,Michel Jean Barnier,Sales Tax,politics">
+        <meta name="sailthru.description" content="U.K. Prime Minister Theresa May vowed she will never accept a draft Brexit agreement published by the European Union on Wednesday, raising the prospect that the negotiations are heading for a breakdown. The pound fell.">
+        <meta name="sailthru.date" content="2018-02-28T12:43:31.155Z">
+    
+                <script>!function(){if(!(Math.random()>.1||window.BOOMR&&window.BOOMR.version)){var e,t,n,o=document.createElement("iframe"),a=window;a.addEventListener?a.addEventListener("load",i,!1):a.attachEvent&&a.attachEvent("onload",i),o.src="javascript:void(0)",o.title="",o.role="presentation",(o.frameElement||o).style.cssText="width:0;height:0;border:0;display:none;",(n=document.getElementsByTagName("script")[0]).parentNode.insertBefore(o,n);try{t=o.contentWindow.document}catch(n){e=document.domain,o.src="javascript:var d=document.open();d.domain='"+e+"';void(0);",t=o.contentWindow.document}t.open()._l=function(){var t=this.createElement("script");e&&(this.domain=e),t.id="boomr-if-as",t.src="https://s.go-mpulse.net/boomerang/T6PPY-X9KZV-8VZ6F-7N5GB-F8ELN",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(t)},t.write('<body onload="document._l();">'),t.close()}function i(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}}();</script>
+            </head>
+            <body data-theme="politics" data-type="article">
+                
+        <script>
+            window._fence = (function(d, s, l, id, cdn, v) {
+                var fs, st, lt, pf, ft, f = window._fence || {};
+                if (d.getElementById(id)) return f;
+                fs = d.scripts[0];
+                st = d.createElement(s);
+                lt = d.createElement(l);
+                pf = d.createElement(l);
+                ft = d.createElement(l);
+                pf.rel = "dns-prefetch"; pf.href = cdn;
+                st.id = id; st.async = true; st.src = cdn + "/s3/fence/" + v + "/app.bundle.js";
+                lt.rel = "stylesheet"; lt.href = cdn + "/s3/fence/" + v + "/styles.css";
+                ft.rel = "stylesheet"; ft.href = "https://assets.bwbx.io/font-service/css/BWHaasGrotesk-55Roman-Web,BWHaasGrotesk-75Bold-Web,Bloomberg/font-face.css";
+                f.q = [];
+                f.nq = [];
+                f.ready = function(cb) {
+                  f.q.push(cb);
+                };
+                f.notReady = function(cb) {
+                    f.nq.push(cb);
+                };
+                d.head.appendChild(pf);
+                d.head.appendChild(lt);
+                d.head.appendChild(ft);
+                fs.parentNode.insertBefore(st, fs);
+                return f;
+            }(document, "script", "link", "fence-snippet", "//assets.bwbx.io", "v4"));
+
+            window._fence.ready(function() {
+                window._fence
+                    .enableRender({"hideContentConfig":{"exist":".fence-body","hide":"*:not(p):not(a):not(em):not(h1):not(h2):not(h3):not(h4):not(span):not(strong), p:nth-of-type(n+2) ~ *","hideContainerDirective":"EXIST","inlineContainerDirective":"EXIST"}})
+                    .addArticle("P4V20J6K50XT01", true, "politics");
+            });
+        </script>
+    
+                <script type="text/javascript">window.__bloomberg__=window.__bloomberg__||{};window.__bloomberg__.environment={"playlistPlayerEnabled":true,"psznTrackingUrl":"https://tracking.bloomberg.com/images/tracking-pixel.gif","psznRecommendationUrl":"https://personalization.bloomberg.com","blensSnippetUrl":"https://www.bloomberg.com/markets/modules/datastrip.json?version=2","registrationEnv":"production","tickerToutEnabled":true,"tickerToutUrl":"https://www.bloomberg.com/markets/modules/datastrip?version=2","videoPlayerUrl":"https://cdn.gotraffic.net/projector/latest/bplayer.js","__opEnabled":false,"__naviEnabled":false};</script>
+                <script src="https://assets.bwbx.io/s3/javelin/public/javelin/js/components/event_bus/event_bus-0933a41869.sync.js" type="text/javascript"></script>
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/pwa/pwa-d9e2e840ed.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            (function () {
+                if(typeof window.CustomEvent === "function") return false;
+                function CustomEvent(event, p) {
+                    p = p || {bubbles: false, cancelable: false, detail: undefined};
+                    var e = document.createEvent("CustomEvent");
+                    e.initCustomEvent(event, p.bubbles, p.cancelable, p.detail);
+                    return e;
+                }
+                CustomEvent.prototype = window.Event.prototype;
+                window.CustomEvent = CustomEvent;
+            })();
+        </script>
+    
+                
+        <script type="text/javascript">
+            window.__bloomberg__.ads = {};
+            window.__bloomberg__.ads.queue = [];
+
+            window.__bloomberg__.ads.enqueue = function(id) {
+                if (window.__bloomberg__.ads.render) {
+                    return window.__bloomberg__.ads.render(id);
+                }
+                window.__bloomberg__.ads.queue.push(id);
+            };
+        </script>
+    
+                
+    <div class="leaderboard-container">
+        <div id="leaderboard-rmR3vQB" class="leaderboard" data-position="leaderboard">
+            <script type="text/javascript">
+                window.__bloomberg__.ads.enqueue("leaderboard-rmR3vQB");
+            </script>
+            <script class="params" type="application/json">{"contentId":"P4V20J6K50XT01","position":"leaderboard","dimensions":{"large_desktop":[[728,90],[970,250],[5,16],[1,1]],"small_desktop":[[728,90],[970,250],[5,16],[1,1]],"tablet":[[728,90],[5,16],[1,1]],"mobile":[[5,16],[1,1]]},"strategy":"always","type":"Top Leaderboard Ad","positionIncrement":1,"targeting":{"position":"leaderboard","positionIncrement":1,"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"},"containerId":"leaderboard-rmR3vQB"}</script>
+            <div class="leaderboard-ad-dummy"></div>
+        </div>
+    </div>
+    
+                
+        <div class="truste">
+            <div id="consent_blackbar"></div>
+        </div>
+    
+                <style>
+@font-face {
+    font-family: 'AvenirNextPForBBG-Regular';
+    
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/AvenirNextPForBBG-Regular-09359fef74.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNextPForBBG-Regular-91967b382a.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AvenirNextPForBBG-Demi';
+    
+    
+    src: url('https://assets.bwbx.io/font-service/fonts/AvenirNextPForBBG-Demi-62597c630e.woff2') format('woff2'),
+         url('https://assets.bwbx.io/font-service/fonts/AvenirNextPForBBG-Demi-d7e488b711.woff') format('woff');
+}
+#bb-that a{text-decoration:none}#bb-that .bb-that__sitemap{overflow:hidden;position:relative}#bb-that .bb-that__sitemap{max-height:0;-webkit-transition:max-height 0.6s ease-in-out;-o-transition:max-height 0.6s ease-in-out;transition:max-height 0.6s ease-in-out}#bb-that{background:#000;position:relative}@media (max-width: 759px){#bb-that{display:none}}#bb-that .bb-that--container{margin:0 auto;padding:0 30px;box-sizing:content-box}@media (min-width: 1020px){#bb-that .bb-that--container{padding:0}}#bb-that .bb-that--container:before,#bb-that .bb-that--container:after{content:" ";display:table}#bb-that .bb-that--container:after{clear:both}@media (min-width: 760px){#bb-that .bb-that--container{width:680px}}@media (min-width: 1020px){#bb-that .bb-that--container{width:980px}}@media (min-width: 1280px){#bb-that .bb-that--container{width:1160px}}#bb-that .bb-that-header{font-family:"AvenirNextPForBBG-Demi","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line-height:30px;padding:15px}@media (min-width: 760px){#bb-that .bb-that-header{font-family:"AvenirNextPForBBG-Demi","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;height:30px;padding:0}}#bb-that .bb-that-header__link{position:relative;display:block}@media (min-width: 760px){#bb-that .bb-that-header__link{display:inline-block;padding:0 12px}}#bb-that .bb-that-header__link,#bb-that .bb-that-header__link>span{color:#f3f4ef;font-family:inherit;font-size:inherit;line-height:inherit}@media (min-width: 760px){#bb-that .bb-that-header__link,#bb-that .bb-that-header__link>span{line-height:1;-webkit-font-smoothing:subpixel-antialiased;-moz-osx-font-smoothing:auto}}#bb-that .bb-that-header__link:first-child{padding-left:0}#bb-that .bb-that-header__link:after{font-size:9px;position:absolute}@media (min-width: 760px){#bb-that .bb-that-header__link+.bb-that-header__link{border-left:1px solid #b3b3b3}#bb-that .bb-that-header__link+.bb-that-header__link:after{top:-3px}}#bb-that .bb-that-header__link>span:first-of-type{display:inline}#bb-that .bb-that-header__link>span:first-of-type+span{display:none}@media (max-width: 1019px){#bb-that .bb-that-header__link>span:first-of-type{display:none}#bb-that .bb-that-header__link>span:first-of-type+span{display:inline}}#bb-that .bb-that-header--sitemap-trigger{padding:0 27px 0 12px}#bb-that .bb-that-header--sitemap-trigger:after{display:inline-block;content:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2015%2015%27%3E%3Cpath%20d%3D%27M0,2.5l7.5,10l7.5-10H0z%27%20fill%3D%27%23fff%27%2F%3E%3C%2Fsvg%3E");height:9px;width:9px;line-height:initial;opacity:0.7;-webkit-transition:opacity 0.1s ease-out;-o-transition:opacity 0.1s ease-out;transition:opacity 0.1s ease-out}#bb-that .bb-that-header--sitemap-trigger:hover:after{opacity:1}#bb-that .bb-that-header--sitemap-trigger:after{height:9px;width:9px;-webkit-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0);-webkit-transition:transform 0.35s ease;-o-transition:transform 0.35s ease;transition:transform 0.35s ease}@media (min-width: 760px){#bb-that .bb-that-header--sitemap-trigger:after{right:12px;top:2px;line-height:1}}@media (min-width: 1020px){#bb-that .bb-that--open{border-bottom:1px solid #474747}}#bb-that .bb-that--open .bb-that-header--sitemap-trigger:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}
+</style>
+<div id="bb-that">
+    <nav class="bb-that">
+        <header class="bb-that-header bb-that--container">
+        <a class="bb-that-header__link bb-that-header--sitemap-trigger" href="http://www.bloomberg.com/company/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg the Company &amp; Its Products</a><a class="bb-that-header__link" href="https://bba.bloomberg.net/?utm_source=bloomberg-menu&amp;utm_medium=bcom"><span>Bloomberg Anywhere Remote Login</span><span>Bloomberg Anywhere Login</span></a><a class="bb-that-header__link" href="http://www.bloomberg.com/professional/request-demo/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-DEMO-bbgmenu">Bloomberg Terminal Demo Request</a>    </header>
+        <div class="bb-that__sitemap bb-that--container">
+    <div class="bb-that__close"></div>
+
+        <ul class="bb-that__sitemap-sections bb-that--visible-md bb-that--visible-lg">
+                    <li class="bb-that__col bb-that__col--md">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Bloomberg</h2>
+    <div class="bb-that-category__content"><p class="bb-that-category__text">Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world.</p></div></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">For Customers</h2>
+    <div class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://bba.bloomberg.net/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Anywhere Remote Login</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/professional/downloads/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Software Updates</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&amp;utm_medium=bcom">Manage Products and Account Information</a></li></div></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Support</h2>
+    <div class="bb-that-category__content"><p class="bb-that-category__text"><span>Americas</span>+1 212 318 2000</p><p class="bb-that-category__text"><span>EMEA</span>+44 20 7330 7500</p><p class="bb-that-category__text"><span>Asia Pacific</span>+65 6212 1000</p></div></section>    </li>
+                    <li class="bb-that__col bb-that__col--md">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Company</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/london/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg London</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/company/?utm_source=bloomberg-menu&amp;utm_medium=bcom">About</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/careers/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Careers</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/diversity-inclusion/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Diversity and Inclusion</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/philanthropy/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Philanthropy and Engagement</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/bcause/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Sustainability</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.techatbloomberg.com?utm_source=bloomberg-menu&amp;utm_medium=bcom">Tech</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Communications</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/announcements/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Press Announcements</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/press-contacts/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Press Contacts</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Follow</h2>
+    <div class="bb-that-category__content"><li class="bb-that-category__item"><a href="http://www.facebook.com/Bloomberglp" class="bb-that-category__social-link bb-that--icon-facebook" target="_blank">Facebook</a></li><li class="bb-that-category__item"><a href="https://twitter.com/bloomberg" class="bb-that-category__social-link bb-that--icon-twitter" target="_blank">Twitter</a></li><li class="bb-that-category__item"><a href="https://www.linkedin.com/company/2494" class="bb-that-category__social-link bb-that--icon-linkedin" target="_blank">LinkedIn</a></li><li class="bb-that-category__item"><a href="https://www.instagram.com/bloomberg/" class="bb-that-category__social-link bb-that--icon-instagram" target="_blank">Instagram</a></li></div></section>    </li>
+                    <li class="bb-that__col bb-that__col--md">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Products</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/professional/solution/bloomberg-terminal/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-TERMINAL-bbgmenu">Bloomberg Terminal</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/execution-order-management/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-EXORDMGMT-bbgmenu">Execution and Order Management</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/data-and-content/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-DATACONT-bbgmenu">Data and Content</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/financial-data-management/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-FINDATA-bbgmenu">Financial Data Management</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/integration-and-distribution/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-INTEGDIST-bbgmenu">Integration and Distribution</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/tradebook/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-TBOOK-bbgmenu">Bloomberg Tradebook</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Industry Products</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bna.com/bloomberglaw/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Law</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bna.com/tax?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Tax</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://about.bgov.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Government</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bna.com/ehs/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Environment</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://about.bnef.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg New Energy Finance</a></li></ul></section>    </li>
+                    <li class="bb-that__col bb-that__col--md">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Media</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/markets/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Markets</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/technology/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Technology</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/pursuits/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Pursuits</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/politics/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Politics</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/view/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Opinion</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/businessweek/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Businessweek</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberglive.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Live Conferences</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloombergapps.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Apps</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloombergradio.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Radio</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/live?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Television</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/news-bureaus/?utm_source=bloomberg-menu&amp;utm_medium=bcom">News Bureaus</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Media Services</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/distribution?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Media Distribution</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloombergmedia.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Advertising</a></li></ul></section>    </li>
+            </ul>
+
+        <ul class="bb-that__sitemap-sections bb-that--visible-sm">
+                    <li class="bb-that__col bb-that__col--sm">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Company</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/london/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg London</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/company/?utm_source=bloomberg-menu&amp;utm_medium=bcom">About</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/careers/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Careers</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/diversity-inclusion/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Diversity and Inclusion</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/philanthropy/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Philanthropy and Engagement</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/bcause/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Sustainability</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.techatbloomberg.com?utm_source=bloomberg-menu&amp;utm_medium=bcom">Tech</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Communications</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/announcements/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Press Announcements</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/press-contacts/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Press Contacts</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Follow</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a href="http://www.facebook.com/Bloomberglp" class="bb-that-category__social-link bb-that--icon-facebook" target="_blank">Facebook</a></li><li class="bb-that-category__item"><a href="https://twitter.com/bloomberg" class="bb-that-category__social-link bb-that--icon-twitter" target="_blank">Twitter</a></li><li class="bb-that-category__item"><a href="https://www.linkedin.com/company/2494" class="bb-that-category__social-link bb-that--icon-linkedin" target="_blank">LinkedIn</a></li><li class="bb-that-category__item"><a href="https://www.instagram.com/bloomberg/" class="bb-that-category__social-link bb-that--icon-instagram" target="_blank">Instagram</a></li></ul></section>    </li>
+                    <li class="bb-that__col bb-that__col--sm">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Products</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/professional/solution/bloomberg-terminal/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-TERMINAL-bbgmenu">Bloomberg Terminal</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/execution-order-management/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-EXORDMGMT-bbgmenu">Execution and<br /> Order Management</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/data-and-content/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-DATACONT-bbgmenu">Data and Content</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/financial-data-management/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-FINDATA-bbgmenu">Financial Data<br /> Management</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/integration-and-distribution/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-INTEGDIST-bbgmenu">Integration and<br /> Distribution</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/professional/solution/tradebook/?utm_source=bloomberg-menu&amp;utm_medium=bcom&amp;bbgsum=DG-WS-PROF-SOLU-TBOOK-bbgmenu">Bloomberg<br /> Tradebook</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Industry Products</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bna.com/bloomberglaw/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Law</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bna.com/tax?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Tax</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://about.bgov.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Government</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bna.com/ehs/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Environment</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://about.bnef.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg New Energy Finance</a></li></ul></section>    </li>
+                    <li class="bb-that__col bb-that__col--sm">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Media</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/markets/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Markets</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/technology/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg<br /> Technology</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/pursuits/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Pursuits</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/politics/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Politics</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/view/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Opinion</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloomberg.com/businessweek/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg<br /> Businessweek</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberglive.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Live Conferences</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloombergapps.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Apps</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://www.bloombergradio.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Radio</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/live?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Television</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/company/news-bureaus/?utm_source=bloomberg-menu&amp;utm_medium=bcom">News Bureaus</a></li></ul></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Media Services</h2>
+    <ul class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/distribution?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Media Distribution</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloombergmedia.com/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Advertising</a></li></ul></section>    </li>
+                    <li class="bb-that__col bb-that__col--sm">
+            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Bloomberg</h2>
+    <div class="bb-that-category__content"><p class="bb-that-category__text">Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world.</p></div></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">For Customers</h2>
+    <div class="bb-that-category__content"><li class="bb-that-category__item"><a class="bb-that-category__link" href="https://bba.bloomberg.net/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Bloomberg Anywhere Remote Login</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://www.bloomberg.com/professional/downloads/?utm_source=bloomberg-menu&amp;utm_medium=bcom">Software Updates</a></li><li class="bb-that-category__item"><a class="bb-that-category__link" href="http://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&amp;utm_medium=bcom">Manage Contracts and Orders</a></li></div></section>            <section class="bb-that-category">
+    <h2 class="bb-that-category__title">Support</h2>
+    <div class="bb-that-category__content"><p class="bb-that-category__text"><span>Americas</span>+1 212 318 2000</p><p class="bb-that-category__text"><span>EMEA</span>+44 20 7330 7500</p><p class="bb-that-category__text"><span>Asia Pacific</span>+65 6212 1000</p></div></section>    </li>
+            </ul>
+</div>    </nav>
+</div>
+
+                
+        <script id="nav-data" type="application/json">{"headline":"Brexit Talks in Peril After May Rejects EU Draft Deal","url":"https://www.bloomberg.com/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable","twitterText":"Theresa May doesn't like the EU's draft Brexit deal. \"No UK prime minister could ever agree to it,\" she told lawnmakers","twitterHandle":"bpolitics"}</script>
+        <div class="bb-nav-placeholder">
+            <div class="bb-nav-root"> <nav is="bb-nav" class="bb-nav" id="bb-nav" data-theme="politics" data-persist-for="content" data-mode="index" data-reg-env="production" data-progress="0" data-headline="" data-base="https://nav.bloomberg.com" data-tracker-category="nav" data-tracker-events="click" data-tracker-label="header" data-site="global" data-persist-for="none" > <div class="bb-nav__container"> <div class="bb-nav__content"> <h1 class="bb-nav-logo" is="bb-nav-logo"> <div class="bb-nav-logo__rubix" data-tracker-label="bomb.open.rubix_button" data-tracker-action="click"></div> <div class="bb-nav-logo__menu" data-tracker-label="bomb.open.menu_button" data-tracker-action="click"> <div class="bb-nav-logo__menu-link">MENU</div> </div> <a href="http://www.bloomberg.com" class="bb-nav-logo__link" data-tracker-label="logo" data-tracker-action="click"></a> <div class="bb-nav-logo__arrow"></div> </h1><div class="bb-nav-content-logo" is="bb-nav-content-logo"> <h1 class="bb-nav-content-logo__headline" data-tracker-label="content"> <a href="http://www.bloomberg.com" class="bb-nav-content-logo__site" data-tracker-label="logo" data-tracker-action="click"></a> </h1> <div class="bb-nav-content-logo__down-arrow" data-tracker-label="expand" data-tracker-action="click"></div> </div><h2 class="bb-nav-headline"></h2><bb-experience-select class="bb-nav-experience-select"></bb-experience-select><div class="bb-nav-categories"> <ul class="bb-nav-categories__container"> <li class="bb-nav-categories__category bb-nav-categories__about has-submenu"> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/company/" data-tracker-label="about_the_company" data-tracker-action="click"> About The Company </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/company/london" data-tracker-label="bloomberg_london" data-tracker-action="click"> Bloomberg London </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li> <li class="bb-nav-categories__home"> <a href="http://www.bloomberg.com" class="bb-nav-categories__home-link"> Homepage </a> </li> <li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="markets" data-vertical="markets" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <a href="http://www.bloomberg.com/markets" class="bb-nav-categories__link" data-category-path="/markets" data-category-vertical="markets" target="_self" data-tracker-action="click">Markets</a> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_stocks" href="https://www.bloomberg.com/markets/stocks" data-tracker-label="stocks" data-tracker-action="click"> Stocks </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_currencies" href="https://www.bloomberg.com/markets/currencies" data-tracker-label="currencies" data-tracker-action="click"> Currencies </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_fixed_income" href="https://www.bloomberg.com/markets/fixed-income" data-tracker-label="fixed_income" data-tracker-action="click"> Fixed Income </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_etfs" href="https://www.bloomberg.com/markets/etfs" data-tracker-label="etfs" data-tracker-action="click"> ETFs </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_commodities" href="https://www.bloomberg.com/markets/commodities" data-tracker-label="commodities" data-tracker-action="click"> Commodities </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_rates_bonds" href="https://www.bloomberg.com/markets/rates-bonds" data-tracker-label="rates_plus_bonds" data-tracker-action="click"> Rates + Bonds </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_economics" href="https://www.bloomberg.com/markets/economics" data-tracker-label="economics" data-tracker-action="click"> Economics </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_magazine" href="https://www.bloomberg.com/markets/markets-magazine" data-tracker-label="magazine" data-tracker-action="click"> Magazine </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_benchmark" href="https://www.bloomberg.com/markets/benchmark" data-tracker-label="benchmark" data-tracker-action="click"> Benchmark </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_watchlist" href="https://www.bloomberg.com/markets/watchlist" data-tracker-label="watchlist" data-tracker-action="click"> Watchlist </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/markets_economic_calendar" href="https://www.bloomberg.com/markets/economic-calendar" data-tracker-label="economic_calendar" data-tracker-action="click"> Economic Calendar </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li><li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="technology" data-vertical="technology" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <a href="http://www.bloomberg.com/technology" class="bb-nav-categories__link" data-category-path="/technology" data-category-vertical="technology" target="_self" data-tracker-action="click">Tech</a> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/technology_us" href="https://www.bloomberg.com/topics/silicon-valley" data-tracker-label="us" data-tracker-action="click"> U.S. </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/technology_global" href="https://www.bloomberg.com/topics/global-tech" data-tracker-label="global" data-tracker-action="click"> Global </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/technology_start_ups" href="https://www.bloomberg.com/topics/startups" data-tracker-label="startups" data-tracker-action="click"> Startups </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/technology_bloomberg_tv" href="https://www.bloomberg.com/shows/bloomberg-technology" data-tracker-label="bloomberg_technology_tv" data-tracker-action="click"> Bloomberg Technology TV </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/news_special-reports_gadgets-with-gurman" href="https://www.bloomberg.com/news/special-reports/gadgets-with-gurman" data-tracker-label="gadgets_with_gurman" data-tracker-action="click"> Gadgets With Gurman </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/news_special-reports_digital-defense" href="https://www.bloomberg.com/news/special-reports/digital-defense" data-tracker-label="digital_defense" data-tracker-action="click"> Digital Defense </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/studio_1" href="https://www.bloomberg.com/studio-1" data-tracker-label="studio_10" data-tracker-action="click"> Studio 1.0 </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/news_special-reports_focus-on-infrastructure" href="https://www.bloomberg.com/news/special-reports/focus-on-infrastructure" data-tracker-label="focus_on__infrastructure" data-tracker-action="click"> Focus On: Infrastructure </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li><li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="pursuits" data-vertical="pursuits" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <a href="http://www.bloomberg.com/pursuits" class="bb-nav-categories__link" data-category-path="/pursuits" data-category-vertical="pursuits" target="_self" data-tracker-action="click">Pursuits</a> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_autos" href="https://www.bloomberg.com/pursuits/cars-bikes" data-tracker-label="cars_and_bikes" data-tracker-action="click"> Cars & Bikes </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_style" href="https://www.bloomberg.com/pursuits/style-grooming" data-tracker-label="style_and_grooming" data-tracker-action="click"> Style & Grooming </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_scene" href="https://www.bloomberg.com/pursuits/spend" data-tracker-label="spend" data-tracker-action="click"> Spend </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_timepieces" href="https://www.bloomberg.com/pursuits/watches-gadgets" data-tracker-label="watches_and_gadgets" data-tracker-action="click"> Watches & Gadgets </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_food" href="https://www.bloomberg.com/pursuits/food-drinks" data-tracker-label="food_and_drinks" data-tracker-action="click"> Food & Drinks </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_travel" href="https://www.bloomberg.com/pursuits/travel" data-tracker-label="travel" data-tracker-action="click"> Travel </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_property" href="https://www.bloomberg.com/pursuits/real-estate" data-tracker-label="real_estate" data-tracker-action="click"> Real Estate </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/pursuits_art" href="https://www.bloomberg.com/pursuits/art-design" data-tracker-label="art_and_design" data-tracker-action="click"> Art & Design </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/shows/brilliant-ideas" data-tracker-label="brilliant_ideas" data-tracker-action="click"> Brilliant Ideas </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li><li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="politics" data-vertical="politics" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <a href="http://www.bloomberg.com/politics" class="bb-nav-categories__link" data-category-path="/politics" data-category-vertical="politics" target="_self" data-tracker-action="click">Politics</a> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/graphics/global-risk-briefing/" data-tracker-label="global_risk_briefing" data-tracker-action="click"> Global Risk Briefing </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/graphics/2018-midterm-elections-preview/" data-tracker-label="all_signs_point_to_big_democratic_wins_in_2018" data-tracker-action="click"> All Signs Point to Big Democratic Wins in 2018 </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/news/features/2017-12-11/trump-takes-credit-for-killing-hundreds-of-regulations-that-were-already-dead" data-tracker-label="trump_takes_credit_for_killing_hundreds_of_regulations_that_were_already_dead" data-tracker-action="click"> Trump Takes Credit for Killing Hundreds of Regulations That Were Already Dead </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/graphics/2017-china-party-congress/" data-tracker-label="how_china’s_top_leaders_came_into_power" data-tracker-action="click"> How China’s Top Leaders Came Into Power </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/graphics/2017-europe-populist-right/" data-tracker-label="how_the_populist_right_is_redrawing_the_map_of_europe" data-tracker-action="click"> How the Populist Right Is Redrawing the Map of Europe </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li><li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="opinion" data-vertical="opinion" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <span class="bb-nav-categories__link" data-category-path="/opinion" data-category-vertical="opinion" target="_self" data-tracker-action="click">Opinion</span> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/opinion_view" href="https://www.bloomberg.com/view/" data-tracker-label="view" data-tracker-action="click"> View </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/opinion_gadfly" href="https://www.bloomberg.com/gadfly/" data-tracker-label="gadfly" data-tracker-action="click"> Gadfly </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li><li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="businessweek" data-vertical="businessweek" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <a href="http://www.bloomberg.com/businessweek" class="bb-nav-categories__link" data-category-path="/businessweek" data-category-vertical="businessweek" target="_self" data-tracker-action="click">Businessweek</a> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/magazine/businessweek/18_15" data-tracker-label="latest_issue" data-tracker-action="click"> Latest Issue </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/podcasts/debrief" data-tracker-label="debrief_podcast" data-tracker-action="click"> Debrief Podcast </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="https://nav.bloomberg.com/global/api/businessweek_subscribe" href="https://subscribe.businessweek.com/servlet/OrdersGateway?cds_mag_code=BWK&cds_page_id=221240&source=coverstoryrail" data-tracker-label="subscribe" data-tracker-action="click"> Subscribe </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li><li is="bb-nav-category" class="bb-nav-categories__category has-submenu " data-tracker-label="footer" data-vertical="footer" > <div class="bb-nav-categories__category-container"> <div class="bb-nav-categories__notch"></div> <span class="bb-nav-categories__link" data-category-path="/footer" data-category-vertical="footer" target="_self" data-tracker-action="click">More</span> </div> <div class="bb-nav-submenu" is="bb-nav-submenu"> <div class="bb-nav-submenu__content"> <div class="bb-nav-submenu__inner"> <ul class="bb-nav-submenu__categories"> <li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/crypto" data-tracker-label="crypto" data-tracker-action="click"> Crypto </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/hyperdrive" data-tracker-label="hyperdrive" data-tracker-action="click"> Hyperdrive </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/climate-changed" data-tracker-label="climate_changed" data-tracker-action="click"> Climate Changed </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/international-womens-day-2018" data-tracker-label="focus_on__women" data-tracker-action="click"> Focus On: Women </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/graphics" data-tracker-label="graphics" data-tracker-action="click"> Graphics </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/billionaires/" data-tracker-label="billionaires" data-tracker-action="click"> Billionaires </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/personal-finance" data-tracker-label="personal_finance" data-tracker-action="click"> Personal Finance </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/segments/inspire-go" data-tracker-label="inspire_go" data-tracker-action="click"> Inspire GO </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/sponsor/partnerships/" data-tracker-label="sponsored_content" data-tracker-action="click"> Sponsored Content </a> </li><li class="bb-nav-submenu__category"> <a class="bb-nav-submenu__category-link" data-subroute="" href="https://www.bloomberg.com/tips/" data-tracker-label="send_tips" data-tracker-action="click"> Send Tips </a> </li> </ul> <div class="bb-nav-submenu__cards" hidden></div> </div> </div> </div> </li> <li class="bb-nav-categories__category bb-nav-categories__sign-in"> <a id="bb-nav-dropdown-sign-in" class="bb-nav-categories__sign-in-link" href="https://login.bloomberg.com/?in_source=login_direct" data-tracker-label="sign_in" data-tracker-action="click"> Sign In </a> </li> <li class="bb-nav-categories__category bb-nav-categories__experience"> <bb-experience-select class="bb-nav-mobile-experience-select"></bb-experience-select> </li> </ul> </div><div class="bb-nav-touts" is="bb-nav-touts" data-tracker-label="tout"> <a target="_self" id="bb-nav-sign-in" class="bb-nav-touts__link" href="https://login.bloomberg.com/login?in_source=login_direct" data-tracker-label="sign_in" data-tracker-action="click"> Sign In </a> <a target="_blank" class="bb-nav-touts__subscribe-link" href="http://businessweekmag.com/navbartextlink" data-vertical-target="businessweek" data-tracker-label="subscribe" data-tracker-action="click">Subscribe</a> </div><div class="bb-nav-social-container"> <bb-social class="bb-nav-social"></bb-social> </div><div class="bb-nav-search" is="bb-nav-search" data-tracker-label="search"> <form class="bb-nav-search__form" action="/search" method="get" autocomplete="false"> <input type="text" class="bb-nav-search__input" placeholder="What are you searching for?" name="query" autocomplete="off"/> </form> <div class="bb-search-drawer" tabindex="0"> <div class="bb-search-drawer__content"> <bb-quick-links></bb-quick-links> <bb-search-suggestions></bb-search-suggestions> </div> </div> </div> <span class="bb-nav-search__icon" data-tracker-label="search.icon" data-tracker-action="click"></span> </div> </div> <div class="bb-progress"> <div class="bb-progress__status"></div> </div> </nav> </div>
+        </div>
+    
+                <div class='breaking-news-placeholder' data-region=''></div>
+                <main class="transporter-container">
+                    <div class="transporter-item current">
+                        
+            <article data-story-id="P4V20J6K50XT01" data-theme="politics" data-type="article" itemscope itemtype="http://schema.org/Article">
+                <script id="piano-P4V20J6K50XT01" type="application/json">{"excludeFromWall":false,"contentType":"article","publishedAt":"2018-02-28T12:43:31.155Z","theme":"politics"}</script>
+                <script id="article-info-P4V20J6K50XT01" type="application/json">{"id":"P4V20J6K50XT01","contentType":"article","contentTags":[{"id":"1642606","type":"Person","directScore":0.08285657920694417,"derivedScore":0.08285657920694417},{"id":"1514506","type":"Person","directScore":0.7318997829946735,"derivedScore":0.7318997829946735},{"id":"1643329","type":"Person","directScore":3.7208250908110276,"derivedScore":3.7208250908110276},{"id":"london","type":"City","directScore":0.825803906095877,"derivedScore":0.825803906095877},{"id":"law","type":"Topic","directScore":0.12369303610179523,"derivedScore":0.12369303610179523},{"id":"sales-tax","type":"Topic","directScore":0.4539356875123298,"derivedScore":0.4539356875123298},{"id":"conservative","type":"Topic","directScore":0.7474847109883607,"derivedScore":0.7474847109883607},{"id":"brexit","type":"Topic","directScore":11.49033973369338,"derivedScore":11.49033973369338},{"id":"northern-ireland","type":"Location","directScore":2.769579798776879,"derivedScore":2.769579798776879},{"id":"Europe","type":"Region","directScore":3.762437988782327,"derivedScore":5.685086923795813},{"id":"UK","type":"Country","directScore":0.006707437364371671,"derivedScore":2.9967771591783197},{"id":"IE","type":"Country","directScore":2.901361215229829,"derivedScore":2.901361215229829},{"id":"GBP:CUR","type":"Currency","directScore":1.1105396898941398,"derivedScore":1.1105396898941398},{"id":"currency","type":"Topic","directScore":0,"derivedScore":1.1105396898941398},{"id":"GB","type":"Country","directScore":0,"derivedScore":3.1080270357356587},{"id":"markets","type":"Classification","directScore":0,"derivedScore":1.1105396898941398}]}</script>
+                <script id="page-level-ad-config-P4V20J6K50XT01" type="application/json">{"url":"2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable","adCode":"politics/story","targeting":{"suid":"P4V20J6K50XT01","page":"articlejav","currentResource":"Story|P4V20J6K50XT01","ni":["ACEXCLUDE","AGRKEY","ALLFEA","ALLTOP","ALLWWCUR","AMFEAT","ASFEAT","ASLEAD","ATTACHMENT","BGOVBILLGO","BGOVCODES","BIZNEWS","BONDWIRES","BPOLITICS","BREXIT","BUSINESS","CMDGLOMAC","CMDKEY","COS","CREDITKEY","DEBTKEY","DEVECO","EMEAREGION","EQUITYKEY","ESGCONTROV","ESGRES","EU","EUCOJ","EULEAD","EUROPE","EURTOP","FXKEY","G10MEMB","G7MEMB","GEN","GENTOP","GENTOPZ3","GLOBALMACR","GLOBFEAT","GOV","GOVMISC","INDUSTRIES","LAW","LITIGATE","MAJOR","METALKEY","MISC","MSCIDVEUR","MSCIWORLD","NIREL","NRGKEY","OILKEY","ONWEB","PHOTO","POL","POLIRISK","RATESKEY","READ","READ100","READ25","READ50","READ5000","SPREGIONS","SRCRANK1","TEC","TIMECO","TIMENI","TOP","TOPBIZMKT","TRD","TRIALS","UK","UKGOV","UKPM","UKTOP","UKTOPZ1","UPDATE","WORLD","WWTOP","WWTOPAM","WWTOPAS","WWTOPBIZ","WWTOPEU","WWTOPFEAT","WWTOPGLOB","WWTOPLEAD","WWTOPZ3","WWTOPZ4","WWTOPZ5"],"tagr":[],"kwl":["pol_goldman_q2","pol_hsbc","pol_synchrony","pol_citi","pol_vices","pol_etrade","pol_bp1","pol_bp2","pol_bp3","pol_bp4","pol_schwab","pol_United","pol_mobkoimandslist","pol_tdameritrade","pol_ishares","pol_mulberry","pol_junctiondigital","pol_att1","pol_att3","pol_att5","pol_skymobkoi","pol_hsbcpb","pol_masia2","pol_mobkoibelvedere","pol_ishares2","pol_ishares3","pol_security","pol_president"],"tickers":[]},"disableAds":false}</script>
+                
+    <div class="lede-text-only lede">
+        <div class="lede-text-only__background">
+            <div class="background-image"></div>
+            <div class="background-dots"></div>
+            <div class="background-fade"></div>
+        </div>
+        <div class="lede-text-only__container">
+            <div class="lede-text-only__content">
+                
+                <h1 class="lede-text-only__hed"><span class="lede-text-only__highlight">Brexit Talks in Peril After May Rejects EU Draft Deal</span></h1>
+                
+                <address class="lede-text-only__byline">By <div class="author">Tim Ross
+        <div class="author__modal">
+            <a class="author__modal-social" data-feed="twitter" href="https://www.twitter.com/TimRoss_1" target="_blank">@TimRoss_1</a>
+            
+            <a class="author__modal-bio" href="https://www.bloomberg.com/authors/ATA2uoEiDe0/tim-ross" rel="author">More stories by Tim Ross</a>
+        </div>
+    </div> and <div class="author">Ian Wishart
+        <div class="author__modal">
+            <a class="author__modal-social" data-feed="twitter" href="https://www.twitter.com/IanWishart" target="_blank">@IanWishart</a>
+            
+            <a class="author__modal-bio" href="https://www.bloomberg.com/authors/ARa7v0VQYww/ian-wishart" rel="author">More stories by Ian Wishart</a>
+        </div>
+    </div></address>
+                
+                <div class="lede-text-only__times">
+                    
+        <time class="article-timestamp" itemprop="datePublished" datetime="2018-02-28T12:43:31.155Z" data-type="updated" data-status="">
+            
+        <script class="article-timestamp__format" type="application/json">
+            {"year":"numeric","month":"long","day":"numeric","hour":"numeric","minute":"numeric","timeZoneName":"short"}
+        </script>
+        <noscript>February 28, 2018, 7:43 AM EST</noscript>
+    
+        </time>
+    
+                    <span class="updated-wrap"><span class="updated-text">Updated on </span>
+        <time class="article-timestamp" itemprop="dateModified" datetime="2018-02-28T16:28:52.014Z" data-type="updated" data-status="">
+            
+        <script class="article-timestamp__format" type="application/json">
+            {"year":"numeric","month":"long","day":"numeric","hour":"numeric","minute":"numeric","timeZoneName":"short"}
+        </script>
+        <noscript>February 28, 2018, 11:28 AM EST</noscript>
+    
+        </time>
+    </span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+                <div class="content-well">
+                    <section class="main-column">
+                        
+    <ul class="abstract">
+        
+        <li class="abstract__item">
+            <div class="abstract__item-text">
+                PM says EU text would undermine integrity of U.K. economy
+            </div>
+        </li>
+        <li class="abstract__item">
+            <div class="abstract__item-text">
+                EU fall-back option would keep N. Ireland in customs union
+            </div>
+        </li>
+    </ul>
+                        
+    <div class="lede-media-video lede">
+        
+        <div class="video-player">
+            <div id="player-xbm1Qiy" class="video-player__container" data-bmmrid="GImwICd0TW~7DBKTfJ_oDA" data-url="https://www.bloomberg.com/news/videos/2018-02-28/may-says-no-u-k-pm-could-agree-to-eu-draft-deal-video" data-autoplay="true" data-poster="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikKLWMd44aKA/v5/-1x-1.jpg"></div>
+            <div class="video-player__curtain">
+                <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikKLWMd44aKA/v5/640x-1.jpg" srcset="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikKLWMd44aKA/v5/640x-1.jpg 640w, https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikKLWMd44aKA/v5/680x-1.jpg 680w, https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikKLWMd44aKA/v5/840x-1.jpg 840w" sizes="(min-width:761px) and (max-width:1020px) 680px, (min-width:1021px) and (max-width:1280px) 640px, (min-width:1281px) 840px, 100vw">
+                <div class="video-player__overlay" data-playerid="player-xbm1Qiy">
+                    <img class="video-player__play-icon" src="https://assets.bwbx.io/s3/javelin/public/javelin/images/play-076012604d.svg"/>
+                </div>
+            </div>
+        </div>
+    
+        
+        <figcaption>
+            <div class="lede-media-video__caption">"No U.K. Prime Minister could ever agree," to the EU’s draft deal, Theresa May says.</div>
+        </figcaption>
+    </div>
+                        
+        <div class="body-copy fence-body">
+            <p><em>Follow </em><em><a data-web-url="https://twitter.com/Brexit" href="https://twitter.com/Brexit" target="_blank" rel="nofollow noopener">@Brexit</a> on Twitter, join our <a href="https://www.facebook.com/groups/525208901205570/" itemprop="StoryLink" itemscope="itemscope" target="_blank" rel="nofollow noopener"> Facebook group</a> and <a data-web-url="http://link.mail.bloombergbusiness.com/join/4wm/brexit-briefing-signup" href="http://link.mail.bloombergbusiness.com/join/4wm/brexit-briefing-signup" target="_blank" rel="nofollow noopener">sign up</a> to our Brexit Bulletin.</em></p><div class="hardwall" data-position="1"></div><div class="softwall" data-position="1"></div><p>U.K. Prime Minister Theresa May vowed she will never accept a draft Brexit agreement published by the European Union on Wednesday, raising the prospect that the negotiations are heading for a breakdown. The pound fell.</p><div class="hardwall" data-position="2"></div><div class="softwall" data-position="2"></div><aside class="inline-newsletter" data-state="ready"></aside><p>The EU commission set out in minute detail how it wanted to arrange Britain&#x2019;s withdrawal, but key passages on avoiding new customs checks at the U.K.&#x2019;s land border with Ireland made the 118-page draft impossible for May to support. It proposes keeping&#xA0;Northern Ireland in the bloc&#x2019;s customs union, under the jurisdiction of the European Court of Justice -- both of which May wants the whole of the U.K. to leave.</p><div class="hardwall" data-position="3"></div><div class="softwall" data-position="3"></div>
+        <div id="box-iJUQrR9" class="page-ad" data-position="mobile-box">
+            <script class="params" type="application/json">{"contentId":"P4V20J6K50XT01","position":"box","dimensions":{"mobile":[[300,250],[1,1]]},"type":"Mobile Body Box Ad","positionIncrement":1,"targeting":{"position":"box1","positionIncrement":1,"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"},"containerId":"box-iJUQrR9"}</script>
+            <div class="mobile-box-ad-dummy"></div>
+        </div>
+        <p>With time running out to reach a solution before the U.K. leaves in March 2019, May gave her verdict: the plan would undermine the integrity of the British economy and constitution.</p><div class="hardwall" data-position="4"></div><div class="softwall" data-position="4"></div><p>&#x201C;No U.K. prime minister could ever agree to it,&#x201D; May told Parliament in London. &#x201C;We will never do so.&#x201D;</p><p>While May fights Brussels, her room to negotiate is being squeezed by her wafer slim parliamentary majority at home. She <a itemscope="itemscope" itemprop="StoryLink" href="https://www.bloomberg.com/politics/articles/2018-02-28/uk-tory-rebellion-on-customs-union-grows-to-ten-lawmakers" title="Pro-EU Tory Rebellion Grows Further as May Ever More Boxed In" target="_blank"><meta itemprop="active" content="true"><meta itemprop="type" content="StoryLink"><meta itemprop="suid" content="P4V26HSYF01V">faces rebels</a> on each end of the Brexit spectrum.</p><p>Those who want her to keep closer EU ties are gaining in strength, and are backing legislation to keep the U.K. in the customs union that has enough support to defeat her.</p><h3>Tory Rebellion</h3><p>These pro-EU Conservative lawmakers might be encouraged by the words of chief EU negotiator Michel Barnier, who said keeping the whole U.K. in a customs union with the bloc would go a long way to solving the problem of the Irish border.</p><figure data-type="image" data-id="324499554" data-image-type="photo" data-image-size="half" data-align="right" class="figure-expandable"><div class="image"><div id="lazy-img-324499554" class="lazy-img"><style>#lazy-img-324499554:before{padding-top:66.675%;}</style><img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i6UWCEccAvS4/v0/60x-1.jpg" data-native-src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i6UWCEccAvS4/v0/-1x-1.jpg" class="lazy-img__image"></div></div><figcaption><div class="news-figure-caption-text caption"><p>Michel Barnier</p></div><div class="news-figure-credit credit">Photographer: Dario Pignatelli/Bloomberg</div></figcaption></figure>
+        <div id="in-article-MGhMItb" class="page-ad" data-position="in-article">
+            <script class="params" type="application/json">{"contentId":"P4V20J6K50XT01","position":"in-article","dimensions":{"mobile":[[5,19],[300,250],[1,1]],"tablet":[[5,19],[728,90],[1,1]]},"type":"In Article Flex Native Ad","positionIncrement":1,"targeting":{"position":"in-article","positionIncrement":1,"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"},"containerId":"in-article-MGhMItb"}</script>
+            <div class="in-article-ad-dummy"></div>
+        </div>
+        <p data-tout-type="story"><a itemscope="itemscope" itemprop="StoryLink" href="https://www.bloomberg.com/politics/articles/2017-11-22/irish-border-plays-key-role-in-post-brexit-world-quicktake-q-a" title="Click for full story" target="_blank"><meta itemprop="active" content="true"><meta itemprop="type" content="StoryLink"><meta itemprop="suid" content="P0MZ7R6KLVR4">Why Ireland&#x2019;s Border Is Brexit&#x2019;s Vexing Puzzle: QuickTake Q&amp;A</a></p><p>May is due to spell out her own vision for the future trading partnership with the EU in a speech on Friday. The stakes are high. She needs to finalize the terms of the Brexit transition phase that business is desperate for at the March 22 EU leaders&#x2019; summit, and then move on to start negotiations on trade, with the aim of concluding these by October.</p><p>So far, the EU has dismissed May&#x2019;s approach to a free-trade agreement outside the EU&#x2019;s single market and customs union as &#x201C;cherry picking.&#x201D; There&#x2019;s still no deal on what the transitional phase will look like, and even parts of the divorce settlement that were agreed in December now look like they&#x2019;re falling apart.</p><p>While privately officials say much of the dispute is down to both sides taking up tactical negotiating positions, a seemingly intractable problem lies at the heart of the argument. That is how to police the U.K.&#x2019;s future land border with the Republic of Ireland, an EU member, after Brexit.</p><h3>Common Rules</h3><p>According to the EU&#x2019;s draft treaty, Northern Ireland will form a &#x201C;common regulatory area&#x201D; with the Republic of Ireland and will have to follow the EU&#x2019;s rules and rates on customs, sales tax, state aid, excise duties and even sanitary and phytosanitary rules. U.K. officials working at the Northern Irish customs will have to follow EU rules.</p><p>This is the fall-back position that will come into force if the U.K. and the EU do not agree to a sweeping free-trade accord that solves the problem, and if other solutions can&#x2019;t be found.</p><p>For May, the problem with the EU&#x2019;s plan is threefold: first, it goes much further toward tying Northern Ireland into the EU&#x2019;s market rules than was <a itemscope="itemscope" itemprop="StoryLink" href="https://www.bloomberg.com/politics/articles/2017-12-08/brexit-deal-in-brussels-what-small-print-says-and-what-it-means" title="Brexit Deal in Brussels: What Small Print Says and What It Means" target="_blank"><meta itemprop="active" content="true"><meta itemprop="type" content="StoryLink"><meta itemprop="suid" content="P0N6LV6K50XV">agreed</a> in the initial phase of Brexit talks in December.</p><p data-tout-type="story"><a itemscope="itemscope" itemprop="StoryLink" href="https://www.bloomberg.com/politics/articles/2018-02-28/johnson-irish-border-being-used-to-keep-u-k-in-customs-union" title="Click for full story" target="_blank"><meta itemprop="active" content="true"><meta itemprop="type" content="StoryLink"><meta itemprop="suid" content="P4URCN6TTDS6">Johnson: Irish Border &#x2018;Being Used&#x2019; to Keep U.K. in Customs Union</a></p><p>She&#x2019;s also promised the hard-line Brexit supporters in her own party who are keeping her in office that the entire U.K. -- including Northern Ireland -- will leave the EU&#x2019;s customs union.</p><h3>Heresy</h3><p>Finally, the EU proposal will create a new frontier between the island of Ireland and the British mainland.&#xA0;This is heresy for the&#xA0;Democratic Unionist Party, the Northern Irish lawmakers who prop up May&#x2019;s minority government.</p><p>The EU text is &#x201C;constitutionally unacceptable and would be economically catastrophic for Northern Ireland,&#x201D; DUP leader Arlene Foster said on Wednesday.</p><p>British officials privately regard the EU&#x2019;s draft as hostile. One said the European Commission appeared to be trying to annex Northern Ireland and turn it into a supplicant state.</p><p>The EU rejects such a notion. Irish Foreign Minister Simon Coveney said in an interview with Irish broadcaster RTE on Wednesday that Northern Ireland will&#xA0;&#x201C;of course&#x201D; remain part of the U.K. after Brexit. Moreover, the backstop option applies primarily to goods, meaning even if it came to pass, much of U.K. law would still apply across the province.</p><p>The U.K. official also said it was provocative for the EU to cut a key passage of text that was included in the deal signed by May and European Commission President Jean-Claude Juncker in December, which was intended to guarantee no new trade barriers between Northern Ireland and mainland Britain.</p><p>&#x201C;We are committed to ensuring that we see no hard border between Northern Ireland and Ireland,&#x201D; May told Parliament on Wednesday. &#x201C;But the December text also made clear that there should continue to be trade between Northern Ireland and the rest of the United Kingdom as there is today.&#x201D;</p><ol class="noscript-footnotes"></ol>
+        </div>
+    
+                        
+                        
+                        
+                        <div class="touts">
+                            
+    <div class="terminal-tout-container">
+        <div class="terminal-tout">
+            <span class="terminal-tout__text">Before it's here, it's on the Bloomberg Terminal.</span>
+            <div class="terminal-tout__icon"></div>
+            <a href="https://bloom.bg/dg-ws-core-bcom-a1" class="terminal-tout__link">LEARN MORE</a>
+        </div>
+    </div>
+                            
+        <div class="secure-tip-tout">
+            <a class="secure-tip-tout__link" href="https://www.bloomberg.com/tips/">Have a confidential news tip?<br>Get in touch with our reporters.</a>
+        </div>
+                        </div>
+                        
+                        
+                        
+                        
+        <script id="page-level-taboola-config-P4V20J6K50XT01" type="application/json">{"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"}</script>
+        <div id="taboola-below-article-thumbnails-f8f51053e7551b373ed7af43a357a43c" class="taboola"></div>
+    
+                    </section>
+                    <aside class="right-rail right-rail-v1">
+                        
+                        
+                        <div class="dry-container">
+                        </div>
+                        <div class="sticky-container">
+                            
+                            
+        <div class="sticky-video"></div>
+    
+                            
+    <div id="box-GFyE2pc" class="box rotation-item page-ad" data-position="box">
+        <script class="params" type="application/json">{"contentId":"P4V20J6K50XT01","position":"box","dimensions":{"small_desktop":[[300,600],[300,250],[1,1]],"large_desktop":[[300,600],[300,250],[1,1]]},"positionIncrement":1,"targeting":{"position":"box1","positionIncrement":1,"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"},"containerId":"box-GFyE2pc"}</script>
+    </div>
+    
+                            
+                            
+        <div class="recirc rotation-item">
+            <div class="recirc__title">Most Read</div>
+            <ol class="recirc__list">
+                
+        <li class="recirc__list-item recirc__list-item-article">
+            <a class="recirc__list-item-article-link" href="https://www.bloomberg.com/news/articles/2018-04-10/to-visit-america-s-richest-zip-code-first-you-ll-need-a-boat">This Is America&#x2019;s Richest Zip Code</a>
+        </li>
+        <li class="recirc__list-item recirc__list-item-article">
+            <a class="recirc__list-item-article-link" href="https://www.bloomberg.com/news/articles/2018-04-09/asia-stocks-face-mixed-start-after-u-s-rally-ebbs-markets-wrap">Stocks Rally Amid U.S., China Conciliatory Remarks: Markets Wrap</a>
+        </li>
+        <li class="recirc__list-item recirc__list-item-article">
+            <a class="recirc__list-item-article-link" href="https://www.bloomberg.com/news/articles/2018-04-09/bitcoin-seen-popping-like-the-greatest-bubbles-by-bofa">Bitcoin, the Biggest Bubble in History, Is Popping</a>
+        </li>
+        <li class="recirc__list-item recirc__list-item-article">
+            <a class="recirc__list-item-article-link" href="https://www.bloomberg.com/news/articles/2018-04-10/facebook-s-zuckerberg-gets-high-marks-for-washington-performance">Facebook&apos;s Zuckerberg Earns Likes for Washington Performance</a>
+        </li>
+        <li class="recirc__list-item recirc__list-item-article">
+            <a class="recirc__list-item-article-link" href="https://www.bloomberg.com/news/articles/2018-04-09/new-york-s-jfk-booted-out-of-world-s-top-20-busiest-airports">New York&apos;s JFK Booted Out of World&apos;s Top 20 Busiest Airports</a>
+        </li>
+            
+    <li id="trendingnow-l3NGN6o" class="recirc__list-item recirc__list-item-ad" data-position="trendingnow">
+        <script class="params" type="application/json">{"contentId":"P4V20J6K50XT01","position":"trendingnow","dimensions":{"small_desktop":[[5,18],[1,1]],"large_desktop":[[5,18],[1,1]]},"positionIncrement":1,"targeting":{"position":"trendingnow1","positionIncrement":1,"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"},"containerId":"trendingnow-l3NGN6o"}</script>
+    </li></ol>
+        </div>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        
+                        
+    <div id="native-7B50CzZ" class="native ads__taboola-ab" data-position="native">
+        <script class="params" type="application/json">{"contentId":"P4V20J6K50XT01","position":"native","dimensions":{"all":[[5,16],[5,5],[5,2],[1,1]],"mobile":[[300,250]]},"type":"Native Transporter Ad","positionIncrement":1,"targeting":{"position":"native1","positionIncrement":1,"url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable"},"containerId":"native-7B50CzZ"}</script>
+    </div>
+    
+                    </div>
+                </main>
+                <footer class="bb-global-footer"> <div class="bb-global-footer__content"> <div class="bb-global-footer__group"> <a class="bb-global-footer__link" href="http://www.bloomberg.com/tos">Terms of Service</a> <a class="bb-global-footer__link" href="http://www.bloomberg.com/trademarks">Trademarks</a> <a class="bb-global-footer__link" href="http://www.bloomberg.com/privacy">Privacy Policy</a> <small class="bb-global-footer__copyright">©2018 Bloomberg L.P. All Rights Reserved</small> </div> <div class="bb-global-footer__group"> <a class="bb-global-footer__link" href="http://www.bloomberg.com/careers/?utm_source=dotcom&utm_medium=footer">Careers</a> <a class="bb-global-footer__link" href="http://nytm.org/made-in-nyc">Made in NYC</a> <a class="bb-global-footer__link" href="http://bloombergmedia.com/">Advertise</a> <a class="bb-global-footer__link bb-global-footer__ad-choices" href="http://www.bloomberg.com/privacy#advertisements">Ad Choices</a> <a class="bb-global-footer__link" href="http://www.bloomberg.com/feedback">Website Feedback</a> <a class="bb-global-footer__link" href="http://www.bloomberg.com/help">Help</a> </div> </div> </footer>
+                
+        <script>
+            window["jvln-asset-prefix"] = "https://assets.bwbx.io/s3/javelin";
+        </script>
+        <script class="dependencies" type="application/json">
+            {"css":["/public/javelin/css/application/application-08d1bf1521.css","/public/javelin/css/layout/basic/basic-bcfea0e55a.css","/public/javelin/css/layout/basic/basic-c95315608b.desktop.css","/public/javelin/css/layout/basic/basic-dc74d44610.small_desktop.css","/public/javelin/css/layout/basic/basic-52967ea5ad.large_desktop.css","/public/javelin/css/layout/basic/basic-b58b2a9999.tablet.css","/public/javelin/css/layout/basic/basic-364753bead.mobile.css","/public/javelin/css/nav/bb/nav-e804800f4a.css","/public/javelin/css/components/breaking_news_placeholder/breaking_news-07c1b1eccf.desktop.css","/public/javelin/css/components/image_viewer/image_viewer-1e5746c2c1.css","/public/javelin/css/components/image_viewer/image_viewer-058810df2a.desktop.css","/public/javelin/css/components/image_viewer/image_viewer-94b75c625f.mobile-tablet.css","/public/javelin/css/components/image_viewer/image_viewer-eeba583cbe.mobile.css","/public/javelin/css/print/print-ffa68fd905.css","/public/javelin/css/components/truste/truste-5a6952f5b8.css","/public/javelin/css/components/truste/truste-323c682892.small_desktop.css","/public/javelin/css/components/truste/truste-5679a9f67c.large_desktop.css","/public/javelin/css/components/truste/truste-932ba91b49.tablet.css","/public/javelin/css/components/truste/truste-53c717658f.mobile.css","/public/javelin/css/ads/leaderboard/leaderboard-f7160e7776.css","/public/javelin/css/ads/leaderboard/leaderboard-290beb4fc2.tablet-desktop.css","/public/javelin/css/ads/native/native-15685ecbee.css","/public/javelin/css/components/lazy_images/lazy_image-7dc0452705.css","/public/javelin/css/unsupportedBrowserMessage/unsupportedBrowserMessage-ce08ced21c.css","/public/javelin/css/pianola/pianola_css-b3b06f00e4.css","/public/javelin/css/components/abstract/abstract-762d163070.css","/public/javelin/css/components/author_tout/author_tout-c6e448ba2b.css","/public/javelin/css/components/author_tout/author_tout-e273b6df99.mobile.css","/public/javelin/css/body/basic/body-cfa9f847b6.css","/public/javelin/css/body/basic/newsletter_tout-7104a5317e.css","/public/javelin/css/body/basic/outstream_ad-c21b3ed6be.css","/public/javelin/css/body/basic/body-75cdc2b544.desktop.css","/public/javelin/css/body/basic/in_article_ad-238ed3378a.desktop.css","/public/javelin/css/body/basic/body-5d67f9f853.large_desktop.css","/public/javelin/css/body/basic/body-e886f59cb3.tablet-desktop.css","/public/javelin/css/body/basic/mobile_ads-10915d4c59.tablet-desktop.css","/public/javelin/css/body/basic/body-b820c41d19.tablet.css","/public/javelin/css/body/basic/in_article_ad-302586dffe.tablet.css","/public/javelin/css/body/basic/in_article_ad-b789d79511.mobile-tablet.css","/public/javelin/css/body/basic/body-6689773bd7.mobile.css","/public/javelin/css/body/basic/in_article_ad-a8500fe5ea.mobile.css","/public/javelin/css/body/basic/mobile_ads-95f94f08a6.mobile.css","/public/javelin/css/body/basic/newsletter_tout-12eaa8fd13.mobile.css","/public/javelin/css/ledes/basic/video/video-ada3b27501.css","/public/javelin/css/ledes/basic/video/video-d88c002e2c.desktop.css","/public/javelin/css/ledes/basic/video/video-36691f1d24.large_desktop.css","/public/javelin/css/ledes/basic/video/video-86bf2ad2f7.tablet.css","/public/javelin/css/ledes/basic/video/video-b10ee21246.mobile.css","/public/javelin/css/ledes/basic/text_only/text_only-e169350d35.css","/public/javelin/css/ledes/basic/text_only/text_only-2feccae3d6.desktop.css","/public/javelin/css/ledes/basic/text_only/text_only-6a33ad34f5.small_desktop.css","/public/javelin/css/ledes/basic/text_only/text_only-b17a45ed53.large_desktop.css","/public/javelin/css/ledes/basic/text_only/text_only-13bc91fa5b.tablet.css","/public/javelin/css/ledes/basic/text_only/text_only-5763675d95.mobile.css","/public/javelin/css/components/author_details/author_details-f6d8baf35e.css","/public/javelin/css/components/recirc/recirc-f69a644ec7.css","/public/javelin/css/components/charts/charts-9cc89e34a6.css","/public/javelin/css/components/charts/charts-2a9dffa69a.desktop.css","/public/javelin/css/components/charts/charts-6724cab530.mobile.css","/public/javelin/css/ads/terminal_tout/terminal_tout-f96d849049.css","/public/javelin/css/ads/terminal_tout/terminal_tout-b55b132f21.mobile.css","/public/javelin/css/ads/secure_tip_tout/secure_tip_tout-0250568d0e.css","/public/javelin/css/themes/politics/politics-5bafa23bfb.css","/public/javelin/css/components/sticky_video/sticky_video-abccaf05bd.desktop.css"],"js":["/public/javelin/js/pwa/pwa-d9e2e840ed.js","/public/javelin/js/components/event_bus/event_bus-0933a41869.sync.js","/public/javelin/js/layout/right_rail/right_rail-c8bf11599b.desktop.js","/public/javelin/js/experiments/experiments-88dd5c0bee.js","/public/javelin/js/nav/bb/nav-349f5a927e.js","/public/javelin/js/components/breaking_news_placeholder/breaking_news_placeholder-edf381166d.js","/public/javelin/js/components/image_viewer/image_viewer-63b0a33e4a.js","/public/javelin/js/ads/initialize/initialize_ads-86004bad77.js","/public/javelin/js/transporter/transporter-3635f0862d.js","/public/javelin/js/components/truste/truste-7e8fb3b0d3.js","/public/javelin/js/ads/leaderboard/leaderboard-d5d33acd16.tablet-desktop.js","/public/javelin/js/components/lazy_images/lazy_images-99dd6b989f.js","/public/javelin/js/components/third_party_embeds/third_party_embeds-e0ec0bac3a.js","/public/javelin/js/components/timestamp/timestamp-d8d2d2594a.js","/public/javelin/js/components/video_player/video_player-816c82bcc8.js","/public/javelin/js/polyfills/polyfills-e08f8690e2.js","/public/javelin/js/unsupportedBrowserMessage/unsupportedBrowserMessage-2cea176ceb.async.js","/public/javelin/js/pianola/pianola-456e8efe70.js","/public/javelin/js/components/author_details/author_details-dc16c46e9f.js","/public/javelin/js/components/charts/charts-8fa0c9ba9f.js","/public/javelin/js/ads/taboola/en/taboola-894c4bc04a.js","/public/javelin/js/components/sticky_video/sticky_video-0bd57fe2aa.desktop.js","/public/javelin/js/analytics/geoip/geoip-250507a5c1.js","/public/javelin/js/dependencies/dependencies-8b55c67466.js"]}
+        </script>
+                <script class="content-data" type="application/json">{"adCode":"politics/story","attributor":"bn","brand":"politics","secondaryBrands":["politics"],"byline":"Tim Ross and Ian Wishart","franchise":null,"id":"P4V20J6K50XT01","primaryCategory":"politics","categories":[],"primarySite":"bpol","publishedAt":"2018-02-28T12:43:31.155Z","seoHeadline":"Brexit Talks in Peril After May Rejects EU Draft Deal","slug":"2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable","textHeadline":"Brexit Talks in Peril After May Rejects EU Draft Deal","theme":"politics","topic":"Brexit","twitterHandle":"bpolitics","twitterText":"Theresa May doesn't like the EU's draft Brexit deal. \"No UK prime minister could ever agree to it,\" she told lawnmakers","type":"article","url":"/news/articles/2018-02-28/brexit-talks-in-peril-as-may-rejects-eu-draft-as-unacceptable","webOriginal":false,"metadata":{"isMetered":true}}</script>
+                
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/polyfills/polyfills-e08f8690e2.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/ads/initialize/initialize_ads-86004bad77.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/pianola/pianola-456e8efe70.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("(min-width:761px)").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/ads/leaderboard/leaderboard-d5d33acd16.tablet-desktop.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/breaking_news_placeholder/breaking_news_placeholder-edf381166d.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/video_player/video_player-816c82bcc8.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("(min-width:1021px)").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/layout/right_rail/right_rail-c8bf11599b.desktop.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/author_details/author_details-dc16c46e9f.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/charts/charts-8fa0c9ba9f.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+        <script type="text/javascript">
+            if (window.matchMedia("(min-width:1021px)").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/sticky_video/sticky_video-0bd57fe2aa.desktop.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/ads/taboola/en/taboola-894c4bc04a.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/transporter/transporter-3635f0862d.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/analytics/geoip/geoip-250507a5c1.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                <script type="text/javascript">(function(d){var s=d.createElement("script");s.async=true;s.src="https://www.bbthat.com/assets/v1.4.0/that.js";s.type="text/javascript";d.head.appendChild(s);})(document);</script>
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/nav/bb/nav-349f5a927e.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                <script type="text/javascript">(function(d){var s=d.createElement("script");s.async=true;s.src="https://nav.bloomberg.com/public/javascripts/global/bb-global-nav-c35d31be2a.js";s.type="text/javascript";d.head.appendChild(s);})(document);</script>
+                
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/image_viewer/image_viewer-63b0a33e4a.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/dependencies/dependencies-8b55c67466.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/lazy_images/lazy_images-99dd6b989f.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/third_party_embeds/third_party_embeds-e0ec0bac3a.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/timestamp/timestamp-d8d2d2594a.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+                <script src="https://assets.bwbx.io/s3/javelin/public/javelin/js/unsupportedBrowserMessage/unsupportedBrowserMessage-2cea176ceb.async.js" type="text/javascript" async></script>
+                <!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MNTH5N');</script><!-- End Google Tag Manager -->
+                <!-- Google Tag Manager (noscript) --><noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-MNTH5N' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+                
+        <script type="text/javascript">
+            if (window.matchMedia("all").matches) {
+                var s = document.createElement("script");
+                s.src = "https://assets.bwbx.io/s3/javelin/public/javelin/js/components/truste/truste-7e8fb3b0d3.js";
+                s.type = "text/javascript";
+                s.async = true;
+                document.head.appendChild(s);
+            }
+        </script>
+    
+            </body>
+        </html>
+    
