@@ -45,7 +45,7 @@ setup(
     author_email='p@psolbach.com',
     url='https://github.com/psolbach/metadoc',
     license=metadata["license"],
-    cmdclass={'install': CustomInstall, 'develop': DevInstall},
+    cmdclass={'install': CustomInstall, 'develop': DevInstall, 'bdist_wheel': CustomInstall},
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     zip_safe=False
