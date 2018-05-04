@@ -12,13 +12,22 @@ import time
 import concurrent
 import requests
 import urllib.parse
+import os
+import sys
+import logging
 
 from .domain import Domaintools
 from .extract import Extractor
 from .social import ActivityCount
 
-import logging
-logging.basicConfig(level=logging.DEBUG)
+
+logger = logging.getLogger()
+logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
+formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s %(message)s')
+
+ch = logging.StreamHandler(sys.stdout)
+ch.setFormatter(formatter)
+logger.addHandler(ch)
 
 class Metadoc(object):
   def __init__(self, url=None, html=None, **kwargs):
@@ -26,12 +35,14 @@ class Metadoc(object):
     :param url: The article url we shall investigate, required.
     :param html: You can pass in the article html manually, optional.
     """
-
+    self.errors = []
     self.html = html or None
     self.url = url or None
 
     if not url:
       raise AttributeError('Missing \"url\" attribute.')
+
+    logger.info("Processing url: {}".format(url))
 
     if not self.html:
       self._request_url()
@@ -42,27 +53,22 @@ class Metadoc(object):
 
   def query_all(self):
     """Combine all available resources"""
-    subtasks = []
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+    try:
+        subtasks = []
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
 
-    executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
-    subtasks.append(loop.run_in_executor(executor, self.extractor.get_all))
-    subtasks.append(loop.run_in_executor(executor, self.domain.get_all))
-    subtasks.append(self.activity.get_all(loop))
+        executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
+        subtasks.append(loop.run_in_executor(executor, self.extractor.get_all))
+        subtasks.append(loop.run_in_executor(executor, self.domain.get_all))
+        subtasks.append(self.activity.get_all(loop))
 
-    loop.run_until_complete(asyncio.wait(subtasks, loop=loop))
-    loop.close()
-
-  def return_ball(self):
-    return self._render()
-
-  def return_social(self):
-    return {
-      "url": self.url,
-      "social": getattr(self.activity, "responses", None),
-      "__version__": __version__
-    }
+        loop.run_until_complete(asyncio.wait(subtasks, loop=loop))
+        loop.close()
+    except Exception as exc:
+        logger.error("Error when processing {}".format(self.url))
+        logger.exception(exc)
+        self.errors.append(str(exc))
 
   def query_domain(self):
     self.domain.get_all()
@@ -77,11 +83,26 @@ class Metadoc(object):
   def query_extract(self):
     self.extractor.get_all()
 
+  def return_ball(self):
+    return self._render()
+
+  def return_social(self):
+    return {
+      "url": self.url,
+      "social": getattr(self.activity, "responses", None),
+      "__version__": __version__
+    }
+
   def _render(self):
     """Construct response dict after partial or complete
     queries to various sources
     """
-    return {
+    if self.errors:
+        return {
+            "errors": self.errors
+        }
+
+    res = {
       "url": self.url,
       "title": getattr(self.extractor, "title", None),
       "authors": getattr(self.extractor, "authors", None),
@@ -113,6 +134,22 @@ class Metadoc(object):
 
       "__version__": __version__
     }
+    self._check_result(res)
+    return res
+
+  def _check_result(self, res):
+    if not res["title"]:
+        logger.warning("No title: {}".format(self.url))
+    if not res["canonical_url"]:
+        logger.warning("No canonical url: {}".format(self.url))
+    if len(res["text"]["fulltext"]) < 50:
+        logger.warning("No or little text: {}".format(self.url))
+    if not res["entities"]["names"]:
+        logger.warning("No names: {}".format(self.url))
+    if not res["entities"]["keywords"]:
+        logger.warning("No keywords: {}".format(self.url))
+    if not res["domain"]["name"]:
+        logger.warning("No domain name: {}".format(self.url))
 
   def _request_url(self):
     """In case no html parameter was provided to the constructor"""

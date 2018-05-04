@@ -12,7 +12,7 @@ from goose3 import Goose, Configuration
 from .ner import EntityExtractor
 from .html import HtmlMeta
 
-logging.getLogger("requests").setLevel(logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 class Extractor(object):
   """Entity recognition, pullquote extraction etc.
@@ -117,4 +117,4 @@ class Extractor(object):
     self.detect_language()
     self.get_contenthash()
     self.get_reading_time()
-    logging.info("--- extraction module %s seconds ---" % (time.time() - start_time))
+    logger.debug("--- extraction module %s seconds ---" % (time.time() - start_time))

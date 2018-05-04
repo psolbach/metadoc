@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from .lookup import whois_date_registered
 from .check import check_credibility
 
-logging.getLogger("requests").setLevel(logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 class Domaintools(object):
   """Gather various metadata like whois informaion
@@ -38,7 +38,7 @@ class Domaintools(object):
       self.recalculate_fake_confidence()
       self.date_registered_iso = self.date_registered.isoformat()
 
-    logging.info("--- domain module %s seconds ---" % (time.time() - start_time))
+    logger.debug("--- domain module %s seconds ---" % (time.time() - start_time))
 
   def recalculate_fake_confidence(self):
     # Adds .2 to fake_confidence if website was registered delta 1y

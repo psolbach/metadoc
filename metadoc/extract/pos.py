@@ -1,11 +1,8 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 """Averaged perceptron classifier. Implementation geared for simplicity rather than
 efficiency. Adapted from @hankcs, cf. https://github.com/hankcs/AveragedPerceptronPython/blob/master/LICENSE
 Based on http://honnibal.wordpress.com/2013/09/11/a-good-part-of-speechpos-tagger-in-about-200-lines-of-python/
 """
-
 from collections import defaultdict
 import pickle
 import random
@@ -15,11 +12,11 @@ import os
 PICKLE = os.path.join(os.path.dirname(__file__), "data/tagger.pickle")
 TRAINING_SET = os.path.join(os.path.dirname(__file__), "data/training_set.txt")
 
-logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def do_train():
   tagger = AveragedPerceptronTagger(autoload=False)
-  logging.info('Reading corpus.')
+  logger.info('Reading corpus.')
   training_data = []
   sentence = ([], [])
 
@@ -34,8 +31,8 @@ def do_train():
       training_data.append(sentence)
       sentence = ([], [])
 
-  logging.info('training corpus size : %d', len(training_data))
-  logging.info('Start training...')
+  logger.info('training corpus size : %d', len(training_data))
+  logger.info('Start training...')
   tagger.train(training_data, save_loc=PICKLE)
 
 class AveragedPerceptron(object):
@@ -112,7 +109,6 @@ class AveragedPerceptronTagger(object):
   '''Greedy Averaged Perceptron tagger, as implemented by Matthew Honnibal.
   :param load: Load the pickled model upon instantiation.
   '''
-
   START = ['-START-', '-START2-']
   END = ['-END-', '-END2-']
   AP_MODEL_LOC = PICKLE
@@ -157,10 +153,10 @@ class AveragedPerceptronTagger(object):
     IO classification isn't as accurate here, since we're not differentiating between PERSON and ORGANIZATION.
     Still, this is fast and in many cases suited to the task.
 
-    [('The', 'DT'), ('extraordinary', 'JJ'), ('phenomenon', 'NN'), ('of', 'IN'), ('fake', 'JJ'), 
-    ('news', 'NN'), ('spread', 'NN'), ('by', 'IN'), ('Facebook', 'NNP'), ('and', ''), ('other', 'JJ'), 
-    ('social', 'JJ'), ('media', 'NNS'), ('during', 'IN'), ('the', 'DT'), ('2016', 'CD'), ('presidential', 'JJ'), 
-    ('election', 'NN'), ('has', 'VBZ'), ('been', 'VBN'), ('largely', 'RB'), ('portrayed', 'VBN'), ('as', 'IN'), 
+    [('The', 'DT'), ('extraordinary', 'JJ'), ('phenomenon', 'NN'), ('of', 'IN'), ('fake', 'JJ'),
+    ('news', 'NN'), ('spread', 'NN'), ('by', 'IN'), ('Facebook', 'NNP'), ('and', ''), ('other', 'JJ'),
+    ('social', 'JJ'), ('media', 'NNS'), ('during', 'IN'), ('the', 'DT'), ('2016', 'CD'), ('presidential', 'JJ'),
+    ('election', 'NN'), ('has', 'VBZ'), ('been', 'VBN'), ('largely', 'RB'), ('portrayed', 'VBN'), ('as', 'IN'),
     ('a', 'DT'), ('lucky', 'JJ'), ('break', 'NN'), ('for', 'IN'), ('Donald', 'NNP'), ('Trump', 'NNP')]
     '''
 
@@ -177,7 +173,7 @@ class AveragedPerceptronTagger(object):
       elif len(ent):
         push_ent(ent)
         ent = []
-    
+
     return entities
 
   def train(self, sentences, save_loc=None, nr_iter=5):
@@ -187,7 +183,6 @@ class AveragedPerceptronTagger(object):
     :param save_loc: If not ``None``, saves a pickled model in this location.
     :param nr_iter: Number of training iterations.
     '''
-
     self._make_tagdict(sentences)
     self.model.classes = self.classes
     for iter_ in range(nr_iter):
@@ -208,14 +203,14 @@ class AveragedPerceptronTagger(object):
           c += guess == tags[i]
           n += 1
       random.shuffle(sentences)
-      logging.info("Iter {0}: {1}/{2}={3}".format(iter_, c, n, _pc(c, n)))
+      logger.info("Iter {0}: {1}/{2}={3}".format(iter_, c, n, _pc(c, n)))
     self.model.average_weights()
-    
+
     # Pickle as a binary file
     if save_loc is not None:
       pickle.dump((self.model.weights, self.tagdict, self.classes),
             open(save_loc, 'wb'), -1)
-    
+
     return None
 
   def load(self, loc=None):
@@ -281,7 +276,7 @@ class AveragedPerceptronTagger(object):
       for word, tag in zip(words, tags):
         counts[word][tag] += 1
         self.classes.add(tag)
-    
+
     freq_thresh = 20
     ambiguity_thresh = 0.97
 
