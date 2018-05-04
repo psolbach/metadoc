@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 __title__ = 'Metadoc - Postmodern news article metadata service'
@@ -20,7 +19,6 @@ from .domain import Domaintools
 from .extract import Extractor
 from .social import ActivityCount
 
-
 logger = logging.getLogger()
 logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
 formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s %(message)s')
@@ -30,63 +28,87 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 class Metadoc(object):
+
     def __init__(self, url=None, html=None, **kwargs):
         """Metadoc API, initialize with
         :param url: The article url we shall investigate, required.
         :param html: You can pass in the article html manually, optional.
         """
+        logger.info("Processing url: {}".format(url))
+
         self.errors = []
         self.html = html or None
         self.url = url or None
 
-        if not url:
+        if not self.url:
           raise AttributeError('Missing \"url\" attribute.')
 
-        logger.info("Processing url: {}".format(url))
+        self.extractor = None
+        self.activity = None
+        self.domain = None
 
+    def _prepare(self):
         if not self.html:
-          self._request_url()
-
+            self.html = self._request_url()
         self.extractor = Extractor(html=self.html) # Named entities, synthetic summaries
         self.activity = ActivityCount(url=self.url) # Social activity from various networks
         self.domain = Domaintools(url=self.url) # Domain whois date, blacklisting
 
-    def query_all(self):
-        """Combine all available resources"""
+    def query(self, mode=None, fmt=None):
+        data = None
         try:
-            subtasks = []
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
-            executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
-            subtasks.append(loop.run_in_executor(executor, self.extractor.get_all))
-            subtasks.append(loop.run_in_executor(executor, self.domain.get_all))
-            subtasks.append(self.activity.get_all(loop))
-
-            loop.run_until_complete(asyncio.wait(subtasks, loop=loop))
-            loop.close()
+            self._prepare()
+            calls = {
+                "social": self._query_social,
+                "domain": self._query_domain,
+                "extract": self._query_extract,
+            }
+            calls.get(mode, self._query_all)()
+            data = self._render_social() if fmt == "social" else self._render()
+            self._check_result(data)
         except Exception as exc:
             logger.error("Error when processing {}".format(self.url))
             logger.exception(exc)
             self.errors.append(str(exc))
 
-    def query_domain(self):
+        # return data or error
+        if data is None or self.errors:
+            return self._render_errors()
+        return data
+
+    def _query_all(self):
+        """Combine all available resources"""
+        subtasks = []
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+        executor = concurrent.futures.ThreadPoolExecutor(max_workers=3)
+        subtasks.append(loop.run_in_executor(executor, self.extractor.get_all))
+        subtasks.append(loop.run_in_executor(executor, self.domain.get_all))
+        subtasks.append(self.activity.get_all(loop))
+
+        loop.run_until_complete(asyncio.wait(subtasks, loop=loop))
+        loop.close()
+
+    def _query_domain(self):
         self.domain.get_all()
 
-    def query_social(self):
+    def _query_social(self):
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
 
         loop.run_until_complete(self.activity.get_all(loop))
         loop.close()
 
-    def query_extract(self):
+    def _query_extract(self):
         self.extractor.get_all()
 
-    def return_ball(self):
-        return self._render()
+    def _render_errors(self):
+        return {
+            "errors": self.errors
+        }
 
-    def return_social(self):
+    def _render_social(self):
         return {
           "url": self.url,
           "social": getattr(self.activity, "responses", None),
@@ -97,12 +119,7 @@ class Metadoc(object):
         """Construct response dict after partial or complete
         queries to various sources
         """
-        if self.errors:
-            return {
-                "errors": self.errors
-            }
-
-        res = {
+        return {
           "url": self.url,
           "title": getattr(self.extractor, "title", None),
           "authors": getattr(self.extractor, "authors", None),
@@ -119,23 +136,18 @@ class Metadoc(object):
             "reading_time": getattr(self.extractor, "reading_time", None),
             "contenthash": getattr(self.extractor, "contenthash", None)
           },
-
           "entities": {
             "names": getattr(self.extractor, "names", None),
             "keywords": getattr(self.extractor, "keywords", None),
           },
-
           "domain": {
             "name": getattr(self.domain, "domain", None),
             "credibility": getattr(self.domain, "credibility", None),
             "date_registered": getattr(self.domain, "date_registered_iso", None),
             "favicon": "https://logo.clearbit.com/{0}?size=200".format(getattr(self.domain, "domain", None)),
           },
-
           "__version__": __version__
         }
-        self._check_result(res)
-        return res
 
     def _check_result(self, res):
         if not res["title"]:
@@ -171,4 +183,4 @@ class Metadoc(object):
         if req.status_code != 200:
           raise Exception('Requesting article body failed with {} status code.'.format(req.status_code))
 
-        self.html = req.text # after except
+        return req.text # after except
