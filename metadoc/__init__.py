@@ -65,7 +65,8 @@ class Metadoc(object):
             }
             calls.get(mode, self._query_all)()
             data = self._render_social() if fmt == "social" else self._render()
-            self._check_result(data)
+            if mode is None:
+                self._check_result(data)
         except Exception as exc:
             logger.error("Error when processing {}".format(self.url))
             logger.exception(exc)
@@ -150,17 +151,17 @@ class Metadoc(object):
         }
 
     def _check_result(self, res):
-        if not res["title"]:
+        if not res.get("title"):
             logger.warning("No title: {}".format(self.url))
-        if not res["canonical_url"]:
+        if not res.get("canonical_url"):
             logger.warning("No canonical url: {}".format(self.url))
-        if len(res["text"]["fulltext"]) < 50:
+        if len(res.get("text", {}).get("fulltext", [])) < 50:
             logger.warning("No or little text: {}".format(self.url))
-        if not res["entities"]["names"]:
+        if not res.get("entities", {}).get("names"):
             logger.warning("No names: {}".format(self.url))
-        if not res["entities"]["keywords"]:
+        if not res.get("entities", {}).get("keywords"):
             logger.warning("No keywords: {}".format(self.url))
-        if not res["domain"]["name"]:
+        if not res.get("domain", {}).get("name"):
             logger.warning("No domain name: {}".format(self.url))
 
     def _request_url(self):

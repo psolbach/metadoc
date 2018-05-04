@@ -19,29 +19,27 @@ class MetadocModuleTest(asynctest.TestCase):
 
   @asynctest.ignore_loop
   def test_query_all(self):
-    self.metadoc.query_all()
-    result = self.metadoc.return_ball()
+    result = self.metadoc.query()
     assert result
 
   @asynctest.ignore_loop
   def test_extract(self):
-    self.metadoc.query_extract()
+    self.metadoc.query("extract")
     assert self.metadoc.extractor
 
   @asynctest.ignore_loop
   def test_social(self):
-    self.metadoc.query_social()
+    self.metadoc.query("social")
     assert self.metadoc.activity
 
   @asynctest.ignore_loop
   def test_social_return(self):
-    self.metadoc.query_social()
-    result = self.metadoc.return_social()
+    result = self.metadoc.query("social", "social")
     assert list(result.keys()) == ["url", "social", "__version__"]
 
   @asynctest.ignore_loop
   def test_domain(self):
-    self.metadoc.query_domain()
+    self.metadoc.query("domain")
     assert self.metadoc.domain
 
   @asynctest.ignore_loop
@@ -51,11 +49,15 @@ class MetadocModuleTest(asynctest.TestCase):
 
   @asynctest.ignore_loop
   def test_invalid_url_fail(self):
-    with pytest.raises(Exception):
-      from metadoc import Metadoc
-      foo = Metadoc(url="https://theintercept.com/404/", html=None)
+      metadoc = Metadoc(url="https://theintercept.com/404/", html=None)
+      result = metadoc.query()
+      assert result["errors"][0] ==  "Requesting article body failed with 404 status code."
 
   @asynctest.ignore_loop
   def test_no_html(self):
     metadoc = Metadoc(url=self.url)
-    metadoc.query_all()
+    metadoc.query()
+
+  @asynctest.ignore_loop
+  def test_check_result(self):
+      self.metadoc._check_result({})
