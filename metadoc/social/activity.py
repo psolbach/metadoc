@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import aiohttp
 import asyncio
 import jmespath
 import json
@@ -11,7 +10,7 @@ import time
 from aiohttp import ClientSession
 from .providers import providers
 
-logging.getLogger("requests").setLevel(logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 class ActivityCount(object):
     """Gather activity/share stats from social APIs"""
@@ -51,6 +50,6 @@ class ActivityCount(object):
                 })
             self.responses.append(data)
         except Exception as exc:
-            logging.error("Collecting sharecount failed!")
-            logging.exception(exc)
+            logger.error("Collecting sharecount failed!")
+            logger.exception(exc)
 

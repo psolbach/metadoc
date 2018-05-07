@@ -8,6 +8,8 @@ from dateutil.parser import parse
 from dateutil.tz import tzoffset
 from collections import ChainMap
 
+logger = logging.getLogger(__name__)
+
 class HtmlMeta(object):
     """Extract metadata from html.
     Needs work, e.g. handling multiple @property=author tags,
@@ -157,8 +159,8 @@ class HtmlMeta(object):
                 for item in[i for i in ld if i.get("@type") == "NewsArticle"]:
                     return item
         except Exception as exc:
-            logging.error("JSON-LD parsing failed")
-            logging.exception(exc)
+            logger.error("JSON-LD parsing failed")
+            logger.exception(exc)
         return ld if ld else {}
 
     def extract_title(self):
