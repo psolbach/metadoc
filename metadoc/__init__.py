@@ -4,7 +4,7 @@ __title__ = 'Metadoc - Postmodern news article metadata service'
 __copyright__ = 'Copyright 2016, Paul Solbach'
 __author__ = 'Paul Solbach'
 __license__ = 'MIT'
-__version__ = '0.7.0'
+__version__ = '0.8.0'
 
 import asyncio
 import time
@@ -23,9 +23,11 @@ logger = logging.getLogger()
 logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
 formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s %(message)s')
 
-ch = logging.StreamHandler(sys.stdout)
-ch.setFormatter(formatter)
-logger.addHandler(ch)
+if not os.environ.get("LAMBDA_TASK_ROOT", False):
+    # add stream handler, except for AWS Lambda
+    ch = logging.StreamHandler(sys.stdout)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
 
 class Metadoc(object):
 
