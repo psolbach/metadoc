@@ -23,10 +23,6 @@ logger = logging.getLogger()
 logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
 formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s %(message)s')
 
-ch = logging.StreamHandler(sys.stdout)
-ch.setFormatter(formatter)
-logger.addHandler(ch)
-
 class Metadoc(object):
 
     def __init__(self, url=None, html=None, **kwargs):
