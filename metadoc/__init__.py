@@ -23,6 +23,12 @@ logger = logging.getLogger()
 logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
 formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s %(message)s')
 
+if not os.environ.get("LAMBDA_TASK_ROOT", False):
+    # add stream handler, except for AWS Lambda
+    ch = logging.StreamHandler(sys.stdout)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+
 class Metadoc(object):
 
     def __init__(self, url=None, html=None, **kwargs):
