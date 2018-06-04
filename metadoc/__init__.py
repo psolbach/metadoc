@@ -187,8 +187,9 @@ class Metadoc(object):
           raise Exception('Requesting article body failed with {} status code.'.format(req.status_code))
 
         # check for encoding conflicts (e.g. t3n.de)
-        if req.encoding.lower() != req.apparent_encoding.lower() and \
-           req.apparent_encoding.lower() != "windows-1254":
-            logger.info("Switching html encoding: {} -> {}".format(req.encoding, req.apparent_encoding))
-            req.encoding = req.apparent_encoding
+        enc_apparent = req.apparent_encoding.lower()
+        if req.encoding.lower() != enc_apparent and \
+           enc_apparent != "windows-1254":
+            logger.info("Switching html encoding: {} -> {}".format(req.encoding, enc_apparent))
+            req.encoding = enc_apparent
         return req.text
