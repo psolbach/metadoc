@@ -61,3 +61,17 @@ class MetadocModuleTest(asynctest.TestCase):
   @asynctest.ignore_loop
   def test_check_result(self):
       self.metadoc._check_result({})
+
+  @asynctest.ignore_loop
+  def test_invalid_charset_check(self):
+      s = "Von da an beginnt fÃ¤r die meisten jedoch der hektische Teil."
+      assert self.metadoc._check_invalid_encoding(s) == True
+      s = "Von da an beginnt fÃ¼r die meisten jedoch der hektische Teil."
+      assert self.metadoc._check_invalid_encoding(s) == True
+      s = "Von da an beginnt fÃ¶r die meisten jedoch der hektische Teil."
+      assert self.metadoc._check_invalid_encoding(s) == True
+      s = "Von da an beginnt fÃ¼r die meisten jedoch der hektische Teil."
+      assert self.metadoc._check_invalid_encoding(s) == True
+
+      s = "DE PÃŠRA"
+      assert self.metadoc._check_invalid_encoding(s) == False

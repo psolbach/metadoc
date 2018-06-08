@@ -12,6 +12,7 @@ import concurrent
 import requests
 import urllib.parse
 import os
+import re
 import sys
 import logging
 
@@ -186,10 +187,15 @@ class Metadoc(object):
         if req.status_code != 200:
           raise Exception('Requesting article body failed with {} status code.'.format(req.status_code))
 
-        # check for encoding conflicts (e.g. t3n.de)
-        enc_apparent = req.apparent_encoding.lower()
-        if req.encoding.lower() != enc_apparent and \
-           enc_apparent != "windows-1254":
-            logger.info("Switching html encoding: {} -> {}".format(req.encoding, enc_apparent))
-            req.encoding = enc_apparent
+        if self._check_invalid_encoding(req.text):
+            # check for encoding conflicts (e.g. t3n.de)
+            enc_apparent = req.apparent_encoding.lower()
+            if req.encoding.lower() != enc_apparent and \
+               enc_apparent != "windows-1254":
+                logger.info("Switching html encoding: {} -> {}".format(req.encoding, enc_apparent))
+                req.encoding = enc_apparent
         return req.text
+
+    def _check_invalid_encoding(self, html):
+        r=r'(Ã¼|Ã¤|Ã¶|Ã¼)'
+        return True if re.search(r, html, re.I|re.M) else False
