@@ -10,3 +10,6 @@ dist
 venv
 htmlcov
 *.swp
+venv36
+metadoc/extract/data/*
+.pytest_cache
