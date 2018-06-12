@@ -107,6 +107,13 @@ python metadoc/__install__.py
 python serve.py => serving @ 6060
 ```
 
+## Test
+```shell
+py.test -v tests
+```
+If you happen to run into an error with OSX 10.11 concerning a lazy bound library in PIL,   
+just remove `/PIL/.dylibs/liblzma.5.dylib`.
+
 ## Todo
 * Page concatenation is needed in order to properly calculate wordcount and reading time.
 * Authenticity heuristic with sharecount deviance detection (requires state).
@@ -118,4 +125,3 @@ python serve.py => serving @ 6060
 Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).   
 Metadoc leans on [this](https://github.com/hankcs/AveragedPerceptronPython) perceptron implementation inspired by Matthew Honnibal.    
 Metadoc is work-in-progress and maintained by [@___paul](https://twitter.com/___paul)   
-

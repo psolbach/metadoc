@@ -58,7 +58,7 @@ def full_article():
     abort(404)
 
   metadoc = Metadoc(url=url, html=html)
-  payload = metadoc.query_all()
+  payload = metadoc.query()
 
   return json.dumps(payload)
 
