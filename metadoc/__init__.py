@@ -181,7 +181,7 @@ class Metadoc(object):
 
         req = requests.get(url, headers={
           'Accept-Encoding': 'identity, gzip, deflate, *',
-          'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)'
+          'User-Agent': 'Facebot/1.0'
         })
 
         if req.status_code != 200:
