@@ -65,6 +65,9 @@ class Extractor(object):
 
     self.html = emoji_pattern.sub(r'', self.html)
 
+    # empty charset derails goose3
+    self.html = self.html.replace('<meta charset="">', '<meta charset="utf-8">')
+
   def extract_text(self):
     """Parse fulltext, do keyword extraction using the newspaper lib
     => newspaper.readthedocs.io
