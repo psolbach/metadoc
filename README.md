@@ -120,8 +120,13 @@ just remove `/PIL/.dylibs/liblzma.5.dylib`.
 * ~~Perf: Worst offender is nltk's pos tagger. Roll own w/ Average Perceptron.~~
 * ~~Newspaper's summarize produces pullquotes, fulltext takes a while. Move to libextract?~~
 
+## Contributors
+[Martin Borho](https://github.com/mborho)   
+[Paul Solbach](https://github.com/___paul)   
+
 ---
 
+Meteadoc is a software product of Praise Internet UG, Hamburg.   
 Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).   
 Metadoc leans on [this](https://github.com/hankcs/AveragedPerceptronPython) perceptron implementation inspired by Matthew Honnibal.    
 Metadoc is work-in-progress and maintained by [@___paul](https://twitter.com/___paul)   
