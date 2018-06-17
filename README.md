@@ -75,7 +75,7 @@ Since it's painful watching humans be all aggrevated about those fake news makin
 For speed and simplicity, I decided against `nltk` and instead rely on the Averaged Perceptron as imagined by Matthew Honnibal [@explosion](https://github.com/explosion). The pip install comes pre-trained with a [CoNLL 2000](http://www.cnts.ua.ac.be/conll2000/) training set which works reasonably well to detect proper nouns. Since training is non-deterministic, unwanted stopwords might slip through. If you want to try out other datasets, simply replace `metadoc/extract/data/training_set.txt` with your own and run `metadoc.extract.pos.do_train`.
 
 ## Purpose
-This humble library is used in the context of a news-related software undertaking. We're synthesizing what we dub "audience-evaluated content" with automated metadata. Machine-in-the-loop, if you will. Sounds like bullshit, but it's totally not. If you're intrigued and might want to work with us, feel free to drop a line to p at psolbach dot com.
+This humble library is used in the context of a news-related software undertaking called [Praise](https://praise.press). We're building the first social network dedicated to quality journalism recommendations. Synthesizing what we dub "audience-evaluated content" with automated metadata. If you're intrigued and might want to work with us, feel free to drop a line to [a@praise.press](a@praise.press).   
 
 ## Install
 Requires python 3.5.
@@ -129,4 +129,4 @@ just remove `/PIL/.dylibs/liblzma.5.dylib`.
 Meteadoc is a software product of Praise Internet UG, Hamburg.   
 Metadoc stems from a pedigree of nice libraries like [libextract](https://github.com/datalib/libextract), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).   
 Metadoc leans on [this](https://github.com/hankcs/AveragedPerceptronPython) perceptron implementation inspired by Matthew Honnibal.    
-Metadoc is work-in-progress and maintained by [@___paul](https://twitter.com/___paul)   
+Metadoc is a work-in-progress.
