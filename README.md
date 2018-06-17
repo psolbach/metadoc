@@ -69,13 +69,13 @@ metadoc.return_ball()
 ```
 
 ## Trustworthiness Check
-Since it's painful watching humans be all aggrevated about those fake news making the rounds, Metadoc does a rather crude background check on article sources. This means compiling a simple blacklist-lookup and `whois` data on the domain. Blacklists taken into account include the widely discredited [PropOrNot](http://www.propornot.com/p/the-list.html). Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. The resulting metadata should be taken with lots of salt. To put it in the words of [Don DeLillo](http://www.theparisreview.org/interviews/1887/don-delillo-the-art-of-fiction-no-135-don-delillo) – "lists are a form of cultural hysteria."
+Metadoc does a basic background check on article sources. This means a simple blacklist-lookup via `whois` data on the domain. Blacklists taken into account include the controversial [PropOrNot](http://www.propornot.com/p/the-list.html). Thus, only if a domain is found on every blacklist do we spit out a `fake_confidence` of 1. The resulting metadata should be taken with a grain of salt.
 
 ## Part-of-speech tagging
-For speed and simplicity, I decided against `nltk` and instead rely on the Averaged Perceptron as imagined by Matthew Honnibal [@explosion](https://github.com/explosion). The pip install comes pre-trained with a [CoNLL 2000](http://www.cnts.ua.ac.be/conll2000/) training set which works reasonably well to detect proper nouns. Since training is non-deterministic, unwanted stopwords might slip through. If you want to try out other datasets, simply replace `metadoc/extract/data/training_set.txt` with your own and run `metadoc.extract.pos.do_train`.
+For speed and simplicity, we decided against `nltk` and instead rely on the Averaged Perceptron as imagined by Matthew Honnibal [@explosion](https://github.com/explosion). The pip install comes pre-trained with a [CoNLL 2000](http://www.cnts.ua.ac.be/conll2000/) training set which works reasonably well to detect proper nouns. Since training is non-deterministic, unwanted stopwords might slip through. If you want to try out other datasets, simply replace `metadoc/extract/data/training_set.txt` with your own and run `metadoc.extract.pos.do_train`.
 
 ## Purpose
-This humble library is used in the context of a news-related software undertaking called [Praise](https://praise.press). We're building the first social network dedicated to quality journalism recommendations. Synthesizing what we dub "audience-evaluated content" with automated metadata. If you're intrigued and might want to work with us, feel free to drop a line to [a@praise.press](a@praise.press).   
+This library is used in the context of a news-related software undertaking called [Praise](https://praise.press). We're building the first social network dedicated to quality journalism recommendations. Synthesizing what we dub "audience-evaluated content" with automated metadata. If you're intrigued and might want to work with us, feel free to drop a line to [a@praise.press](a@praise.press).   
 
 ## Install
 Requires python 3.5.
