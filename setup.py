@@ -7,8 +7,11 @@ from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
+
+requirements_txt = open("./requirements.txt").read()
 main_py = open('metadoc/__init__.py').read()
 metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", main_py))
+
 
 def _post_install():
         from metadoc.install import install_nltk_sets
@@ -16,13 +19,13 @@ def _post_install():
 
 class DevInstall(_install):
     def run(self):
-        call(["pip install -r requirements-dev.txt --no-clean"], shell=True)
+        call(["pip install -r ./requirements-dev.txt --no-clean"], shell=True)
         self.execute(_post_install, (), msg="Installing nltk sets!")
         _install.run(self)
 
 class CustomInstall(_install):
     def run(self):
-        call(["pip install -r requirements.txt --no-clean"], shell=True)
+        call(["pip install -r ./requirements.txt --no-clean"], shell=True)
         self.execute(_post_install, (), msg="Installing nltk sets!")
         _install.run(self)
 
@@ -47,6 +50,7 @@ setup(
     license=metadata["license"],
     cmdclass={'install': CustomInstall, 'develop': DevInstall, 'bdist_wheel': CustomInstall},
     packages=find_packages(exclude=['tests']),
+    install_requires=requirements_txt.strip().split("\n"),
     include_package_data=True,
     zip_safe=False
 )
