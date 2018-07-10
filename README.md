@@ -14,7 +14,7 @@ metadoc = Metadoc(url=url)
 res = metadoc.query()
 ```
 =>
-```json
+```python
 {'__version__': '0.9.0',
  'authors': ['Kim Zetter'],
  'canonical_url': 'https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says/',
