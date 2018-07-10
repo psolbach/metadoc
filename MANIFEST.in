@@ -1,2 +1,5 @@
+include requirements.txt
+include requirements-dev.txt
+include README.md
 recursive-include metadoc/extract/data *
 #global-exclude *.zip
