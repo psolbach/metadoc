@@ -50,13 +50,13 @@ res = metadoc.query()
   }],
   'text': {
     'contenthash': '940a62c70db255b4aec378529ae7a2c8',
-          'fulltext': 'a guardian of user privacy this year after fighting FBI
-            demands to help crack into San Bernardino shooter Syed ...',
-          'reading_time': 439,
-          'summary': 'Your call logs get sent to Apple’s servers whenever '
-                     'iCloud is on — something Apple does not disclose.'},
- 'title': 'iPhones Secretly Send Call\xa0History to Apple, Security Firm Says',
- 'url': 'https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says'
+    'fulltext': 'a guardian of user privacy this year after fighting FBI
+      demands to help crack into San Bernardino shooter Syed ...',
+    'reading_time': 439,
+    'summary': 'Your call logs get sent to Apple’s servers whenever iCloud is on — something Apple does not disclose.'
+  },
+  'title': 'iPhones Secretly Send Call\xa0History to Apple, Security Firm Says',
+  'url': 'https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says'
 }
 ```
 
