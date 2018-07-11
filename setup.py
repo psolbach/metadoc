@@ -6,7 +6,11 @@ import re
 from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
+from setuptools.command.sdist import sdist as _sdist
+from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
 
+with open('./README.md') as f:
+    long_description = f.read()
 
 requirements_txt = open("./requirements.txt").read()
 main_py = open('metadoc/__init__.py').read()
@@ -23,17 +27,27 @@ class DevInstall(_install):
         self.execute(_post_install, (), msg="Installing nltk sets!")
         _install.run(self)
 
-class CustomInstall(_install):
+class CustomInstall(_sdist):
+
     def run(self):
         call(["pip install -r ./requirements.txt --no-clean"], shell=True)
         self.execute(_post_install, (), msg="Installing nltk sets!")
-        _install.run(self)
+        _sdist.run(self)
+
+
+class BdistEggInstall(_bdist_wheel):
+
+   def run(self):
+        call(["pip install -r ./requirements.txt --no-clean"], shell=True)
+        self.execute(_post_install, (), msg="Installing nltk sets!")
+        _bdist_wheel.run(self)
 
 setup(
     name='metadoc',
     version=metadata["version"],
     description="Post-truth era news article metadata service.",
-    long_description="",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     classifiers=[ # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
         "Programming Language :: Python :: 3.5",
         "Topic :: Internet :: WWW/HTTP",
@@ -46,9 +60,9 @@ setup(
     keywords=["scraping", "metadata", "news article"],
     author=metadata["author"],
     author_email='p@psolbach.com',
-    url='https://github.com/psolbach/metadoc',
+    url='https://github.com/praise-internet/metadoc',
     license=metadata["license"],
-    cmdclass={'install': CustomInstall, 'develop': DevInstall, 'bdist_wheel': CustomInstall},
+    cmdclass={'sdist': CustomInstall, 'develop': DevInstall, 'bdist_wheel': BdistEggInstall},
     packages=find_packages(exclude=['tests']),
     install_requires=requirements_txt.strip().split("\n"),
     include_package_data=True,
