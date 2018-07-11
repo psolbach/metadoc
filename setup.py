@@ -7,6 +7,8 @@ from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
+with open('./README.md') as f:
+    long_description = f.read()
 
 requirements_txt = open("./requirements.txt").read()
 main_py = open('metadoc/__init__.py').read()
@@ -34,7 +36,8 @@ setup(
     name='metadoc',
     version=metadata["version"],
     description="Post-truth era news article metadata service.",
-    long_description="",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     classifiers=[ # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
         "Programming Language :: Python :: 3.5",
         "Topic :: Internet :: WWW/HTTP",
