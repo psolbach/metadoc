@@ -15,44 +15,43 @@ res = metadoc.query()
 ```
 =>
 ```python
-{'__version__': '0.9.0',
- 'authors': ['Kim Zetter'],
- 'canonical_url': 'https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says/',
- 'domain': {'credibility': {'fake_confidence': '0.00', 'is_blacklisted': False},
-            'date_registered': None,
-            'favicon': 'https://logo.clearbit.com/theintercept.com?size=200',
-            'name': 'theintercept.com'},
- 'entities': {'keywords': ['cellebrite',
-                           'fbi',
-                           'skype',
-                           'intercept',
-                           'israeli',
-                           'russian',
-                           'elcomsoft',
-                           'katalov'],
-              'names': ['San Bernardino',
-                        'Apple CallKit',
-                        'Civil Liberties Union',
-                        'Phone Breaker',
-                        'Apple ID',
-                        'Vladimir Katalov',
-                        'Financial Times',
-                        'Chris Soghoian']},
- 'image': 'https://theintercept.imgix.net/wp-uploads/sites/1/2016/11/GettyImages-578052668-s.jpg?auto=compress%2Cformat&q=90&fit=crop&w=1200&h=800',
- 'language': 'en',
- 'modified_date': None,
- 'published_date': '2016-11-17T11:00:36+00:00',
- 'scraped_date': '2018-07-10T12:13:46+00:00',
- 'social': [{'metrics': [{'count': 7340, 'label': 'sharecount'}],
-             'provider': 'facebook'},
-            {'metrics': [{'count': None, 'label': 'upvotes'},
-                         {'count': None, 'label': 'num_reports'}],
-             'provider': 'reddit'},
-            {'metrics': [{'count': 0, 'label': 'sharecount'}],
-             'provider': 'linkedin'}],
- 'text': {'contenthash': '940a62c70db255b4aec378529ae7a2c8',
-          'fulltext': 'a guardian of user privacy this year after fighting FBI '
-                      'demands to help crack into San Bernardino shooter Syed [...]',
+{
+  '__version__': '0.9.0',
+  'authors': ['Kim Zetter'],
+  'canonical_url': 'https://theintercept.com/2016/11/17/iphones-secretly-send-call-history-to-apple-security-firm-says/',
+  'domain': {
+    'credibility': {
+      'fake_confidence': '0.00',
+      'is_blacklisted': False
+    },
+    'date_registered': None,
+    'favicon': 'https://logo.clearbit.com/theintercept.com?size=200',
+    'name': 'theintercept.com'},
+    'entities': {
+      'keywords': [
+        'cellebrite',
+        'fbi',
+        'skype',
+        'intercept'
+        ...
+      ]
+    }
+  },
+  'image': 'https://theintercept.imgix.net/wp-uploads/sites/1/2016/11/GettyImages-578052668-s.jpg?auto=compress%2Cformat&q=90&fit=crop&w=1200&h=800',
+  'language': 'en',
+  'modified_date': None,
+  'published_date': '2016-11-17T11:00:36+00:00',
+  'scraped_date': '2018-07-10T12:13:46+00:00',
+  'social': [{
+    'metrics': [{
+      'count': 7340, 'label': 'sharecount'
+    }],
+    'provider': 'facebook'
+  }],
+  'text': {
+    'contenthash': '940a62c70db255b4aec378529ae7a2c8',
+          'fulltext': 'a guardian of user privacy this year after fighting FBI
+            demands to help crack into San Bernardino shooter Syed ...',
           'reading_time': 439,
           'summary': 'Your call logs get sent to Apple’s servers whenever '
                      'iCloud is on — something Apple does not disclose.'},
@@ -112,12 +111,12 @@ just remove `/PIL/.dylibs/liblzma.5.dylib`.
 * ~~Newspaper's summarize produces pullquotes, fulltext takes a while. Move to libextract?~~
 
 ## Contributors
-[Martin Borho](https://github.com/mborho)
-[Paul Solbach](https://github.com/___paul)
+[Martin Borho](https://github.com/mborho)   
+[Paul Solbach](https://github.com/___paul)   
 
 ---
 
-Meteadoc is a software product of Praise Internet UG, Hamburg.
-Metadoc stems from a pedigree of nice libraries like [goose3](https://github.com/goose3/goose3/tree/master/goose3), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).
+Meteadoc is a software product of Praise Internet UG, Hamburg.   
+Metadoc stems from a pedigree of nice libraries like [goose3](https://github.com/goose3/goose3/tree/master/goose3), [langdetect](https://github.com/Mimino666/langdetect) and [nltk](https://github.com/nltk/nltk).   
 Metadoc leans on [this](https://github.com/hankcs/AveragedPerceptronPython) perceptron implementation inspired by Matthew Honnibal.    
-Metadoc is a work-in-progress.
+Metadoc is a work-in-progress.   
