@@ -6,6 +6,7 @@ import re
 from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
+from setuptools.command.bdist_egg import bdist_egg as _bdist_egg
 
 
 requirements_txt = open("./requirements.txt").read()
@@ -24,10 +25,18 @@ class DevInstall(_install):
         _install.run(self)
 
 class CustomInstall(_install):
+
     def run(self):
         call(["pip install -r ./requirements.txt --no-clean"], shell=True)
         self.execute(_post_install, (), msg="Installing nltk sets!")
         _install.run(self)
+
+class BdistEggInstall(_bdist_egg):
+
+    def run(self):
+        call(["pip install -r ./requirements.txt --no-clean"], shell=True)
+        self.execute(_post_install, (), msg="Installing nltk sets!")
+        _bdist_egg.run(self)
 
 setup(
     name='metadoc',
@@ -46,9 +55,9 @@ setup(
     keywords=["scraping", "metadata", "news article"],
     author=metadata["author"],
     author_email='p@psolbach.com',
-    url='https://github.com/psolbach/metadoc',
+    url='https://github.com/praise-internet/metadoc',
     license=metadata["license"],
-    cmdclass={'install': CustomInstall, 'develop': DevInstall, 'bdist_wheel': CustomInstall},
+    cmdclass={'install': CustomInstall, 'develop': DevInstall, 'bdist_wheel': BdistEggInstall},
     packages=find_packages(exclude=['tests']),
     install_requires=requirements_txt.strip().split("\n"),
     include_package_data=True,
