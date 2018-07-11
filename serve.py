@@ -9,21 +9,20 @@ __license__ = 'MIT'
 import concurrent
 import json
 import bottle
-from bottle import response, request, post, route, run, abort, error
+from bottle import response, request, get, route, run, abort, error
 from metadoc import Metadoc
 
 bottle.BaseRequest.MEMFILE_MAX = 1024 * 1024 # up max POST payload size to 1MB
 
 @error(404)
 def error404(error):
-  return json.dumps({'code': 404,'message': 'Params html or title missing.'})
+  return json.dumps({'code': 404,'message': 'url param is missing.'})
 
-@post('/social')
+@get('/social')
 def social_article():
-  """POST data url required, html optional"""
+  """GET data url required"""
   response.content_type = 'application/json'
-  url = request.forms.get("url")
-
+  url = request.query.getone("url")
   if not url:
     abort(404)
 
@@ -32,32 +31,31 @@ def social_article():
 
   return json.dumps(payload)
 
-@post('/extract')
+@get('/extract')
 def extract_article():
-  """POST data url required, html optional"""
+  """GET data url required"""
   response.content_type = 'application/json'
-  url = request.forms.get("url")
-
+  url = request.query.getone("url")
   if not url:
     abort(404)
 
   metadoc = Metadoc(url=url)
+  metadoc._prepare()
   metadoc._query_domain()
   metadoc._query_extract()
 
   payload = metadoc._render() # Preserve order
   return json.dumps(payload)
 
-@post('/full')
+@get('/full')
 def full_article():
-  """POST data url required, html optional"""
+  """GET data url required"""
   response.content_type = 'application/json'
-  url, html = request.forms.get("url"), request.forms.get("html")
-
+  url = request.query.getone("url")
   if not url:
     abort(404)
 
-  metadoc = Metadoc(url=url, html=html)
+  metadoc = Metadoc(url=url)
   payload = metadoc.query()
 
   return json.dumps(payload)
