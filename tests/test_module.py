@@ -80,4 +80,4 @@ class MetadocModuleTest(asynctest.TestCase):
   def test_invalid_t3n(self):
       metadoc = Metadoc(url="https://t3n.de/news/remote-work-home-office-heimarbeit-erfahrungsbericht-1018248/", html=None)
       result = metadoc.query()
-      assert result["title"] ==  "Remote Workers Life: „Das Home-Office löst viele Probleme, schafft aber auch neue“"
+      assert result["title"] ==  "Remote Workers Life: „Das Homeoffice löst viele Probleme, schafft aber auch neue“"
