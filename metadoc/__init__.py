@@ -24,6 +24,10 @@ logger = logging.getLogger()
 logger.setLevel(os.environ.get("LOGLEVEL", "INFO"))
 formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s %(message)s')
 
+# set user agent
+USER_AGENT = os.environ.get("USER_AGENT",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36")
+
 if not os.environ.get("LAMBDA_TASK_ROOT", False):
     # add stream handler, except for AWS Lambda
     ch = logging.StreamHandler(sys.stdout)
@@ -180,10 +184,8 @@ class Metadoc(object):
         url = p.geturl()
 
         req = requests.get(url, headers={
-          #'Accept-Encoding': 'identity, gzip, deflate, *',
-          #'User-Agent': 'Facebot/1.0'
-          #'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
-          'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0',
+          'Accept-Encoding': 'identity, gzip, deflate, *',
+          'User-Agent': USER_AGENT
         })
 
         if req.status_code != 200:
