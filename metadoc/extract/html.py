@@ -54,9 +54,15 @@ class HtmlMeta(object):
     def _extract_ld_authors(self):
         # extract from jsonld
         ld_authors = self.jsonld.get("author", {})
+
+        # Return if unparseable
+        if not ld_authors:
+            return None
+
         # sanitize ld structure
         if type(ld_authors) == str:
             ld_authors = {"name": ld_authors}
+
         ld_authors = [a["name"] for a in ld_authors] if type(ld_authors) == list else ld_authors.get("name", False)
         return ld_authors
 
