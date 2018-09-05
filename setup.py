@@ -7,6 +7,7 @@ from subprocess import call
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 from setuptools.command.sdist import sdist as _sdist
+from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
 
 with open('./README.md') as f:
     long_description = f.read()
@@ -32,15 +33,11 @@ class CustomInstall(_sdist):
         self.execute(_post_install, (), msg="Installing nltk sets!")
         _sdist.run(self)
 
-# class BdistEggInstall(_bdist_wheel):
-#    def run(self):
-#         if sys.version_info[0] < 3 or sys.version_info[1] < 6:
-#             raise Exception("Must be using Python 3.6^")
-
-#         from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
-#         call(["pip install -r ./requirements.txt --no-clean"], shell=True)
-#         self.execute(_post_install, (), msg="Installing nltk sets!")
-#         _bdist_wheel.run(self)
+class BdistEggInstall(_bdist_wheel):
+   def run(self):
+        call(["pip install -r ./requirements.txt --no-clean"], shell=True)
+        self.execute(_post_install, (), msg="Installing nltk sets!")
+        _bdist_wheel.run(self)
 
 setup(
     name='metadoc',
